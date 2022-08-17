@@ -1,1 +1,33 @@
-<footer>Footer</footer>
+<footer class="page-footer">
+  <div class="container">
+    <div class="page-footer__content">
+      <nav class="page-footer__nav nav">
+        <ul class="nav__list">
+          {% for link in nav %}
+            <li class="nav__item">
+              <a class="nav__link" href="{{ link.href}}.html">{{ link.title }}</a>
+              {% if link.subNav %}
+                <ul class="nav__sub-list">
+                  {% for subLink in link.subNav %}
+                    <li class="nav__sub-item">
+                       <a class="nav__sub-link" href="{{ subLink.href}}.html">{{ subLink.title}}</a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+              {% if link.title == "Оборудование" %}
+                <a class="nav__configurator" href="#!" >Конфигуратор</a>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+      <div class="page-footer__logo-address">
+        <a class="page-footer__logo logo" href="./index.html" >
+          <img src="@img/logo-footer.svg" alt="Логотип EXASystems">
+        </a>
+        <p class="page-footer__address">Москва, Новая Басманная ул., 23, стр. 2, офис 316<br>+7 (495) 540-47-08, info@exasystems.ru</p>
+      </div>
+    </div>
+  </div>
+</footer>

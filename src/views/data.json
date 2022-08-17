@@ -2,10 +2,86 @@
   "debug": false,
   "site_name": "EXASystems",
   "active_menu_link": "link--active",
-  "menu": [
+  "nav": [
     {
-      "title": "Главная",
-      "href": "index"
+      "title": "Оборудование",
+      "href": "equipment",
+      "subNav" : [
+        {
+          "title": "Серверы",
+          "href": "servers"
+        },
+        {
+          "title": "Комплектующие для серверов",
+          "href": "servers-accessories"
+        },
+        {
+          "title": "Сетевое оборудование",
+          "href": "network-hardware"
+        },
+        {
+          "title": "Системы хранения данных",
+          "href": "data-systems"
+        },
+        {
+          "title": "Оборудование для защиты питания",
+          "href": "power-defense-hardware"
+        },
+        {
+          "title": "Серверные шкафы и стойки",
+          "href": "server-closets"
+        },
+        {
+          "title": "Программное обеспечение",
+          "href": "software"
+        }
+      ]
+    },
+    {
+      "title": "Услуги и решения",
+      "href": "services-and-solutions",
+      "subNav" : [
+        {
+          "title": "Техническая поддержка и аутсорсинг",
+          "href": "tech-support"
+        },
+        {
+          "title": "Серверная ИТ-инфраструктура",
+          "href": "server-it"
+        },
+        {
+          "title": "Телекоммуникационные системы",
+          "href": "telecommunication-systems"
+        },
+        {
+          "title": "ИТ-консалтинг",
+          "href": "it-consulting"
+        },
+        {
+          "title": "Инженерные системы",
+          "href": "engineering-systems"
+        },
+        {
+          "title": "Безопасный регион",
+          "href": "safe-region"
+        }
+      ]
+    },
+    {
+      "title": "Команда",
+      "href": "team"
+    },
+    {
+      "title": "Блог",
+      "href": "blog"
+    },
+    {
+      "title": "Кейсы",
+      "href": "cases"
+    },
+    {
+      "title": "Вендоры",
+      "href": "vendors"
     },
     {
       "title": "Контакты",
