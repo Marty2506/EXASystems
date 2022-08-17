@@ -1,0 +1,146 @@
+.case {
+  margin-bottom: 50px;
+}
+.case__container {
+}
+.case__header {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  margin-bottom: 17px;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+    gap: 30px;
+  }
+}
+.case__header-line {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.case__date {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 19px;
+  color: $grey-color;
+}
+.case__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: $blue-color;
+
+  &:hover {
+    & .case__link-text {
+      color: $bg-color;
+    }
+    & .case__link-icon {
+      fill: $bg-color;
+    }
+  }
+}
+.case__link-text {
+  font-size: 14px;
+  line-height: 17px;
+  color: $blue-color;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+.case__link-icon {
+  margin-left: 15px;
+  fill: $blue-color;
+  transition: fill 0.3s ease;
+}
+.case__link--hidden {
+  @media (max-width: $max-mobile-width) {
+    display: none;
+  }
+}
+.case__link--back {
+  & .case__link-icon {
+    margin-left: 0;
+    margin-right: 15px;
+    transform: rotate(180deg);
+  }
+}
+.case__title {
+  margin-bottom: 17px;
+
+  @media (min-width: $desktop-width) {
+    width: 70%;
+    margin: 0;
+  }
+}
+.case__logo-wrapper {
+  max-width: 168px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 220px;
+  }
+}
+.case__logo {
+  display: inline-flex;
+  height: auto;
+}
+.case__main {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 50px;
+
+    margin-bottom: 37px;
+  }
+}
+.case__left {
+  @media (max-width: $max-tablet-width) {
+    margin-bottom: 25px;
+  }
+
+}
+
+.case__right {
+  display: flex;
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-end;
+  }
+
+}
+.case__photos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-grow: 0;
+
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    display: grid;
+
+    grid-template-columns: repeat(2, 323px);
+    gap: 15px;
+
+  }
+
+}
+
+.case__photo-wrapper {
+  display: flex;
+  max-width: 325px;
+}
+
+.case__photo {
+  display: block;
+}
+
+.case__footer {
+  display: flex;
+  justify-content: space-between;
+}
