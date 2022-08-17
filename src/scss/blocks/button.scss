@@ -1,0 +1,40 @@
+$button-height: 47;
+.button {
+  position: relative;
+  display: inline-flex;
+  height: $button-height +px;
+  justify-content: center;
+  align-items: center;
+  background-color: $button-color;
+  color: #fff;
+  text-decoration: underline;
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 17px;
+  max-width: 290px;
+
+  transition: color 0.5s ease;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: calc($button-height / 2.9375) +px;
+    transform: translateX(calc($button-height / 2.9375 - 1) +px);
+
+    background-image: url("@img/button-triangle.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &:hover {
+    color: $black-color;
+  }
+}
