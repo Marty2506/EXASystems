@@ -5,7 +5,54 @@
         <img class="page-header__logo-image1" src="@img/logo-header-part1.svg" alt="Логотип EXASystems">
         <img class="page-header__logo-image2" src="@img/logo-header-part2.svg" alt="">
       </a>
+      <div class="menu menu--no-js">
+        <div class="menu__main">
+          <ul class="menu__list">
+            {% for link in menu %}
+              <li class="menu__item">
+                {% if link.subMenu %}
+                  <a class="menu__link" href="{{ link.href}}.html">{{ link.title }}</a>
+                  <div class="menu__sub">
+                    <button class="menu__back-button" type="button">Назад</button>
+                    <ul class="menu__list">
+                      {% for subLink in link.subMenu %}
+                        <li class="menu__item">
+                          {% if subLink.subMenu %}
+                            <a class="menu__link" href="{{ link.href}}.html">{{ subLink.title }}</a>
+                            <div class="menu__sub">
+                              <button class="menu__back-button" type="button">Назад</button>
+                              <ul class="menu__list">
+                                {% for subSubLink in subLink.subMenu %}
+                                  <li class="menu__item">
+                                    <a class="menu__link menu__link--end" href="{{ link.href}}.html">{{ subSubLink.title }}</a>
+                                  </li>
+                                {% endfor %}
+                              </ul>
+                            </div>
+                          {% else %}
+                            <a class="menu__link menu__link--end" href="{{ link.href}}.html">{{ subLink.title }}</a>
+                          {% endif %}
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
 
+                {% else %}
+                  <a class="menu__link menu__link--end" href="{{ link.href}}.html">{{ link.title }}</a>
+                {% endif %}
+              </li>
+            {% endfor %}
+            <li class="menu__item">
+              <a class="menu__link menu__link--end menu__link--configurator" href="#!">Конфигуратор</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu__contacts">
+          <a class="menu__phone" href="tel:+74955404708">8 (495) 540-47-08</a>
+          <a class="menu__mail" href="mailto:mail@info@exasystems.ru">info@exasystems.ru</a>
+          <a class="menu__back-call-button button" href="#!">Обратный звонок</a>
+        </div>
+      </div>
       <div class="page-header__buttons">
         <div class="page-header__contacts">
           <a class="page-header__phone-button" href="tel:+74955404708">
@@ -23,7 +70,6 @@
             </svg>
           </a>
         </div>
-
         <button class="burger">
           <span class="visually-hidden">Открыть меню.</span>
         </button>

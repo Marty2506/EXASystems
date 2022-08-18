@@ -7,7 +7,6 @@ burger.addEventListener('click', (evt) => {
   if (menu) {
     menu.classList.toggle('menu--opened');
     document.body.classList.toggle('menu-opened'); // Скрывает футер и мэйн
-    pageHeaderBottom.classList.toggle('page-header__bottom--opened');
   }
 })
 
