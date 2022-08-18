@@ -1,0 +1,27 @@
+<section class="case-card">
+  <div class="case-card__content">
+    <div class="case-card__header">
+      <div class="case-card__dates">
+        <p class="case-card__date">{{ card.startDate }}</p>
+        <p class="case-card__date">{{ card.stopDate }}</p>
+      </div>
+      <img class="case-card__logo" src="@img/{{ card.logo.url }}" alt="{{ card.logo.alt }}" width="{{ card.logo.width }}" height="{{ card.logo.height }}">
+    </div>
+    <div class="case-card__main">
+      <a class="case-card__title-link" href="./case.html">
+        <h3 class="case-card__title">{{ card.title | safe}}</h3>
+      </a>
+      <ul class="case-card__list">
+        {% for item in card.items %}
+          <li class="case-card__item">{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <a class="case-card__open-case-button"href="./case-page.html">
+      <svg class="case-card__open-case-button-icon" width="24" height="6" viewBox="0 0 24 6">
+        <use xlink:href="img/sprite.svg#open-case-icon"></use>
+      </svg>
+      <span class="visually-hidden">Перейти на страницу кейса.</span>
+    </a>
+  </div>
+</section>
