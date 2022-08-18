@@ -4,6 +4,10 @@
 
 {% block content %}
   <main class="page-main">
+    <h1 class="visually-hidden">Кейсы</h1>
+    <div class="container">
+      <a href="./case-page.html">Case page</a>
+    </div>
     <div class="container">
       <div class="breadcumbs">
         <ul class="breadcumbs__list">
@@ -16,10 +20,9 @@
         </ul>
       </div>
     </div>
-    <div class="container">
-      <h1 class="title">Кейсы</h1>
-      <a href="./case-page.html">Case page</a>
-    </div>
+
+    {% include "./blocks/completed-projects.j2" %}
+    {% include "./blocks/subscribe-section.j2" %}
   </main>
 {% endblock content %}
 
