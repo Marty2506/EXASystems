@@ -41,7 +41,7 @@
 a.breadcumbs__link {
   transition: color 0.3s ease;
   &:hover {
-    color: $bg-color;
+    color: $button-color;
   }
 }
 .breadcumbs__link--current {
