@@ -1,7 +1,33 @@
-<header>
-  <nav>
-    {% for link in menu %}
-      <a{% if link.href == page %} class="{{active_menu_link}}"{% endif %} href="{{ link.href }}.html">{{ link.title }}</a>
-    {% endfor %}
-  </nav>
+<header class="page-header">
+  <div class="page-header__container container">
+    <div class="page-header__row">
+      <a class="page-header__logo logo" href="./index.html" >
+        <img class="page-header__logo-image1" src="@img/logo-header-part1.svg" alt="Логотип EXASystems">
+        <img class="page-header__logo-image2" src="@img/logo-header-part2.svg" alt="">
+      </a>
+
+      <div class="page-header__buttons">
+        <div class="page-header__contacts">
+          <a class="page-header__phone-button" href="tel:+74955404708">
+            <span>+7 495 540 47 08</span>
+            <div class="page-header__phone-icon-wrapper">
+              <svg class="page-header__phone-icon" width="12" height="14" viewBox="0 0 12 14">
+                <use xlink:href="img/sprite.svg#phone-icon"></use>
+              </svg>
+            </div>
+          </a>
+          <a class="page-header__mail-button" href="mailto:info@exasystems.ru">
+            <span>info@exasystems.ru</span>
+            <svg class="page-header__mail-icon" width="16" height="12" viewBox="0 0 16 12">
+              <use xlink:href="img/sprite.svg#mail-icon"></use>
+            </svg>
+          </a>
+        </div>
+
+        <button class="burger">
+          <span class="visually-hidden">Открыть меню.</span>
+        </button>
+      </div>
+    </div>
+  </div>
 </header>

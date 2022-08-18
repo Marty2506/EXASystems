@@ -3,6 +3,7 @@
 @import "./mixin.scss";
 @import "./fonts.scss";
 
+@import "./blocks/visually-hidden.scss";
 @import "./blocks/container.scss";
 @import "./blocks/button.scss";
 @import "./blocks/title.scss";
@@ -11,9 +12,11 @@
 @import "./blocks/form.scss";
 @import "./blocks/nav.scss";
 @import "./blocks/logo.scss";
+@import "./blocks/burger.scss";
 
 
 @import "./blocks/page.scss";
+@import "./blocks/page-header.scss";
 @import "./blocks/page-main.scss";
 @import "./blocks/page-footer.scss";
 @import "./blocks/case.scss";

@@ -1,0 +1,59 @@
+.burger {
+  position: relative;
+  z-index: 99;
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 44px;
+  height: 44px;
+  background-color: $button-color;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    right: 10px;
+    height: 2px;
+    background-color: #ffffff;
+    box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+  }
+
+  &:active {
+    background-color: $blue-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+.burger--opened {
+  background-color: transparent;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    right: 10px;
+    height: 2px;
+    box-shadow: none;
+    background-color: #ffffff;
+    transition: transform 0.5s ease;
+  }
+
+  &::before {
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  &::after {
+    transform: translateY(-50%) rotate(-45deg);
+  }
+}
+.burger--no-js {
+  display: none;
+}

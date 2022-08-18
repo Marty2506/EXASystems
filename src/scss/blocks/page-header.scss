@@ -1,0 +1,141 @@
+.page-header {
+  padding: 16px 0;
+  background: linear-gradient(180deg, #453FA9 0%, #675FC6 100%);
+}
+.page-header__container {
+}
+.page-header__row {
+  display: flex;
+
+}
+.page-header__logo {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  @media (min-width: $desktop-width) {
+    width: 193px;
+  }
+
+  & img {
+    display: block;
+  }
+}
+.page-header__logo-image2 {
+
+  @media (min-width: $desktop-width) {
+    width: 102px;
+    height: 7px;
+    align-self: flex-end;
+  }
+}
+.page-header__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.page-header__buttons {
+  margin-left: auto;
+  display: flex;
+  gap: 7px;
+}
+.page-header__phone-button {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  align-items: center;
+  gap: 8px;
+
+
+  & span {
+    font-family: "Jost", "Arial", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 29px;
+    color: #fff;
+    transition: color 0.3s ease;
+
+    @media (max-width: $max-tablet-width) {
+      display: none;
+    }
+  }
+
+  &:hover {
+    & span {
+      color: $button-color;
+    }
+    & .page-header__phone-icon-wrapper {
+      background-color: #fff;
+    }
+    & .page-header__phone-icon {
+      fill: $aqua-color;
+    }
+  }
+}
+.page-header__phone-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+
+  @media (min-width: $desktop-width) {
+    width: 18px;
+    height: 18px;
+    border-radius: 1px;
+    background-color: $blue-color;
+  }
+}
+.page-header__phone-icon {
+  fill: #fff;
+  transition: fill 0.3s ease;
+
+  @media (max-width: $max-tablet-width) {
+    width: 27px;
+    height: 32px;
+    fill: $aqua-color;
+  }
+
+}
+
+.page-header__mail-button {
+  @media (max-width: $max-tablet-width) {
+    display: none;
+  }
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-decoration: none;
+
+  & span {
+    font-size: 13px;
+    line-height: 16px;
+    text-decoration-line: underline;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+
+  & .page-header__mail-icon {
+    fill: $bg2-color;
+    transition: fill 0.3s ease;
+  }
+
+  &:hover {
+    & span {
+      color: $button-color;
+
+    }
+    & .page-header__mail-icon {
+      fill: $button-color;
+    }
+  }
+}
+.page-header__mail-icon {
+}
