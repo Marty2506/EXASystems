@@ -4,6 +4,13 @@
   color: #fff;
   background: linear-gradient(180deg, #453FA9 0%, #675FC6 100%);
   overflow: hidden;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: none;
+  }
 }
 .menu--no-js {
   @media (max-width: $desktop-width) {
@@ -24,66 +31,101 @@
 }
 .menu__main {
   margin-bottom: 25px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 .menu__list {
   margin: 0;
   padding: 0;
 
   list-style-type: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-left: 32px;
+  }
 }
 .menu__item {
-  position: relative;
 
-  &:last-child::after {
-    content: "";
-    position: absolute;
-    right: -17px;
-    bottom: -1px;
-    left: 0;
+  @media (max-width: $max-tablet-width) {
+    position: relative;
 
-    height: 1px;
+    &:last-child::after {
+      content: "";
+      position: absolute;
+      right: -17px;
+      bottom: -1px;
+      left: 0;
 
-    background-color: rgba(245, 245, 245, 0.51);
+      height: 1px;
+
+      background-color: rgba(245, 245, 245, 0.51);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -1px;
+      right: -17px;
+      left: 0;
+
+      height: 1px;
+
+      background-color: rgba(245, 245, 245, 0.51);
+    }
   }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: -1px;
-    right: -17px;
-    left: 0;
-
-    height: 1px;
-
-    background-color: rgba(245, 245, 245, 0.51);
+}
+.menu__item--desktop-hidden {
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 .menu__link {
-  position: relative;
+  @media (max-width: $max-tablet-width) {
+    position: relative;
 
-  display: flex;
-  padding: 13px 0;
+    display: flex;
+    padding: 13px 0;
 
-  font-family: "Jost", "Arial", sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 26px;
-  color: inherit;
-  text-decoration: none;
+    font-family: "Jost", "Arial", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: inherit;
+    text-decoration: none;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 18px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 18px;
 
-    width: 12px;
-    height: 19px;
+      width: 12px;
+      height: 19px;
 
-    background-image: url("@img/icons/menu-arrow.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    transform: translateY(-50%);
+      background-image: url("@img/icons/menu-arrow.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      transform: translateY(-50%);
+    }
+  }
+  @media (min-width: $desktop-width) {
+    padding: 3px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $button-color;
+    }
   }
 }
 .menu__link--end {
@@ -143,11 +185,34 @@
   }
 }
 .menu__link--configurator {
+
+  @media (min-width: $desktop-width) {
+    display: inline-flex;
+    height: 32px;
+    padding: 0 15px;
+    align-items: center;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+    background-color: $blue-color;
+    transition: background-color 0.3s ease;
+
+    &:hover{
+      background-color: $button-color;
+      color: #fff;
+    }
+  }
+
 }
 .menu__contacts {
   display: flex;
   flex-direction: column;
   font-family: "Jost", "Arial", sans-serif;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 .menu__phone {
   display: block;
@@ -167,9 +232,6 @@
 }
 .menu__back-call-button {
   margin-left: -18px;
-  margin-right: -18px;
-  // box-sizing: content-box;
-  // margin-right: -180px;
   max-width: calc(100% + 18px);
   height: 65px;
   font-weight: 500;

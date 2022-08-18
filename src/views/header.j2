@@ -9,7 +9,11 @@
         <div class="menu__main">
           <ul class="menu__list">
             {% for link in menu %}
-              <li class="menu__item">
+              {% if link.desktopHidden %}
+                <li class="menu__item menu__item--desktop-hidden">
+              {% else %}
+                <li class="menu__item">
+              {% endif %}
                 {% if link.subMenu %}
                   <a class="menu__link" href="{{ link.href}}.html">{{ link.title }}</a>
                   <div class="menu__sub">

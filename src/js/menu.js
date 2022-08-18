@@ -7,14 +7,14 @@ menuSubs.forEach(submenu => {
   const link = submenu.parentNode.querySelector('.menu__link');
   if (link) {
     link.addEventListener('click', (evt) => {
-      if (!link.classList.contains('menu__link--end')) {
+      if (!link.classList.contains('menu__link--end') && window.innerWidth < 1321) {
         evt.preventDefault();
+        submenu.classList.add('menu__sub--active');
+        const backButton = submenu.querySelector('.menu__back-button');
+        backButton.addEventListener('click', () => {
+          submenu.classList.remove('menu__sub--active');
+        });
       }
-      submenu.classList.add('menu__sub--active');
-      const backButton = submenu.querySelector('.menu__back-button');
-      backButton.addEventListener('click', () => {
-        submenu.classList.remove('menu__sub--active');
-      });
     });
   }
 });
@@ -56,7 +56,7 @@ function handleTouchMove(evt) {
             } else {
               const menu = evt.target.closest('.menu');
               if (menu) {
-                // burger.click();
+                burger.click();
               }
             }
 

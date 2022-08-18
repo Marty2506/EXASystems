@@ -1,6 +1,9 @@
 .page-header {
   padding: 16px 0;
   background: linear-gradient(180deg, #453FA9 0%, #675FC6 100%);
+  @media (min-width: $desktop-width) {
+    padding: 42px 0;
+  }
 }
 .page-header__container {
 }
