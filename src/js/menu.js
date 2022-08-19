@@ -50,18 +50,17 @@ function handleTouchMove(evt) {
     if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
         if ( xDiff > 0 ) {
             /* right swipe */
-            const menuSub = evt.target.closest('.menu__sub');
-            if (menuSub) {
-              menuSub.querySelector('.menu__back-button').click();
-            } else {
-              const menu = evt.target.closest('.menu');
-              if (menu) {
-                burger.click();
-              }
-            }
-
         } else {
-            /* left swipe */
+          /* left swipe */
+          const menuSub = evt.target.closest('.menu__sub');
+          if (menuSub) {
+            menuSub.querySelector('.menu__back-button').click();
+          } else {
+            const menu = evt.target.closest('.menu');
+            if (menu) {
+              burger.click();
+            }
+          }
         }
     } else {
         if ( yDiff > 0 ) {
