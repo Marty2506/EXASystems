@@ -1,7 +1,7 @@
 var casesLayout = Macy({
   container: '.completed-projects__list',
   trueOrder: true,
-  waitForImages: true,
+  waitForImages: false,
   columns: 1,
   mobileFirst: true,
   breakAt: {
