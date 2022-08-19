@@ -52,7 +52,10 @@
   transition: color 0.3s ease;
 
   &:hover {
-    color: $aqua-color;
+    color: $blue-color;
+  }
+  &:active {
+    opacity: 0.7;
   }
 }
 .nav__sub-list {
@@ -77,7 +80,10 @@
   transition: color 0.3s ease;
 
   &:hover {
-    color: $aqua-color;
+    color: $blue-color;
+  }
+  &:active {
+    opacity: 0.7;
   }
 }
 
@@ -95,10 +101,13 @@
   width: 134px;
   border-radius: 2px;
   background-color: $button-color;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
 
   &:hover {
-    color: $black-color;
+    background-color: $blue-color;
+  }
+  &:active {
+    opacity: 0.7;
   }
 
   @media (max-width: $max-tablet-width) {
