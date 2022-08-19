@@ -19,10 +19,13 @@
 
 
     {% include "./blocks/about.j2" %}
+    {% include "./blocks/team.j2" %}
     {% include "./blocks/subscribe-section.j2" %}
   </main>
 {% endblock content %}
 
 {% block js %}
+  <script src="./js/macy.min.js"></script>
+  <script src="./js/team.min.js"></script>
   <script src="./js/main.min.js"></script>
 {% endblock %}

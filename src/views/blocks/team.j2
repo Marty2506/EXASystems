@@ -1,0 +1,164 @@
+{% set teamMemberCounter = 1 %}
+<section class="team section">
+  <div class="container">
+    <div class="team__content">
+      <h2 class="team__title title">Команда</h2>
+      <ul class="team__list">
+        <li class="team__item">
+          <figure class="team__photo">
+            <picture>
+              {# <source type="image/webp" media="(min-width: 768px)" srcset="@img/team-photo-{{ teamMemberCounter }}-desktop.webp 1x, @img/team-photo-{{ teamMemberCounter }}-desktop@2x.webp 2x"> #}
+              {# <source type="image/webp" srcset="@img/team-photo-{{ teamMemberCounter }}-mobile.webp 1x, @img/team-photo-{{ teamMemberCounter }}-mobile@2x.webp 2x"> #}
+              <source media="(min-width: 768px)" srcset="@img/team-photo-{{ teamMemberCounter }}-desktop.jpg 1x, @img/team-photo-{{ teamMemberCounter }}-desktop@2x.jpg 2x">
+              <img class="team__image" src="@img/team-photo-{{ teamMemberCounter }}-mobile.jpg" srcset="@img/team-photo-{{ teamMemberCounter }}-mobile@2x.jpg 2x" alt="">
+              {% set teamMemberCounter = teamMemberCounter + 1 %}
+            </picture>
+          </figure>
+          <div class="team__info">
+            <p class="team__name">Семенов Константин Владимирович</p>
+            <p class="team__job-title">Генеральный директор, сооснователь</p>
+            <ul class="team__about-list">
+              <li class="team__about-item">15 лет опыта управления IT-проектами в крупных торговых, производственных и строительных компаниях</li>
+              <li class="team__about-item">Участие в международных технических проектах</li>
+              <li class="team__about-item">Выпускник МГТУ им. Н.Э.Баумана по специальности "Автоматизированные системы обработки информации и управления”</li>
+              <li class="team__about-item">Профессиональные интересы – активное применение облачных технологий</li>
+            </ul>
+          </div>
+
+        </li>
+        <li class="team__item">
+          <div class="team__insurance">
+            <p class="team__insurance-text">Профессиональная ответственность каждого инженера застрахована</p>
+            <span class="team__insurance-value">10 000 000 Р</span>
+          </div>
+          <figure class="team__photo">
+            <picture>
+              {# <source type="image/webp" media="(min-width: 768px)" srcset="@img/team-photo-{{ teamMemberCounter }}-desktop.webp 1x, @img/team-photo-{{ teamMemberCounter }}-desktop@2x.webp 2x"> #}
+              {# <source type="image/webp" srcset="@img/team-photo-{{ teamMemberCounter }}-mobile.webp 1x, @img/team-photo-{{ teamMemberCounter }}-mobile@2x.webp 2x"> #}
+              <source media="(min-width: 768px)" srcset="@img/team-photo-{{ teamMemberCounter }}-desktop.jpg 1x, @img/team-photo-{{ teamMemberCounter }}-desktop@2x.jpg 2x">
+              <img class="team__image" src="@img/team-photo-{{ teamMemberCounter }}-mobile.jpg" srcset="@img/team-photo-{{ teamMemberCounter }}-mobile@2x.jpg 2x" alt="">
+              {% set teamMemberCounter = teamMemberCounter + 1 %}
+            </picture>
+          </figure>
+          <div class="team__info">
+            <p class="team__name">Евланов Артем Евгеньевич</p>
+            <p class="team__job-title">Директор по маркетингу, сооснователь</p>
+            <ul class="team__about-list">
+              <li class="team__about-item">Окончил МГТУ им. Н.Э. Баумана, красный диплом</li>
+              <li class="team__about-item">Опыт предпринимательства с 2004г</li>
+              <li class="team__about-item">Основал и развил 2 производственные компании с нуля до 50+ сотрудников</li>
+              <li class="team__about-item">Вдохновляется женой, воспитывает сына</li>
+              <li class="team__about-item">Дайвинг, сноуборд, саморазвитие</li>
+            </ul>
+          </div>
+        </li>
+        <li class="team__item">
+          <figure class="team__photo">
+            <picture>
+              {# <source type="image/webp" media="(min-width: 768px)" srcset="@img/team-photo-{{ teamMemberCounter }}-desktop.webp 1x, @img/team-photo-{{ teamMemberCounter }}-desktop@2x.webp 2x"> #}
+              {# <source type="image/webp" srcset="@img/team-photo-{{ teamMemberCounter }}-mobile.webp 1x, @img/team-photo-{{ teamMemberCounter }}-mobile@2x.webp 2x"> #}
+              <source media="(min-width: 768px)" srcset="@img/team-photo-{{ teamMemberCounter }}-desktop.jpg 1x, @img/team-photo-{{ teamMemberCounter }}-desktop@2x.jpg 2x">
+              <img class="team__image" src="@img/team-photo-{{ teamMemberCounter }}-mobile.jpg" srcset="@img/team-photo-{{ teamMemberCounter }}-mobile@2x.jpg 2x" alt="">
+              {% set teamMemberCounter = teamMemberCounter + 1 %}
+            </picture>
+          </figure>
+          <div class="team__info">
+            <p class="team__name">Горшков Олег Викторович</p>
+            <p class="team__job-title">Руководитель направления слаботочных систем</p>
+            <ul class="team__about-list">
+              <li class="team__about-item">Опыт в сфере систем безопасности и слаботочных систем – 14 лет</li>
+              <li class="team__about-item">Прошел профессиональный путь от инженера до руководителя отдела «Комплексных Инженерных Систем» в строительной компании «МОРТОН»</li>
+              <li class="team__about-item">Образование среднее специальное техническое</li>
+              <li class="team__about-item">Женат. Увлечен путешествиями, дайвингом и горными лыжами</li>
+            </ul>
+          </div>
+        </li>
+        <li class="team__item">
+          <figure class="team__photo">
+            <picture>
+              {# <source type="image/webp" media="(min-width: 768px)" srcset="@img/team-photo-{{ teamMemberCounter }}-desktop.webp 1x, @img/team-photo-{{ teamMemberCounter }}-desktop@2x.webp 2x"> #}
+              {# <source type="image/webp" srcset="@img/team-photo-{{ teamMemberCounter }}-mobile.webp 1x, @img/team-photo-{{ teamMemberCounter }}-mobile@2x.webp 2x"> #}
+              <source media="(min-width: 768px)" srcset="@img/team-photo-{{ teamMemberCounter }}-desktop.jpg 1x, @img/team-photo-{{ teamMemberCounter }}-desktop@2x.jpg 2x">
+              <img class="team__image" src="@img/team-photo-{{ teamMemberCounter }}-mobile.jpg" srcset="@img/team-photo-{{ teamMemberCounter }}-mobile@2x.jpg 2x" alt="">
+              {% set teamMemberCounter = teamMemberCounter + 1 %}
+            </picture>
+          </figure>
+          <div class="team__info">
+            <p class="team__name">Золин Михаил Валерьевич</p>
+            <p class="team__job-title">Системный администратор</p>
+            <ul class="team__about-list">
+              <li class="team__about-item">Образование высшее техническоет</li>
+              <li class="team__about-item">Опыт в IT – 7 лет</li>
+              <li class="team__about-item">После старта карьеры в «Аристон Термо Групп» был призван на армейскую службу в войска связи, уволился в запас в звании сержанта</li>
+              <li class="team__about-item">В ГК Мортон получил бесценный опыт работы в условиях систематизации IT-инфраструктуры</li>
+              <li class="team__about-item">Женат. Из интересов выделяет чтение, в остальном же продолжает поиск своей «музы»</li>
+            </ul>
+          </div>
+        </li>
+        <li class="team__item">
+          <figure class="team__photo">
+            <picture>
+              {# <source type="image/webp" media="(min-width: 768px)" srcset="@img/team-photo-{{ teamMemberCounter }}-desktop.webp 1x, @img/team-photo-{{ teamMemberCounter }}-desktop@2x.webp 2x"> #}
+              {# <source type="image/webp" srcset="@img/team-photo-{{ teamMemberCounter }}-mobile.webp 1x, @img/team-photo-{{ teamMemberCounter }}-mobile@2x.webp 2x"> #}
+              <source media="(min-width: 768px)" srcset="@img/team-photo-{{ teamMemberCounter }}-desktop.jpg 1x, @img/team-photo-{{ teamMemberCounter }}-desktop@2x.jpg 2x">
+              <img class="team__image" src="@img/team-photo-{{ teamMemberCounter }}-mobile.jpg" srcset="@img/team-photo-{{ teamMemberCounter }}-mobile@2x.jpg 2x" alt="">
+              {% set teamMemberCounter = teamMemberCounter + 1 %}
+            </picture>
+          </figure>
+          <div class="team__info">
+            <p class="team__name">Стедорцов Денис Васильевич</p>
+            <p class="team__job-title">Руководитель направления слаботочных систем</p>
+            <ul class="team__about-list">
+              <li class="team__about-item">Образование высшее техническое</li>
+              <li class="team__about-item">Опыт работы в области организации и развития IT – 16 лет, из них 6 на руководящих должностях в крупных промышленных предприятиях</li>
+              <li class="team__about-item">Портфель проектов – 3,6 млрд. руб., в области IT/связи/АСУТП</li>
+              <li class="team__about-item">Женат. Интересы – туризм, история</li>
+            </ul>
+          </div>
+        </li>
+        <li class="team__item">
+          <figure class="team__photo">
+            <picture>
+              {# <source type="image/webp" media="(min-width: 768px)" srcset="@img/team-photo-{{ teamMemberCounter }}-desktop.webp 1x, @img/team-photo-{{ teamMemberCounter }}-desktop@2x.webp 2x"> #}
+              {# <source type="image/webp" srcset="@img/team-photo-{{ teamMemberCounter }}-mobile.webp 1x, @img/team-photo-{{ teamMemberCounter }}-mobile@2x.webp 2x"> #}
+              <source media="(min-width: 768px)" srcset="@img/team-photo-{{ teamMemberCounter }}-desktop.jpg 1x, @img/team-photo-{{ teamMemberCounter }}-desktop@2x.jpg 2x">
+              <img class="team__image" src="@img/team-photo-{{ teamMemberCounter }}-mobile.jpg" srcset="@img/team-photo-{{ teamMemberCounter }}-mobile@2x.jpg 2x" alt="">
+              {% set teamMemberCounter = teamMemberCounter + 1 %}
+            </picture>
+          </figure>
+          <div class="team__info">
+            <p class="team__name">Ефаненков Анатолий Анатольевич</p>
+            <p class="team__job-title">Директор по продажам, сооснователь</p>
+            <ul class="team__about-list">
+              <li class="team__about-item">Два высших образования: техническое и юридическое</li>
+              <li class="team__about-item">В IT – 12 лет</li>
+              <li class="team__about-item">Прошел профессиональный путь от менеджера по продажам до руководителя отдела продаж в системном интеграторе</li>
+              <li class="team__about-item">Реализованные проекты – Мортон, ПИК, ГК Основа, Инград, Моспроект, Моспромпроект, Донстрой, 3data, Альфабанк, ГК Соллерс, РЖД, Валентафарм</li>
+              <li class="team__about-item">Женат, 2 детей. 18 лет профессионально занимался баскетболом.Интересы – ЗОЖ, бильярд, теннис, горные лыжи</li>
+            </ul>
+          </div>
+        </li>
+        <li class="team__item">
+          <figure class="team__photo">
+            <picture>
+              {# <source type="image/webp" media="(min-width: 768px)" srcset="@img/team-photo-{{ teamMemberCounter }}-desktop.webp 1x, @img/team-photo-{{ teamMemberCounter }}-desktop@2x.webp 2x"> #}
+              {# <source type="image/webp" srcset="@img/team-photo-{{ teamMemberCounter }}-mobile.webp 1x, @img/team-photo-{{ teamMemberCounter }}-mobile@2x.webp 2x"> #}
+              <source media="(min-width: 768px)" srcset="@img/team-photo-{{ teamMemberCounter }}-desktop.jpg 1x, @img/team-photo-{{ teamMemberCounter }}-desktop@2x.jpg 2x">
+              <img class="team__image" src="@img/team-photo-{{ teamMemberCounter }}-mobile.jpg" srcset="@img/team-photo-{{ teamMemberCounter }}-mobile@2x.jpg 2x" alt="">
+              {% set teamMemberCounter = teamMemberCounter + 1 %}
+            </picture>
+          </figure>
+          <div class="team__info">
+            <p class="team__name">Мартынюк Кирилл Сергеевич</p>
+            <p class="team__job-title">Заместитель генерального директора</p>
+            <ul class="team__about-list">
+              <li class="team__about-item">Выпускник МГТУ им. Н.Э. Баумана по специальности "Автоматизированные системы обработки информации и управления"</li>
+              <li class="team__about-item">Специалист в сфере IT-технологий с более чем 17-летним опытом работы, из них 9 лет на руководящих должностях.</li>
+              <li class="team__about-item">Профессиональные интересы - системы безопасности</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
