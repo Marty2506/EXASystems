@@ -82,11 +82,15 @@
 .case-card__item {
   padding: 8px 10px;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 140%;
   background-color: $bg2-color;
   color: $grey-color;
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+  }
 }
 .case-card__open-case-button {
   display: inline-block;
