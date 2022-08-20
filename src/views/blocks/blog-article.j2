@@ -1,0 +1,70 @@
+<article class="blog-article">
+  <div class="container">
+    <div class="blog-article__header">
+      <div class="blog-article__header-line">
+        <p class="blog-article__date">21.06.2022</p>
+        <a class="blog-article__link next-link" href="#!">
+          <span class="next-link__text">Следующая статья</span>
+          <svg class="next-link__icon" width="10" height="15" viewBox="0 0 10 15">
+            <use xlink:href="img/sprite.svg#next-arrow-icon"></use>
+          </svg>
+        </a>
+      </div>
+      <h1 class="blog-article__title title">Как мы проектировали и строили центр обработки данных. Может быть длиннее. В пару строк</h1>
+      <ul class="blog-article__tags-list">
+        <li class="blog-article__tags-item tag">СУБД</li>
+        <li class="blog-article__tags-item tag">системы хранения данных</li>
+      </ul>
+    </div>
+    <div class="blog-article__main">
+      <picture>
+        {# <source type="image/webp" media="(min-width: 1321px)" srcset="@img/blog-iamge-desktop.webp 1x, @img/blog-iamge-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="@img/blog-iamge-tablet.webp 1x, @img/blog-iamge-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="@img/blog-iamge-mobile.webp 1x, @img/blog-iamge-mobile@2x.webp 2x"> #}
+        <source media="(min-width: 1321px)" srcset="@img/blog-iamge-desktop.jpg 1x, @img/blog-iamge-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="@img/blog-iamge-tablet.jpg 1x, @img/blog-iamge-tablet@2x.jpg 2x">
+        <img class="blog-article__image" src="@img/blog-iamge-mobile.jpg" srcset="@img/blog-iamge-mobile@2x.jpg 2x" alt="Фотография центраобработки данных">
+      </picture>
+      <p class="blog-article__paragraph blog-article__text">
+        Это был уже третий наш собственный ЦОД и далеко не первый и даже не двадцатый из тех, что мы строили или помогали строить по всей стране для различных заказчиков. Соответственно, к этому моменту мы уже имели отличную команду инженеров и проверенных поставщиков.
+      </p>
+      <p class="blog-article__text-title">Базовые параметры ЦОД «Компрессор»</p>
+      <ul class="blog-article__text-list blog-article__text">
+        <li class="blog-article__text-item">Отказоустойчивость: Tier III, подтвержденная Uptime Institute,</li>
+        <li class="blog-article__text-item">Охлаждение: N+1, в среднем 6 кВт/стойку (есть и 30 кВт стойки, они ставятся рядом с менее мощными в машзале),</li>
+        <li class="blog-article__text-item">Энергоснабжение: 2N, ИБП – 15 минут, ДГУ – 24 часа без дозаправки,</li>
+        <li class="blog-article__text-item">Вместимость – 800 стоек,</li>
+        <li class="blog-article__text-item">Помещения склада и персонала заказчика,</li>
+        <li class="blog-article__text-item">Охраняемая территория,</li>
+        <li class="blog-article__text-item">Здание в собственности,</li>
+        <li class="blog-article__text-item">Соединен оптоволоконным кольцом с сетью дата-центров КРОК,</li>
+        <li class="blog-article__text-item">6000 кВт общей холодильной мощности, из них 1500 кВт резерв,</li>
+        <li class="blog-article__text-item">Сквозное резервирование системы холодоснабжения N+1 (3+1),</li>
+        <li class="blog-article__text-item">Среднегодовой расчётный PUE не хуже 1.45,</li>
+        <li class="blog-article__text-item">Запас холода 15 минут при отключении электроснабжения,</li>
+        <li class="blog-article__text-item">Температурный диапазон -36…+37 градусов (это абсолютный минимум и максимум за последние 10 лет в Москве).</li>
+      </ul>
+      <p class="blog-article__paragraph blog-article__text">
+        Строительство «Компрессора» мы начали в 2009 году. Хотелось сделать всё по уму, поскольку специфика некоторых наших клиентов такова, что ЦОДы должны работать несмотря ни на что. Был выбран уровень TIER-III как наиболее соответствующий задачам (такие ЦОДы продолжают стабильно работать без изменений при выходе любого узла системы из строя и имеют показатель доступности 99,98%). Мы прошли сертификацию Uptime Institute по проекту и по объекту – до нас в России было всего два ЦОДа такого уровня.
+      </p>
+      <p class="blog-article__paragraph blog-article__text">
+        Итак, на начало работ у нас было здание. В целом оно было в хорошем состоянии. Мы добавили перекрытия между первым и вторым этажом, плюс нарастили третий этаж под бытовые нужды (например, там сейчас столовая).
+      </p>
+      <p class="blog-article__paragraph blog-article__text">
+        Вот и всё. После того, как фасад здания был полностью облицован, мы ещё привели в порядок территорию, поставили забор для охраны и посадили газон.
+      </p>
+      <p class="blog-article__paragraph blog-article__text">
+        Ссылки
+      </p>
+      <p class="blog-article__paragraph blog-article__text">
+        Вот здесь есть фотоэскурсия по данному ЦОД, здесь – больше деталей, а вот здесь – про особенности сертификации.
+      </p>
+      <p class="blog-article__paragraph blog-article__text">
+        P.S. Если интересно, я напишу пост про оборудование, инженерные системы и поставщиков (кстати, некоторые отечественные поставщики очень даже неплохо себя зарекомендовали).
+      </p>
+    </div>
+    <div class="blog-article__footer">
+
+    </div>
+  </div>
+</article>
