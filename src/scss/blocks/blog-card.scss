@@ -1,0 +1,120 @@
+.blog-card {
+  padding-top: 20px;
+  background-color: $white-color;
+}
+.blog-card__content {
+  display: flex;
+  flex-direction: column;
+}
+.blog-card__header {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.blog-card__title-link {
+
+}
+.blog-card__title-link {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $blue-color;
+  }
+  &:active {
+    opacity: 0.7;
+  }
+}
+.blog-card__title {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Jost", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 10px;
+  }
+
+}
+.blog-card__date {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 130%;
+  color: $grey-color;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+  }
+}
+.blog-card__image-link {
+  display: block;
+  text-decoration: none;
+}
+.blog-card__image {
+  @media (max-width: $max-mobile-width) {
+    max-height: 270px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.blog-card__main {
+  padding: 30px;
+}
+.blog-card__description {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+
+  font-size: 16px;
+  line-height: 19px;
+
+  color: $grey-color;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
+}
+.blog-card__tags-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.blog-card__tags {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 11px;
+
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.blog-card__read-link {
+  @media (max-width: $max-mobile-width) {
+    align-self: flex-end;
+  }
+}

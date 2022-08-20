@@ -1,0 +1,99 @@
+{% set blogCardCounter = 1 %}
+<section class="blog section">
+  <div class="container">
+    <div class="blog__content">
+      <h1 class="blog__title title">Блог для профессионалов</h1>
+      <ul class="blog__tags">
+        <li class="blog__tags-item">
+          <button class="tag" type="button">компьютеры</button>
+        </li>
+        <li class="blog__tags-item">
+          <button class="tag" type="button">серверы</button>
+        </li>
+        <li class="blog__tags-item">
+          <button class="tag" type="button">рубрика</button>
+        </li>
+        <li class="blog__tags-item">
+          <button class="tag" type="button">оборудование для офиса</button>
+        </li>
+        <li class="blog__tags-item">
+          <button class="tag" type="button">СУБД</button>
+        </li>
+        <li class="blog__tags-item">
+          <button class="tag" type="button">системы хранения данных</button>
+        </li>
+      </ul>
+
+      <ol class="blog__list">
+        <li class="blog__item">
+          <div class="blog-card">
+            <div class="blog-card__content">
+              <div class="blog-card__header">
+                <a class="blog-card__title-link" href="./blog-page.html">
+                  <h3 class="blog-card__title">Как мы проектировали и строили центр обработки данных. Может быть длиннее. В пару строк</h3>
+                </a>
+                <p class="blog-card__date">21.06.2022</p>
+              </div>
+              <a class="blog-card__image-link" href="./blog-page.html">
+                <picture>
+                  {# <source type="image/webp" media="(min-width: 768px)" srcset="@img/blog-card-{{ blogCardCounter }}-desktop.webp 1x, @img/blog-card-{{ blogCardCounter }}-desktop@2x.webp 2x">
+                  <source type="image/webp" srcset="@img/blog-card-{{ blogCardCounter }}-mobile.webp 1x, @img/blog-card-{{ blogCardCounter }}-mobile@2x.webp 2x"> #}
+                  <source media="(min-width: 768px)" srcset="@img/blog-card-{{ blogCardCounter }}-desktop.jpg 1x, @img/blog-card-{{ blogCardCounter }}-desktop@2x.jpg 2x">
+                  <img class="blog-card__image" src="@img/blog-card-{{ blogCardCounter }}-mobile.jpg" srcset="@img/blog-card-{{ blogCardCounter }}-mobile@2x.jpg 2x" alt="">
+                </picture>
+              </a>
+              <div class="blog-card__main">
+                <p class="blog-card__description">Длинное описани о том, как это было. DELL PowerEdge R440 1U/ 4LFF/ 1x3106 (8-Core, 1.7 GHz, 85W)/ 1x16GB RDIMM</p>
+                <div class="blog-card__tags-wrapper">
+                  <ul class="blog-card__tags">
+                    <li class="tag">системы хранения данных</li>
+                    <li class="tag">СУБД</li>
+                  </ul>
+                  <a class="blog-card__read-link next-link" href="./blog-page.html">Читать статью</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% set blogCardCounter = blogCardCounter + 1 %}
+        </li>
+        <li class="blog__item">
+          <div class="blog-card">
+            <div class="blog-card__content">
+              <div class="blog-card__header">
+                <a class="blog-card__title-link" href="./blog-page.html">
+                  <h3 class="blog-card__title">Как мы проектировали и строили центр обработки данных. Может быть длиннее. В пару строк</h3>
+                </a>
+                <p class="blog-card__date">21.06.2022</p>
+              </div>
+              <a class="blog-card__image-link" href="./blog-page.html">
+                <picture>
+                  {# <source type="image/webp" media="(min-width: 768px)" srcset="@img/blog-card-{{ blogCardCounter }}-desktop.webp 1x, @img/blog-card-{{ blogCardCounter }}-desktop@2x.webp 2x">
+                  <source type="image/webp" srcset="@img/blog-card-{{ blogCardCounter }}-mobile.webp 1x, @img/blog-card-{{ blogCardCounter }}-mobile@2x.webp 2x"> #}
+                  <source media="(min-width: 768px)" srcset="@img/blog-card-{{ blogCardCounter }}-desktop.jpg 1x, @img/blog-card-{{ blogCardCounter }}-desktop@2x.jpg 2x">
+                  <img class="blog-card__image" src="@img/blog-card-{{ blogCardCounter }}-mobile.jpg" srcset="@img/blog-card-{{ blogCardCounter }}-mobile@2x.jpg 2x" alt="">
+                </picture>
+              </a>
+              <div class="blog-card__main">
+                <p class="blog-card__description">Длинное описани о том, как это было. DELL PowerEdge R440 1U/ 4LFF/ 1x3106 (8-Core, 1.7 GHz, 85W)/ 1x16GB RDIMM</p>
+                <div class="blog-card__tags-wrapper">
+                  <ul class="blog-card__tags">
+                    <li class="tag">системы хранения данных</li>
+                    <li class="tag">СУБД</li>
+                  </ul>
+                  <a class="blog-card__read-link next-link" href="./blog-page.html">Читать статью</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% set blogCardCounter = blogCardCounter + 1 %}
+        </li>
+      </ol>
+      <button class="blog__show-more show-more" type="button">
+        <svg class="show-more__icon" width="10" height="15" viewBox="0 0 10 15">
+          <use xlink:href="img/sprite.svg#next-arrow-icon"></use>
+        </svg>
+        <span class="show-more__text">Показать еще</span>
+      </button>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,39 @@
+.tag {
+  display: inline-flex;
+  align-self: flex-start;
+  margin: 0;
+  padding: 8px 10px;
+
+  background-color: $white-color;
+  border: 1px solid #ebebeb;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+
+  color: $blue-color;
+
+  cursor: default;
+
+  transition: all;
+}
+
+a.tag,
+button.tag {
+  cursor: pointer;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $button-color;
+  }
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.tag--active {
+  color: $white-color;
+  background-color: $blue-color;
+}

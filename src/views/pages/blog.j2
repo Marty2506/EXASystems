@@ -1,0 +1,28 @@
+{% extends "layout.j2" %}
+
+{% set page = "blog" %}
+
+{% block content %}
+  <main class="page-main">
+    <div class="container">
+      <div class="breadcumbs">
+        <ul class="breadcumbs__list">
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="./index.html">Главная</a>
+          </li>
+          <li class="breadcumbs__item">
+            <span class="breadcumbs__link breadcumbs__link--current">Блог для профессионалов</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    {% include "./blocks/blog.j2" %}
+    {% include "./blocks/subscribe-section.j2" %}
+  </main>
+{% endblock content %}
+
+{% block js %}
+  <script src="./js/blog.min.js"></script>
+  <script src="./js/main.min.js"></script>
+{% endblock %}
