@@ -18,12 +18,12 @@
     </div>
     <div class="blog-article__main">
       <picture>
-        {# <source type="image/webp" media="(min-width: 1321px)" srcset="@img/blog-iamge-desktop.webp 1x, @img/blog-iamge-desktop@2x.webp 2x">
-        <source type="image/webp" media="(min-width: 768px)" srcset="@img/blog-iamge-tablet.webp 1x, @img/blog-iamge-tablet@2x.webp 2x">
-        <source type="image/webp" srcset="@img/blog-iamge-mobile.webp 1x, @img/blog-iamge-mobile@2x.webp 2x"> #}
-        <source media="(min-width: 1321px)" srcset="@img/blog-iamge-desktop.jpg 1x, @img/blog-iamge-desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)" srcset="@img/blog-iamge-tablet.jpg 1x, @img/blog-iamge-tablet@2x.jpg 2x">
-        <img class="blog-article__image" src="@img/blog-iamge-mobile.jpg" srcset="@img/blog-iamge-mobile@2x.jpg 2x" alt="Фотография центраобработки данных">
+        {# <source type="image/webp" media="(min-width: 1321px)" srcset="@img/blog-image-desktop.webp 1x, @img/blog-image-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="@img/blog-image-desktop.webp 1x, @img/blog-image-desktop@2x.webp 2x">
+        <source type="image/webp" srcset="@img/blog-image-mobile.webp 1x, @img/blog-image-mobile@2x.webp 2x"> #}
+        <source media="(min-width: 1321px)" srcset="@img/blog-image-desktop.jpg 1x, @img/blog-image-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="@img/blog-image-desktop.jpg 1x, @img/blog-image-desktop@2x.jpg 2x">
+        <img class="blog-article__image" src="@img/blog-image-mobile.jpg" srcset="@img/blog-image-mobile@2x.jpg 2x" alt="Фотография центра обработки данных">
       </picture>
       <p class="blog-article__paragraph blog-article__text">
         Это был уже третий наш собственный ЦОД и далеко не первый и даже не двадцатый из тех, что мы строили или помогали строить по всей стране для различных заказчиков. Соответственно, к этому моменту мы уже имели отличную команду инженеров и проверенных поставщиков.
@@ -64,7 +64,18 @@
       </p>
     </div>
     <div class="blog-article__footer">
-
+      <a class="blog-article__footer-link-back next-link next-link--back" href="#!">
+        <svg class="next-link__icon" width="10" height="15" viewBox="0 0 10 15">
+          <use xlink:href="img/sprite.svg#next-arrow-icon"></use>
+        </svg>
+        <span class="next-link__text">Назад в блог</span>
+      </a>
+      <a class="blog-article__footer-link-next next-link" href="#!">
+        <span class="next-link__text">Следующая статья</span>
+        <svg class="next-link__icon" width="10" height="15" viewBox="0 0 10 15">
+          <use xlink:href="img/sprite.svg#next-arrow-icon"></use>
+        </svg>
+      </a>
     </div>
   </div>
 </article>
