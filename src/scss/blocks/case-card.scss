@@ -108,3 +108,9 @@
     background-color: $blue-color;
   }
 }
+
+.case-card--mini {
+  & .case-card__header {
+    flex-direction: column;
+  }
+}
