@@ -4,7 +4,6 @@ const showMorePopularArticles = document.querySelector(".popular-articles__show-
 if (showMorePopularArticles) {
   showMorePopularArticles.addEventListener("click", (evt) => {
     evt.target.disabled = true;
-    console.log("HERE");
     renderPopularArticle();
     evt.target.disabled = false;
   });

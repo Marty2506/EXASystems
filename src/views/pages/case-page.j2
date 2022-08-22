@@ -20,10 +20,13 @@
       </div>
     </div>
     {% include "./blocks/case.j2" %}
+    {% include "./blocks/other-projects.j2" %}
     {% include "./blocks/subscribe-section.j2" %}
   </main>
 {% endblock content %}
 
 {% block js %}
+  <script src="./js/macy.min.js"></script>
+  <script src="./js/other-projects.min.js"></script>
   <script src="./js/main.min.js"></script>
 {% endblock %}

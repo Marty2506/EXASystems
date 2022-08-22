@@ -1,0 +1,27 @@
+<section class="other-projects">
+  <div class="container">
+    <div class="other-projects__content">
+      <h2 class="other-projects__title title">Другие проекты</h2>
+    </div>
+    <ul class="other-projects__list">
+      <li class="other-projects__item">
+        {% include "./case-cards/case-card-otkritie.j2" %}
+      </li>
+      <li class="other-projects__item">
+        {% include "./case-cards/case-card-rkif.j2" %}
+      </li>
+      <li class="other-projects__item">
+        {% include "./case-cards/case-card-daf.j2" %}
+      </li>
+      <li class="other-projects__item">
+        {% include "./case-cards/case-card-ascott.j2" %}
+      </li>
+    </ul>
+    <button class="other-projects__show-more show-more" type="button">
+      <svg class="show-more__icon" width="10" height="15" viewBox="0 0 10 15">
+        <use xlink:href="img/sprite.svg#next-arrow-icon"></use>
+      </svg>
+      <span class="show-more__text">Показать еще</span>
+    </button>
+  </div>
+</section>
