@@ -21,10 +21,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-bottom: 270px;
     flex-direction: row;
     justify-content: space-between;
 
-    background-position: 0 calc(100% + 125px);
+    background-position: 0 calc(100% + 105px);
   }
 }
 .contacts__contacts {
@@ -39,10 +40,6 @@
     padding-bottom: 30px;
     margin-left: -$paddings-mobile;
     margin-right: -$paddings-mobile;;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-height: 660px;
   }
 }
 .contacts__title {
@@ -163,8 +160,6 @@ a.contacts__item {
     z-index: 1;
   }
 
-}
-.visually-hidden {
 }
 .contacts__map-image {
   display: block;
