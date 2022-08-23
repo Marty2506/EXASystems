@@ -1,0 +1,103 @@
+{% extends "layout.j2" %}
+
+{% set page = "reviews" %}
+
+{% block content %}
+  <main class="page-main">
+    <div class="container">
+      <div class="breadcumbs">
+        <ul class="breadcumbs__list">
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="./index.html">Главная</a>
+          </li>
+          <li class="breadcumbs__item">
+            <span class="breadcumbs__link breadcumbs__link--current">Отзывы</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="reviews">
+      <div class="container">
+        <div class="reviews__content">
+          <h1 class="reviews__title title">Отзывы</h1>
+          <ul class="reviews__list reviews__list--video">
+            <li class="reviews__item">
+              <div class="reviews__video-review">
+                <div class="reviews__video-container">
+                  <iframe class="reviews__video" src="https://www.youtube.com/embed/nSaFstyQQbs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="reviews__video-about">
+                  <div class="reviews__video-person">
+                    <p class="reviews__video-person-name">Евгений Иванов</p>
+                    <p class="reviews__video-person-job">Директор Ascott Group</p>
+                  </div>
+                  <img class="reviews__video-company-logo" src="@img/svp-logo.png" alt="Логотип компании SVP">
+                </div>
+              </div>
+            </li>
+            <li class="reviews__item">
+              <div class="reviews__video-review">
+                <div class="reviews__video-container">
+                  <iframe class="reviews__video" src="https://www.youtube.com/embed/nSaFstyQQbs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="reviews__video-about">
+                  <div class="reviews__video-person">
+                    <p class="reviews__video-person-name">Евгений Иванов</p>
+                    <p class="reviews__video-person-job">Директор Ascott Group</p>
+                  </div>
+                  <img class="reviews__video-company-logo" src="@img/svp-logo.png" alt="Логотип компании SVP">
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="reviews__list reviews__list--letter">
+            <li class="reviews__item">
+              <div class="reviews__letter">
+                <a class="reviews__letter-link" href="#!">
+                  <img class="reviews__letter-image" src="@img/review-letter.jpg" alt="">
+                </a>
+                <div class="reviews__letter-text-container">
+                  <img class="reviews__letter-company-logo" src="@img/spaarman-logo.png" alt="Логотип компании SVP">
+                  <p class="reviews__letter-text">Немецкая логистическая компания <b>C. Spaarmann GmbH</b> рекомендует команду Exasystems к сотрудничеству, которая произвела ее успешный переход на удаленный режим работы и снизила расходы на ИТ.</p>
+                </div>
+              </div>
+            </li>
+            <li class="reviews__item">
+              <div class="reviews__letter">
+                <a class="reviews__letter-link" href="#!">
+                  <img class="reviews__letter-image" src="@img/review-letter.jpg" alt="">
+                </a>
+                <div class="reviews__letter-text-container">
+                  <img class="reviews__letter-company-logo" src="@img/spaarman-logo.png" alt="Логотип компании SVP">
+                  <p class="reviews__letter-text">Немецкая логистическая компания <b>C. Spaarmann GmbH</b> рекомендует команду Exasystems к сотрудничеству, которая произвела ее успешный переход на удаленный режим работы и снизила расходы на ИТ.</p>
+                </div>
+              </div>
+            </li>
+            <li class="reviews__item">
+              <div class="reviews__letter">
+                <a class="reviews__letter-link" href="#!">
+                  <img class="reviews__letter-image" src="@img/review-letter.jpg" alt="">
+                </a>
+                <div class="reviews__letter-text-container">
+                  <img class="reviews__letter-company-logo" src="@img/spaarman-logo.png" alt="Логотип компании SVP">
+                  <p class="reviews__letter-text">Немецкая логистическая компания <b>C. Spaarmann GmbH</b> рекомендует команду Exasystems к сотрудничеству, которая произвела ее успешный переход на удаленный режим работы и снизила расходы на ИТ.</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    {% include "./blocks/our-advantages.j2" %}
+
+  </main>
+{% endblock content %}
+
+{% block js %}
+  <script src="./js/macy.min.js"></script>
+  <script src="./js/other-projects.min.js"></script>
+  <script src="./js/main.min.js"></script>
+{% endblock %}
