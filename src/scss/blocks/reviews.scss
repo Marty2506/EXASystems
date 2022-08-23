@@ -9,12 +9,23 @@
   display: flex;
   flex-direction: column;
 }
-.reviews__title {
+.reviews__header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   margin-bottom: 20px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
+}
+.reviews__all-link {
+}
+.reviews__title {
+  margin: 0;
 }
 .reviews__list {
   margin: 0;
