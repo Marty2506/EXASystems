@@ -37,11 +37,11 @@
             <form class="contacts__form form" action="https://echo.htmlacademy.ru" method="get">
               <label class="form__label">
                 <span class="contacts__label-text form__label-text">Ваше имя</span>
-                <input class="form__field" type="text" id="client-name" name="client-name" placeholder="Введите ваше имя" required>
+                <input class="form__field" type="text" id="client-name" name="client-name" placeholder="Введите ваше имя" required data-pristine-required-message="Обязательно к заполнению">
               </label>
               <label class="form__label">
                 <span class="contacts__label-text form__label-text">Ваш телефон</span>
-                <input class="form__field" type="phone" id="contacts-phone" name="contacts-phone" placeholder="+7 (999) 999-99-99" required>
+                <input class="form__field" type="phone" id="contacts-phone" name="contacts-phone" placeholder="+7 (999) 999-99-99" required data-pristine-required-message="Обязательно к заполнению">
               </label>
               <button class="button form__submit-button">Отправить заявку</button>
             </form>
@@ -65,6 +65,8 @@
 
 {% block js %}
   <script src="./js/imask.js"></script>
+  <script src="./js/pristine.min.js"></script>
+  <script src="./js/contacts.min.js"></script>
   <script src="./js/mask.min.js"></script>
   <script src="./js/main.min.js"></script>
 {% endblock %}
