@@ -4,6 +4,7 @@
   gap: 30px;
 }
 .form__label {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -31,4 +32,15 @@
   @media (max-width: $max-mobile-width) {
     max-width: 95%;
   }
+}
+.form__error-message {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(calc(100% + 3px));
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 130%;
+  color: #cc2b24;
+  opacity: 0.7;
 }
