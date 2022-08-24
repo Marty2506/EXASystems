@@ -252,13 +252,13 @@ function watcher() {
   gulp.watch(path.watch.js, scripts);
   gulp.watch(path.watch.images, imagesCopy);
   // gulp.watch(path.watch.images, images);
-  // gulp.watch(path.watch.images, imagesWebp);
+  gulp.watch(path.watch.images, imagesWebp);
   gulp.watch(path.watch.sprite, sprite);
   gulp.watch([path.src.svg, `!${path.src.sprite}`], svg);
 }
 
 const mainTasks = gulp.parallel(copy, copyFavicon, fonts, views, styles, scripts, images, imagesWebp, sprite, svg);
-const devTasks = gulp.parallel(copy, copyFavicon, fonts, views, styles, scripts, imagesCopy, sprite, svg);
+const devTasks = gulp.parallel(copy, copyFavicon, fonts, views, styles, scripts, imagesCopy, imagesWebp, sprite, svg);
 
 // Построение сценариев выполнения задач
 export const dev = gulp.series(clean, devTasks, gulp.parallel(watcher, server));
