@@ -14,9 +14,14 @@
 
   {% include "footer.j2" %}
 
+
+  {% include "./blocks/modal.j2" %}
   {% block modal %}{% endblock %}
 
   <script src="./js/burger.min.js"></script>
+  <script src="./js/pristine.min.js"></script>
+  <script src="./js/imask.js"></script>
+  <script src="./js/modal.min.js"></script>
   <script src="./js/menu.min.js"></script>
   {% block js %}{% endblock %}
 </body>

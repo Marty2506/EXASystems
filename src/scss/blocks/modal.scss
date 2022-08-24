@@ -1,0 +1,144 @@
+.modal {
+  position: fixed;
+  z-index: 9999;
+
+  display: none;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0,0,0,0.6);
+
+  animation: showing-animation 0.3s ease;
+}
+.modal--opened {
+  display: flex;
+}
+.modal__wrapper {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 577px;
+  margin: auto;
+  padding: 70px 20px;
+  overflow: hidden;
+
+  background-color: #ffffff;
+  border-radius: 1px;;
+
+  @media (min-width: $tablet-width) {
+    width: 577px;
+    padding: 48px 45px 50px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1026px;
+    max-width: 1026px;
+  }
+}
+.modal__image-wrapper {
+  position: relative;
+
+  flex-shrink: 0;
+  width: 400px;
+  margin-right: 43px;
+  @media (max-width: $max-tablet-width) {
+    display: none;
+  }
+}
+.modal__image {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+
+  object-fit: contain;
+}
+.modal__content {
+  display: flex;
+  flex-direction: column;
+}
+.modal__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 14px;
+
+  font-family: "Jost", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 110%;
+  color: $black-color;
+}
+.modal__form {
+  gap: 20px;
+}
+.modal__label-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  opacity: 0.7;
+  color: $black-color;
+}
+.modal__form-textarea {
+  resize: none;
+  height: 75px;
+}
+@keyframes spinAfter {
+  from {transform: translateY(-50%) rotate(-45deg);}
+  to {transform:translateY(-50%) rotate(315deg);}
+}
+@keyframes spinBefore {
+  from {transform: translateY(-50%) rotate(45deg);}
+  to {transform:translateY(-50%) rotate(405deg);}
+}
+.modal__close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    width: 30px;
+    height: 2px;
+
+    background-color: $blue-color;
+    transform: translateY(-50%) rotate(45deg);
+    transform-origin: center;
+
+    transition: background-color 0.3s ease;
+
+  }
+  &::after {
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  &:hover {
+    &::before,
+    &::after {
+      animation: spin 0.7s linear;
+      background-color: $button-color;
+    }
+    &::before {
+      animation: spinBefore 0.7s ease-out;
+    }
+    &::after {
+      animation: spinAfter 0.7s ease-out;
+    }
+  }
+  &:active {
+    opacity: 0.7;
+  };
+}

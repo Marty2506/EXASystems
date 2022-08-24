@@ -166,6 +166,10 @@
   @media (max-width: $max-mobile-width) {
     width: 100%;
   }
+
+  @media (min-width: $tablet-width) {
+    max-width: 200px;
+  }
 }
 .reviews__letter-image {
   @media (max-width: $max-mobile-width) {

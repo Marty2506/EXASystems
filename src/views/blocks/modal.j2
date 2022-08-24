@@ -1,0 +1,31 @@
+<div class="modal">
+  <div class="modal__wrapper container">
+    <div class="modal__image-wrapper">
+      <picture>
+        {# <source type="image/webp" srcset="@img/modal-image.webp 1x"> #}
+        <img class="modal__image" src="@img/modal-image.jpg" alt="">
+      </picture>
+    </div>
+    <div class="modal__content">
+      <p class="modal__title">Отправьте заявку и мы перезвоним в&nbsp;течение 30 минут</p>
+      <form class="modal__form form" action="https://echo.htmlacademy.ru" method="get">
+        <label class="form__label">
+          <span class="modal__label-text form__label-text">Ваше имя</span>
+          <input class="form__field" type="text" id="modal-client-name" name="modal-client-name" placeholder="Введите ваше имя" required data-pristine-required-message="Обязательно к заполнению">
+        </label>
+        <label class="form__label">
+          <span class="modal__label-text form__label-text">Ваш телефон</span>
+          <input class="form__field" type="phone" id="modal-phone" name="modal-phone" placeholder="+7 (999) 999-99-99" required data-pristine-required-message="Обязательно к заполнению">
+        </label>
+        <label class="form__label">
+          <span class="modal__label-text form__label-text">Опишите Вашу задачу</span>
+          <textarea class="modal__form-textarea form__field" name="modal-task" id="modal-task" cols="30" rows="10" placeholder="Введите текст"></textarea>
+        </label>
+        <button class="button form__submit-button">Получить консультацию</button>
+      </form>
+    </div>
+    <button class="modal__close-button" type="button">
+      <span class="visually-hidden">Закрыть окно</span>
+    </button>
+  </div>
+</div>
