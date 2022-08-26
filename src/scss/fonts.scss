@@ -74,3 +74,13 @@
   src: url("../fonts/Jost-ExtraBold.woff2") format("woff2");
   src: url("../fonts/Jost-ExtraBold.woff") format("woff");
 }
+
+@font-face {
+  font-style: normal;
+  font-weight: 300;
+  font-family: "Jost";
+
+  font-display: swap;
+  src: url("../fonts/Jost-Light.woff2") format("woff2");
+  src: url("../fonts/Jost-Light.woff") format("woff");
+}

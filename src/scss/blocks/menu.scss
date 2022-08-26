@@ -238,8 +238,5 @@
   font-size: 19px;
   line-height: 23px;
   text-decoration: none;
-
-  &::after {
-    content: none;
-  }
+  clip-path: none;
 }

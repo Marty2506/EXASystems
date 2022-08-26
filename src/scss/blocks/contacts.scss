@@ -165,14 +165,6 @@ a.contacts__item {
   }
 
 }
-.contacts__map-image {
-  display: block;
-  width: 100%;
-  object-fit: cover;
-  object-position: top;
-  max-height: 843px;
-}
-
 .contacts__map iframe {
   width: 100%;
   filter: invert(1) grayscale(0.5);
