@@ -98,8 +98,11 @@
   </main>
 {% endblock content %}
 
+{% block modal %}
+  {% include "./blocks/modal-image.j2" %}
+{% endblock %}
+
 {% block js %}
-  <script src="./js/macy.min.js"></script>
-  <script src="./js/other-projects.min.js"></script>
+  <script src="./js/modal-image.min.js"></script>
   <script src="./js/main.min.js"></script>
 {% endblock %}
