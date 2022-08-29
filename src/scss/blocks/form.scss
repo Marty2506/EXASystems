@@ -3,7 +3,17 @@
   flex-direction: column;
   gap: 30px;
 }
+.form__row {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
 .form__label {
+  width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -26,13 +36,17 @@
 
   &:hover,
   &:focus {
-    outline: 2px solid $bg-color;
+    outline: 2px solid $blue-color;
   }
 }
 .form__submit-button {
   max-width: 206px;
   @media (max-width: $max-mobile-width) {
     max-width: 95%;
+  }
+  &:hover {
+    color: $white-color;
+    background-color: $blue-color;
   }
 }
 .form__error-message {
@@ -46,3 +60,178 @@
   color: #cc2b24;
   opacity: 0.7;
 }
+
+.form-choices {
+  position: relative;
+  color: $black-color;
+  overflow: hidden;
+
+  &:hover {
+    outline: 2px solid $blue-color;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &.is-open {
+    overflow: visible;
+
+    & .form-choices__inner {
+      outline: 2px solid $blue-color;
+      background-color: $white-color;
+    }
+  }
+  &.is-focused {
+    outline: 2px solid $blue-color;
+  }
+  &.is-flipped {
+    & .form-choices__list[aria-expanded],
+    & .form-choices__list--dropdown {
+      top: auto;
+      bottom: 100%;
+      margin-top: 0;
+      margin-bottom: -1px;
+    }
+  }
+}
+.form-choices[data-type*=select-one]::after {
+  content: "";
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-color: #333 transparent transparent;
+  border-width: 5px;
+  position: absolute;
+  left: 45px;
+  top: 50%;
+  margin-top: -2.5px;
+  pointer-events: none;
+}
+.is-open.form-choices[data-type*=select-one]::after {
+  border-color: transparent transparent #333;
+  margin-top: -7.5px;
+}
+.form-choices__inner {
+  width: 100%;
+  overflow: hidden;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 130%;
+  border: none;
+  background-color: #ebf3f8;
+
+  box-shadow: inset 1px 1px 0px rgba(0, 0, 0, 0.15);
+
+  & .is-open,
+  & .is-focused {
+    border: 1px solid $blue-color;
+  }
+}
+.form-choices__item {
+  position: relative;
+  padding: 11px 12px;
+  padding-left: 68px;
+  font-size: 14px;
+  line-height: 130%;
+  color: $black-color;
+
+  &[data-value="Whatsup"] {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 11px;
+      transform: translateY(-50%);
+      width: 24px;
+      height: 24px;
+      background-image: url("@img/icons/whatsapp-icon.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  &[data-value="Telegram"] {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 11px;
+      transform: translateY(-50%);
+      width: 25px;
+      height: 25px;
+      background-image: url("@img/icons/telegram-icon.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  &[data-value="Телефон"] {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 11px;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      background-image: url("@img/icons/phone-icon.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+.form-choices__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.form-choices__list[aria-expanded],
+.form-choices__list--dropdown {
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  width: 100%;
+  margin-top: -1px;
+  overflow: hidden;
+  word-break: break-all;
+  visibility: hidden;
+  will-change: visibility;
+  border-width: 0px 1px 1px 1px;
+  border-style: solid;
+  background-color: $white-color;
+  border-color: #bbbbbc;
+
+  &.is-active {
+    visibility: visible;
+  }
+}
+.form-choices__list--dropdown {
+
+  & .form-choices__item {
+    padding-left: 47px;
+    color: $blue-color;
+    border-top: 1px solid #ebebeb;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $bg2-color;
+    }
+  }
+
+  & .form-choices__item.is-selected {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 17px;
+      transform: translateY(-50%);
+      width: 13px;
+      height: 9px;
+      background-image: url("@img/icons/select-check-icon.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+
+    }
+  }
+}
+
+

@@ -3,6 +3,9 @@
 @import "./mixin.scss";
 @import "./fonts.scss";
 
+// @import "./vendor/choices/base.min.scss";
+@import "./vendor/choices/choices.min.scss";
+
 @import "./blocks/visually-hidden.scss";
 @import "./blocks/container.scss";
 @import "./blocks/button.scss";
@@ -18,7 +21,6 @@
 @import "./blocks/show-more.scss";
 @import "./blocks/modal.scss";
 @import "./blocks/modal-image.scss";
-
 
 @import "./blocks/page.scss";
 @import "./blocks/page-header.scss";
