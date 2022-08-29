@@ -20,3 +20,14 @@ reveiwsLetters.forEach(reviewsLetter => {
 });
 
 modalImageCLoseButton.addEventListener('click', hideModalImage);
+
+const caseImageLinks = document.querySelectorAll('.case__photo-wrapper');
+caseImageLinks.forEach(caseImageLink => {
+  caseImageLink.addEventListener('click', (evt) => {
+    evt.preventDefault();
+
+    modalImageContent.src = caseImageLink.href;
+
+    modalImage.classList.add('modal-image--opened');
+  })
+});
