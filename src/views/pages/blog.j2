@@ -19,11 +19,14 @@
 
     {% include "./blocks/blog.j2" %}
     {% include "./blocks/actual-news.j2" %}
+    {% include "./blocks/other-projects.j2" %}
     {% include "./blocks/subscribe-section.j2" %}
   </main>
 {% endblock content %}
 
 {% block js %}
+  <script src="./js/macy.min.js"></script>
+  <script src="./js/other-projects.min.js"></script>
   <script src="./js/blog.min.js"></script>
   <script src="./js/subscribe-form.min.js"></script>
   <script src="./js/main.min.js"></script>
