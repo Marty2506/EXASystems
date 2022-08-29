@@ -1,0 +1,67 @@
+{% extends "layout.j2" %}
+
+{% set page = "vendors" %}
+
+{% block content %}
+  <main class="page-main">
+    <div class="container">
+      <div class="breadcumbs">
+        <ul class="breadcumbs__list">
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="./index.html">Главная</a>
+          </li>
+          <li class="breadcumbs__item">
+            <span class="breadcumbs__link breadcumbs__link--current">Вендоры</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="vendors section">
+      <div class="container">
+        <div class="vendors__content">
+          <h1 class="vendors__title title">Вендоры</h1>
+          <p class="vendors__description">Мы заинтересованы в качестве поставляемой техники, поэтому сотрудничаем с производителями напрямую. Мы заключаем договор, в рамках которого партнеры поставляют оборудование без наценок и соблюдают гарантийные обязательства.</p>
+          <ul class="vendors__list">
+            <li class="vendors__item">
+              <a class="vendors__item-wrapper" href="./vendor-page.html">
+                <img class="vendors__company-logo" width="150" height="45" src="@img/postgrespro-logo.png" alt="Логотип компании PostgresPro">
+                <p class="vendors__company-about">Российский разработчик систем управления базами данных...</p>
+              </a>
+            </li>
+            <li class="vendors__item">
+              <a class="vendors__item-wrapper" href="./vendor-page.html">
+                <img class="vendors__company-logo" width="94" height="70" src="@img/aladdin-logo.png" alt="Логотип компании Аладдин">
+                <p class="vendors__company-about">Ведущий российский разработчик и поставщик средств аутентификации...</p>
+              </a>
+            </li>
+            <li class="vendors__item">
+              <a class="vendors__item-wrapper" href="./vendor-page.html">
+                <img class="vendors__company-logo" width="158" height="31" src="@img/kaspersky-logo.png" alt="Логотип компании Касперский">
+                <p class="vendors__company-about">Российский поставщик антивирусных и кибербезопасных решений...</p>
+              </a>
+            </li>
+            <li class="vendors__item">
+              <a class="vendors__item-wrapper" href="./vendor-page.html">
+                <img class="vendors__company-logo" width="202" height="50" src="@img/kaspersky-os-logo.png" alt="Логотип компании Лаборатории Касперского">
+                <p class="vendors__company-about">Кибериммунная операционная система «Лаборатории Касперского»...</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    {% include "./blocks/our-advantages.j2" %}
+
+  </main>
+{% endblock content %}
+
+{% block modal %}
+  {% include "./blocks/modal-image.j2" %}
+{% endblock %}
+
+{% block js %}
+  <script src="./js/modal-image.min.js"></script>
+  <script src="./js/main.min.js"></script>
+{% endblock %}
