@@ -92,3 +92,10 @@
     margin-left: 93px;
   }
 }
+
+.subscribe-section__form-submit-button {
+  &:hover {
+    color: $button-color;
+    background-color: $white-color;
+  }
+}
