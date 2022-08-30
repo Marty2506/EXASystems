@@ -1,0 +1,38 @@
+.import-replacement {
+  padding-top: 15px;
+  padding-bottom: 40px;
+  background-color: $bg2-color;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 34px;
+    padding-bottom: 38px;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 130px), 65% 100%, 0 calc(100% - 160px));
+    min-height: 800px;
+  }
+}
+.import-replacement__content {
+  display: flex;
+  flex-direction: column;
+}
+.import-replacement__title {
+}
+.import-replacement__subtitle {
+}
+.import-replacement__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 28px;
+    row-gap: 20px;
+  }
+}
+.import-replacement__item {
+}

@@ -1,0 +1,57 @@
+{% extends "layout.j2" %}
+
+{% set page = "import-replacement" %}
+
+{% block content %}
+  <main class="page-main">
+    <div class="container">
+      <div class="breadcumbs">
+        <ul class="breadcumbs__list">
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="./index.html">Главная</a>
+          </li>
+          <li class="breadcumbs__item">
+            <span class="breadcumbs__link breadcumbs__link--current">Импортозамещение в EXASystems</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="import-replacement">
+      <div class="container">
+        <div class="import-replacement__content">
+          <h1 class="import-replacement__title title">Импортозамещение компьютерного и серверного оборудования</h1>
+          <p class="import-replacement__subtitle">Реальные и эффективные решения от российских компаний</p>
+          <ul class="import-replacement__list">
+            <li class="import-replacement__item">
+              <div class="equipment-card">
+                <div class="equipment-card__content">
+                  <a class="equipment-card__title" href="./catalog.html">Компьютеры, моноблоки, ПК</a>
+                  <ul class="equipment-card__vendors">
+                    <li class="equipment-card__vendor">
+                      <a class="equipment-card__vendor-link" href="./vendor-page.html">iRU</a>
+                    </li>
+                    <li class="equipment-card__vendor">
+                      <a class="equipment-card__vendor-link" href="./vendor-page.html">RDW Computers</a>
+                    </li>
+                  </ul>
+                  <a class="equipment-card__button button" href="./catalog.html">Перейти в раздел</a>
+                </div>
+                <img class="equipment-card__image" src="@img/equipment-card-computers.png" alt="" style="top: 20px; right: -10px">
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+{% endblock content %}
+
+{% block modal %}
+
+{% endblock %}
+
+{% block js %}
+  <script src="./js/main.min.js"></script>
+{% endblock %}
