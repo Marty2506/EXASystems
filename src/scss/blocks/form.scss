@@ -39,6 +39,10 @@
     outline: 2px solid $blue-color;
   }
 }
+.form__field--textarea {
+  resize: none;
+  height: 75px;
+}
 .form__submit-button {
   max-width: 206px;
   @media (max-width: $max-mobile-width) {
@@ -136,7 +140,7 @@
   line-height: 130%;
   color: $black-color;
 
-  &[data-value="Whatsup"] {
+  &[data-value="Whatsapp"] {
     &::before {
       content: "";
       position: absolute;

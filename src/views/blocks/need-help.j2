@@ -1,0 +1,40 @@
+<section class="need-help section">
+  <div class="container">
+    <div class="need-help__content">
+      <div class="need-help__left">
+        <h2 class="need-help__title title">Нужна помощь с выбором?</h2>
+        <div class="need-help__image-wrapper">
+          <img class="need-help__image" src="@img/need-help-image.png" alt="" width="569" height="420">
+        </div>
+      </div>
+      <div class="need-help__form-wrapper">
+        <p class="need-help__form-title">Ответим на вопросы, поможем подобрать оборудование, валидируем ваше решение</p>
+        <form class="need-help__form form" action="https://echo.htmlacademy.ru" method="get">
+          <label class="form__label">
+            <span class="need-help__label-text form__label-text">Ваше имя</span>
+            <input class="form__field" type="text" id="need-help-client-name" name="need-help-client-name" placeholder="Введите ваше имя">
+          </label>
+          <div class="form__row">
+            <label class="form__label form__label--messengers">
+              <span class="need-help__label-text form__label-text">Как с вами связаться?</span>
+              <select class="form__select" id="need-help-messengers" name="need-help-messengers">
+                <option value="Whatsapp">Whatsapp</option>
+                <option value="Telegram">Telegram</option>
+                <option value="Телефон">Телефон</option>
+              </select>
+            </label>
+            <label class="form__label">
+              <span class="need-help__label-text form__label-text">Ваш телефон</span>
+              <input class="form__field" type="tel" id="need-help-phone" name="need-help-phone" placeholder="+7 (999) 999-99-99" required data-pristine-required-message="Обязательно к заполнению">
+            </label>
+          </div>
+          <label class="form__label">
+            <span class="need-help__label-text form__label-text">Опишите Вашу задачу</span>
+            <textarea class="form__field--textarea form__field" name="need-help-task" id="need-help-task" cols="30" rows="10" placeholder="Введите текст"></textarea>
+          </label>
+          <button class="button form__submit-button">Получить консультацию</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
