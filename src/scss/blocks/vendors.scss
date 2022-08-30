@@ -39,8 +39,8 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
     row-gap: 22px;
   }
 
@@ -68,10 +68,31 @@
   box-shadow: 4px 4px 11px rgba(0, 0, 0, 0.05);
   text-decoration: none;
 
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 26px;
+  //   right: 26px;
+  //   width: 12px;
+  //   height: 12px;
+  //   opacity: 0;
+
+  //   transition: opacity 0.3s ease;
+
+  //   background-image: url("@img/icons/vendor-arrow-icon.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  // }
+
   &:hover {
+    // background-color: $bg2-color;
     & .vendors__company-about {
+      // color: $black-color;
       color: $button-color;
     }
+    // &::after {
+    //   opacity: 1;
+    // }
   }
   &:focus-visible {
     outline: 2px solid $blue-color;
