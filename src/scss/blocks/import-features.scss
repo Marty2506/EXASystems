@@ -1,0 +1,33 @@
+.import-features {
+  padding-top: 35px;
+  padding-bottom: 55px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 67px;
+    padding-bottom: 60px;
+  }
+}
+.import-features__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 30px;
+    row-gap: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 215px 260px 260px auto;
+    gap: 25px;
+  }
+
+}
+.import-features__item {
+}

@@ -55,3 +55,35 @@
     background-image: url("@img/feature-result.svg");
   }
 }
+.feature--currency {
+  &::before {
+    width: 72px;
+    height: 72px;
+    background-image: url("@img/feature-currency.svg");
+    background-position: 0 0;
+  }
+}
+.feature--warranty {
+  &::before {
+    width: 72px;
+    height: 72px;
+    background-image: url("@img/feature-warranty.svg");
+    background-position: 0 0;
+  }
+}
+.feature--service-center {
+  &::before {
+    width: 72px;
+    height: 72px;
+    background-image: url("@img/feature-service-center.svg");
+    background-position: 0 0;
+  }
+}
+.feature--modern-equip {
+  &::before {
+    width: 80px;
+    height: 72px;
+    background-image: url("@img/feature-modern-equip.svg");
+    background-position: 0 0;
+  }
+}
