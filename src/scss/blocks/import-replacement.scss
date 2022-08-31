@@ -1,13 +1,24 @@
 .import-replacement {
+  position: relative;
   padding-top: 15px;
   padding-bottom: 40px;
-  background-color: $bg2-color;
 
   @media (min-width: $desktop-width) {
     padding-top: 34px;
     padding-bottom: 38px;
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 130px), 65% 100%, 0 calc(100% - 160px));
     min-height: 800px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      clip-path: polygon(0 0, 100% 0, 100% calc(100% - 130px), 65% 100%, 0 calc(100% - 160px));
+      background-color: $bg2-color;
+    }
   }
 }
 .import-replacement__content {
@@ -15,8 +26,20 @@
   flex-direction: column;
 }
 .import-replacement__title {
+  margin-bottom: 32px;
 }
 .import-replacement__subtitle {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 45px;
+  font-family: "Jost", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+
+  @media (max-width: $max-tablet-width) {
+    display: none;
+  }
 }
 .import-replacement__list {
   margin: 0;
@@ -27,11 +50,15 @@
   gap: 20px;
   overflow: hidden;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 28px;
+    column-gap: 20px;
     row-gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 28px;
   }
 }
 .import-replacement__item {

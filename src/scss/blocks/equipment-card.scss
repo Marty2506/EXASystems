@@ -1,7 +1,7 @@
 .equipment-card {
   position: relative;
   height: 320px;
-  min-width: 556px;
+  max-width: 556px;
   padding-top: 28px;
   padding-left: 29px;
   padding-bottom: 36px;
@@ -9,7 +9,24 @@
   overflow: hidden;
   z-index: 1;
 
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: lighten($bg-color, 15%);
+    clip-path: circle(0 at left top);
+    transition: 0.3s linear;
+    z-index: -2;
+  }
+
   &:hover {
+    &::before {
+      clip-path: circle(500px at left top);
+    }
+
     & .equipment-card__button {
       visibility: visible;
       opacity: 1;
@@ -22,7 +39,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  max-width: 285px;
+  max-width: 275px;
 }
 .equipment-card__title {
   margin: 0;
@@ -86,13 +103,69 @@
   }
 }
 .equipment-card__button {
-  visibility: hidden;
-  opacity: 0;
   margin-top: auto;
   max-width: 177px;
   transition: all 0.3s ease;
+
+  @media (min-width: $desktop-width) {
+    visibility: hidden;
+    opacity: 0;
+  }
 }
 .equipment-card__image {
   position: absolute;
   z-index: -1;
+  max-width: none;
+
+  top: 10%;
+  @media (max-width: $max-tablet-width) {
+    left: 40%;
+    transform: scale(0.8);
+  }
+  @media (min-width: $desktop-width) {
+    left: 42%;
+  }
+
+  &--computers {
+
+    // top: 20px;
+    // right: 0px
+  }
+  &--servers {
+    top: 60px;
+    @media (max-width: $max-tablet-width) {
+      left: 65%;
+    }
+    @media (min-width: $desktop-width) {
+      left: 60%;
+    }
+  }
+  &--network {
+    top: 30%;
+    @media (max-width: $max-tablet-width) {
+      left: 45%;
+    }
+    @media (min-width: $desktop-width) {
+      left: 42%;
+    }
+  }
+  &--ups {
+    top: 10%;
+    @media (max-width: $max-tablet-width) {
+      transform: scale(0.9);
+      left: 45%;
+    }
+    @media (min-width: $desktop-width) {
+      left: 45%;
+    }
+  }
+  &--interactive {
+    top: 10px;
+    @media (max-width: $max-tablet-width) {
+      left: 45%;
+    }
+    @media (min-width: $desktop-width) {
+      left: 45%;
+    }
+  }
 }
