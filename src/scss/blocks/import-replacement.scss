@@ -3,6 +3,10 @@
   padding-top: 15px;
   padding-bottom: 40px;
 
+  @media (max-width: $max-tablet-width) {
+    background-color: $bg2-color;
+  }
+
   @media (min-width: $desktop-width) {
     padding-top: 34px;
     padding-bottom: 38px;
