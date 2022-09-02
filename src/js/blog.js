@@ -18,7 +18,6 @@ const showMoreBlogArticles = document.querySelector(".blog__show-more");
 if (showMoreBlogArticles) {
   showMoreBlogArticles.addEventListener("click", (evt) => {
     evt.target.disabled = true;
-    console.log("HERE");
     renderBlogArticle();
     evt.target.disabled = false;
   });

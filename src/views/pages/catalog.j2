@@ -29,28 +29,28 @@
               <div class="catalog__filters-group-name"><span>По типу:</span></div>
               <ul class="catalog__filters-list">
                 <li class="catalog__filters-item">
-                  <button class="filter" id="filter-id-computers" type="button">Компьютеры</button>
+                  <button class="filter" data-filter-type="type" data-filter-value="computers" type="button">Компьютеры</button>
                 </li>
                 <li class="catalog__filters-item">
-                  <button class="filter" id="filter-id-monoblocks" type="button">моноблоки</button>
+                  <button class="filter" data-filter-type="type" data-filter-value="monoblocks" type="button">моноблоки</button>
                 </li>
                 <li class="catalog__filters-item">
-                  <button class="filter" id="filter-id-pc" type="button">ПК</button>
+                  <button class="filter" data-filter-type="type" data-filter-value="pc" type="button">ПК</button>
                 </li>
                 <li class="catalog__filters-item">
-                  <button class="filter" id="filter-id-servers" type="button">серверы</button>
+                  <button class="filter" data-filter-type="type" data-filter-value="servers" type="button">серверы</button>
                 </li>
                 <li class="catalog__filters-item">
-                  <button class="filter" id="filter-id-data-servers" type="button">системы хранения данных</button>
+                  <button class="filter" data-filter-type="type" data-filter-value="data-servers" type="button">системы хранения данных</button>
                 </li>
                 <li class="catalog__filters-item">
-                  <button class="filter" id="filter-id-network-equip" type="button">сетевое оборудование</button>
+                  <button class="filter" data-filter-type="type" data-filter-value="equip" type="button">сетевое оборудование</button>
                 </li>
                 <li class="catalog__filters-item">
-                  <button class="filter" id="filter-id-ups" type="button">ИБП</button>
+                  <button class="filter" data-filter-type="type" data-filter-value="ups" type="button">ИБП</button>
                 </li>
                 <li class="catalog__filters-item">
-                  <button class="filter" id="filter-id-interactive" type="button">интерактивное оборудование</button>
+                  <button class="filter" data-filter-type="type" data-filter-value="interactive" type="button">интерактивное оборудование</button>
                 </li>
               </ul>
             </div>
@@ -58,13 +58,13 @@
               <div class="catalog__filters-group-name"><span>По производителю:</span></div>
               <ul class="catalog__filters-list">
                 <li class="catalog__filters-item">
-                  <button class="filter" id="filter-id-vendor-rdw-computers" type="button">
+                  <button class="filter" data-filter-type="vendor" data-filter-value="rdw-computers" type="button">
                     <span class="visually-hidden">RDW Computers.</span>
                     <img class="filter__image" src="@img/filter-vendor-rdw.png" alt="">
                   </button>
                 </li>
                 <li class="catalog__filters-item">
-                  <button class="filter" id="filter-id-vendor-rdw-computers" type="button">
+                  <button class="filter" data-filter-type="vendor" data-filter-value="iru" type="button">
                     <span class="visually-hidden">iru.</span>
                     <img class="filter__image" src="@img/filter-vendor-iru.png" alt="">
                   </button>
@@ -108,7 +108,41 @@
               </div>
             </li>
             <li class="catalog__cards-item">
-              <div class="product-card" data-product-type="computers" data-vendor="iru">
+              <div class="product-card" data-product-type="servers" data-vendor="iru">
+                <a class="product-card__background-link" href="./product-page.html"><span class="visually-hidden">Перейти на карточку продукта.</span></a>
+                <div class="product-card__content">
+                  <p class="product-card__title">iRU Office 310A3SM MT</p>
+                  <p class="product-card__subtitle">Компьютер для эффективной работы</p>
+                  <div class="product-card__image-wrapper">
+                    <img class="product-card__image" src="@img/product-card-image-1.jpg" alt="">
+                    <span class="product-card__vendor filter">
+                      <span class="visually-hidden">RDW Computers.</span>
+                      <img class="filter__image" src="@img/filter-vendor-iru.png" alt="">
+                    </span>
+                  </div>
+                  <div class="product-card__price-row">
+                    <div class="product-card__prices-wrapper">
+                      <span class="product-card__price">582 940 ₽</span>
+                      <span class="product-card__credit">или <span class="product-card__credit-val">24 290 ₽</span> в месяц</span>
+                    </div>
+                    <a class="product-card__button button" href="#!">Заказать</a>
+                  </div>
+                  <div class="product-card__toolbar">
+                    <button class="product-card__toolbar-button product-card__toolbar-button--compare">
+                      <svg class="product-card__toolbar-button-icon" width="24" height="19" viewBox="0 0 24 19">
+                        <use xlink:href="img/sprite.svg#compare-icon"></use>
+                      </svg>
+                      <span class="product-card__toolbar-button-text">Сравнить</span>
+                    </button>
+                    <a class="product-card__toolbar-button product-card__toolbar-button--conf" href="#!">
+                      <span class="product-card__toolbar-button-text">Конфигуратор</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="catalog__cards-item">
+              <div class="product-card" data-product-type="servers" data-vendor="iru">
                 <a class="product-card__background-link" href="./product-page.html"><span class="visually-hidden">Перейти на карточку продукта.</span></a>
                 <div class="product-card__content">
                   <p class="product-card__title">iRU Office 310A3SM MT</p>
@@ -244,7 +278,7 @@
               </div>
             </li>
             <li class="catalog__cards-item">
-              <div class="product-card" data-product-type="computers" data-vendor="rdw-computers">
+              <div class="product-card" data-product-type="ups" data-vendor="rdw-computers">
                 <a class="product-card__background-link" href="./product-page.html"><span class="visually-hidden">Перейти на карточку продукта.</span></a>
                 <div class="product-card__content">
                   <p class="product-card__title">iRU Office 310A3SM MT</p>
@@ -278,41 +312,7 @@
               </div>
             </li>
             <li class="catalog__cards-item">
-              <div class="product-card" data-product-type="computers" data-vendor="rdw-computers">
-                <a class="product-card__background-link" href="./product-page.html"><span class="visually-hidden">Перейти на карточку продукта.</span></a>
-                <div class="product-card__content">
-                  <p class="product-card__title">iRU Office 310A3SM MT</p>
-                  <p class="product-card__subtitle">Компьютер для эффективной работы</p>
-                  <div class="product-card__image-wrapper">
-                    <img class="product-card__image" src="@img/product-card-image-1.jpg" alt="">
-                    <span class="product-card__vendor filter">
-                      <span class="visually-hidden">RDW Computers.</span>
-                      <img class="filter__image" src="@img/filter-vendor-rdw.png" alt="">
-                    </span>
-                  </div>
-                  <div class="product-card__price-row">
-                    <div class="product-card__prices-wrapper">
-                      <span class="product-card__price">582 940 ₽</span>
-                      <span class="product-card__credit">или <span class="product-card__credit-val">24 290 ₽</span> в месяц</span>
-                    </div>
-                    <a class="product-card__button button" href="#!">Заказать</a>
-                  </div>
-                  <div class="product-card__toolbar">
-                    <button class="product-card__toolbar-button product-card__toolbar-button--compare">
-                      <svg class="product-card__toolbar-button-icon" width="24" height="19" viewBox="0 0 24 19">
-                        <use xlink:href="img/sprite.svg#compare-icon"></use>
-                      </svg>
-                      <span class="product-card__toolbar-button-text">Сравнить</span>
-                    </button>
-                    <a class="product-card__toolbar-button product-card__toolbar-button--conf" href="#!">
-                      <span class="product-card__toolbar-button-text">Конфигуратор</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="catalog__cards-item">
-              <div class="product-card" data-product-type="computers" data-vendor="rdw-computers">
+              <div class="product-card" data-product-type="servers" data-vendor="rdw-computers">
                 <a class="product-card__background-link" href="./product-page.html"><span class="visually-hidden">Перейти на карточку продукта.</span></a>
                 <div class="product-card__content">
                   <p class="product-card__title">iRU Office 310A3SM MT</p>
