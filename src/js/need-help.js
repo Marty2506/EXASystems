@@ -14,6 +14,7 @@ const needHelpForm = document.querySelector('.need-help__form');
   needHelpForm.addEventListener('submit', function (e) {
     e.preventDefault();
     var valid = needHelpPristine.validate();
+    // TODO здесь должен написать запрос программист
   });
 
   // Настраиваем селект

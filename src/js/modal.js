@@ -25,6 +25,7 @@ modals.forEach(modal => {
   modalForm.addEventListener('submit', function (e) {
     e.preventDefault();
     var valid = modalPristine.validate();
+    // TODO здесь должен написать запрос программист
   });
   const modalPhone = document.querySelector('#modal-phone');
   IMask(modalPhone, modalMaskOptions);
