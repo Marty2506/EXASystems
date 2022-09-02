@@ -1,9 +1,4 @@
 .reviews {
-  margin-bottom: 30px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 80px;
-  }
 }
 .reviews__content {
   display: flex;

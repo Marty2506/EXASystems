@@ -1,15 +1,11 @@
 .need-help {
   padding-top: 25px;
   padding-bottom: 45px;
-  margin-bottom: 40px;
 
   background: linear-gradient(271.32deg, #2AA898 -12.13%, #39C0B4 79.47%);
 
   @media (min-width: $tablet-width) {
     padding: 70px 0;
-  }
-  @media (min-width: $desktop-width) {
-    margin-bottom: 70px;
   }
 }
 .need-help__content {
