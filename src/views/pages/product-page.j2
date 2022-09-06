@@ -1,0 +1,134 @@
+{% extends "layout.j2" %}
+
+{% set page = "product-page" %}
+
+{% block content %}
+  <main class="page-main">
+    <div class="container">
+      <div class="breadcumbs">
+        <ul class="breadcumbs__list">
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="./index.html">Главная</a>
+          </li>
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="./import-replacement.html">Импортозамещение в EXASystems</a>
+          </li>
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="#!">Импортозамещение оборудования</a>
+          </li>
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="#!">Серверное оборудование</a>
+          </li>
+          <li class="breadcumbs__item">
+            <span class="breadcumbs__link breadcumbs__link--current">HPE ProLiant DL380 Gen10</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="product-page">
+      <div class="product-page__main">
+        <div class="container">
+          <div class="product-page__content">
+            <div class="product-page__main-top">
+              <div class="product-page__text-content">
+                <div class="product-page__header">
+                  <h1 class="product-page__title title">HPE ProLiant DL380 Gen10</h1>
+                  <span class="product-page__vendor filter">
+                    <img class="filter__image" src="@img/filter-vendor-iru.png" alt="Логотип компании iru.">
+                  </span>
+                </div>
+                <p class="product-page__slogan">
+                  Производительность<br>мирового класса<br>и невероятная универсальность
+                </p>
+                <p class="product-page__mini-description">
+                  Серверы HPE ProLiant DL380 Gen10 предназначены для решения сложных ресурсоемких задач, включая виртуализацию и облачную работы, рекомендуются к использованию средними и крупными компаниями с развитой инфраструктурой.
+                </p>
+              </div>
+              <figure class="product-page__image-wrapper">
+                <img class="product-page__image" src="@img/product-page-photo-1.png" width="502" height="124" alt="Фотография сервера HPE ProLiant DL380 Gen10.">
+              </figure>
+            </div>
+            <div class="product-page__main-bottom">
+              <div class="product-page__prices">
+                <span class="product-page__price">582 940 ₽</span>
+                <span class="product-page__credit">/ <span class="product-page__credit-value">24 290 ₽</span> в месяц</span>
+                <div class="product-page__info-icon-wrapper">
+                  <svg class="product-page__info-icon" width="18" height="19" viewBox="0 0 18 19">
+                    <use xlink:href="img/sprite.svg#info-icon"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="product-page__toolbar">
+                <a class="product-card__toolbar-button product-card__toolbar-button--conf" href="#!">
+                  <span class="product-card__toolbar-button-text">Конфигуратор</span>
+                </a>
+                <button class="product-card__toolbar-button product-card__toolbar-button--compare">
+                  <svg class="product-card__toolbar-button-icon" width="24" height="19" viewBox="0 0 24 19">
+                    <use xlink:href="img/sprite.svg#compare-icon"></use>
+                  </svg>
+                  <span class="product-card__toolbar-button-text">Сравнить</span>
+                </button>
+              </div>
+              <div class="product-page__button-wrapper">
+                <span class="product-page__availability">в наличии</span>
+                <button class="product-page__button button" type="button">Заказать</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product-page__tabs tabs">
+        <div class="product-page__tabs-list-wrapper">
+          <div class="container">
+            <ul class="product-page__tabs-list tabs__list">
+              <li class="product-page__tabs-item tabs__item">
+                <button class="product-page__tabs-button tabs__button" type="button">Описание</button>
+              </li>
+              <li class="product-page__tabs-item tabs__item">
+                <button class="product-page__tabs-button tabs__button" type="button">Технические характеристики</button>
+              </li>
+              <li class="product-page__tabs-item tabs__item">
+                <button class="product-page__tabs-button tabs__button" type="button">Готовые модели</button>
+              </li>
+              <li class="product-page__tabs-item tabs__item">
+                <button class="product-page__tabs-button tabs__button" type="button">Гарантия и поддержка</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="product-page__panels-wrapper">
+          <div class="container">
+            <div class="product-page__panels tabs__panels">
+              <div class="product-page__pannel tabs__panel">
+                Панель 1
+              </div>
+              <div class="product-page__pannel tabs__panel">
+                Панель 2
+              </div>
+              <div class="product-page__pannel tabs__panel">
+                Панель 3
+              </div>
+              <div class="product-page__pannel tabs__panel">
+                Панель 4
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {% include "./blocks/need-help.j2" %}
+
+  </main>
+{% endblock content %}
+
+{% block modal %}
+
+{% endblock %}
+
+{% block js %}
+  <script src="./js/need-help.min.js"></script>
+  <script src="./js/tabs.min.js"></script>
+  <script src="./js/product-page.min.js"></script>
+  <script src="./js/main.min.js"></script>
+{% endblock %}
