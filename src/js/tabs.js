@@ -4,6 +4,7 @@ tabs.forEach(tabsElement => {
   let panels = tabsElement.querySelectorAll('.tabs__panel');
   panels[0].classList.add('tabs__panel--active');
   let tabButtons = tabsElement.querySelectorAll('.tabs__button');
+  tabButtons[0].classList.add('tabs__button--active');
   tabButtons.forEach((tabButton, i) => {
     tabButton.addEventListener('click', (evt) => {
       tabButtons.forEach((element, j) => {

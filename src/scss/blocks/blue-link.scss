@@ -1,0 +1,38 @@
+.blue-link {
+  padding: 2px;
+  display: flex;
+  gap: 15px;
+  text-decoration: none;
+  color: $blue-color;
+  border: none;
+  background-color: transparent;
+  align-items: center;
+
+  &:hover {
+    & .blue-link__icon {
+      fill: $button-color;
+    }
+    & .blue-link__text {
+      color: $button-color;
+    }
+  }
+  &:focus-visible {
+    outline: 2px solid $blue-color;
+    border-radius: 2px;
+  }
+  &:active {
+    opacity: 0.7;
+  }
+}
+.blue-link__icon {
+  flex-shrink: 0;
+  fill: $blue-color;
+  transition: fill 0.3s ease;
+}
+.blue-link__text {
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: underline;
+  flex-shrink: 0;
+  transition: color 0.3s ease;
+}
