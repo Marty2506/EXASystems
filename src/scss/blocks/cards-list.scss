@@ -60,3 +60,13 @@
 }
 .cards-list__item {
 }
+.cards-list--white-bg {
+
+  @media (min-width: $tablet-width) {
+    background-color: $white-color;
+  }
+
+  &::after {
+    content: none;
+  }
+}

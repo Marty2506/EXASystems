@@ -1,0 +1,231 @@
+{% extends "layout.j2" %}
+
+{% set page = "vendor-page" %}
+
+{% block content %}
+  <main class="page-main">
+    <div class="container">
+      <div class="breadcumbs">
+        <ul class="breadcumbs__list">
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="./index.html">Главная</a>
+          </li>
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="./vendors.html">Вендоры</a>
+          </li>
+          <li class="breadcumbs__item">
+            <span class="breadcumbs__link breadcumbs__link--current">IRu</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="vendor">
+      <div class="container">
+        <div class="vendor__content">
+          <div class="vendor__main">
+            <div class="vendor__text-content">
+              <h1 class="vendor__title title">IRu</h1>
+              <p class="vendor__paragraph">iRU – российский производитель компьютерной техники, основанный в 2002 году, крупнейшим широкопрофильным дистрибьютором России. iRU входит в топ-5 российских производителей ПК наряду с компаниями мирового масштаба.</p>
+              <p class="vendor__paragraph">Ассортимент продукции iRU включает в себя товары для домашних пользователей, решения для малого, среднего бизнеса и крупных корпораций: компьютеры, моноблоки, ноутбуки, графические и рабочие станции, серверы любого уровня сложности, системы хранения данных, программно-аппаратные комплексы и телекоммуникационное оборудование.</p>
+            </div>
+            <div class="vendor__logo-wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: 1347px)" srcset="@img/vendor-page-logo-desktop.webp 1x, @img/vendor-page-logo-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="@img/vendor-page-logo-mobile.webp 1x, @img/vendor-page-logo-mobile@2x.webp 2x">
+                <source media="(min-width: 1347px)" srcset="@img/vendor-page-logo-desktop.jpg 1x, @img/vendor-page-logo-desktop@2x.jpg 2x">
+                <img class="vendor__logo" src="@img/vendor-page-logo-mobile.png" srcset="@img/vendor-page-logo-mobile@2x.png 2x" alt="Лого компании IRu.">
+              </picture>
+            </div>
+
+          </div>
+        <div class="vendor__contacts">
+          <h3 class="vendor__contacts-title">Контакты сервисных центров в Москве:</h3>
+          <ul class="vendor__offices-list">
+            <li class="vendor__offices-item">
+              <p class="vendor__office-text">Компьютерная клиника №774</p>
+              <p class="vendor__office-text">Адрес: улица Кржижановского 17к1</p>
+              <p class="vendor__office-text">Телефон: +7(495)504-18-65</p>
+              <p class="vendor__office-text">E-mail: <a class="vendor__office-link blue-link blue-link--no-svg" href="mailto:skk774@yandex.ru">skk774@yandex.ru</a>; <a class="vendor__office-link blue-link blue-link--no-svg" href="mailto:moscow774@itclinic.ru">moscow774@itclinic.ru</a></p>
+            </li>
+            <li class="vendor__offices-item">
+              <p class="vendor__office-text">Компьютерная клиника №999</p>
+              <p class="vendor__office-text">Адрес: ул.Донская, д. 24</p>
+              <p class="vendor__office-text">Телефон: +7(499)444-99-65</p>
+              <p class="vendor__office-text">Сайт: <a class="vendor__office-link blue-link blue-link--no-svg" href="https://itc999.ru/" target="_blank">ITC999.ru</a></p>
+              <p class="vendor__office-text">E-mail: <a class="vendor__office-link blue-link blue-link--no-svg" href="mailto:info@itc999.ru">info@itc999.ru</a></p>
+            </li>
+            <li class="vendor__offices-item">
+              <p class="vendor__office-text">СЦ "Амфитон"</p>
+              <p class="vendor__office-text">Адрес: ул. Маршала Рыбалко, д.12 к.1</p>
+              <p class="vendor__office-text">Телефон: +7(926)816-10-79</p>
+              <p class="vendor__office-text">E-mail: <a class="vendor__office-link blue-link blue-link--no-svg" href="mailto:3012.00@mail.ru">3012.00@mail.ru</a></p>
+            </li>
+            <li class="vendor__offices-item">
+              <p class="vendor__office-text">ООО "ТехноСпейс Сервис"</p>
+              <p class="vendor__office-text">Адрес: улица Бориса Галушкина 19к2</p>
+              <p class="vendor__office-text">Телефон: +7(495)147-47-87</p>
+              <p class="vendor__office-text">Сайт: <a class="vendor__office-link blue-link blue-link--no-svg" href="http://www.technosp.ru/" target="_blank">www.technosp.ru</a></p>
+              <p class="vendor__office-text">E-mail: <a class="vendor__office-link blue-link blue-link--no-svg" href="mailto:info@technosp.ru">info@technosp.ru</a></p>
+            </li>
+            <li class="vendor__offices-item">
+              <p class="vendor__office-text">Компьютерная клиника №772</p>
+              <p class="vendor__office-text">Адрес: Солнечногорский проезд 11</p>
+              <p class="vendor__office-text">Телефон: +7(495)644-00-33</p>
+              <p class="vendor__office-text">Сайт: <a class="vendor__office-link blue-link blue-link--no-svg" href="https://www.modernservice.ru/" target="_blank">www.modernservice.ru </a></p>
+              <p class="vendor__office-text">E-mail: <a class="vendor__office-link blue-link blue-link--no-svg" href="info@modernservice.ru">info@modernservice.ru</a>; <a class="vendor__office-link blue-link blue-link--no-svg" href="tvm@modernservice.ru">tvm@modernservice.ru</a></p>
+            </li>
+          </ul>
+        </div>
+        <ul class="vendor__cards">
+          <li class="vendor__card">
+            <div class="equipment-card">
+              <div class="equipment-card__content">
+                <a class="equipment-card__title" href="./catalog.html">Компьютеры, моноблоки, ПК</a>
+                <a class="equipment-card__button button" href="./catalog.html">Перейти в раздел</a>
+              </div>
+              <img class="equipment-card__image equipment-card__image--computers" src="@img/equipment-card-computers.png" alt="">
+            </div>
+          </li>
+          <li class="vendor__card">
+            <div class="equipment-card">
+              <div class="equipment-card__content">
+                <a class="equipment-card__title" href="./catalog.html">Серверы и системы хранения данных</a>
+                <a class="equipment-card__button button" href="./catalog.html">Перейти в раздел</a>
+              </div>
+              <img class="equipment-card__image equipment-card__image--servers" src="@img/equipment-card-servers.png" alt="">
+            </div>
+          </li>
+        </ul>
+
+        </div>
+      </div>
+    </section>
+
+    {% set cardsListTittle = "Оборудование" %}
+    <section class="cards-list cards-list--white-bg">
+      <div class="container">
+        <div class="cards-list__content">
+          <h2 class="cards-list__title">{{cardsListTittle}}</h2>
+          <ul class="cards-list__list">
+            <li class="cards-list__item">
+              <div class="product-card" data-product-type="computers" data-vendor="rdw-computers">
+                <a class="product-card__background-link" href="./product-page.html"><span class="visually-hidden">Перейти на карточку продукта.</span></a>
+                <div class="product-card__content">
+                  <p class="product-card__title">iRU Office 310A3SM MT</p>
+                  <p class="product-card__subtitle">Компьютер для эффективной работы</p>
+                  <div class="product-card__image-wrapper">
+                    <img class="product-card__image" src="@img/product-card-image-1.jpg" alt="">
+                    <span class="product-card__vendor filter">
+                      <span class="visually-hidden">RDW Computers.</span>
+                      <img class="filter__image" src="@img/filter-vendor-rdw.png" alt="">
+                    </span>
+                  </div>
+                  <div class="product-card__price-row">
+                    <div class="product-card__prices-wrapper">
+                      <span class="product-card__price">582 940 ₽</span>
+                      <span class="product-card__credit">или <span class="product-card__credit-val">24 290 ₽</span> в месяц</span>
+                    </div>
+                    <a class="product-card__button button" href="#!">Заказать</a>
+                  </div>
+                  <div class="product-card__toolbar">
+                    <button class="product-card__toolbar-button product-card__toolbar-button--compare">
+                      <svg class="product-card__toolbar-button-icon" width="24" height="19" viewBox="0 0 24 19">
+                        <use xlink:href="img/sprite.svg#compare-icon"></use>
+                      </svg>
+                      <span class="product-card__toolbar-button-text">Сравнить</span>
+                    </button>
+                    <a class="product-card__toolbar-button product-card__toolbar-button--conf" href="#!">
+                      <span class="product-card__toolbar-button-text">Конфигуратор</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="cards-list__item">
+              <div class="product-card" data-product-type="computers" data-vendor="rdw-computers">
+                <a class="product-card__background-link" href="./product-page.html"><span class="visually-hidden">Перейти на карточку продукта.</span></a>
+                <div class="product-card__content">
+                  <p class="product-card__title">iRU Office 310A3SM MT</p>
+                  <p class="product-card__subtitle">Компьютер для эффективной работы</p>
+                  <div class="product-card__image-wrapper">
+                    <img class="product-card__image" src="@img/product-card-image-1.jpg" alt="">
+                    <span class="product-card__vendor filter">
+                      <span class="visually-hidden">RDW Computers.</span>
+                      <img class="filter__image" src="@img/filter-vendor-rdw.png" alt="">
+                    </span>
+                  </div>
+                  <div class="product-card__price-row">
+                    <div class="product-card__prices-wrapper">
+                      <span class="product-card__price">582 940 ₽</span>
+                      <span class="product-card__credit">или <span class="product-card__credit-val">24 290 ₽</span> в месяц</span>
+                    </div>
+                    <a class="product-card__button button" href="#!">Заказать</a>
+                  </div>
+                  <div class="product-card__toolbar">
+                    <button class="product-card__toolbar-button product-card__toolbar-button--compare">
+                      <svg class="product-card__toolbar-button-icon" width="24" height="19" viewBox="0 0 24 19">
+                        <use xlink:href="img/sprite.svg#compare-icon"></use>
+                      </svg>
+                      <span class="product-card__toolbar-button-text">Сравнить</span>
+                    </button>
+                    <a class="product-card__toolbar-button product-card__toolbar-button--conf" href="#!">
+                      <span class="product-card__toolbar-button-text">Конфигуратор</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="cards-list__item">
+              <div class="product-card" data-product-type="computers" data-vendor="rdw-computers">
+                <a class="product-card__background-link" href="./product-page.html"><span class="visually-hidden">Перейти на карточку продукта.</span></a>
+                <div class="product-card__content">
+                  <p class="product-card__title">iRU Office 310A3SM MT</p>
+                  <p class="product-card__subtitle">Компьютер для эффективной работы</p>
+                  <div class="product-card__image-wrapper">
+                    <img class="product-card__image" src="@img/product-card-image-1.jpg" alt="">
+                    <span class="product-card__vendor filter">
+                      <span class="visually-hidden">RDW Computers.</span>
+                      <img class="filter__image" src="@img/filter-vendor-rdw.png" alt="">
+                    </span>
+                  </div>
+                  <div class="product-card__price-row">
+                    <div class="product-card__prices-wrapper">
+                      <span class="product-card__price">582 940 ₽</span>
+                      <span class="product-card__credit">или <span class="product-card__credit-val">24 290 ₽</span> в месяц</span>
+                    </div>
+                    <a class="product-card__button button" href="#!">Заказать</a>
+                  </div>
+                  <div class="product-card__toolbar">
+                    <button class="product-card__toolbar-button product-card__toolbar-button--compare">
+                      <svg class="product-card__toolbar-button-icon" width="24" height="19" viewBox="0 0 24 19">
+                        <use xlink:href="img/sprite.svg#compare-icon"></use>
+                      </svg>
+                      <span class="product-card__toolbar-button-text">Сравнить</span>
+                    </button>
+                    <a class="product-card__toolbar-button product-card__toolbar-button--conf" href="#!">
+                      <span class="product-card__toolbar-button-text">Конфигуратор</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    {% include "./blocks/need-help.j2" %}
+    {% include "./blocks/our-advantages.j2" %}
+  </main>
+{% endblock content %}
+
+{% block modal %}
+
+{% endblock %}
+
+{% block js %}
+  <script src="./js/need-help.min.js"></script>
+  <script src="./js/tabs.min.js"></script>
+  <script src="./js/product-page.min.js"></script>
+  <script src="./js/main.min.js"></script>
+{% endblock %}

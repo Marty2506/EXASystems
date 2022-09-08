@@ -36,3 +36,10 @@
   flex-shrink: 0;
   transition: color 0.3s ease;
 }
+.blue-link--no-svg {
+  text-decoration: underline;
+  transition: color 0.3s ease;
+  &:hover {
+    color: $button-color;
+  }
+}
