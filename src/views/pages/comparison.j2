@@ -1,0 +1,344 @@
+{% extends "layout.j2" %}
+
+{% set page = "comparison" %}
+
+{% block content %}
+  <main class="page-main">
+    <div class="container">
+      <div class="breadcumbs">
+        <ul class="breadcumbs__list">
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="./index.html">Главная</a>
+          </li>
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="./import-replacement.html">Импортозамещение в EXASystems</a>
+          </li>
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="#!">Импортозамещение оборудования</a>
+          </li>
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="#!">Серверное оборудование</a>
+          </li>
+          <li class="breadcumbs__item">
+            <span class="breadcumbs__link breadcumbs__link--current">Сравнение</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="comparison">
+      <div class="container">
+        <h1 class="comparison__title title">Сравнение оборудования</h1>
+        <ul class="comparison__categories">
+          <li class="comparison__category">
+            <a class="comparison__category-link comparison__category-link--active" data-category-name="computers" href="#!">
+              <span class="comparison__category-link-text">Компьютеры <span class="comparison__category-products-cnt">4</span></span>
+            </a>
+          </li>
+          <li class="comparison__category">
+            <a class="comparison__category-link" data-category-name="monoblocks" href="#!">
+              <span class="comparison__category-link-text">Моноблоки <span class="comparison__category-products-cnt">2</span></span>
+            </a>
+          </li>
+          <li class="comparison__category">
+            <a class="comparison__category-link" data-category-name="pcs" href="#!">
+              <span class="comparison__category-link-text">ПК <span class="comparison__category-products-cnt">3</span></span>
+            </a>
+          </li>
+          <li class="comparison__category">
+            <a class="comparison__category-link" data-category-name="servers" href="#!">
+              <span class="comparison__category-link-text">Серверы <span class="comparison__category-products-cnt">5</span></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="comparison__cards">
+        <div class="comparison__swiper swiper">
+          <ul class="comparison__cards-list swiper-wrapper">
+            <li class="comparison__cards-item swiper-slide">
+              <div class="comparison__card">
+                <ul class="camparison__characteristics-list">
+                  <li class="camparison__characteristics-item camparison__characteristics-item--model">
+                    <span class="camparison__characteristics-name">Модель</span>
+                    <a class="camparison__model" href="product-page.html">iRU Office 310A3SM MT</a>
+                    <a class="comparison__model-card-image-link" href="product-page.html">
+                      <img class="comparison__card-image" src="@img/product-card-image-1.jpg" alt="">
+                    </a>
+                  </li>
+                  <li class="camparison__characteristics-item camparison__characteristics-item--vendor">
+                    <span class="camparison__characteristics-name" data-characteristics-name="Производитель">Производитель</span>
+                    <span class="camparison__vendor filter">
+                      <span class="visually-hidden">iru.</span>
+                      <img class="filter__image" src="@img/filter-vendor-iru.png" alt="">
+                    </span>
+                  </li>
+                  <li class="camparison__characteristics-item camparison__characteristics-item--price">
+                    <span class="camparison__characteristics-name">Стоимость</span>
+                    <div class="camparison__prices">
+                      <span class="camparison__price">582 940 ₽</span>
+                      <span class="camparison__credit">или <span class="product-page__credit-value">24 290 ₽</span> в месяц</span>
+                    </div>
+                  </li>
+                  <li class="camparison__characteristics-item">
+                    <span class="camparison__characteristics-name">Тип процессора</span>
+                    <span class="camparison__characteristics-value">Intel</span>
+                  </li>
+                  <li class="camparison__characteristics-item">
+                    <span class="camparison__characteristics-name">Поколение процессоров</span>
+                    <span class="camparison__characteristics-value">Intel Xeon Scalable серии 8100/8200</span>
+                  </li>
+                  <li class="camparison__characteristics-item">
+                    <span class="camparison__characteristics-name">Форм-фактор</span>
+                    <span class="camparison__characteristics-value">1U</span>
+                  </li>
+                  <li class="camparison__characteristics-item">
+                    <span class="camparison__characteristics-name">Кол-во слотов для HDD</span>
+                    <span class="camparison__characteristics-value">8</span>
+                  </li>
+                  <li class="camparison__characteristics-item">
+                    <span class="camparison__characteristics-name">Оперативная память</span>
+                    <span class="camparison__characteristics-value">4 слота от 2 до 32 Гб</span>
+                  </li>
+                  <li class="camparison__characteristics-item">
+                    <span class="camparison__characteristics-name">Обьем памяти</span>
+                    <span class="camparison__characteristics-value">3 Тбайт (24 X 128 Гбайт) LRDIMM</span>
+                  </li>
+                  <li class="camparison__characteristics-item">
+                    <span class="camparison__characteristics-name">Количество блоков питания</span>
+                    <span class="camparison__characteristics-value">Количество блоков питания</span>
+                  </li>
+                  <li class="camparison__characteristics-item">
+                    <span class="camparison__characteristics-name">Наличие</span>
+                    <span class="camparison__characteristics-value">+</span>
+                  </li>
+                </ul>
+                <div class="comparison__card-buttons">
+                  <a class="comparison__card-button button" href="#!">Заказать</a>
+                  <a class="comparison__card-toolbar-button blue-link blue-link--no-svg" href="#!">Конфигуратор</a>
+                </div>
+              </div>
+            </li>
+            <li class="comparison__cards-item swiper-slide">
+              <div class="comparison__card">
+                <ul class="camparison__characteristics-list">
+                  <li class="camparison__characteristics-item camparison__characteristics-item--model">
+                    <span class="camparison__characteristics-name">Модель</span>
+                    <a class="camparison__model" href="product-page.html">iRU Office 310A3SM MT</a>
+                    <a class="comparison__model-card-image-link" href="product-page.html">
+                      <img class="comparison__card-image" src="@img/product-card-image-1.jpg" alt="">
+                    </a>
+                  </li>
+                  <li class="camparison__characteristics-item camparison__characteristics-item--vendor">
+                    <span class="camparison__characteristics-name">Производитель</span>
+                    <span class="camparison__vendor filter">
+                      <span class="visually-hidden">iru.</span>
+                      <img class="filter__image" src="@img/filter-vendor-iru.png" alt="">
+                    </span>
+                  </li>
+                  <li class="camparison__characteristics-item camparison__characteristics-item--price">
+                    <span class="camparison__characteristics-name">Стоимость</span>
+                    <div class="camparison__prices">
+                      <span class="camparison__price">582 940 ₽</span>
+                      <span class="camparison__credit">или <span class="product-page__credit-value">24 290 ₽</span> в месяц</span>
+                    </div>
+                  </li>
+                  <li class="camparison__characteristics-item">
+                    <span class="camparison__characteristics-name">Тип процессора</span>
+                    <span class="camparison__characteristics-value">Intel</span>
+                  </li>
+                  <li class="camparison__characteristics-item">
+                    <span class="camparison__characteristics-name">Поколение процессоров</span>
+                    <span class="camparison__characteristics-value">Intel Xeon Scalable серии 8100/8200</span>
+                  </li>
+                  <li class="camparison__characteristics-item">
+                    <span class="camparison__characteristics-name">Форм-фактор</span>
+                    <span class="camparison__characteristics-value">1U</span>
+                  </li>
+                  <li class="camparison__characteristics-item">
+                    <span class="camparison__characteristics-name">Кол-во слотов для HDD</span>
+                    <span class="camparison__characteristics-value">8</span>
+                  </li>
+                  <li class="camparison__characteristics-item">
+                    <span class="camparison__characteristics-name">Оперативная память</span>
+                    <span class="camparison__characteristics-value">4 слота от 2 до 32 Гб</span>
+                  </li>
+                  <li class="camparison__characteristics-item">
+                    <span class="camparison__characteristics-name">Обьем памяти</span>
+                    <span class="camparison__characteristics-value">3 Тбайт (24 X 128 Гбайт) LRDIMM</span>
+                  </li>
+                  <li class="camparison__characteristics-item">
+                    <span class="camparison__characteristics-name">Количество блоков питания</span>
+                    <span class="camparison__characteristics-value">Количество блоков питания</span>
+                  </li>
+                  <li class="camparison__characteristics-item">
+                    <span class="camparison__characteristics-name">Наличие</span>
+                    <span class="camparison__characteristics-value">+</span>
+                  </li>
+                </ul>
+                <div class="comparison__card-buttons">
+                  <a class="comparison__card-button button" href="#!">Заказать</a>
+                  <a class="comparison__card-toolbar-button blue-link blue-link--no-svg" href="#!">Конфигуратор</a>
+                </div>
+              </div>
+            </li>
+            <li class="comparison__cards-item swiper-slide">
+              <div class="comparison__card">
+                <ul class="camparison__characteristics-list">
+                  <li class="camparison__characteristics-item camparison__characteristics-item--model">
+                    <span class="camparison__characteristics-name">Модель</span>
+                    <a class="camparison__model" href="product-page.html">iRU Office 310A3SM MT</a>
+                    <a class="comparison__model-card-image-link" href="product-page.html">
+                      <img class="comparison__card-image" src="@img/product-card-image-1.jpg" alt="">
+                    </a>
+                  </li>
+                  <li class="camparison__characteristics-item camparison__characteristics-item--vendor">
+                    <span class="camparison__characteristics-name">Производитель</span>
+                    <span class="camparison__vendor filter">
+                      <span class="visually-hidden">iru.</span>
+                      <img class="filter__image" src="@img/filter-vendor-iru.png" alt="">
+                    </span>
+                  </li>
+                  <li class="camparison__characteristics-item camparison__characteristics-item--price">
+                    <span class="camparison__characteristics-name">Стоимость</span>
+                    <div class="camparison__prices">
+                      <span class="camparison__price">582 940 ₽</span>
+                      <span class="camparison__credit">или <span class="product-page__credit-value">24 290 ₽</span> в месяц</span>
+                    </div>
+                  </li>
+                  <li class="camparison__characteristics-item">
+                    <span class="camparison__characteristics-name">Тип процессора</span>
+                    <span class="camparison__characteristics-value">Intel</span>
+                  </li>
+                  <li class="camparison__characteristics-item">
+                    <span class="camparison__characteristics-name">Поколение процессоров</span>
+                    <span class="camparison__characteristics-value">Intel Xeon Scalable серии 8100/8200</span>
+                  </li>
+                  <li class="camparison__characteristics-item">
+                    <span class="camparison__characteristics-name">Форм-фактор</span>
+                    <span class="camparison__characteristics-value">1U</span>
+                  </li>
+                  <li class="camparison__characteristics-item">
+                    <span class="camparison__characteristics-name">Кол-во слотов для HDD</span>
+                    <span class="camparison__characteristics-value">8</span>
+                  </li>
+                  <li class="camparison__characteristics-item">
+                    <span class="camparison__characteristics-name">Оперативная память</span>
+                    <span class="camparison__characteristics-value">4 слота от 2 до 32 Гб</span>
+                  </li>
+                  <li class="camparison__characteristics-item">
+                    <span class="camparison__characteristics-name">Обьем памяти</span>
+                    <span class="camparison__characteristics-value">3 Тбайт (24 X 128 Гбайт) LRDIMM</span>
+                  </li>
+                  <li class="camparison__characteristics-item">
+                    <span class="camparison__characteristics-name">Количество блоков питания</span>
+                    <span class="camparison__characteristics-value">Количество блоков питания</span>
+                  </li>
+                  <li class="camparison__characteristics-item">
+                    <span class="camparison__characteristics-name">Наличие</span>
+                    <span class="camparison__characteristics-value">+</span>
+                  </li>
+                </ul>
+                <div class="comparison__card-buttons">
+                  <a class="comparison__card-button button" href="#!">Заказать</a>
+                  <a class="comparison__card-toolbar-button blue-link blue-link--no-svg" href="#!">Конфигуратор</a>
+                </div>
+              </div>
+            </li>
+            <li class="comparison__cards-item swiper-slide">
+              <div class="comparison__card">
+                <ul class="camparison__characteristics-list">
+                  <li class="camparison__characteristics-item camparison__characteristics-item--model">
+                    <span class="camparison__characteristics-name">Модель</span>
+                    <a class="camparison__model" href="product-page.html">iRU Office 310A3SM MT</a>
+                    <a class="comparison__model-card-image-link" href="product-page.html">
+                      <img class="comparison__card-image" src="@img/product-card-image-1.jpg" alt="">
+                    </a>
+                  </li>
+                  <li class="camparison__characteristics-item camparison__characteristics-item--vendor">
+                    <span class="camparison__characteristics-name">Производитель</span>
+                    <span class="camparison__vendor filter">
+                      <span class="visually-hidden">iru.</span>
+                      <img class="filter__image" src="@img/filter-vendor-iru.png" alt="">
+                    </span>
+                  </li>
+                  <li class="camparison__characteristics-item camparison__characteristics-item--price">
+                    <span class="camparison__characteristics-name">Стоимость</span>
+                    <div class="camparison__prices">
+                      <span class="camparison__price">582 940 ₽</span>
+                      <span class="camparison__credit">или <span class="product-page__credit-value">24 290 ₽</span> в месяц</span>
+                    </div>
+                  </li>
+                  <li class="camparison__characteristics-item">
+                    <span class="camparison__characteristics-name">Тип процессора</span>
+                    <span class="camparison__characteristics-value">Intel</span>
+                  </li>
+                  <li class="camparison__characteristics-item">
+                    <span class="camparison__characteristics-name">Поколение процессоров</span>
+                    <span class="camparison__characteristics-value">Intel Xeon Scalable серии 8100/8200</span>
+                  </li>
+                  <li class="camparison__characteristics-item">
+                    <span class="camparison__characteristics-name">Форм-фактор</span>
+                    <span class="camparison__characteristics-value">1U</span>
+                  </li>
+                  <li class="camparison__characteristics-item">
+                    <span class="camparison__characteristics-name">Кол-во слотов для HDD</span>
+                    <span class="camparison__characteristics-value">8</span>
+                  </li>
+                  <li class="camparison__characteristics-item">
+                    <span class="camparison__characteristics-name">Оперативная память</span>
+                    <span class="camparison__characteristics-value">4 слота от 2 до 32 Гб</span>
+                  </li>
+                  <li class="camparison__characteristics-item">
+                    <span class="camparison__characteristics-name">Обьем памяти</span>
+                    <span class="camparison__characteristics-value">3 Тбайт (24 X 128 Гбайт) LRDIMM</span>
+                  </li>
+                  <li class="camparison__characteristics-item">
+                    <span class="camparison__characteristics-name">Количество блоков питания</span>
+                    <span class="camparison__characteristics-value">Количество блоков питания</span>
+                  </li>
+                  <li class="camparison__characteristics-item">
+                    <span class="camparison__characteristics-name">Наличие</span>
+                    <span class="camparison__characteristics-value">+</span>
+                  </li>
+                </ul>
+                <div class="comparison__card-buttons">
+                  <a class="comparison__card-button button" href="#!">Заказать</a>
+                  <a class="comparison__card-toolbar-button blue-link blue-link--no-svg" href="#!">Конфигуратор</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <button class="swiper-button swiper-button--prev" type="button">
+          <svg class="swiper-button-icon" width="19" height="30" viewBox="0 0 19 30">
+            <use xlink:href="img/sprite.svg#swiper-next-icon"></use>
+          </svg>
+          <span class="visually-hidden">Перелестнуть назад</span>
+        </button>
+        <button class="swiper-button swiper-button--next" type="button">
+          <svg class="swiper-button-icon" width="19" height="30" viewBox="0 0 19 30">
+            <use xlink:href="img/sprite.svg#swiper-next-icon"></use>
+          </svg>
+          <span class="visually-hidden">Перелестнуть вперед</span>
+        </button>
+      </div>
+    </section>
+
+    {% include "./blocks/need-help.j2" %}
+    {% include "./blocks/cards-list.j2" %}
+    {% include "./blocks/our-advantages.j2" %}
+  </main>
+{% endblock content %}
+
+{% block modal %}
+
+{% endblock %}
+
+{% block js %}
+  <script src="./js/need-help.min.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/swipers.min.js"></script>
+  <script src="./js/tabs.min.js"></script>
+  <script src="./js/product-page.min.js"></script>
+  <script src="./js/main.min.js"></script>
+{% endblock %}
