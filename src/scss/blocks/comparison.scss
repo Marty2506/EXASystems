@@ -144,12 +144,12 @@
     padding-top: 30px;
   }
 }
-.camparison__characteristics-list {
+.comparison__characteristics-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-.camparison__characteristics-item {
+.comparison__characteristics-item {
   padding: 12px 0;
   display: flex;
   border-bottom: 1px solid #EBEBEB;
@@ -163,19 +163,19 @@
     padding: 20px 0;
   }
 }
-.camparison__characteristics-item--model {
+.comparison__characteristics-item--model {
   flex-direction: column;
   align-items: flex-start;
-  & .camparison__characteristics-name {
+  & .comparison__characteristics-name {
     display: none;
   }
-  & .camparison__model {
+  & .comparison__model {
     @media (min-width: $tablet-width) {
       width: calc(100% - 100px);
     }
   }
 }
-.camparison__characteristics-name {
+.comparison__characteristics-name {
   width: 260px;
   flex-shrink: 0;
 
@@ -187,26 +187,26 @@
   }
 }
 // Нужен для js при выравнивании высот
-.camparison__characteristics-item--mobile {
-  & .camparison__characteristics-name {
+.comparison__characteristics-item--mobile {
+  & .comparison__characteristics-name {
     @media (max-width: $max-mobile-width) {
       max-width: 95px;
       display: block;
     }
   }
 }
-.camparison__characteristics-item--model,
-.camparison__characteristics-item--vendor,
-.camparison__characteristics-item--price {
+.comparison__characteristics-item--model,
+.comparison__characteristics-item--vendor,
+.comparison__characteristics-item--price {
   margin: 0;
   padding: 0;
   border-bottom: none;
-  & .camparison__characteristics-name {
+  & .comparison__characteristics-name {
     display: none;
   }
 
 }
-.camparison__model {
+.comparison__model {
   display: inline-block;
   margin: 0;
   padding: 0;
@@ -254,10 +254,10 @@
 .comparison__card-image {
   object-fit: contain;
 }
-.camparison__characteristics-item--vendor {
+.comparison__characteristics-item--vendor {
   padding: 20px 0;
 }
-.camparison__vendor {
+.comparison__vendor {
   pointer-events: none;
   @media (min-width: $desktop-width) {
     position: absolute;
@@ -265,7 +265,7 @@
     right: 20px;
   }
 }
-.camparison__characteristics-item--price {
+.comparison__characteristics-item--price {
   padding: 0;
   padding-bottom: 20px;
   border-bottom: 1px solid #EBEBEB;
@@ -275,11 +275,11 @@
   }
 
 }
-.camparison__prices {
+.comparison__prices {
   display: flex;
   flex-direction: column;
 }
-.camparison__price {
+.comparison__price {
   margin: 0;
   padding: 0;
 
@@ -293,7 +293,7 @@
     line-height: 23px;
   }
 }
-.camparison__credit {
+.comparison__credit {
   margin: 0;
   padding: 0;
 
@@ -306,7 +306,7 @@
     line-height: 19px;
   }
 }
-.camparison__characteristics-value {
+.comparison__characteristics-value {
   font-size: 16px;
   line-height: 130%;
 }
