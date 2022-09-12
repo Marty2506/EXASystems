@@ -1,0 +1,31 @@
+<div class="modal modal--order">
+  <div class="modal__wrapper container">
+    <div class="modal__content">
+      <p class="modal__title">Отправьте заявку и мы перезвоним в&nbsp;течение 30 минут</p>
+      <form class="modal__form form" action="https://echo.htmlacademy.ru" method="get">
+        <label class="form__label">
+          <span class="modal__label-text form__label-text">Ваше имя</span>
+          <input class="form__field" type="text" id="modal-order-client-name" name="modal-order-client-name" placeholder="Введите ваше имя">
+        </label>
+        <div class="form__row">
+          <label class="form__label form__label--messengers">
+            <span class="modal__label-text form__label-text">Как с вами связаться?</span>
+            <select class="form__select" id="modal-order-messengers" name="modal-order-messengers">
+              <option value="Whatsapp">Whatsapp</option>
+              <option value="Telegram">Telegram</option>
+              <option value="Телефон">Телефон</option>
+            </select>
+          </label>
+          <label class="form__label">
+            <span class="modal__label-text form__label-text">Ваш телефон</span>
+            <input class="form__field" type="tel" id="modal-order-phone" name="modal-order-phone" placeholder="+7 (999) 999-99-99" required data-pristine-required-message="Обязательно к заполнению">
+          </label>
+        </div>
+        <button class="button form__submit-button" type="submit">Отправить заявку</button>
+      </form>
+    </div>
+    <button class="modal__close-button" type="button">
+      <span class="visually-hidden">Закрыть окно</span>
+    </button>
+  </div>
+</div>

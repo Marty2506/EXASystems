@@ -26,6 +26,10 @@
 .swiper-slide {
   background-position: center;
   background-size: cover;
+
+  @media (max-width: $max-mobile-width) {
+    width: 100px;
+  }
 }
 .swiper-button {
   position: absolute;

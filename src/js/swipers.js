@@ -14,6 +14,7 @@ const comparisonSwiperOptions = {
   },
   breakpoints: {
     320: {
+      spaceBetween: 0,
       slidesPerView: 2,
     },
     768: {

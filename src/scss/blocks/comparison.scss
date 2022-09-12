@@ -71,13 +71,15 @@
 }
 .comparison__category-products-cnt {
   margin-left: 5px;
-  // color: lighten($blue-color, 30%);
   color: $bg-color;
 }
 .comparison__cards {
   position: relative;
   margin: 0 auto;
   padding: 0 8px;
+
+  display: flex;
+  gap: 5px;
 
   @media (min-width: $desktop-width) {
     margin: 0 auto;
@@ -89,7 +91,38 @@
     padding-bottom: 90px;
   }
 }
+.comparison__mobile-props-list {
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  list-style-type: none;
+
+  width: 25%;
+
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+.comparison__mobile-props-item {
+  padding-top: 20px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 130%;
+  word-wrap: break-word;
+
+  &:first-of-type {
+    visibility: hidden;
+  }
+}
 .comparison__swiper {
+  flex-shrink: 0;
+  @media (max-width: $max-mobile-width) {
+    width: 75%;
+  }
 }
 .comparison__cards-list {
   margin: 0;
@@ -97,10 +130,6 @@
   list-style-type: none;
 
   display: flex;
-
-  @media (max-width: $max-mobile-width) {
-    padding-left: 95px;
-  }
 }
 
 .comparison__card {
@@ -119,21 +148,19 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-
 }
 .camparison__characteristics-item {
   padding: 12px 0;
   display: flex;
+  border-bottom: 1px solid #EBEBEB;
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 20px;
     gap: 23px;
     align-items: center;
-    box-shadow: 0px -1px 0px #EEEEEE;
   }
 
   @media (max-width: $max-mobile-width) {
-    padding-top: 40px;
+    padding: 20px 0;
   }
 }
 .camparison__characteristics-item--model {
@@ -141,6 +168,11 @@
   align-items: flex-start;
   & .camparison__characteristics-name {
     display: none;
+  }
+  & .camparison__model {
+    @media (min-width: $tablet-width) {
+      width: calc(100% - 100px);
+    }
   }
 }
 .camparison__characteristics-name {
@@ -154,6 +186,26 @@
     display: none;
   }
 }
+// Нужен для js при выравнивании высот
+.camparison__characteristics-item--mobile {
+  & .camparison__characteristics-name {
+    @media (max-width: $max-mobile-width) {
+      max-width: 95px;
+      display: block;
+    }
+  }
+}
+.camparison__characteristics-item--model,
+.camparison__characteristics-item--vendor,
+.camparison__characteristics-item--price {
+  margin: 0;
+  padding: 0;
+  border-bottom: none;
+  & .camparison__characteristics-name {
+    display: none;
+  }
+
+}
 .camparison__model {
   display: inline-block;
   margin: 0;
@@ -166,6 +218,10 @@
   text-decoration: none;
   color: inherit;
   transition: all 0.3s ease;
+
+  @media (max-width: $max-mobile-width) {
+    margin-bottom: 20px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 22px;
@@ -185,23 +241,21 @@
     opacity: 0.7;
   }
 }
-.camparison__characteristics-item--model,
-.camparison__characteristics-item--vendor,
-.camparison__characteristics-item--price {
-  margin: 0;
-  padding: 0;
-  & .camparison__characteristics-name {
-    display: none;
-  }
-}
 .comparison__model-card-image-link {
+  margin-top: auto;
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: center;
+  max-height: 306px;
+  min-height: 135px;
+  margin-bottom: 20px;
 }
 .comparison__card-image {
   object-fit: contain;
+}
+.camparison__characteristics-item--vendor {
+  padding: 20px 0;
 }
 .camparison__vendor {
   pointer-events: none;
@@ -210,17 +264,16 @@
     top: 23px;
     right: 20px;
   }
-
-  @media (max-width: $max-mobile-width) {
-    margin-bottom: 20px;
-  }
 }
 .camparison__characteristics-item--price {
   padding: 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #EBEBEB;
 
-  @media (min-width: $desktop-width) {
-    margin-bottom: 20px;
+  @media (max-width: $max-mobile-width) {
+    padding-top: 20px;
   }
+
 }
 .camparison__prices {
   display: flex;
@@ -253,8 +306,6 @@
     line-height: 19px;
   }
 }
-.product-page__credit-value {
-}
 .camparison__characteristics-value {
   font-size: 16px;
   line-height: 130%;
@@ -263,6 +314,7 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+  padding: 20px 0;
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
@@ -288,10 +340,13 @@
   @media (max-width: $max-mobile-width) {
     width: 100%;
     max-width: 100%;
+    min-width: 0;
   }
 
 }
 .comparison__card-toolbar-button {
+  font-size: 14px;
+  line-height: 17px;
   @media (min-width: $desktop-width) {
     order: -1;
   }
