@@ -31,3 +31,14 @@ caseImageLinks.forEach(caseImageLink => {
     modalImage.classList.add('modal-image--opened');
   })
 });
+
+const certificates = document.querySelectorAll('.certificates__link');
+certificates.forEach(certificate => {
+  certificate.addEventListener('click', (evt) => {
+    evt.preventDefault();
+
+    modalImageContent.src = certificate.href;
+
+    modalImage.classList.add('modal-image--opened');
+  })
+});

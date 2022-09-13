@@ -24,7 +24,7 @@
           <h1 class="certificates__title title">Сертификаты</h1>
           <ul class="certificates__list">
             <li class="certificates__item">
-              <a class="certificates__link" href="#!">
+              <a class="certificates__link" href="img/certificate-full-test.jpg">
                 <p class="certificates__item-title">Hyperline</p>
                 <p class="certificates__item-description">Сертифицированный инсталлятор</p>
                 <img class="certificates__image" src="@img/certificate-{{ certificateCounter }}.jpg" alt="">
@@ -32,7 +32,7 @@
             </li>
             {% set certificateCounter = certificateCounter + 1 %}
             <li class="certificates__item">
-              <a class="certificates__link" href="#!">
+              <a class="certificates__link" href="img/certificate-full-test.jpg">
                 <p class="certificates__item-title">Huawei</p>
                 <p class="certificates__item-description">Enterprise Structured Cabling Deployment</p>
                 <img class="certificates__image" src="@img/certificate-{{ certificateCounter }}.jpg" alt="">
@@ -40,7 +40,7 @@
             </li>
             {% set certificateCounter = certificateCounter + 1 %}
             <li class="certificates__item">
-              <a class="certificates__link" href="#!">
+              <a class="certificates__link" href="img/certificate-full-test.jpg">
                 <p class="certificates__item-title">Nikomax</p>
                 <p class="certificates__item-description">Сертифицированный инсталлятор</p>
                 <img class="certificates__image" src="@img/certificate-{{ certificateCounter }}.jpg" alt="">
@@ -48,7 +48,7 @@
             </li>
             {% set certificateCounter = certificateCounter + 1 %}
             <li class="certificates__item">
-              <a class="certificates__link" href="#!">
+              <a class="certificates__link" href="img/certificate-full-test.jpg">
                 <p class="certificates__item-title">Juniper</p>
                 <p class="certificates__item-description">Reseller Partner</p>
                 <img class="certificates__image" src="@img/certificate-{{ certificateCounter }}.jpg" alt="">
@@ -56,7 +56,7 @@
             </li>
             {% set certificateCounter = certificateCounter + 1 %}
             <li class="certificates__item">
-              <a class="certificates__link" href="#!">
+              <a class="certificates__link" href="img/certificate-full-test.jpg">
                 <p class="certificates__item-title">Panduit</p>
                 <p class="certificates__item-description">Authorized Partner</p>
                 <img class="certificates__image" src="@img/certificate-{{ certificateCounter }}.jpg" alt="">
@@ -64,7 +64,7 @@
             </li>
             {% set certificateCounter = certificateCounter + 1 %}
             <li class="certificates__item">
-              <a class="certificates__link" href="#!">
+              <a class="certificates__link" href="img/certificate-full-test.jpg">
                 <p class="certificates__item-title">Lenovo</p>
                 <p class="certificates__item-description">PC Partner Authorized</p>
                 <img class="certificates__image" src="@img/certificate-{{ certificateCounter }}.jpg" alt="">
@@ -72,7 +72,7 @@
             </li>
             {% set certificateCounter = certificateCounter + 1 %}
             <li class="certificates__item">
-              <a class="certificates__link" href="#!">
+              <a class="certificates__link" href="img/certificate-full-test.jpg">
                 <p class="certificates__item-title">Lenovo</p>
                 <p class="certificates__item-description">Lenovo ISG Partner Authorized</p>
                 <img class="certificates__image" src="@img/certificate-{{ certificateCounter }}.jpg" alt="">
@@ -89,6 +89,11 @@
   </main>
 {% endblock content %}
 
+{% block modal %}
+  {% include "./blocks/modal-image.j2" %}
+{% endblock %}
+
 {% block js %}
+  <script src="./js/modal-image.min.js"></script>
   <script src="./js/main.min.js"></script>
 {% endblock %}
