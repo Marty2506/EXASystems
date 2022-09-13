@@ -127,48 +127,6 @@
   line-height: 19px;
   color: $grey-color;
 }
-.product-page__info-icon-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  &::after {
-    content: "Что тут должно быть?";
-    position: absolute;
-    padding: 10px;
-    display: none;
-    opacity: 0;
-    z-index: 1;
-    bottom: 20px;
-    left: 20px;
-    background-color: $white-color;
-    color: inherit;
-    width: 200px;
-    height: 30px;
-    border: 1px solid $grey-color;
-    border-radius: 7px;
-    transition: opacity 0.5s ease;
-  }
-
-  &:hover {
-    & .product-page__info-icon {
-      fill: $button-color;
-    }
-    &::after {
-      display: block;
-      opacity: 1;
-    }
-  }
-}
-.product-page__info-icon {
-
-  fill: $grey-color;
-  transition: fill 0.3s ease;
-  cursor: pointer;
-}
-.product-page__credit-value {
-}
 .product-page__toolbar {
   display: flex;
   align-items: center;
