@@ -155,12 +155,27 @@ if (modalOrder) {
     orderButtons.forEach(orderButton => {
       orderButton.addEventListener('click', (evt) => {
         evt.preventDefault(); // Запрет перехода по ссылке
+        const modalOrderProduct = modalOrder.querySelector('.modal__product-name');
+        const modalOrderProductInput = modalOrder.querySelector('#modal-order-product');
         if (orderButton.classList.contains('comparison__card-button')) {
-          const productName = orderButton.closest('.comparison__card').
-                                          querySelector('.comparison__model').textContent;
-          const modalOrderProduct = modalOrder.querySelector('.modal__product-name');
-          modalOrderProduct.textContent = productName;
-          const modalOrderProductInput = modalOrder.querySelector('#modal-order-product');
+          const comparisonCard = orderButton.closest('.comparison__card');
+          const productName = comparisonCard.querySelector('.comparison__model').textContent;
+          const productType = comparisonCard.dataset.productType;
+          modalOrderProduct.textContent = `${productType} ${productName}`;
+          modalOrderProductInput.value = productName;
+        }
+        if (orderButton.classList.contains('product-page__button')) {
+          const productPage = orderButton.closest('.product-page');
+          const productName = productPage.querySelector('.product-page__title').textContent;
+          const productType = productPage.querySelector('.product-page__type').textContent;
+          modalOrderProduct.textContent = `${productType} ${productName}`;
+          modalOrderProductInput.value = productName;
+        }
+        if (orderButton.classList.contains('product-card__button')) {
+          const productPage = orderButton.closest('.product-card');
+          const productName = productPage.querySelector('.product-card__title').textContent;
+          const productType = productPage.querySelector('.product-card__subtitle').textContent;
+          modalOrderProduct.textContent = `${productType} ${productName}`;
           modalOrderProductInput.value = productName;
         }
         modalOrder.classList.add('modal--opened');

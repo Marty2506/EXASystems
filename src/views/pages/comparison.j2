@@ -69,7 +69,7 @@
         <div class="comparison__swiper swiper">
           <ul class="comparison__cards-list swiper-wrapper">
             <li class="comparison__cards-item swiper-slide">
-              <div class="comparison__card">
+              <div class="comparison__card" data-product-type="Компьютер">
                 <ul class="comparison__characteristics-list">
                   <li class="comparison__characteristics-item comparison__characteristics-item--model">
                     <span class="comparison__characteristics-name">Модель</span>
@@ -132,7 +132,7 @@
               </div>
             </li>
             <li class="comparison__cards-item swiper-slide">
-              <div class="comparison__card">
+              <div class="comparison__card" data-product-type="Компьютер">
                 <ul class="comparison__characteristics-list">
                   <li class="comparison__characteristics-item comparison__characteristics-item--model">
                     <span class="comparison__characteristics-name">Модель</span>
@@ -195,7 +195,7 @@
               </div>
             </li>
             <li class="comparison__cards-item swiper-slide">
-              <div class="comparison__card">
+              <div class="comparison__card" data-product-type="Компьютер">
                 <ul class="comparison__characteristics-list">
                   <li class="comparison__characteristics-item comparison__characteristics-item--model">
                     <span class="comparison__characteristics-name">Модель</span>
@@ -258,7 +258,7 @@
               </div>
             </li>
             <li class="comparison__cards-item swiper-slide">
-              <div class="comparison__card">
+              <div class="comparison__card" data-product-type="Компьютер">
                 <ul class="comparison__characteristics-list">
                   <li class="comparison__characteristics-item comparison__characteristics-item--model">
                     <span class="comparison__characteristics-name">Модель</span>
@@ -344,7 +344,6 @@
 {% endblock content %}
 
 {% block modal %}
-  {% include "./blocks/modal-order.j2" %}
 {% endblock %}
 
 {% block js %}
@@ -353,6 +352,5 @@
   <script src="./js/swipers.min.js"></script>
   <script src="./js/tabs.min.js"></script>
   <script src="./js/comparison.min.js"></script>
-  <script src="./js/modal-order.min.js"></script>
   <script src="./js/main.min.js"></script>
 {% endblock %}
