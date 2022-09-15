@@ -1,7 +1,11 @@
 {
-  "extends": "stylelint-config-standard",
+  "extends": "stylelint-config-standard-scss",
+  "plugins": [
+    "stylelint-scss"
+  ],
   "rules": {
-    "at-rule-no-unknown": [
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": [
       true,
       {
         "ignoreAtRules": ["function", "include", "mixin", "return", "use"]
@@ -14,6 +18,7 @@
         "ignore": ["after-comment"]
       }
     ],
+    "selector-class-pattern": "^[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$|^Mui.*$",
     "color-hex-case": "lower",
     "color-hex-length": "short",
     "color-no-invalid-hex": true,
@@ -52,6 +57,12 @@
     "no-eol-whitespace": true,
     "no-invalid-double-slash-comments": true,
     "no-invalid-position-at-import-rule": null,
-    "no-missing-end-of-source-newline": true
+    "no-missing-end-of-source-newline": true,
+    "scss/dollar-variable-pattern": null,
+    "scss/at-import-partial-extension": null,
+    "scss/double-slash-comment-empty-line-before": null,
+    "scss/comment-no-empty": null,
+    "rule-empty-line-before": null,
+    "declaration-empty-line-before": null
   }
 }
