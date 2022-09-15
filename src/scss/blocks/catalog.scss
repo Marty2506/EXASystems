@@ -1,5 +1,6 @@
 .catalog {
   position: relative;
+
   padding-top: 15px;
 
 
@@ -13,44 +14,48 @@
 
   @media (min-width: $desktop-width) {
     &::after {
-      position: absolute;
-      z-index: -1;
       content: "";
+      position: absolute;
       top: 0;
       left: 0;
+      z-index: -1;
+
       width: 100%;
       height: 100%;
-      clip-path: polygon(0 0, 100% 0, 100% calc(1205px - 130px), 65% 1205px, 0 calc(1205px - 160px));
+
       background-color: $bg2-color;
+
+      clip-path: polygon(0 0, 100% 0, 100% calc(1205px - 130px), 65% 1205px, 0 calc(1205px - 160px));
     }
   }
-
 }
 .catalog__content {
   display: flex;
   flex-direction: column;
 }
-.catalog__title {
-}
+
 .catalog__filters {
   position: relative;
-  padding-bottom: 27px;
-  margin-bottom: 27px;
+
   display: flex;
   flex-direction: column;
+  margin-bottom: 27px;
+  padding-bottom: 27px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 27px;
     margin-bottom: 27px;
+    padding-bottom: 27px;
   }
 
   &::after {
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
-    content: "";
+
     width: 100%;
     height: 1px;
+
     background-color: #ebebeb;
   }
 }
@@ -66,16 +71,15 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
   }
+}
 
-}
-.catalog__filters-group--type {
-}
 .catalog__filters-group-name {
   display: flex;
   align-items: center;
   margin: 0;
-  padding: 0;
   margin-bottom: 20px;
+  padding: 0;
+
   font-size: 13px;
   line-height: 16px;
   color: $grey-color;
@@ -83,8 +87,10 @@
 
   &::after {
     content: "";
+
     width: 100%;
     height: 1px;
+
     background-color: #ebebeb;
   }
 
@@ -95,34 +101,36 @@
 }
 .catalog__filters-list {
   display: flex;
-  gap: 11px;
   flex-wrap: wrap;
-
   margin: 0;
   padding: 0;
+
   list-style-type: none;
+
+  gap: 11px;
 }
-.catalog__filters-item {
-}
+
 .catalog__cards-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
   gap: 8px;
 
   @media (min-width: $tablet-width) {
     display: grid;
+
+    column-gap: 20px;
+
     grid-template-columns: repeat(2, 1fr);
     row-gap: 20px;
-    column-gap: 20px;
   }
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(3, 1fr);
     column-gap: 24px;
+
+    grid-template-columns: repeat(3, 1fr);
   }
-}
-.catalog__cards-item {
 }

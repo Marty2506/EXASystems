@@ -1,5 +1,6 @@
 .blog-card {
   padding-top: 20px;
+
   background-color: $white-color;
 }
 .blog-card__content {
@@ -9,8 +10,8 @@
 .blog-card__header {
   display: flex;
   flex-direction: column;
-  padding: 0 30px;
   margin-bottom: 20px;
+  padding: 0 30px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -18,13 +19,13 @@
     align-items: center;
   }
 }
-.blog-card__title-link {
 
-}
 .blog-card__title-link {
   display: block;
+
+  color: #000000;
   text-decoration: none;
-  color: #000;
+
   transition: color 0.3s ease;
 
   &:hover {
@@ -38,19 +39,19 @@
   margin: 0;
   padding: 0;
 
-  font-family: "Jost", "Arial", sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
+  font-family: "Jost", "Arial", sans-serif;
 
   @media (max-width: $max-mobile-width) {
     margin-bottom: 10px;
   }
-
 }
 .blog-card__date {
   margin: 0;
   padding: 0;
+
   font-size: 14px;
   line-height: 130%;
   color: $grey-color;
@@ -61,13 +62,15 @@
 }
 .blog-card__image-link {
   display: block;
+
   text-decoration: none;
 }
 .blog-card__image {
   display: block;
   @media (max-width: $max-mobile-width) {
-    max-height: 270px;
     width: 100%;
+    max-height: 270px;
+
     object-fit: cover;
   }
 }
@@ -76,12 +79,11 @@
 }
 .blog-card__description {
   margin: 0;
-  padding: 0;
   margin-bottom: 20px;
+  padding: 0;
 
   font-size: 16px;
   line-height: 19px;
-
   color: $grey-color;
 
   @media (min-width: $desktop-width) {
@@ -92,6 +94,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
   gap: 20px;
 
   @media (min-width: $tablet-width) {
@@ -104,10 +107,10 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 11px;
-
   margin: 0;
   padding: 0;
+
+  gap: 11px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -124,9 +127,10 @@
   max-width: 358px;
 
   & .blog-card__header {
-    padding: 0 20px;
     flex-direction: column;
     align-items: flex-start;
+    padding: 0 20px;
+
     gap: 10px;
   }
 
@@ -135,15 +139,16 @@
   }
 
   & .blog-card__tags-wrapper {
-    padding: 0 20px;
     flex-direction: column;
     margin-bottom: 20px;
+    padding: 0 20px;
   }
 
   & .blog-card__image {
     width: 100%;
     height: auto;
     max-height: none;
+
     object-fit: cover;
   }
 }

@@ -2,7 +2,7 @@
   padding-top: 25px;
   padding-bottom: 45px;
 
-  background: linear-gradient(271.32deg, #2AA898 -12.13%, #39C0B4 79.47%);
+  background: linear-gradient(271.32deg, #2aa898 -12.13%, #39c0b4 79.47%);
 
   @media (min-width: $tablet-width) {
     padding: 70px 0;
@@ -26,18 +26,17 @@
   }
 }
 .need-help__title {
-  font-family: "Jost", "Arial", sans-serif;
   font-weight: 600;
   font-size: 24px;
   line-height: 35px;
-
+  font-family: "Jost", "Arial", sans-serif;
   color: $white-color;
 
   @media (min-width: $tablet-width) {
-    font-family: "Proxima Nova", "Arial", sans-serif;
     font-weight: 700;
     font-size: 28px;
     line-height: 115%;
+    font-family: "Proxima Nova", "Arial", sans-serif;
   }
 }
 .need-help__image-wrapper {
@@ -51,36 +50,33 @@
     margin-left: -100px;
   }
 }
-.need-help__image {
-}
-.need-help__form-wrapper {
 
+.need-help__form-wrapper {
   @media (min-width: $desktop-width) {
-    padding: 32px 53px 43px 61px;
-    background-color: $white-color;
     max-width: 586px;
+    padding: 32px 53px 43px 61px;
+
+    background-color: $white-color;
     box-shadow: 5px 9px 21px rgba(48, 41, 131, 0.3);
   }
-
 }
 .need-help__form-title {
   margin: 0;
+  margin-bottom: 15px;
   padding: 0;
-  font-family: 'Jost';
+
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 22px;
-  margin-bottom: 15px;
-
+  font-family: "Jost";
   color: $white-color;
 
   @media (min-width: $desktop-width) {
     color: $black-color;
   }
 }
-.need-help__form {
-}
+
 .need-help__label-text {
   @media (max-width: $max-tablet-width) {
     opacity: 0.7;

@@ -7,8 +7,7 @@
   "scripts": {
     "build": "gulp build",
     "start": "gulp dev",
-    "test": "stylelint \"src/scss/**/*.scss\" --config .stylelintrc.json --customSyntax postcss-scss --fix",
-    "lintscss": "stylelint \"src/scss/**/about.scss\" --config .stylelintrc.json --customSyntax postcss-scss"
+    "lintscss": "stylelint \"src/scss/**/**.scss\" --config .stylelintrc.json --customSyntax postcss-scss --fix"
   },
   "repository": {
     "type": "git",
@@ -51,8 +50,5 @@
     "stylelint-scss": "^4.2.0",
     "webpack": "^5.72.1",
     "webpack-stream": "^7.0.0"
-  },
-  "dependencies": {
-    "stylelint-selector-bem-pattern": "^2.1.1"
   }
 }

@@ -1,11 +1,11 @@
-.nav {
-}
+
 .nav__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
@@ -41,14 +41,15 @@
       margin-left: auto;
     }
   }
-
 }
 .nav__link {
+  padding: 3px;
+
   font-weight: 600;
   font-size: 16px;
+  color: #000000;
   text-decoration: none;
-  color: #000;
-  padding: 3px;
+
   transition: color 0.3s ease;
 
   &:hover {
@@ -59,22 +60,21 @@
   }
 }
 .nav__sub-list {
-  margin: 0;
-  padding: 20px 0;
-  list-style-type: none;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 20px 0;
+
+  list-style-type: none;
+
   gap: 10px;
 }
-.nav__sub-item {
-}
+
 .nav__sub-link {
   font-weight: 300;
   font-size: 15px;
   line-height: 18px;
-
   color: $black-color;
-
   text-decoration: none;
 
   transition: color 0.3s ease;
@@ -91,16 +91,19 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  width: 134px;
+  height: 32px;
+
   font-weight: 700;
   font-size: 13px;
   line-height: 16px;
-  color: #fff;
-  text-decoration: none;
+  color: #ffffff;
   text-transform: none;
-  height: 32px;
-  width: 134px;
-  border-radius: 2px;
+  text-decoration: none;
+
   background-color: $button-color;
+  border-radius: 2px;
+
   transition: all 0.3s ease;
 
   &:hover {

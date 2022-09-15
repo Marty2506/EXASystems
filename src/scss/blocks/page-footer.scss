@@ -1,6 +1,7 @@
 .page-footer {
   padding-top: 55px;
   padding-bottom: 90px;
+
   background-color: $bg2-color;
 
   @media (max-width: $max-tablet-width) {
@@ -21,9 +22,10 @@
   flex-direction: column;
   @media (min-width: $desktop-width) {
     position: absolute;
-    align-items: flex-end;
-    bottom: 0;
     right: 0;
+    bottom: 0;
+
+    align-items: flex-end;
   }
 }
 .page-footer__logo {
@@ -35,15 +37,15 @@
 .page-footer__address {
   margin: 0;
   padding: 0;
+
   font-weight: 300;
   font-size: 12px;
   line-height: 18px;
 
 
   @media (min-width: $desktop-width) {
-    text-align: right;
     font-size: 15px;
     line-height: 22px;
+    text-align: right;
   }
-
 }

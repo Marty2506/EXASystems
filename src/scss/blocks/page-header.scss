@@ -1,20 +1,19 @@
 .page-header {
   padding: 16px 0;
-  background: linear-gradient(180deg, #453FA9 0%, #675FC6 100%);
+
+  background: linear-gradient(180deg, #453fa9 0%, #675fc6 100%);
   @media (min-width: $desktop-width) {
     padding: 42px 0;
   }
 }
-.page-header__container {
-}
+
 .page-header__row {
   display: flex;
-
 }
 .page-header__logo {
   display: flex;
-  flex-direction: column;
   flex-grow: 0;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 
@@ -27,11 +26,10 @@
   }
 }
 .page-header__logo-image2 {
-
   @media (min-width: $desktop-width) {
+    align-self: flex-end;
     width: 102px;
     height: 7px;
-    align-self: flex-end;
   }
 }
 .page-header__contacts {
@@ -40,27 +38,32 @@
   align-items: flex-end;
 }
 .page-header__buttons {
-  margin-left: auto;
   display: flex;
+  margin-left: auto;
+
   gap: 7px;
 }
 .page-header__phone-button {
   display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
+
+  text-decoration: none;
+
   border: none;
   cursor: pointer;
-  text-decoration: none;
-  align-items: center;
+
   gap: 8px;
 
 
   & span {
-    font-family: "Jost", "Arial", sans-serif;
     font-weight: 800;
     font-size: 20px;
     line-height: 29px;
-    color: #fff;
+    font-family: "Jost", "Arial", sans-serif;
+    color: #ffffff;
+
     transition: color 0.3s ease;
 
     @media (max-width: $max-tablet-width) {
@@ -73,7 +76,7 @@
       color: $button-color;
     }
     & .page-header__phone-icon-wrapper {
-      background-color: #fff;
+      background-color: #ffffff;
     }
     & .page-header__phone-icon {
       fill: $aqua-color;
@@ -82,63 +85,69 @@
 }
 .page-header__phone-icon-wrapper {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
-  background-color: #fff;
+
+  background-color: #ffffff;
+
   transition: background-color 0.3s ease;
 
   @media (min-width: $desktop-width) {
     width: 18px;
     height: 18px;
-    border-radius: 1px;
+
     background-color: $blue-color;
+    border-radius: 1px;
   }
 }
 .page-header__phone-icon {
-  fill: #fff;
   transition: fill 0.3s ease;
+
+  fill: #ffffff;
 
   @media (max-width: $max-tablet-width) {
     width: 27px;
     height: 32px;
+
     fill: $aqua-color;
   }
-
 }
 
 .page-header__mail-button {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+
+  gap: 10px;
   @media (max-width: $max-tablet-width) {
     display: none;
   }
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  text-decoration: none;
 
   & span {
     font-size: 13px;
     line-height: 16px;
-    text-decoration-line: underline;
-    color: #fff;
+    color: #ffffff;
+
     transition: color 0.3s ease;
+
+    text-decoration-line: underline;
   }
 
   & .page-header__mail-icon {
-    fill: $bg2-color;
     transition: fill 0.3s ease;
+
+    fill: $bg2-color;
   }
 
   &:hover {
     & span {
       color: $button-color;
-
     }
     & .page-header__mail-icon {
       fill: $button-color;
     }
   }
-}
-.page-header__mail-icon {
 }

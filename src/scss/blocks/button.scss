@@ -1,26 +1,30 @@
 $button-height: 47;
 .button {
   position: relative;
+
   display: flex;
-  height: $button-height +px;
   justify-content: center;
   align-items: center;
-  background-color: $button-color;
-  color: #fff;
+  max-width: 290px;
+  height: $button-height +px;
   margin: 0;
-  border: none;
-  cursor: pointer;
-  font-family: inherit;
+
   font-size: 14px;
   line-height: 17px;
-  max-width: 290px;
+  font-family: inherit;
+  color: #ffffff;
   text-decoration: none;
+
+  background-color: $button-color;
+  border: none;
+  cursor: pointer;
 
   transition: all 0.3s ease;
 
   &:hover {
     color: $button-color;
-    background-color: #fff;
+
+    background-color: #ffffff;
   }
   &:focus-visible {
     outline: none;
@@ -30,4 +34,3 @@ $button-height: 47;
     opacity: 0.7;
   }
 }
-

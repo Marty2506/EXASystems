@@ -1,7 +1,9 @@
 .product-card {
   position: relative;
+
   max-width: 363px;
   padding: 20px;
+
   background-color: $white-color;
 
   &:hover {
@@ -27,59 +29,65 @@
 .product-card__background-link {
   position: absolute;
   top: 0;
+  right: 0;
   bottom: 0;
   left: 0;
-  right: 0;
   z-index: 1;
 
   &:focus-visible {
     outline: 2px solid $blue-color;
   }
 }
-.product-card__content {
-}
+
 .product-card__title {
   margin: 0;
-  padding: 0;
   margin-bottom: 5px;
-  font-family: "Jost", "Arial", sans-serif;
+  padding: 0;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
+  font-family: "Jost", "Arial", sans-serif;
+
   transition: color 0.3s ease;
 }
 .product-card__subtitle {
   margin: 0;
-  padding: 0;
   margin-bottom: 10px;
+  padding: 0;
+
   font-size: 16px;
   line-height: 19px;
   color: $grey-color;
 }
 .product-card__image-wrapper {
   position: relative;
+
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin-left: -20px;
+  align-items: center;
   margin-right: -20px;
+  margin-left: -20px;
 }
 .product-card__image {
-  height: 238px;
   width: auto;
+  height: 238px;
+
   object-fit: contain;
 }
 .product-card__vendor {
   position: absolute;
   top: 0;
   left: 20px;
+
   pointer-events: none;
 }
 .product-card__price-row {
   display: flex;
   justify-content: space-between;
-  gap: 5px;
   margin-bottom: 22px;
+
+  gap: 5px;
 }
 .product-card__prices-wrapper {
   display: flex;
@@ -88,24 +96,27 @@
 .product-card__price {
   margin: 0;
   padding: 0;
-  font-family: "Jost", "Arial", sans-serif;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
+  font-family: "Jost", "Arial", sans-serif;
 }
 .product-card__credit {
   margin: 0;
   padding: 0;
+
   font-size: 16px;
   line-height: 19px;
   color: $grey-color;
 }
-.product-card__credit-val {
-}
+
 .product-card__button {
-  min-width: 130px;
-  clip-path: none;
   z-index: 1;
+
+  min-width: 130px;
+
+  clip-path: none;
 
   &:focus-visible {
     &::after {
@@ -114,8 +125,9 @@
   }
 
   &:hover {
-    background-color: $blue-color;
     color: $white-color;
+
+    background-color: $blue-color;
   }
 
   @media (min-width: $desktop-width) {
@@ -126,18 +138,22 @@
 .product-card__toolbar {
   display: flex;
   flex-wrap: wrap;
+
   gap: 30px;
 }
 .product-card__toolbar-button {
   z-index: 1;
+
   display: flex;
   align-items: center;
-  text-decoration: none;
-  cursor: pointer;
+  padding: 2px 5px;
+
   font-family: inherit;
+  text-decoration: none;
+
   background-color: transparent;
   border: none;
-  padding: 2px 5px;
+  cursor: pointer;
 
 
   &:hover {
@@ -149,8 +165,8 @@
     }
   }
   &:focus-visible {
-    outline: 1px solid $blue-color;
     border-radius: 2px;
+    outline: 1px solid $blue-color;
   }
   &:active {
     opacity: 0.7;
@@ -158,26 +174,29 @@
 }
 .product-card__toolbar-button--compare {
   position: relative;
+
   padding-left: 44px;
 }
 .product-card__toolbar-button-icon {
   position: absolute;
   top: 50%;
   left: 10px;
+
   transform: translateY(-50%);
-  fill: $blue-color;
+
   transition: fill 0.3s ease;
+
+  fill: $blue-color;
 }
 .product-card__toolbar-button-text {
   margin: 0;
   padding: 0;
 
-  font-family: inherit;
   font-size: 14px;
   line-height: 17px;
+  font-family: inherit;
   color: $blue-color;
   text-decoration: underline;
+
   transition: color 0.3s ease;
-}
-.product-card__toolbar-button--conf {
 }

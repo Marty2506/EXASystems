@@ -1,38 +1,43 @@
 .form {
   display: flex;
   flex-direction: column;
+
   gap: 30px;
 }
 .form__row {
   display: flex;
-  gap: 20px;
   flex-direction: column;
+
+  gap: 20px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
   }
 }
 .form__label {
-  width: 100%;
   position: relative;
+
   display: flex;
   flex-direction: column;
+  width: 100%;
+
   gap: 4px;
 }
 .form__label-text {
   font-size: 14px;
   line-height: 130%;
-  color: #fff;
+  color: #ffffff;
 }
 .form__field {
   padding: 11px 12px;
-  font-family: inherit;
+
   font-size: 14px;
   line-height: 130%;
-  border: none;
-  background-color: #ebf3f8;
+  font-family: inherit;
 
-  box-shadow: inset 1px 1px 0px rgba(0, 0, 0, 0.15);
+  background-color: #ebf3f8;
+  border: none;
+  box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.15);
 
   &:hover,
   &:focus {
@@ -40,8 +45,9 @@
   }
 }
 .form__field--textarea {
-  resize: none;
   height: 75px;
+
+  resize: none;
 }
 .form__submit-button {
   max-width: 206px;
@@ -50,6 +56,7 @@
   }
   &:hover {
     color: $white-color;
+
     background-color: $blue-color;
   }
 }
@@ -57,18 +64,22 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  transform: translateY(calc(100% + 3px));
+
   font-weight: 600;
   font-size: 12px;
   line-height: 130%;
   color: #cc2b24;
+
+  transform: translateY(calc(100% + 3px));
   opacity: 0.7;
 }
 
 .form-choices {
   position: relative;
-  color: $black-color;
+
   overflow: hidden;
+
+  color: $black-color;
 
   &:hover {
     outline: 2px solid $blue-color;
@@ -82,8 +93,8 @@
     overflow: visible;
 
     & .form-choices__inner {
-      outline: 2px solid $blue-color;
       background-color: $white-color;
+      outline: 2px solid $blue-color;
     }
   }
   &.is-focused {
@@ -94,6 +105,7 @@
     & .form-choices__list--dropdown {
       top: auto;
       bottom: 100%;
+
       margin-top: 0;
       margin-bottom: -1px;
     }
@@ -101,31 +113,36 @@
 }
 .form-choices[data-type*=select-one]::after {
   content: "";
-  height: 0;
-  width: 0;
-  border-style: solid;
-  border-color: #333 transparent transparent;
-  border-width: 5px;
   position: absolute;
-  left: 45px;
   top: 50%;
+  left: 45px;
+
+  width: 0;
+  height: 0;
   margin-top: -2.5px;
+
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333333 transparent transparent;
+
   pointer-events: none;
 }
 .is-open.form-choices[data-type*=select-one]::after {
-  border-color: transparent transparent #333;
   margin-top: -7.5px;
+
+  border-color: transparent transparent #333333;
 }
 .form-choices__inner {
   width: 100%;
   overflow: hidden;
-  font-family: inherit;
+
   font-size: 14px;
   line-height: 130%;
-  border: none;
-  background-color: #ebf3f8;
+  font-family: inherit;
 
-  box-shadow: inset 1px 1px 0px rgba(0, 0, 0, 0.15);
+  background-color: #ebf3f8;
+  border: none;
+  box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.15);
 
   & .is-open,
   & .is-focused {
@@ -134,8 +151,10 @@
 }
 .form-choices__item {
   position: relative;
+
   padding: 11px 12px;
   padding-left: 68px;
+
   font-size: 14px;
   line-height: 130%;
   color: $black-color;
@@ -146,12 +165,14 @@
       position: absolute;
       top: 50%;
       left: 11px;
-      transform: translateY(-50%);
+
       width: 24px;
       height: 24px;
+
       background-image: url("@img/icons/whatsapp-icon.svg");
       background-repeat: no-repeat;
       background-position: center;
+      transform: translateY(-50%);
     }
   }
   &[data-value="Telegram"] {
@@ -160,12 +181,14 @@
       position: absolute;
       top: 50%;
       left: 11px;
-      transform: translateY(-50%);
+
       width: 25px;
       height: 25px;
+
       background-image: url("@img/icons/telegram-icon.svg");
       background-repeat: no-repeat;
       background-position: center;
+      transform: translateY(-50%);
     }
   }
   &[data-value="Телефон"] {
@@ -174,46 +197,55 @@
       position: absolute;
       top: 50%;
       left: 11px;
-      transform: translateY(-50%);
+
       width: 20px;
       height: 20px;
+
       background-image: url("@img/icons/phone-icon.svg");
       background-repeat: no-repeat;
       background-position: center;
+      transform: translateY(-50%);
     }
   }
 }
 .form-choices__list {
   margin: 0;
   padding: 0;
+
   list-style-type: none;
 }
 .form-choices__list[aria-expanded],
 .form-choices__list--dropdown {
   position: absolute;
-  z-index: 1;
   top: 100%;
+  z-index: 1;
+
   width: 100%;
   margin-top: -1px;
   overflow: hidden;
+
   word-break: break-all;
-  visibility: hidden;
-  will-change: visibility;
-  border-width: 0px 1px 1px 1px;
-  border-style: solid;
+
   background-color: $white-color;
+  border-width: 0 1px 1px 1px;
+  border-style: solid;
   border-color: #bbbbbc;
+  visibility: hidden;
+
+  will-change: visibility;
 
   &.is-active {
     visibility: visible;
   }
 }
 .form-choices__list--dropdown {
-
   & .form-choices__item {
     padding-left: 47px;
+
     color: $blue-color;
+
     border-top: 1px solid #ebebeb;
+
     transition: background-color 0.3s ease;
 
     &:hover {
@@ -227,15 +259,14 @@
       position: absolute;
       top: 50%;
       right: 17px;
-      transform: translateY(-50%);
+
       width: 13px;
       height: 9px;
+
       background-image: url("@img/icons/select-check-icon.svg");
       background-repeat: no-repeat;
       background-position: center;
-
+      transform: translateY(-50%);
     }
   }
 }
-
-

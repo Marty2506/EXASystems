@@ -5,23 +5,27 @@
 
   &::before {
     content: "";
+
     margin-bottom: 15px;
-    background-position: center;
+
     background-repeat: no-repeat;
+    background-position: center;
   }
 }
 .feature__title {
-  font-family: "Jost", "Arial", sans-serif;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 115%;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 15px;
+  font-family: "Jost", "Arial", sans-serif;
 }
 .feature__desription {
   margin: 0;
   padding: 0;
+
   font-size: 16px;
   line-height: 19px;
   color: $grey-color;
@@ -30,14 +34,15 @@
   &::before {
     width: 60px;
     height: 60px;
+
     background-image: url("@img/feature-adv.svg");
   }
-
 }
 .feature--exp {
   &::before {
     width: 60px;
     height: 60px;
+
     background-image: url("@img/feature-exp.svg");
   }
 }
@@ -45,6 +50,7 @@
   &::before {
     width: 60px;
     height: 60px;
+
     background-image: url("@img/feature-gear.svg");
   }
 }
@@ -52,6 +58,7 @@
   &::before {
     width: 54px;
     height: 60px;
+
     background-image: url("@img/feature-result.svg");
   }
 }
@@ -59,6 +66,7 @@
   &::before {
     width: 72px;
     height: 72px;
+
     background-image: url("@img/feature-currency.svg");
     background-position: 0 0;
   }
@@ -67,6 +75,7 @@
   &::before {
     width: 72px;
     height: 72px;
+
     background-image: url("@img/feature-warranty.svg");
     background-position: 0 0;
   }
@@ -75,6 +84,7 @@
   &::before {
     width: 72px;
     height: 72px;
+
     background-image: url("@img/feature-service-center.svg");
     background-position: 0 0;
   }
@@ -83,6 +93,7 @@
   &::before {
     width: 80px;
     height: 72px;
+
     background-image: url("@img/feature-modern-equip.svg");
     background-position: 0 0;
   }

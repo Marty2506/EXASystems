@@ -1,18 +1,21 @@
 .our-advantages {
   padding-top: 40px;
   padding-bottom: 170px;
+
   background-image: url("@img/our-adv-bg-mobile.png");
   background-repeat: no-repeat;
   background-position: calc(50% + 50px) calc(100% + 14px);
 
   @media (min-width: $tablet-width) {
     padding-bottom: 140px;
+
     background-position: calc(50% + 250px) calc(100% + 14px);
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 80px;
     padding-bottom: 55px;
+
     background-image: url("@img/our-adv-bg.png");
     background-position: calc(50% + 440px) calc(100% + 19px);
   }
@@ -23,14 +26,14 @@
 }
 .our-advantages__title {
   margin: 0;
+  margin-bottom: 35px;
   padding: 0;
 
-  font-family: "Jost", "Arial", sans-serif;
   font-weight: 600;
   font-size: 24px;
   line-height: 120%;
-  margin-bottom: 35px;
-  color: #000;
+  font-family: "Jost", "Arial", sans-serif;
+  color: #000000;
 
   @media (min-width: $desktop-width) {
     font-size: 32px;
@@ -45,25 +48,29 @@
   }
 }
 .our-advantages__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  flex-shrink: 0;
   display: flex;
+  flex-shrink: 0;
   flex-direction: column;
-  gap: 44px;
+  margin: 0;
   margin-bottom: 80px;
+  padding: 0;
+
+  list-style-type: none;
+
+  gap: 44px;
 
   @media (min-width: $desktop-width) {
     max-width: 615px;
     margin-right: 135px;
     margin-bottom: 40px;
+
     gap: 48px;
   }
 }
 .our-advantages__item {
   display: flex;
   flex-direction: column;
+
   gap: 10px;
 
   @media (min-width: $tablet-width) {
@@ -73,11 +80,13 @@
 
   &::before {
     content: "";
+
     flex-shrink: 0;
     width: 79px;
     height: 76px;
-    background-position: left;
+
     background-repeat: no-repeat;
+    background-position: left;
   }
 
   &--no-agents::before {
@@ -99,16 +108,17 @@
 .our-advantages__item-wrapper {
   display: flex;
   flex-direction: column;
+
   gap: 2px;
 }
 .our-advantages__item-title {
   margin: 0;
   padding: 0;
 
-  font-family: "Jost", "Arial", sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 29px;
+  font-family: "Jost", "Arial", sans-serif;
 }
 .our-advantages__item-info {
   margin: 0;
@@ -120,12 +130,12 @@
   color: $grey-color;
 }
 .our-advantages__values {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
 
   @media (min-width: $tablet-width) {
     padding-right: 25px;
@@ -135,20 +145,21 @@
   position: relative;
 }
 .our-advantages__desc-list {
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
+
   gap: 12px;
 }
 .our-advantages__desc-term {
   margin: 0;
   padding: 0;
 
-  font-family: "Jost", "Arial", sans-serif;
   font-weight: 600;
   font-size: 42px;
   line-height: 114%;
+  font-family: "Jost", "Arial", sans-serif;
 
   @media (min-width: $desktop-width) {
     font-size: 52px;

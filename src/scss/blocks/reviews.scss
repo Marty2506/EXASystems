@@ -1,5 +1,4 @@
-.reviews {
-}
+
 .reviews__content {
   display: flex;
   flex-direction: column;
@@ -7,34 +6,36 @@
 .reviews__header {
   display: flex;
   flex-direction: column;
-  gap: 10px;
   margin-bottom: 20px;
 
+  gap: 10px;
+
   @media (min-width: $tablet-width) {
-    margin-bottom: 30px;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
   }
 }
-.reviews__all-link {
-}
+
 .reviews__title {
   margin: 0;
 }
 .reviews__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
   gap: 20px;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+
     gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .reviews__list--video {
@@ -44,8 +45,7 @@
     margin-bottom: 45px;
   }
 }
-.reviews__item {
-}
+
 .reviews__video-review {
   display: flex;
   flex-direction: column;
@@ -54,9 +54,8 @@
   position: relative;
 
   height: 0;
-  padding-bottom: 56.25%; /* 16:9 */
-
   margin-bottom: 5px;
+  padding-bottom: 56.25%; /* 16:9 */
 
   @media (min-width: $tablet-width) {
     margin-bottom: 12px;
@@ -74,6 +73,7 @@
 .reviews__video-about {
   display: flex;
   flex-direction: column;
+
   gap: 15px;
 
   @media (min-width: $tablet-width) {
@@ -85,9 +85,10 @@
 .reviews__video-person {
   display: flex;
   flex-direction: column;
-  gap: 6px;
 
   font-family: "Jost", "Arial", sans-serif;
+
+  gap: 6px;
 }
 .reviews__video-person-name {
   margin: 0;
@@ -127,27 +128,32 @@
 .reviews__letter {
   display: flex;
   flex-direction: column;
-  gap: 15px;
   max-width: 350px;
+
+  gap: 15px;
 
   @media (min-width: $tablet-width) {
     max-width: 400px;
-    background-color: $bg2-color;
     padding: 20px 20px;
     padding-bottom: 40px;
+
+    background-color: $bg2-color;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     max-width: none;
-    gap: 30px;
     padding: 44px 33px 95px 39px;
+
+    gap: 30px;
   }
 }
 .reviews__letter-link {
   display: block;
   flex-shrink: 0;
+
   text-decoration: none;
+
   filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.05));
 
   transition: opacity 0.3s ease;
@@ -175,11 +181,12 @@
 .reviews__letter-text-container {
   display: flex;
   flex-direction: column;
+
   gap: 20px;
 }
 .reviews__letter-company-logo {
-  align-self: flex-start;
   order: 1;
+  align-self: flex-start;
 
   @media (max-width: $max-tablet-width) {
     order: 2;

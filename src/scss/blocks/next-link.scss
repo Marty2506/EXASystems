@@ -1,7 +1,9 @@
 .next-link {
   display: flex;
   align-items: center;
+
   text-decoration: none;
+
   cursor: pointer;
 
   &:hover {
@@ -22,12 +24,15 @@
   line-height: 17px;
   color: $blue-color;
   text-decoration: underline;
+
   transition: color 0.3s ease;
 }
 .next-link__icon {
   margin-left: 15px;
-  fill: $blue-color;
+
   transition: fill 0.3s ease;
+
+  fill: $blue-color;
 }
 .next-link--hidden {
   @media (max-width: $max-mobile-width) {
@@ -36,8 +41,9 @@
 }
 .next-link--back {
   & .next-link__icon {
-    margin-left: 0;
     margin-right: 15px;
+    margin-left: 0;
+
     transform: rotate(180deg);
   }
 }

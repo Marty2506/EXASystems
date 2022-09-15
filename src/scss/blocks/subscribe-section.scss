@@ -1,9 +1,9 @@
 .subscribe-section {
   padding-top: 25px;
   padding-bottom: 35px;
-
   // background-color: $aqua-color;
-  background: linear-gradient(271.32deg, #2AA898 -12.13%, #39C0B4 79.47%);
+
+  background: linear-gradient(271.32deg, #2aa898 -12.13%, #39c0b4 79.47%);
 
   @media (min-width: $desktop-width) {
     padding-top: 50px;
@@ -12,6 +12,7 @@
 }
 .subscribe-section__content {
   position: relative;
+
   display: flex;
   flex-direction: column;
 
@@ -24,7 +25,7 @@
   flex-direction: column;
 }
 .subscribe-section__title {
-  color: #fff;
+  color: #ffffff;
 
   & span {
     @media (max-width: $max-mobile-width) {
@@ -40,6 +41,7 @@
     position: absolute;
     top: 0;
     left: 0;
+
     transform: translate(-60px, 60px);
   }
 }
@@ -47,12 +49,14 @@
   display: block;
 }
 .subscribe-section__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
   display: flex;
   flex-direction: column;
+  margin: 0;
   margin-left: 205px;
+  padding: 0;
+
+  list-style-type: none;
+
   gap: 30px;
 
 
@@ -62,15 +66,18 @@
 }
 .subscribe-section__item {
   position: relative;
+
   display: inline-flex;
-  padding: 8px 42px 8px 10px;
   width: fit-content;
+  padding: 8px 42px 8px 10px;
+
   font-weight: 600;
   font-size: 16px;
   line-height: 140%;
+  color: #ffffff;
   text-transform: uppercase;
-  color: #fff;
-  border: 1px solid #FFFFFF;
+
+  border: 1px solid #ffffff;
   cursor: default;
 
   &::after {
@@ -78,12 +85,14 @@
     position: absolute;
     top: 50%;
     right: 5px;
-    transform: translateY(-50%);
+
     width: 23px;
     height: 17px;
+
     background-image: url("@img/icons/subscribe-check-icon.svg");
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: center;
+    transform: translateY(-50%);
   }
 }
 .subscribe-section__form {
@@ -96,6 +105,7 @@
 .subscribe-section__form-submit-button {
   &:hover {
     color: $button-color;
+
     background-color: $white-color;
   }
 }

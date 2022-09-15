@@ -1,23 +1,24 @@
-.team {
-}
+
 .team__content {
   display: flex;
   flex-direction: column;
 }
-.team__title {
-}
+
 .team__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
 
   @media (min-width: $desktop-width) {
     display: grid;
+
+    column-gap: 38px;
+
     grid-template-columns: repeat(2, 1fr);
     row-gap: 75px;
-    column-gap: 38px;
   }
 }
 .team__item {
@@ -26,12 +27,13 @@
 }
 .team__photo {
   margin: 0;
-  padding: 0;
   margin-bottom: 25px;
+  padding: 0;
 }
 .team__image {
   display: block;
   height: 100%;
+
   object-fit: contain;
 }
 .team__info {
@@ -41,31 +43,33 @@
 }
 .team__name {
   margin: 0;
-  padding: 0;
   margin-bottom: 15px;
+  padding: 0;
 
-  font-family: "Jost", "Arial", sans-serif;
   font-weight: 500;
   font-size: 24px;
   line-height: 110%;
+  font-family: "Jost", "Arial", sans-serif;
 }
 .team__job-title {
   margin: 0;
-  padding: 0;
   margin-bottom: 15px;
+  padding: 0;
 
   font-size: 16px;
   line-height: 19px;
   color: $grey-color;
 }
 .team__about-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  margin: 0;
   margin-bottom: 15px;
+  padding: 0;
+
+  list-style-type: none;
+
+  gap: 15px;
 
   @media (max-width: $max-mobile-width) {
     margin-bottom: 30px;
@@ -73,35 +77,41 @@
 }
 .team__about-item {
   position: relative;
+
   padding-left: 34px;
+
   font-size: 18px;
   line-height: 21px;
   color: #6e6c6c;
 
   &::before {
-    position: absolute;
-    left: 9px;
-    top: 2px;
     content: "";
+    position: absolute;
+    top: 2px;
+    left: 9px;
+
     width: 9px;
     height: 14px;
 
     background-image: url("@img/icons/team-list-icon.svg");
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
 .team__insurance {
   position: relative;
+
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding-left: 73px;
   margin-bottom: 15px;
+  padding-left: 73px;
+
+  gap: 20px;
 
   @media (max-width: $max-mobile-width) {
     padding-top: 30px;
+
     border-top: 1px solid #ebebeb;
   }
 
@@ -112,17 +122,18 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 88px;
     margin-bottom: 50px;
+    padding-left: 88px;
 
     border-bottom: 1px solid #ebebeb;
   }
 
   &::before {
-    position: absolute;
     content: "";
+    position: absolute;
     top: 0;
     left: 0;
+
     width: 58px;
     height: 59px;
 
@@ -138,6 +149,7 @@
 .team__insurance-text {
   margin: 0;
   padding: 0;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 115%;
@@ -150,11 +162,10 @@
   margin: 0;
   padding: 0;
 
-  font-family: "Jost", "Arial", sans-serif;
   font-weight: 600;
   font-size: 33px;
   line-height: 115%;
-
+  font-family: "Jost", "Arial", sans-serif;
   color: $blue-color;
 
   @media (min-width: $tablet-width) {
@@ -162,7 +173,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 48px;
     margin-bottom: 20px;
+
+    font-size: 48px;
   }
 }

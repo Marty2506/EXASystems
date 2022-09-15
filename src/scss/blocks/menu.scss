@@ -1,14 +1,17 @@
 .menu {
   display: none;
   flex-direction: column;
-  color: #fff;
-  background: linear-gradient(180deg, #453FA9 0%, #675FC6 100%);
   overflow: hidden;
+
+  color: #ffffff;
+
+  background: linear-gradient(180deg, #453fa9 0%, #675fc6 100%);
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
     background: none;
   }
 }
@@ -20,13 +23,14 @@
 .menu--opened {
   @media (max-width: $desktop-width) {
     position: absolute;
-    z-index: 95;
-    left: 0;
     top: 0;
-    padding-top: 85px;
-    padding-left: 18px;
+    left: 0;
+    z-index: 95;
+
     display: flex;
     width: 100%;
+    padding-top: 85px;
+    padding-left: 18px;
   }
 }
 .menu__main {
@@ -44,14 +48,14 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
-    gap: 12px;
+    align-items: center;
     margin-left: 32px;
+
+    gap: 12px;
   }
 }
 .menu__item {
-
   @media (max-width: $max-tablet-width) {
     position: relative;
 
@@ -97,10 +101,10 @@
     display: flex;
     padding: 13px 0;
 
-    font-family: "Jost", "Arial", sans-serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 26px;
+    font-family: "Jost", "Arial", sans-serif;
     color: inherit;
     text-decoration: none;
 
@@ -121,11 +125,13 @@
   }
   @media (min-width: $desktop-width) {
     padding: 3px;
+
     font-weight: 600;
     font-size: 13px;
     line-height: 16px;
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
+
     transition: color 0.3s ease;
 
     &:hover {
@@ -190,29 +196,32 @@
   }
 }
 .menu__link--configurator {
-
   @media (min-width: $desktop-width) {
     display: inline-flex;
+    align-items: center;
     height: 32px;
     padding: 0 15px;
-    align-items: center;
+
     font-weight: 700;
     font-size: 13px;
     line-height: 16px;
     text-transform: uppercase;
+
     background-color: $blue-color;
+
     transition: background-color 0.3s ease;
 
-    &:hover{
+    &:hover {
+      color: #ffffff;
+
       background-color: $button-color;
-      color: #fff;
     }
   }
-
 }
 .menu__contacts {
   display: flex;
   flex-direction: column;
+
   font-family: "Jost", "Arial", sans-serif;
 
   @media (min-width: $desktop-width) {
@@ -230,18 +239,21 @@
 .menu__mail {
   display: block;
   margin-bottom: 28px;
+
   font-size: 20px;
   line-height: 24px;
   color: inherit;
   text-decoration: none;
 }
 .menu__back-call-button {
-  margin-left: -18px;
   max-width: calc(100% + 18px);
   height: 65px;
+  margin-left: -18px;
+
   font-weight: 500;
   font-size: 19px;
   line-height: 23px;
   text-decoration: none;
+
   clip-path: none;
 }

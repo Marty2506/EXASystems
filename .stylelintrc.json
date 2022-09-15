@@ -15,15 +15,13 @@
       "always",
       {
         "except": ["after-same-name", "first-nested"],
-        "ignore": ["after-comment"]
+        "ignore": ["after-comment", "blockless-after-same-name-blockless", "blockless-after-blockless"]
       }
     ],
     "selector-class-pattern": "^[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$|^Mui.*$",
     "color-hex-case": "lower",
     "color-hex-length": "short",
     "color-no-invalid-hex": true,
-    "font-family-name-quotes": "always-where-recommended",
-    "number-leading-zero": "never",
     "number-max-precision": 3,
     "number-no-trailing-zeros": true,
     "length-zero-no-unit": true,
@@ -62,7 +60,11 @@
     "scss/at-import-partial-extension": null,
     "scss/double-slash-comment-empty-line-before": null,
     "scss/comment-no-empty": null,
-    "rule-empty-line-before": null,
-    "declaration-empty-line-before": null
+    "declaration-empty-line-before": null,
+    "number-leading-zero": "always",
+    "font-family-name-quotes":"always-unless-keyword",
+    "declaration-block-no-redundant-longhand-properties": null,
+    "keyframes-name-pattern": null
+
   }
 }

@@ -1,16 +1,16 @@
 .completed-projects {
-  padding: 15px 0;
-  background-color: $bg2-color;
   margin-bottom: 30px;
+  padding: 15px 0;
+
+  background-color: $bg2-color;
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 75px;
     padding: 45px 0;
     padding-bottom: 110px;
-    margin-bottom: 75px;
   }
 }
-.completed-projects__content {
-}
+
 .completed-projects__title {
   margin-bottom: 17px;
 
@@ -19,18 +19,19 @@
   }
 }
 .completed-projects__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
   gap: 20px;
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+
     gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
   }
-}
-.completed-projects__item {
 }

@@ -9,20 +9,18 @@
     margin-bottom: 45px;
     padding-top: 35px;
     padding-bottom: 120px;
+
     background-color: transparent;
     background-image: url("@img/about-bg.png");
-    background-position: bottom;
     background-repeat: no-repeat;
+    background-position: bottom;
     background-size: cover;
   }
-}
-.about__content {
-}
-.about__title {
 }
 .about__text {
   margin: 0;
   padding: 0;
+
   font-size: 16px;
   line-height: 19px;
   color: $grey-color;
@@ -38,24 +36,28 @@
 .about__features {
   display: flex;
   flex-direction: column;
-  gap: 10px;
   margin: 0;
-  padding: 0;
-  list-style-type: none;
   margin-bottom: 30px;
+  padding: 0;
+
+  list-style-type: none;
+
+  gap: 10px;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+
     column-gap: 30px;
+
+    grid-template-columns: repeat(2, auto);
     row-gap: 0;
   }
-
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 215px 260px 260px auto;
-    gap: 25px;
     margin-bottom: 30px;
+
+    gap: 25px;
+    grid-template-columns: 215px 260px 260px auto;
   }
 }
 .about__video-container {
