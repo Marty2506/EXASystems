@@ -15,18 +15,22 @@
     & .blue-link__icon {
       fill: $button-color;
     }
+
     & .blue-link__text {
       color: $button-color;
     }
   }
+
   &:focus-visible {
     border-radius: 2px;
     outline: 2px solid $blue-color;
   }
+
   &:active {
     opacity: 0.7;
   }
 }
+
 .blue-link__icon {
   flex-shrink: 0;
 
@@ -34,6 +38,7 @@
 
   fill: $blue-color;
 }
+
 .blue-link__text {
   flex-shrink: 0;
 
@@ -43,10 +48,12 @@
 
   transition: color 0.3s ease;
 }
+
 .blue-link--no-svg {
   text-decoration: underline;
 
   transition: color 0.3s ease;
+
   &:hover {
     color: $button-color;
   }

@@ -7,11 +7,9 @@
   @media (max-width: $max-tablet-width) {
     background-color: $bg2-color;
   }
-
   @media (min-width: $desktop-width) {
     padding-top: 33px;
   }
-
   @media (min-width: $desktop-width) {
     &::after {
       content: "";
@@ -29,6 +27,7 @@
     }
   }
 }
+
 .catalog__content {
   display: flex;
   flex-direction: column;
@@ -59,6 +58,7 @@
     background-color: #ebebeb;
   }
 }
+
 .catalog__filters-group {
   display: flex;
   flex-direction: column;
@@ -99,6 +99,7 @@
     margin-right: 10px;
   }
 }
+
 .catalog__filters-list {
   display: flex;
   flex-wrap: wrap;

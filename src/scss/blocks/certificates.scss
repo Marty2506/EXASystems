@@ -8,13 +8,16 @@
     background-size: cover;
   }
 }
+
 .certificates__content {
   display: flex;
   flex-direction: column;
 }
+
 .certificates__title {
   margin-bottom: 27px;
 }
+
 .certificates__list {
   display: flex;
   flex-direction: column;
@@ -31,17 +34,18 @@
     gap: 20px;
     grid-template-columns: repeat(2, 1fr);
   }
-
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 .certificates__item {
   @media (max-width: $max-mobile-width) {
     align-self: center;
     max-width: 370px;
   }
 }
+
 .certificates__link {
   display: flex;
   flex-direction: column;
@@ -61,10 +65,12 @@
       color: $button-color;
     }
   }
+
   &:active {
     opacity: 0.7;
   }
 }
+
 .certificates__item-title {
   margin: 0;
   margin-bottom: 10px;
@@ -78,6 +84,7 @@
 
   transition: color 0.3s ease;
 }
+
 .certificates__item-description {
   margin: 0;
   margin-bottom: 20px;
@@ -88,12 +95,14 @@
   line-height: 130%;
   color: $black-color;
 }
+
 .certificates__item-title,
 .certificates__item-description {
   @media (min-width: $tablet-width) {
     padding: 0 20px;
   }
 }
+
 .certificates__image {
-  filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.08));
+  filter: drop-shadow(0 0 15px rgb(0 0 0 / 8%));
 }

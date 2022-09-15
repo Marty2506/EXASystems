@@ -1,8 +1,8 @@
-
 .reviews__content {
   display: flex;
   flex-direction: column;
 }
+
 .reviews__header {
   display: flex;
   flex-direction: column;
@@ -21,6 +21,7 @@
 .reviews__title {
   margin: 0;
 }
+
 .reviews__list {
   display: flex;
   flex-direction: column;
@@ -38,6 +39,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 .reviews__list--video {
   margin-bottom: 30px;
 
@@ -50,6 +52,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .reviews__video-container {
   position: relative;
 
@@ -61,6 +64,7 @@
     margin-bottom: 12px;
   }
 }
+
 .reviews__video {
   position: absolute;
   top: 0;
@@ -70,6 +74,7 @@
   width: 100%;
   height: 100%;
 }
+
 .reviews__video-about {
   display: flex;
   flex-direction: column;
@@ -82,6 +87,7 @@
     align-items: flex-start;
   }
 }
+
 .reviews__video-person {
   display: flex;
   flex-direction: column;
@@ -90,6 +96,7 @@
 
   gap: 6px;
 }
+
 .reviews__video-person-name {
   margin: 0;
   padding: 0;
@@ -102,6 +109,7 @@
     font-size: 25px;
   }
 }
+
 .reviews__video-person-job {
   margin: 0;
   padding: 0;
@@ -115,6 +123,7 @@
     font-size: 18px;
   }
 }
+
 .reviews__video-company-logo {
   align-self: flex-start;
 }
@@ -125,6 +134,7 @@
     align-items: center;
   }
 }
+
 .reviews__letter {
   display: flex;
   flex-direction: column;
@@ -134,12 +144,11 @@
 
   @media (min-width: $tablet-width) {
     max-width: 400px;
-    padding: 20px 20px;
+    padding: 20px;
     padding-bottom: 40px;
 
     background-color: $bg2-color;
   }
-
   @media (min-width: $desktop-width) {
     flex-direction: row;
     max-width: none;
@@ -148,19 +157,21 @@
     gap: 30px;
   }
 }
+
 .reviews__letter-link {
   display: block;
   flex-shrink: 0;
 
   text-decoration: none;
 
-  filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.05));
+  filter: drop-shadow(2px 2px 10px rgb(0 0 0 / 5%));
 
   transition: opacity 0.3s ease;
 
   &:hover {
     opacity: 0.8;
   }
+
   &:active {
     opacity: 0.6;
   }
@@ -168,22 +179,24 @@
   @media (max-width: $max-mobile-width) {
     width: 100%;
   }
-
   @media (min-width: $tablet-width) {
     max-width: 200px;
   }
 }
+
 .reviews__letter-image {
   @media (max-width: $max-mobile-width) {
     width: 100%;
   }
 }
+
 .reviews__letter-text-container {
   display: flex;
   flex-direction: column;
 
   gap: 20px;
 }
+
 .reviews__letter-company-logo {
   order: 1;
   align-self: flex-start;
@@ -192,6 +205,7 @@
     order: 2;
   }
 }
+
 .reviews__letter-text {
   order: 2;
   margin: 0;

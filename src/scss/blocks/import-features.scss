@@ -7,6 +7,7 @@
     padding-bottom: 60px;
   }
 }
+
 .import-features__list {
   display: flex;
   flex-direction: column;
@@ -25,7 +26,6 @@
     grid-template-columns: repeat(2, auto);
     row-gap: 0;
   }
-
   @media (min-width: $desktop-width) {
     display: grid;
 

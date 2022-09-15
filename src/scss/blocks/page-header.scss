@@ -2,6 +2,7 @@
   padding: 16px 0;
 
   background: linear-gradient(180deg, #453fa9 0%, #675fc6 100%);
+
   @media (min-width: $desktop-width) {
     padding: 42px 0;
   }
@@ -10,6 +11,7 @@
 .page-header__row {
   display: flex;
 }
+
 .page-header__logo {
   display: flex;
   flex-grow: 0;
@@ -25,6 +27,7 @@
     display: block;
   }
 }
+
 .page-header__logo-image2 {
   @media (min-width: $desktop-width) {
     align-self: flex-end;
@@ -32,17 +35,20 @@
     height: 7px;
   }
 }
+
 .page-header__contacts {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
+
 .page-header__buttons {
   display: flex;
   margin-left: auto;
 
   gap: 7px;
 }
+
 .page-header__phone-button {
   display: flex;
   align-items: center;
@@ -62,7 +68,7 @@
     font-size: 20px;
     line-height: 29px;
     font-family: "Jost", "Arial", sans-serif;
-    color: #ffffff;
+    color: #fff;
 
     transition: color 0.3s ease;
 
@@ -75,14 +81,17 @@
     & span {
       color: $button-color;
     }
+
     & .page-header__phone-icon-wrapper {
-      background-color: #ffffff;
+      background-color: #fff;
     }
+
     & .page-header__phone-icon {
       fill: $aqua-color;
     }
   }
 }
+
 .page-header__phone-icon-wrapper {
   display: flex;
   justify-content: center;
@@ -90,7 +99,7 @@
   width: 44px;
   height: 44px;
 
-  background-color: #ffffff;
+  background-color: #fff;
 
   transition: background-color 0.3s ease;
 
@@ -102,10 +111,11 @@
     border-radius: 1px;
   }
 }
+
 .page-header__phone-icon {
   transition: fill 0.3s ease;
 
-  fill: #ffffff;
+  fill: #fff;
 
   @media (max-width: $max-tablet-width) {
     width: 27px;
@@ -122,6 +132,7 @@
   text-decoration: none;
 
   gap: 10px;
+
   @media (max-width: $max-tablet-width) {
     display: none;
   }
@@ -129,7 +140,7 @@
   & span {
     font-size: 13px;
     line-height: 16px;
-    color: #ffffff;
+    color: #fff;
 
     transition: color 0.3s ease;
 
@@ -146,6 +157,7 @@
     & span {
       color: $button-color;
     }
+
     & .page-header__mail-icon {
       fill: $button-color;
     }

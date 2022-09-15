@@ -23,8 +23,8 @@
 
     height: 2px;
 
-    background-color: #ffffff;
-    box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+    background-color: #fff;
+    box-shadow: 0 8px 0 0 #fff, 0 16px 0 0 #fff;
   }
 
   &:active {
@@ -35,6 +35,7 @@
     display: none;
   }
 }
+
 .burger--opened {
   background-color: transparent;
 
@@ -48,7 +49,7 @@
 
     height: 2px;
 
-    background-color: #ffffff;
+    background-color: #fff;
     box-shadow: none;
 
     transition: transform 0.5s ease;
@@ -62,6 +63,7 @@
     transform: translateY(-50%) rotate(-45deg);
   }
 }
+
 .burger--no-js {
   display: none;
 }

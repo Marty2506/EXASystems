@@ -23,11 +23,13 @@
     justify-content: space-between;
   }
 }
+
 .vendor__text-content {
   @media (min-width: $desktop-width) {
     max-width: 685px;
   }
 }
+
 .vendor__title {
   margin-bottom: 15px;
 
@@ -35,6 +37,7 @@
     margin-bottom: 20px;
   }
 }
+
 .vendor__paragraph {
   margin: 0;
   margin-bottom: 20px;
@@ -43,16 +46,20 @@
   font-size: 14px;
   line-height: 130%;
 }
+
 .vendor__logo-wrapper {
   flex-shrink: 0;
+
   @media (max-width: $max-tablet-width) {
     position: absolute;
     top: 0;
     right: 0;
   }
 }
+
 .vendor__logo {
   object-fit: contain;
+
   @media (max-width: $max-mobile-width) {
     max-height: 37px;
   }
@@ -60,6 +67,7 @@
     max-width: 400px;
   }
 }
+
 .vendor__contacts {
   margin-bottom: 10px;
 
@@ -67,6 +75,7 @@
     margin-bottom: 40px;
   }
 }
+
 .vendor__contacts-title {
   margin: 0;
   margin-bottom: 15px;
@@ -82,6 +91,7 @@
     line-height: 23px;
   }
 }
+
 .vendor__offices-list {
   display: flex;
   flex-direction: column;
@@ -100,11 +110,11 @@
     grid-template-columns: repeat(2, 1fr);
     row-gap: 0;
   }
-
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 .vendor__offices-item {
   position: relative;
 
@@ -127,6 +137,7 @@
 
   @media (max-width: $max-mobile-width) {
     padding-left: 33px;
+
     &::before {
       left: 7px;
     }
@@ -135,6 +146,7 @@
     background: $white-color;
   }
 }
+
 .vendor__office-text {
   margin: 0;
   padding: 0;
@@ -142,10 +154,12 @@
   font-size: 14px;
   line-height: 130%;
 }
+
 .vendor__office-link {
   display: inline;
   padding: 0;
 }
+
 .vendor__cards {
   display: flex;
   flex-direction: column;

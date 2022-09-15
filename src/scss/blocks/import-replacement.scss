@@ -7,7 +7,6 @@
   @media (max-width: $max-tablet-width) {
     background-color: $bg2-color;
   }
-
   @media (min-width: $desktop-width) {
     min-height: 800px;
     padding-top: 34px;
@@ -29,13 +28,16 @@
     }
   }
 }
+
 .import-replacement__content {
   display: flex;
   flex-direction: column;
 }
+
 .import-replacement__title {
   margin-bottom: 32px;
 }
+
 .import-replacement__subtitle {
   margin: 0;
   margin-bottom: 45px;
@@ -50,6 +52,7 @@
     display: none;
   }
 }
+
 .import-replacement__list {
   display: flex;
   flex-direction: column;
@@ -69,7 +72,6 @@
     grid-template-columns: repeat(2, 1fr);
     row-gap: 20px;
   }
-
   @media (min-width: $desktop-width) {
     column-gap: 28px;
   }

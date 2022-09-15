@@ -12,6 +12,7 @@
     background-position: center;
   }
 }
+
 .feature__title {
   margin: 0;
   margin-bottom: 15px;
@@ -22,6 +23,7 @@
   line-height: 115%;
   font-family: "Jost", "Arial", sans-serif;
 }
+
 .feature__desription {
   margin: 0;
   padding: 0;
@@ -30,6 +32,7 @@
   line-height: 19px;
   color: $grey-color;
 }
+
 .feature--adv {
   &::before {
     width: 60px;
@@ -38,6 +41,7 @@
     background-image: url("@img/feature-adv.svg");
   }
 }
+
 .feature--exp {
   &::before {
     width: 60px;
@@ -46,6 +50,7 @@
     background-image: url("@img/feature-exp.svg");
   }
 }
+
 .feature--no-bur {
   &::before {
     width: 60px;
@@ -54,6 +59,7 @@
     background-image: url("@img/feature-gear.svg");
   }
 }
+
 .feature--result {
   &::before {
     width: 54px;
@@ -62,6 +68,7 @@
     background-image: url("@img/feature-result.svg");
   }
 }
+
 .feature--currency {
   &::before {
     width: 72px;
@@ -71,6 +78,7 @@
     background-position: 0 0;
   }
 }
+
 .feature--warranty {
   &::before {
     width: 72px;
@@ -80,6 +88,7 @@
     background-position: 0 0;
   }
 }
+
 .feature--service-center {
   &::before {
     width: 72px;
@@ -89,6 +98,7 @@
     background-position: 0 0;
   }
 }
+
 .feature--modern-equip {
   &::before {
     width: 80px;

@@ -25,13 +25,13 @@
 
     grid-template-columns: repeat(2, 1fr);
   }
-
   @media (min-width: $desktop-width) {
     display: grid;
 
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 .popular-articles__item {
   @media (max-width: $max-mobile-width) {
     display: flex;

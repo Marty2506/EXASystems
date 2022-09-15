@@ -22,29 +22,29 @@ picture {
     opacity: 1;
   }
 }
-
 @keyframes spinAfter {
   from {
     transform: translateY(-50%) rotate(-45deg);
   }
+
   to {
     transform: translateY(-50%) rotate(315deg);
   }
 }
-
 @keyframes spinBefore {
   from {
     transform: translateY(-50%) rotate(45deg);
   }
+
   to {
     transform: translateY(-50%) rotate(405deg);
   }
 }
-
 @keyframes zoom {
   from {
     transform: scale(0);
   }
+
   to {
     transform: scale(1);
   }

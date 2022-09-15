@@ -9,17 +9,21 @@
     padding-bottom: 20px;
   }
 }
+
 .page-footer__content {
   position: relative;
 }
+
 .page-footer__nav {
   @media (max-width: $max-tablet-width) {
     margin-bottom: 20px;
   }
 }
+
 .page-footer__logo-address {
   display: flex;
   flex-direction: column;
+
   @media (min-width: $desktop-width) {
     position: absolute;
     right: 0;
@@ -28,12 +32,15 @@
     align-items: flex-end;
   }
 }
+
 .page-footer__logo {
   margin-bottom: 18px;
+
   @media (max-width: $max-tablet-width) {
     margin-bottom: 10px;
   }
 }
+
 .page-footer__address {
   margin: 0;
   padding: 0;

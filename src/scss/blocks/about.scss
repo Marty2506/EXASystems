@@ -17,6 +17,7 @@
     background-size: cover;
   }
 }
+
 .about__text {
   margin: 0;
   padding: 0;
@@ -25,6 +26,7 @@
   line-height: 19px;
   color: $grey-color;
 }
+
 .about__description {
   margin-bottom: 17px;
 
@@ -60,12 +62,14 @@
     grid-template-columns: 215px 260px 260px auto;
   }
 }
+
 .about__video-container {
   position: relative;
 
   height: 0;
   padding-bottom: 56.25%; /* 16:9 */
 }
+
 .about__video {
   position: absolute;
   top: 0;

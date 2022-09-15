@@ -3,6 +3,7 @@
 
   color: $grey-color;
 }
+
 .breadcumbs__list {
   display: flex;
   flex-wrap: wrap;
@@ -11,11 +12,14 @@
 
   list-style-type: none;
 }
+
 .breadcumbs__item {
   position: relative;
+
   &:not(:last-child) {
     margin-right: 12px;
     padding-right: 17px;
+
     &::after {
       content: "";
       position: absolute;
@@ -32,6 +36,7 @@
     }
   }
 }
+
 .breadcumbs__link {
   display: inline-flex;
   padding: 2px;
@@ -43,12 +48,15 @@
 
   cursor: pointer;
 }
+
 a.breadcumbs__link {
   transition: color 0.3s ease;
+
   &:hover {
     color: $button-color;
   }
 }
+
 .breadcumbs__link--current {
   cursor: default;
 }

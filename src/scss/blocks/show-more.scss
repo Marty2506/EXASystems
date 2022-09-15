@@ -24,9 +24,11 @@
 
     transition: background-color 0.3s ease;
   }
+
   &::before {
     left: 0;
   }
+
   &::after {
     right: 0;
   }
@@ -35,20 +37,25 @@
     &::before {
       background-color: $button-color;
     }
+
     &::after {
       background-color: $button-color;
     }
+
     & .show-more__icon {
       fill: $button-color;
     }
+
     & .show-more__text {
       color: $button-color;
     }
   }
+
   &:active {
     opacity: 0.7;
   }
 }
+
 .show-more__icon {
   flex-shrink: 0;
   margin-left: 20px;
@@ -59,6 +66,7 @@
 
   fill: $blue-color;
 }
+
 .show-more__text {
   flex-shrink: 0;
   margin: 0;
@@ -74,6 +82,7 @@
 
   transition: color 0.3s ease;
 }
+
 .show-more--hiden {
   display: none;
 }

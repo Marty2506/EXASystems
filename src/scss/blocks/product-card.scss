@@ -11,21 +11,25 @@
       color: $blue-color;
       text-decoration: underline;
     }
+
     & .product-card__button {
       visibility: visible;
       opacity: 1;
     }
   }
+
   &:focus-within {
     & .product-card__button {
       visibility: visible;
       opacity: 1;
     }
   }
+
   &:active {
     opacity: 0.7;
   }
 }
+
 .product-card__background-link {
   position: absolute;
   top: 0;
@@ -51,6 +55,7 @@
 
   transition: color 0.3s ease;
 }
+
 .product-card__subtitle {
   margin: 0;
   margin-bottom: 10px;
@@ -60,6 +65,7 @@
   line-height: 19px;
   color: $grey-color;
 }
+
 .product-card__image-wrapper {
   position: relative;
 
@@ -69,12 +75,14 @@
   margin-right: -20px;
   margin-left: -20px;
 }
+
 .product-card__image {
   width: auto;
   height: 238px;
 
   object-fit: contain;
 }
+
 .product-card__vendor {
   position: absolute;
   top: 0;
@@ -82,6 +90,7 @@
 
   pointer-events: none;
 }
+
 .product-card__price-row {
   display: flex;
   justify-content: space-between;
@@ -89,10 +98,12 @@
 
   gap: 5px;
 }
+
 .product-card__prices-wrapper {
   display: flex;
   flex-direction: column;
 }
+
 .product-card__price {
   margin: 0;
   padding: 0;
@@ -102,6 +113,7 @@
   line-height: 23px;
   font-family: "Jost", "Arial", sans-serif;
 }
+
 .product-card__credit {
   margin: 0;
   padding: 0;
@@ -135,12 +147,14 @@
     opacity: 0;
   }
 }
+
 .product-card__toolbar {
   display: flex;
   flex-wrap: wrap;
 
   gap: 30px;
 }
+
 .product-card__toolbar-button {
   z-index: 1;
 
@@ -160,23 +174,28 @@
     & .product-card__toolbar-button-text {
       color: $button-color;
     }
+
     & .product-card__toolbar-button-icon {
       fill: $button-color;
     }
   }
+
   &:focus-visible {
     border-radius: 2px;
     outline: 1px solid $blue-color;
   }
+
   &:active {
     opacity: 0.7;
   }
 }
+
 .product-card__toolbar-button--compare {
   position: relative;
 
   padding-left: 44px;
 }
+
 .product-card__toolbar-button-icon {
   position: absolute;
   top: 50%;
@@ -188,6 +207,7 @@
 
   fill: $blue-color;
 }
+
 .product-card__toolbar-button-text {
   margin: 0;
   padding: 0;
