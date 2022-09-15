@@ -153,6 +153,7 @@
 .modal--order {
   & .modal__wrapper {
     flex-direction: column;
+    overflow: visible;
 
     @media (min-width: $tablet-width) {
       max-width: 640px;

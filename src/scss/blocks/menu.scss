@@ -85,6 +85,11 @@
     display: none;
   }
 }
+.menu__item--configurator {
+  @media (min-width: $desktop-width) {
+    margin-left: 25px;
+  }
+}
 .menu__link {
   @media (max-width: $max-tablet-width) {
     position: relative;

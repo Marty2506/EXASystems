@@ -84,7 +84,7 @@ const showMoreProductCardsButton = document.querySelector(".catalog__show-more")
 if (showMoreProductCardsButton) {
   showMoreProductCardsButton.addEventListener("click", (evt) => {
     showMoreProductCardsButton.disabled = true;
-    genTestProductCards(3);
+    genTestProductCards(9);
     const filteredCards = filterProductCards(productCards);
     renderProductCards(filteredCards);
     showMoreProductCardsButton.disabled = false;
