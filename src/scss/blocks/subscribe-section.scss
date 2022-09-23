@@ -28,7 +28,7 @@
 }
 
 .subscribe-section__title {
-  color: #fff;
+  color: #ffffff;
 
   & span {
     @media (max-width: $max-mobile-width) {
@@ -81,10 +81,10 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 140%;
-  color: #fff;
+  color: #ffffff;
   text-transform: uppercase;
 
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   cursor: default;
 
   &::after {

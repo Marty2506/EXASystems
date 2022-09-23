@@ -3,7 +3,7 @@
   flex-direction: column;
   overflow: hidden;
 
-  color: #fff;
+  color: #ffffff;
 
   background: linear-gradient(180deg, #453fa9 0%, #675fc6 100%);
 
@@ -137,7 +137,7 @@
     font-weight: 600;
     font-size: 13px;
     line-height: 16px;
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
 
     transition: color 0.3s ease;
@@ -225,7 +225,7 @@
     transition: background-color 0.3s ease;
 
     &:hover {
-      color: #fff;
+      color: #ffffff;
 
       background-color: $button-color;
     }
