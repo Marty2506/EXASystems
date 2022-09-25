@@ -1,0 +1,31 @@
+.services {
+  padding: 25px 0;
+  background: linear-gradient(271.32deg, #2AA898 -12.13%, #39C0B4 79.47%);
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 0;
+  }
+}
+.services__content {
+}
+.services__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.services__item {
+}

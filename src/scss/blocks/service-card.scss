@@ -1,0 +1,107 @@
+.service-card {
+  height: 370px;
+  padding: 30px 35px 43px 35px;
+  background-color: $bg2-color;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  cursor: default;
+
+  @media (max-width: $max-mobile-width) {
+    background-position: calc(100% + 30px) 100%;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 105px 30px 30px;
+  }
+
+  &:hover {
+    & .service__card-button {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+.service-card__content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.service-card__title {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+  font-family: "Jost", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 110%;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
+}
+.service-card__title-link {
+  display: inline-flex;
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $blue-color;
+  }
+  &:focus-visible {
+    outline: 2px solid $blue-color;
+    border-radius: 2px;
+  }
+  &:active {
+    opacity: 0.7;
+  }
+}
+.service-card__description {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 19px;
+  color: $grey-color;
+}
+.service__card-button {
+  padding: 0 20px;
+  margin-top: auto;
+  align-self: flex-start;
+
+  &:hover {
+    background-color: $blue-color;
+    color: $white-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 27px;
+    transition: all 0.3s ease;
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.service-card--support {
+  background-image: url("@img/service-cards/support.png");
+  background-position: calc(100% + 20px) calc(100% + 45px);
+
+  @media (min-width: $tablet-width) {
+    background-position: calc(100% - 10px) calc(100% + 45px);
+  }
+}
+.service-card--servers {
+  background-image: url("@img/service-cards/servers.png");
+}
+.service-card--tele-systems {
+  background-image: url("@img/service-cards/tele-systems.png");
+}
+.service-card--it-consulting {
+  background-image: url("@img/service-cards/it-consulting.png");
+}
+.service-card--eng-systems {
+  background-image: url("@img/service-cards/eng-systems.png");
+}
+.service-card--safe-region {
+  background-image: url("@img/service-cards/safe-region.png");
+}
