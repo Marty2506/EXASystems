@@ -61,7 +61,7 @@
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 
     font-size: 28px;
     line-height: 34px;
@@ -95,11 +95,13 @@
 
 .equipment-card__vendor-link {
   display: inline-flex;
+  gap: 5px;
+  align-items: center;
   padding: 2px;
   padding-left: 0;
 
   font-weight: 300;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 120%;
   font-family: inherit;
   color: $white-color;
@@ -117,6 +119,15 @@
   &:active {
     opacity: 0.7;
   }
+}
+.equipment-card__vendor-link--highlighted {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: -5px;
+}
+.equipment-card__vendor-link-img {
+  max-height: 25px;
+  max-width: 200px;
 }
 
 .equipment-card__button {
@@ -195,6 +206,31 @@
     }
     @media (min-width: $desktop-width) {
       left: 45%;
+    }
+  }
+
+  &--soft {
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: 0;
+
+    @media (max-width: $max-tablet-width) {
+      right: -155px;
+    }
+  }
+
+  &--data-save-systems,
+  &--data-protect-systems,
+  &--server-closets {
+    top: auto;
+    left: auto;
+    right: 0;
+    bottom: 0;
+
+    @media (max-width: $max-tablet-width) {
+      right: -20px;
+      bottom: -30px;
     }
   }
 }
