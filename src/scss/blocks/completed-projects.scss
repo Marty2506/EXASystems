@@ -19,6 +19,20 @@
   }
 }
 
+.completed-projects__list-wrapper {
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 30px;
+    margin-left: -30px;
+    margin-right: -30px;
+    background-color: $bg2-color;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 40px 50px;
+    margin-left: -50px;
+    margin-right: -50px;
+  }
+}
 .completed-projects__list {
   display: flex;
   flex-direction: column;
@@ -34,6 +48,7 @@
 
     gap: 20px;
     grid-template-columns: repeat(2, 1fr);
+
   }
 }
 
@@ -43,7 +58,7 @@
   background: linear-gradient(180deg, #453fa9 0%, #675fc6 100%);
 
   @media (min-width: $desktop-width) {
-  padding: 60px 0 70px 0;
+    padding: 60px 0 70px 0;
   }
 
   & .completed-projects__title {

@@ -16,30 +16,33 @@
   {% include "./blocks/equipment.j2" %}
   {% include "./blocks/our-advantages.j2" %}
   <section class="completed-projects section completed-projects--index">
-  <div class="container">
+  <div class="container completed-projects__container">
     <div class="completed-projects__content">
       <h2 class="completed-projects__title title">Реализованные проекты</h2>
+      <div class="completed-projects__list-wrapper">
+        <ul class="completed-projects__list">
+          <li class="completed-projects__item">
+            {% include "./blocks/case-cards/case-card-otkritie.j2" %}
+          </li>
+          <li class="completed-projects__item">
+            {% include "./blocks/case-cards/case-card-rkif.j2" %}
+          </li>
+          <li class="completed-projects__item">
+            {% include "./blocks/case-cards/case-card-daf.j2" %}
+          </li>
+          <li class="completed-projects__item">
+            {% include "./blocks/case-cards/case-card-ascott.j2" %}
+          </li>
+          <li class="completed-projects__item">
+            {% include "./blocks/case-cards/case-card-printprof.j2" %}
+          </li>
+          <li class="completed-projects__item">
+            {% include "./blocks/case-cards/case-card-logixpro.j2" %}
+          </li>
+        </ul>
+      </div>
     </div>
-    <ul class="completed-projects__list">
-      <li class="completed-projects__item">
-        {% include "./blocks/case-cards/case-card-otkritie.j2" %}
-      </li>
-      <li class="completed-projects__item">
-        {% include "./blocks/case-cards/case-card-rkif.j2" %}
-      </li>
-      <li class="completed-projects__item">
-        {% include "./blocks/case-cards/case-card-daf.j2" %}
-      </li>
-      <li class="completed-projects__item">
-        {% include "./blocks/case-cards/case-card-ascott.j2" %}
-      </li>
-      <li class="completed-projects__item">
-        {% include "./blocks/case-cards/case-card-printprof.j2" %}
-      </li>
-      <li class="completed-projects__item">
-        {% include "./blocks/case-cards/case-card-logixpro.j2" %}
-      </li>
-    </ul>
+
   </div>
 </section>
 {% endblock content %}
