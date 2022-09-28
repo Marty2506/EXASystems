@@ -62,6 +62,13 @@ if (menuCallBackButton) {
     document.querySelector('.modal').classList.add('modal--opened');
   })
 }
+const rcvConsButtons = document.querySelectorAll('.rcv-cons-button');
+rcvConsButtons.forEach(element => {
+  element.addEventListener('click', (evt) => {
+    evt.preventDefault(); // Запрет перехода по ссылке
+    document.querySelector('.modal').classList.add('modal--opened');
+  })
+});
 
 // Настраиваем селект
 const messengersSelect = document.querySelector('#messengers');
