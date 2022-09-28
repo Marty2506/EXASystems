@@ -1,0 +1,43 @@
+<section class="consultation form-section section">
+  <div class="container">
+    <div class="form-section__content">
+      <div class="form-section__left">
+        <h2 class="form-section__title title">Получите консультацию<br>инженера</h2>
+        <p class="form-section__description">
+          Ситуация динамично меняется. В ответ на новые задачи появляются эффективные решения от российских специалистов. Мы держим руку на пульсе. Опишите Вашу задачу, и мы поможем с поиском эффективного решения.
+        </p>
+        <div class="consultation__image-wrapper form-section__image-wrapper">
+          <img class="form-section__image" src="@img/consultation-section-image.png" alt="" width="558" height="389">
+        </div>
+      </div>
+      <div class="form-section__form-wrapper">
+        <p class="form-section__form-title">Отправьте заявку</p>
+        <form class="form-section__form form" id="engineer-cons-form" action="https://echo.htmlacademy.ru" method="get">
+          <label class="form__label">
+            <span class="form-section__label-text form__label-text form__label-text--black">Ваше имя</span>
+            <input class="form__field" type="text" id="engineer-cons-client-name" name="engineer-cons-client-name" placeholder="Введите ваше имя">
+          </label>
+          <div class="form__row">
+            <label class="form__label form__label--messengers">
+              <span class="form-section__label-text form__label-text form__label-text--black">Как с вами связаться?</span>
+              <select class="form__select" id="engineer-cons-messengers" name="engineer-cons-messengers">
+                <option value="Whatsapp">Whatsapp</option>
+                <option value="Telegram">Telegram</option>
+                <option value="Телефон">Телефон</option>
+              </select>
+            </label>
+            <label class="form__label">
+              <span class="form-section__label-text form__label-text form__label-text--black">Ваш телефон</span>
+              <input class="form__field" type="tel" id="engineer-cons-phone" name="engineer-cons-phone" placeholder="+7 (999) 999-99-99" required data-pristine-required-message="Обязательно к заполнению">
+            </label>
+          </div>
+          <label class="form__label">
+            <span class="form-section__label-text form__label-text form__label-text--black">Опишите Вашу задачу</span>
+            <textarea class="form__field--textarea form__field" name="engineer-cons-task" id="engineer-cons-task" cols="30" rows="10" placeholder="Введите текст"></textarea>
+          </label>
+          <button class="button form__submit-button" type="submit">Получить консультацию</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
