@@ -7,7 +7,7 @@ if (engineerConsForm) {
   const formPhone = document.querySelector('#engineer-cons-phone');
   IMask(formPhone, MaskOptions);
 
-  const FormPristine = new Pristine(engineerConsForm, {
+  const engineerConsFormPristine = new Pristine(engineerConsForm, {
     classTo: 'form__label', // Элемент, на который будут добавляться классы
     errorTextParent: 'form__label', // Элемент, куда будет выводиться текст с ошибкой
     errorTextTag: 'span', // Тег, который будет обрамлять текст ошибки
@@ -15,7 +15,7 @@ if (engineerConsForm) {
   }, true);
   engineerConsForm.addEventListener('submit', function (e) {
     e.preventDefault();
-    var valid = FormPristine.validate();
+    var valid = engineerConsFormPristine.validate();
     // TODO здесь должен написать запрос программист
   });
 

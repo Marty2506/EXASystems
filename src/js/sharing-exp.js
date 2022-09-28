@@ -7,7 +7,7 @@ if (shareExpForm) {
   const shareExpFormPhone = document.querySelector('#share-exp-phone');
   IMask(shareExpFormPhone, MaskOptions);
 
-  const FormPristine = new Pristine(shareExpForm, {
+  const shareExpFormPristine = new Pristine(shareExpForm, {
     classTo: 'form__label', // Элемент, на который будут добавляться классы
     errorTextParent: 'form__label', // Элемент, куда будет выводиться текст с ошибкой
     errorTextTag: 'span', // Тег, который будет обрамлять текст ошибки
@@ -15,7 +15,7 @@ if (shareExpForm) {
   }, true);
   shareExpForm.addEventListener('submit', function (e) {
     e.preventDefault();
-    var valid = FormPristine.validate();
+    var valid = shareExpFormPristine.validate();
     // TODO здесь должен написать запрос программист
   });
 
