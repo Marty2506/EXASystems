@@ -1,9 +1,5 @@
 .sharing-exp {
-  padding: 40px 0;
-
-  @media (min-width: $tablet-width) {
-    padding: 40px 0 0;
-  }
+  padding: 40px 0 0;
 
   @media (min-width: $desktop-width) {
     padding: 50px 0 0;
@@ -12,12 +8,13 @@
 .sharing-exp__content {
   display: flex;
   flex-direction: column;
+  background-image: url("@img/sharing-exp-corner.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  padding-bottom: 130px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 60px;
-    background-image: url("@img/sharing-exp-corner.png");
-    background-repeat: no-repeat;
-    background-position: right bottom;
   }
 
   @media (min-width: $desktop-width) {
@@ -103,7 +100,6 @@
       background-repeat: no-repeat;
       background-color: $white-color;
     }
-
   }
 }
 .sharing-exp__form-title {
