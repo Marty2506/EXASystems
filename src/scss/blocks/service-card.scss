@@ -1,8 +1,10 @@
 .service-card {
   position: relative;
   z-index: 1;
+
   height: 370px;
   padding: 30px 35px 43px 35px;
+
   background-color: $bg2-color;
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -36,6 +38,7 @@
     height: 100%;
 
     background-color: transparentize($aqua-color, 0.9webp);
+
     transition: 0.3s linear;
 
     clip-path: circle(0 at left top);
@@ -54,32 +57,35 @@
 }
 .service-card__back-link {
   position: absolute;
-  left: 0;
-  right: 0;
   top: 0;
+  right: 0;
   bottom: 0;
+  left: 0;
   z-index: 1;
-  text-decoration: none;
+
   color: inherit;
+  text-decoration: none;
 
   &:focus-visible {
-    outline: 2px solid $blue-color;
     border-radius: 2px;
+    outline: 2px solid $blue-color;
   }
 }
 .service-card__content {
-  height: 100%;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 .service-card__title {
   margin: 0;
   margin-bottom: 15px;
   padding: 0;
-  font-family: "Jost", "Arial", sans-serif;
+
   font-weight: 500;
   font-size: 28px;
   line-height: 110%;
+  font-family: "Jost", "Arial", sans-serif;
+
   transition: color 0.3s ease;
 
   @media (min-width: $tablet-width) {
@@ -89,25 +95,29 @@
 .service-card__description {
   margin: 0;
   padding: 0;
+
   font-size: 16px;
   line-height: 19px;
   color: $grey-color;
 }
 .service__card-button {
-  padding: 0 20px;
-  margin-top: auto;
   align-self: flex-start;
+  margin-top: auto;
+  padding: 0 20px;
 
   &:hover {
-    background-color: $blue-color;
     color: $white-color;
+
+    background-color: $blue-color;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 27px;
-    transition: all 0.3s ease;
+
     visibility: hidden;
     opacity: 0;
+
+    transition: all 0.3s ease;
   }
 }
 .service-card--support {

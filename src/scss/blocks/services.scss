@@ -1,43 +1,47 @@
 .services {
   padding: 25px 0;
-  background: linear-gradient(271.32deg, #2AA898 -12.13%, #39C0B4 79.47%);
+
+  background: linear-gradient(271.32deg, #2aa898 -12.13%, #39c0b4 79.47%);
 
   @media (min-width: $desktop-width) {
     padding: 60px 0;
   }
 }
 .services__list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
+
   list-style-type: none;
 
-  display: flex;
-  flex-direction: column;
   gap: 8px;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+
     gap: 22px;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 50px;
+
     grid-template-columns: repeat(3, 1fr);
   }
 }
-.services__consultation {
-}
+
 .services__form {
   display: flex;
   margin-bottom: 30px;
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 45px;
     display: grid;
-    grid-template-columns: 425px 425px auto;
+    margin-bottom: 45px;
+
     gap: 17px;
+    grid-template-columns: 425px 425px auto;
   }
 
   & .form__field {
@@ -55,8 +59,10 @@
 .services__engineer {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+
   color: $white-color;
+
+  gap: 30px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -64,6 +70,7 @@
 }
 .services__engineer-info {
   display: flex;
+
   gap: 15px;
 
   @media (min-width: $tablet-width) {
@@ -72,12 +79,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 30px;
     padding: 0 80px;
+
+    gap: 30px;
   }
 }
 .services__engineer-photo {
   max-width: 97px;
+
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
@@ -88,13 +97,11 @@
     max-width: 220px;
   }
 }
-.services__engineer-text-info {
 
-}
 .services__engineer-name {
   margin: 0;
-  padding: 0;
   margin-bottom: 10px;
+  padding: 0;
 
   font-weight: 600;
   font-size: 18px;
@@ -102,6 +109,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
+
     text-align: center;
   }
 }
@@ -118,19 +126,21 @@
 }
 .services__engineer-quote {
   position: relative;
+
   margin: 0;
   padding: 0;
   padding-left: 30px;
 
-  font-family: "Jost", "Arial", sans-serif;
   font-weight: 600;
   font-size: 18px;
   line-height: 120%;
+  font-family: "Jost", "Arial", sans-serif;
 
   @media (min-width: $tablet-width) {
-    font-size: 31px;
     margin-top: 30px;
     padding-left: 70px;
+
+    font-size: 31px;
   }
 
   &::before {
@@ -138,20 +148,20 @@
     position: absolute;
     top: 0;
     left: 15px;
-    font-family: inherit;
+
+    font-weight: 600;
     font-size: 58px;
     line-height: 120%;
-    font-weight: 600;
+    font-family: inherit;
 
     @media (max-width: $max-mobile-width) {
-      font-size: 27px;
       left: 0;
+
+      font-size: 27px;
     }
   }
 
   &::after {
     content: "";
   }
-
-
 }

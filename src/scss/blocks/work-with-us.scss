@@ -5,21 +5,23 @@
     padding: 120px 0;
   }
 }
-.work-with-us__content {
-}
-.work-with-us__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
 
+.work-with-us__list {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
   gap: 10px;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+
     column-gap: 44px;
+
+    grid-template-columns: repeat(3, 1fr);
     row-gap: 35px;
   }
 
@@ -33,9 +35,8 @@
   align-items: center;
   height: 110px;
   max-height: 110px;
+
   background-color: $white-color;
   border: 1px solid rgba(132, 125, 207, 0.23);
   border-radius: 5px;
-}
-.work-with-us__image-wrapper {
 }

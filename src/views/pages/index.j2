@@ -4,115 +4,111 @@
 
 {% block content %}
   <main class="page-main">
-    {# <div class="container">
-      <h1>Главная</h1>
-      <a href="./certificates.html">Сертификаты</a>
-      <a href="./reviews.html">Отзывы</a>
-      <a href="./comparison.html">Сравнение</a>
-    </div> #}
-  </main>
-  {% include "./blocks/features-under-key.j2" %}
-  {% include "./blocks/services.j2" %}
-  {% include "./blocks/equipment.j2" %}
-  {% include "./blocks/our-advantages.j2" %}
-  <section class="completed-projects section completed-projects--index">
-    <div class="container">
-      <div class="completed-projects__content">
-        <h2 class="completed-projects__title title">Реализованные проекты</h2>
-        <div class="completed-projects__list-wrapper">
-          <ul class="completed-projects__list">
-            <li class="completed-projects__item">
-              {% include "./blocks/case-cards/case-card-otkritie.j2" %}
+    <h1 class="visually-hidden">Главная ExaSystems</h1>
+    {% include "./blocks/features-under-key.j2" %}
+    {% include "./blocks/services.j2" %}
+    {% include "./blocks/equipment.j2" %}
+    {% include "./blocks/our-advantages.j2" %}
+    <section class="completed-projects section completed-projects--index">
+      <div class="container">
+        <div class="completed-projects__content">
+          <h2 class="completed-projects__title title">Реализованные проекты</h2>
+          <div class="completed-projects__list-wrapper">
+            <ul class="completed-projects__list">
+              <li class="completed-projects__item">
+                {% include "./blocks/case-cards/case-card-otkritie.j2" %}
+              </li>
+              <li class="completed-projects__item">
+                {% include "./blocks/case-cards/case-card-rkif.j2" %}
+              </li>
+              <li class="completed-projects__item">
+                {% include "./blocks/case-cards/case-card-daf.j2" %}
+              </li>
+              <li class="completed-projects__item">
+                {% include "./blocks/case-cards/case-card-ascott.j2" %}
+              </li>
+              <li class="completed-projects__item">
+                {% include "./blocks/case-cards/case-card-printprof.j2" %}
+              </li>
+              <li class="completed-projects__item">
+                {% include "./blocks/case-cards/case-card-logixpro.j2" %}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews reviews--index">
+      <div class="container">
+        <div class="reviews__content">
+          <div class="reviews__header">
+            <h2 class="reviews__title title">Клиенты о нас</h2>
+            <a class="reviews__all-link next-link" href="reviews.html">
+              <span class="next-link__text">Все отзывы</span>
+            </a>
+          </div>
+          <ul class="reviews__list reviews__list--video">
+            <li class="reviews__item">
+              <div class="reviews__video-review">
+                <div class="reviews__video-container">
+                  <iframe class="reviews__video" src="https://www.youtube.com/embed/nSaFstyQQbs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="reviews__video-about">
+                  <div class="reviews__video-person">
+                    <p class="reviews__video-person-name">Евгений Иванов</p>
+                    <p class="reviews__video-person-job">Директор Ascott Group</p>
+                  </div>
+                  <img class="reviews__video-company-logo" src="@img/svp-logo.png" alt="Логотип компании SVP">
+                </div>
+              </div>
             </li>
-            <li class="completed-projects__item">
-              {% include "./blocks/case-cards/case-card-rkif.j2" %}
+            <li class="reviews__item">
+              <div class="reviews__video-review">
+                <div class="reviews__video-container">
+                  <iframe class="reviews__video" src="https://www.youtube.com/embed/nSaFstyQQbs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="reviews__video-about">
+                  <div class="reviews__video-person">
+                    <p class="reviews__video-person-name">Евгений Иванов</p>
+                    <p class="reviews__video-person-job">Директор Ascott Group</p>
+                  </div>
+                  <img class="reviews__video-company-logo" src="@img/svp-logo.png" alt="Логотип компании SVP">
+                </div>
+              </div>
             </li>
-            <li class="completed-projects__item">
-              {% include "./blocks/case-cards/case-card-daf.j2" %}
+          </ul>
+          <ul class="reviews__list reviews__list--letter">
+            <li class="reviews__item">
+              <div class="reviews__letter">
+                <a class="reviews__letter-link" href="#!">
+                  <img class="reviews__letter-image" src="@img/review-letter.jpg" alt="">
+                </a>
+                <div class="reviews__letter-text-container">
+                  <img class="reviews__letter-company-logo" src="@img/spaarman-logo.png" alt="Логотип компании SVP">
+                  <p class="reviews__letter-text">Немецкая логистическая компания <b>C. Spaarmann GmbH</b> рекомендует команду Exasystems к сотрудничеству, которая произвела ее успешный переход на удаленный режим работы и снизила расходы на ИТ.</p>
+                </div>
+              </div>
             </li>
-            <li class="completed-projects__item">
-              {% include "./blocks/case-cards/case-card-ascott.j2" %}
-            </li>
-            <li class="completed-projects__item">
-              {% include "./blocks/case-cards/case-card-printprof.j2" %}
-            </li>
-            <li class="completed-projects__item">
-              {% include "./blocks/case-cards/case-card-logixpro.j2" %}
+            <li class="reviews__item">
+              <div class="reviews__letter">
+                <a class="reviews__letter-link" href="#!">
+                  <img class="reviews__letter-image" src="@img/review-letter.jpg" alt="">
+                </a>
+                <div class="reviews__letter-text-container">
+                  <img class="reviews__letter-company-logo" src="@img/spaarman-logo.png" alt="Логотип компании SVP">
+                  <p class="reviews__letter-text">Немецкая логистическая компания <b>C. Spaarmann GmbH</b> рекомендует команду Exasystems к сотрудничеству, которая произвела ее успешный переход на удаленный режим работы и снизила расходы на ИТ.</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="reviews reviews--index">
-    <div class="container">
-      <div class="reviews__content">
-        <div class="reviews__header">
-          <h2 class="reviews__title title">Клиенты о нас</h2>
-          <a class="reviews__all-link next-link" href="reviews.html">
-            <span class="next-link__text">Все отзывы</span>
-          </a>
-        </div>
-        <ul class="reviews__list reviews__list--video">
-          <li class="reviews__item">
-            <div class="reviews__video-review">
-              <div class="reviews__video-container">
-                <iframe class="reviews__video" src="https://www.youtube.com/embed/nSaFstyQQbs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <div class="reviews__video-about">
-                <div class="reviews__video-person">
-                  <p class="reviews__video-person-name">Евгений Иванов</p>
-                  <p class="reviews__video-person-job">Директор Ascott Group</p>
-                </div>
-                <img class="reviews__video-company-logo" src="@img/svp-logo.png" alt="Логотип компании SVP">
-              </div>
-            </div>
-          </li>
-          <li class="reviews__item">
-            <div class="reviews__video-review">
-              <div class="reviews__video-container">
-                <iframe class="reviews__video" src="https://www.youtube.com/embed/nSaFstyQQbs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-              <div class="reviews__video-about">
-                <div class="reviews__video-person">
-                  <p class="reviews__video-person-name">Евгений Иванов</p>
-                  <p class="reviews__video-person-job">Директор Ascott Group</p>
-                </div>
-                <img class="reviews__video-company-logo" src="@img/svp-logo.png" alt="Логотип компании SVP">
-              </div>
-            </div>
-          </li>
-        </ul>
-        <ul class="reviews__list reviews__list--letter">
-          <li class="reviews__item">
-            <div class="reviews__letter">
-              <a class="reviews__letter-link" href="#!">
-                <img class="reviews__letter-image" src="@img/review-letter.jpg" alt="">
-              </a>
-              <div class="reviews__letter-text-container">
-                <img class="reviews__letter-company-logo" src="@img/spaarman-logo.png" alt="Логотип компании SVP">
-                <p class="reviews__letter-text">Немецкая логистическая компания <b>C. Spaarmann GmbH</b> рекомендует команду Exasystems к сотрудничеству, которая произвела ее успешный переход на удаленный режим работы и снизила расходы на ИТ.</p>
-              </div>
-            </div>
-          </li>
-          <li class="reviews__item">
-            <div class="reviews__letter">
-              <a class="reviews__letter-link" href="#!">
-                <img class="reviews__letter-image" src="@img/review-letter.jpg" alt="">
-              </a>
-              <div class="reviews__letter-text-container">
-                <img class="reviews__letter-company-logo" src="@img/spaarman-logo.png" alt="Логотип компании SVP">
-                <p class="reviews__letter-text">Немецкая логистическая компания <b>C. Spaarmann GmbH</b> рекомендует команду Exasystems к сотрудничеству, которая произвела ее успешный переход на удаленный режим работы и снизила расходы на ИТ.</p>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  {% include "./blocks/sharing-exp.j2" %}
-  {% include "./blocks/consultation.j2" %}
-  {% include "./blocks/work-with-us.j2" %}
+    </section>
+    {% include "./blocks/sharing-exp.j2" %}
+    {% include "./blocks/consultation.j2" %}
+    {% include "./blocks/work-with-us.j2" %}
+  </main>
+
 {% endblock content %}
 
 {% block modal %}

@@ -8,10 +8,11 @@
 .sharing-exp__content {
   display: flex;
   flex-direction: column;
+  padding-bottom: 130px;
+
   background-image: url("@img/sharing-exp-corner.png");
   background-repeat: no-repeat;
   background-position: right bottom;
-  padding-bottom: 130px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 60px;
@@ -19,8 +20,9 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    gap: 105px;
     padding-bottom: 150px;
+
+    gap: 105px;
   }
 }
 .sharing-exp__articles {
@@ -36,45 +38,51 @@
 .sharing-exp__articles-list {
   margin: 0;
   padding: 0;
+
   list-style-type: none;
 }
 .sharing-exp__article-item {
   position: relative;
+
   display: flex;
   flex-direction: column;
-  gap: 12px;
   padding: 30px 0;
+
+  gap: 12px;
 
   &::after {
     content: "";
     position: absolute;
-    left: 0;
     right: 0;
     bottom: 0;
+    left: 0;
+
     height: 1px;
+
     background-color: #dadada;
 
     @media (min-width: $desktop-width) {
-      left: -30px;
       right: -30px;
+      left: -30px;
     }
   }
 }
 .sharing-exp__article-title {
   margin: 0;
   padding: 0;
-  font-family: "Jost", "Arial", sans-serif;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 115%;
+  font-family: "Jost", "Arial", sans-serif;
 }
 .sharing-exp__article-description {
   margin: 0;
   padding: 0;
+
   color: $grey-color;
 }
-.sharing-exp__article-link {
-}
+
 .sharing-exp__form-wrapper {
   display: flex;
   flex-direction: column;
@@ -83,22 +91,26 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
-    margin-right: 40px;
+
     flex-grow: 1;
-    border: 5px solid #ebebeb;
-    padding: 35px 45px 45px;
     align-self: flex-start;
+    margin-right: 40px;
+    padding: 35px 45px 45px;
+
+    border: 5px solid #ebebeb;
 
     &::after {
       content: "";
       position: absolute;
       right: 45px;
       bottom: -31px;
+
       width: 96px;
       height: 106px;
+
+      background-color: $white-color;
       background-image: url("@img/share-exp-form-bg.png");
       background-repeat: no-repeat;
-      background-color: $white-color;
     }
   }
 }
@@ -106,12 +118,14 @@
   margin: 0;
   margin-bottom: 10px;
   padding: 0;
+
   font-weight: 700;
   font-size: 24px;
   line-height: 115%;
 
   @media (min-width: $desktop-width) {
     margin-bottom: 10px;
+
     font-size: 28px;
     color: $grey-color;
   }
@@ -123,8 +137,7 @@
 
   color: $grey-color;
 }
-.sharing-exp__form {
-}
+
 .sharing-exp__label-text {
   color: $black-color;
 }

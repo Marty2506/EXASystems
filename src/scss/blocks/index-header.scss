@@ -1,19 +1,21 @@
 .index-header {
   position: relative;
+
   display: flex;
   flex-direction: column;
-  padding-top: 30px;
   min-height: 580px;
+  padding-top: 30px;
   overflow: hidden;
+
   background-image: url("@img/index-header-bg.webp");
   background-repeat: no-repeat;
   background-position: -100px 70px;
 
   @media (max-width: $max-mobile-width) {
-    padding-bottom: 20px;
     margin: 0 - $paddings-mobile;
-    padding-left: $paddings-mobile;
     padding-right: $paddings-mobile;
+    padding-bottom: 20px;
+    padding-left: $paddings-mobile;
   }
 
   @media (min-width: $tablet-width) {
@@ -35,6 +37,7 @@
 
 .index-header__title {
   z-index: 1;
+
   margin: 0;
   margin-bottom: 40px;
   padding: 0;
@@ -72,6 +75,7 @@
 
 .index-header__button {
   z-index: 1;
+
   max-width: none;
   padding: 0 25px;
 
