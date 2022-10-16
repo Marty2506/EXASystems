@@ -23,7 +23,7 @@
       <div class="container">
         <h1 class="sfr__title title">Конфигуратор программно-технического комплекса видеонаблюдения «Безопасный регион»</h1>
         <div class="sfr__content section__content">
-          <form class="sfr__form form" action="https://echo.htmlacademy.ru" method="get">
+          <form class="sfr__form form" id="sfr-form" action="https://echo.htmlacademy.ru" method="post">
             <p class="sfr__do-next">
               Введите количество камер каждого типа:
             </p>
@@ -138,6 +138,62 @@
               </label>
               <button class="sfr__calc-button button" type="button">Рассчитать</button>
             </div>
+            <div class="sfr__summary">
+              <div class="sfr__summary-image-wrapper">
+                <span class="sfr__summary-title">Конфигурация «Безопасный&nbsp;регион»</span>
+                <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="@img/sfr-summary-desktop.webp 1x, @img/sfr-summary-desktop@2x.webp 2x">
+                  <source type="image/webp" srcset="@img/sfr-summary-mobile.webp 1x, @img/sfr-summary-mobile@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="@img/sfr-summary-desktop.png 1x, @img/sfr-summary-desktop@2x.png 2x">
+                  <img class="sfr__summary-image" src="@img/sfr-summary-mobile.png" srcset="@img/sfr-summary-mobile@2x.png 2x" alt="">
+                </picture>
+              </div>
+              <div class="sfr__subform form">
+                <div class="sfr__subform-equip">
+                  <ul class="sfr__subform-equip-list">
+                    <li class="sfr__subform-equip-item">
+                      <dl class="sfr__subform-equip-desc-list">
+                        <dt class="sfr__subform-equip-desc-term">Количество камер</dt>
+                        <dd class="sfr__subform-equip-desc-def" id="sfr-cams-cnt">12</dd>
+                      </dl>
+                    </li>
+                    <li class="sfr__subform-equip-item">
+                      <dl class="sfr__subform-equip-desc-list">
+                        <dt class="sfr__subform-equip-desc-term">Количество видеокарт</dt>
+                        <dd class="sfr__subform-equip-desc-def" id="sfr-videocards-cnt">12</dd>
+                      </dl>
+                    </li>
+                    <li class="sfr__subform-equip-item">
+                      <dl class="sfr__subform-equip-desc-list">
+                        <dt class="sfr__subform-equip-desc-term">Объем оперативной памяти</dt>
+                        <dd class="sfr__subform-equip-desc-def" id="sfr-memory-size">8Гб</dd>
+                      </dl>
+                    </li>
+                  </ul>
+                </div>
+                <div class="sfr__subform-wrapper">
+                  <label class="form__label">
+                    <span class="form__label-text form__label-text--black">Ваше имя</span>
+                    <input class="form__field" type="text" id="sfr-name" name="sfr-name" placeholder="Введите ваше имя">
+                  </label>
+                  <div class="form__row">
+                    <label class="form__label form__label--messengers">
+                      <span class="form__label-text form__label-text--black">Как с вами связаться?</span>
+                      <select class="form__select" id="sfr-messengers" name="sfr-messengers">
+                        <option value="Whatsapp">Whatsapp</option>
+                        <option value="Telegram">Telegram</option>
+                        <option value="Телефон">Телефон</option>
+                      </select>
+                    </label>
+                    <label class="form__label">
+                      <span class="form__label-text form__label-text--black">Ваш телефон</span>
+                      <input class="form__field" type="tel" id="sfr-phone" name="sfr-phone" placeholder="+7 (999) 999-99-99" required data-pristine-required-message="Обязательно к заполнению">
+                    </label>
+                  </div>
+                  <button class="sfr__submit-button button form__submit-button" type="submit">Получить консультацию</button>
+                </div>
+              </div>
+            </div>
           </form>
         </div>
       </div>
@@ -151,5 +207,6 @@
 {% endblock %}
 
 {% block js %}
+  <script src="./js/sfr.min.js"></script>
   <script src="./js/main.min.js"></script>
 {% endblock %}

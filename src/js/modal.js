@@ -37,8 +37,10 @@ function hideModal() {
   document.body.classList.remove('modal-opened');
 }
 
-const onModalEscKeydown= (evt) => {
-  if (isEscapeKey(evt)) {
+const isEscapeKey = (evt) => evt.key === 'Escape';
+
+const onModalEscKeydown = (evt) => {
+  if (document.querySelector('.modal--opened') && isEscapeKey(evt)) {
     evt.preventDefault();
     hideModal();
   }

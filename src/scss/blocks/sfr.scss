@@ -187,3 +187,123 @@
     color: $white-color;
   }
 }
+
+.sfr__summary {
+  padding-top: 8px;
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 0;
+  transition: max-height 0.25s ease-out;
+
+
+  @media (max-width: $max-tablet-width) {
+    margin-top: 25px;
+    background-color: $white-color;
+    margin-left: -$paddings-mobile;
+    margin-right: -$paddings-mobile;
+    padding-left: $paddings-mobile;
+    padding-right: $paddings-mobile;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    padding: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 40px;
+    display: none;
+    grid-template-columns: auto 440px;
+    gap: 35px;
+  }
+}
+
+.sfr__summary--opened {
+  display: flex;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+  }
+}
+.sfr__summary-image-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.sfr__summary-title {
+  display: block;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 115%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 360px;
+  }
+}
+.sfr__summary-image {
+  max-width: 540px;
+  margin: 0 auto;
+}
+.sfr__subform {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  @media (min-width: $desktop-width) {
+    gap: 40px;
+  }
+}
+.sfr__subform-equip {
+}
+.sfr__subform-equip-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.sfr__subform-equip-item {
+}
+.sfr__subform-equip-desc-list {
+  margin: 0;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: $bg2-color;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+}
+.sfr__subform-equip-desc-term {
+  margin: 0;
+  padding: 0;
+
+  color: $grey-color;
+}
+.sfr__subform-equip-desc-def {
+  margin: 0;
+  padding: 0;
+}
+.sfr__subform-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.sfr__submit-button {
+  @media (min-width: $desktop-width) {
+    max-width: 220px;
+    width: 220px;
+    margin-top: 25px;
+    margin-left: auto;
+  }
+}
