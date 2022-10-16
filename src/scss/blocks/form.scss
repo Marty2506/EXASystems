@@ -26,6 +26,21 @@
   gap: 4px;
 }
 
+.form__label--checkbox {
+  width: auto;
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  align-items: center;
+
+  &:hover,
+  &:focus-visible {
+    & .form__mark {
+      border-color: $button-color;
+    }
+  }
+}
+
 .form__label-text {
   font-size: 14px;
   line-height: 130%;
@@ -59,6 +74,46 @@
   height: 75px;
 
   resize: none;
+}
+
+.form__field[type="number"] {
+  min-width: 73px;
+  display: flex;
+  padding-right: 8px;
+}
+
+.form__field[type="number"]::-webkit-inner-spin-button {
+  opacity: 1;
+  width: 8px;
+  height: 37px;
+}
+
+
+.form__mark {
+  width: 20px;
+  height: 20px;
+  border: 1px solid $blue-color;
+
+  background-color: $white-color;
+
+  transition: border 0.5s ease;;
+}
+
+.form__checkbox-label-text {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 130%;
+}
+
+.form__checkbox:checked + .form__mark {
+  background-image: url("@img/icons/select-check-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  // background-size: 70%;
+}
+.form__checkbox:focus + .form__mark {
+  border-color: $button-color;
 }
 
 .form__submit-button {
