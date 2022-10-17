@@ -2,6 +2,10 @@
   padding: 25px 0;
   background-color: $bg2-color;
 
+  @media (max-width: $max-mobile-width) {
+    padding-bottom: 0;
+  }
+
   @media (min-width: $desktop-width) {
     padding: 30px 0;
   }
@@ -196,7 +200,6 @@
   max-height: 0;
   transition: max-height 0.25s ease-out;
 
-
   @media (max-width: $max-tablet-width) {
     margin-top: 25px;
     background-color: $white-color;
@@ -297,7 +300,7 @@
 .sfr__subform-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 }
 .sfr__submit-button {
   @media (min-width: $desktop-width) {
@@ -306,4 +309,5 @@
     margin-top: 25px;
     margin-left: auto;
   }
+  // margin-bottom: 20px;
 }

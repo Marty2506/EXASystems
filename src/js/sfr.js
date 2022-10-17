@@ -1,6 +1,26 @@
 const sfrForm = document.querySelector('#sfr-form');
 
 if (sfrForm) {
+  const camsInputs = document.querySelectorAll('.sfr__number-field');
+  const camInputMask = {
+    mask: Number,
+    scale: 0,
+    signed: false,
+    min: 0,
+    max: 99
+  }
+  camsInputs.forEach(element => {
+    IMask(element, camInputMask);
+  });
+
+  const crossButtons = document.querySelectorAll('.sfr__clear-button');
+  crossButtons.forEach(element => {
+    element.addEventListener('click', () => {
+      const input = element.parentElement.querySelector('.sfr__number-field');
+      input.value = 0;
+    })
+  });
+
   const MaskOptions = {
     mask: '+{7} (000) 000-00-00',
   };
@@ -12,12 +32,17 @@ if (sfrForm) {
     errorTextParent: 'form__label', // Элемент, куда будет выводиться текст с ошибкой
     errorTextTag: 'span', // Тег, который будет обрамлять текст ошибки
     errorTextClass: 'form__error-message' // Класс для элемента с текстом ошибки
-  }, true);
+  }, false);
+  sfrFormPristine.addValidator(formPhone, (value) => {
+    return (value.length === 18);
+  }, "Номер неполный", 2, false);
   sfrForm.addEventListener('submit', function (e) {
     e.preventDefault();
     var valid = sfrFormPristine.validate();
     // TODO здесь должен написать запрос программист
   });
+
+
 
   const select = document.querySelector('#sfr-messengers');
   const choices = new Choices(select, {
@@ -56,7 +81,7 @@ if (sfrForm) {
   const calcButton = document.querySelector('.sfr__calc-button');
   const sfrSummary = document.querySelector('.sfr__summary');
   sfrSummary.style.maxHeight = null;
-  const camsInputs = document.querySelectorAll('.sfr__number-field');
+
   let camsCnt = 0;
   const camsCntPole = document.querySelector('#sfr-cams-cnt');
   const videocardsCntPole = document.querySelector('#sfr-videocards-cnt');
@@ -65,8 +90,11 @@ if (sfrForm) {
     camsCnt = 0;
     if (!sfrSummary.classList.contains('sfr__summary--opened')) {
       sfrSummary.classList.add('sfr__summary--opened');
+      sfrSummary.style.overflow = "hidden"; // без этого некорректно считает scrollHeight
       submitButton.disabled = false;
-      sfrSummary.style.maxHeight = sfrSummary.scrollHeight + "px";
+      sfrSummary.style.maxHeight = `${sfrSummary.scrollHeight}px`;
+      sfrSummary.style.overflow = "";
+      sfrSummary.scrollIntoView({behavior: 'smooth'}, true);
     }
     camsInputs.forEach(element => {
       camsCnt += parseInt(element.value);
@@ -74,4 +102,10 @@ if (sfrForm) {
     camsCntPole.textContent = camsCnt.toString();
     videocardsCntPole.textContent = camsCnt.toString();
   })
+
+  window.addEventListener("resize", () => {
+    if (sfrSummary.classList.contains('sfr__summary--opened')) {
+      sfrSummary.style.maxHeight = `${sfrSummary.scrollHeight}px`;
+    }
+  });
 }
