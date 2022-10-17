@@ -7,6 +7,7 @@
     padding: 60px 0;
   }
 }
+
 .services__list {
   display: flex;
   flex-direction: column;
@@ -24,7 +25,6 @@
     gap: 22px;
     grid-template-columns: repeat(2, 1fr);
   }
-
   @media (min-width: $desktop-width) {
     margin-bottom: 50px;
 
@@ -56,6 +56,7 @@
     }
   }
 }
+
 .services__engineer {
   display: flex;
   flex-direction: column;
@@ -68,6 +69,7 @@
     flex-direction: row;
   }
 }
+
 .services__engineer-info {
   display: flex;
 
@@ -77,13 +79,13 @@
     flex-direction: column;
     padding: 0 20px;
   }
-
   @media (min-width: $desktop-width) {
     padding: 0 80px;
 
     gap: 30px;
   }
 }
+
 .services__engineer-photo {
   max-width: 97px;
 
@@ -92,7 +94,6 @@
   @media (min-width: $tablet-width) {
     max-width: 180px;
   }
-
   @media (min-width: $desktop-width) {
     max-width: 220px;
   }
@@ -113,6 +114,7 @@
     text-align: center;
   }
 }
+
 .services__engineer-job-title {
   margin: 0;
   padding: 0;
@@ -124,6 +126,7 @@
     text-align: center;
   }
 }
+
 .services__engineer-quote {
   position: relative;
 

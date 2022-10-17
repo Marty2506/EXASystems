@@ -7,6 +7,7 @@
     padding: 70px 0;
   }
 }
+
 .form-section__content {
   display: flex;
   flex-direction: column;
@@ -18,10 +19,12 @@
     gap: 50px;
   }
 }
+
 .form-section__left {
   display: flex;
   flex-direction: column;
 }
+
 .form-section__title {
   font-weight: 600;
   font-size: 24px;
@@ -36,6 +39,7 @@
     font-family: "Proxima Nova", "Arial", sans-serif;
   }
 }
+
 .form-section__description {
   margin: 0;
   margin-bottom: 10px;
@@ -54,6 +58,7 @@
   flex-shrink: 0;
   align-self: flex-start;
   width: 100%;
+
   @media (min-width: $desktop-width) {
     width: 586px;
     max-width: 586px;
@@ -63,6 +68,7 @@
     box-shadow: 5px 9px 21px rgb(48 41 131 / 30%);
   }
 }
+
 .form-section__form-title {
   margin: 0;
   margin-bottom: 15px;

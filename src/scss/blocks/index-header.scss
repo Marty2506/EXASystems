@@ -17,7 +17,6 @@
     padding-bottom: 20px;
     padding-left: $paddings-mobile;
   }
-
   @media (min-width: $tablet-width) {
     min-height: 510px;
     padding-top: 40px;
@@ -25,7 +24,6 @@
     background-position: calc(50% - 50px) 100%;
     background-size: 90%;
   }
-
   @media (min-width: $desktop-width) {
     min-height: 670px;
     padding-top: 65px;
@@ -51,7 +49,6 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 40px;
   }
-
   @media (min-width: $desktop-width) {
     font-size: 47px;
   }

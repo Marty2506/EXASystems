@@ -1,15 +1,16 @@
 .sfr {
   padding: 25px 0;
+
   background-color: $bg2-color;
 
   @media (max-width: $max-mobile-width) {
     padding-bottom: 0;
   }
-
   @media (min-width: $desktop-width) {
     padding: 30px 0;
   }
 }
+
 .sfr__title {
   margin-bottom: 15px;
 
@@ -17,19 +18,21 @@
     margin-bottom: 35px;
   }
 }
-.sfr__content {
-}
+
 .sfr__form {
   gap: 0;
+
   @media (min-width: $desktop-width) {
-    padding: 15px 55px 40px 55px;
+    padding: 15px 55px 40px;
+
     background-color: $white-color;
   }
 }
+
 .sfr__do-next {
   margin: 0;
-  padding: 0;
   margin-bottom: 30px;
+  padding: 0;
 
   @media (min-width: $desktop-width) {
     margin-bottom: 8px;
@@ -37,12 +40,13 @@
 }
 
 .sfr__cameras {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
+
   list-style-type: none;
-  display: flex;
-  flex-direction: column;
 
   @media (max-width: $max-tablet-width) {
     gap: 10px;
@@ -56,9 +60,11 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     align-items: center;
-    border-bottom: 1px solid #F5EDEA;
+
+    border-bottom: 1px solid #f5edea;
   }
 }
+
 .sfr__camera-short-title {
   display: flex;
   margin: 0;
@@ -70,28 +76,32 @@
   color: $grey-color;
 
   @media (min-width: $desktop-width) {
-    width: 100px;
-    background-color: $bg2-color;
-    align-self: stretch;
-    align-items: center;
     justify-content: center;
-  }
+    align-items: center;
+    align-self: stretch;
+    width: 100px;
 
+    background-color: $bg2-color;
+  }
 }
+
 .sfr__camera-wrapper {
-  padding: 11px 0;
   display: flex;
-  gap: 50px;
   flex-grow: 1;
   align-items: center;
+  padding: 11px 0;
+
+  gap: 50px;
 
   @media (max-width: $max-tablet-width) {
     align-items: stretch;
     min-height: 120px;
     padding: 20px 15px;
+
     background-color: $white-color;
   }
 }
+
 .sfr__camera-title {
   margin: 0;
   margin-right: auto;
@@ -104,9 +114,11 @@
   @media (min-width: $tablet-width) {
     align-self: center;
     padding: 0 15px;
+
     font-size: 18px;
   }
 }
+
 .sfr__number-field-wrapper {
   display: flex;
   align-items: center;
@@ -115,15 +127,16 @@
     flex-direction: column;
   }
 }
-.sfr__number-field {
-}
+
 .sfr__clear-button {
   position: relative;
-  margin: 0 20px 0 10px;
-  padding: 5px;
+
   box-sizing: content-box;
   width: 11px;
   height: 11px;
+  margin: 0 20px 0 10px;
+  padding: 5px;
+
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -155,10 +168,12 @@
       background-color: $blue-color;
     }
   }
+
   &:focus-visible {
-    outline: 2px solid $blue-color;
     border-radius: 2px;
+    outline: 2px solid $blue-color;
   }
+
   &:active {
     opacity: 0.7;
   }
@@ -170,6 +185,7 @@
 
 .sfr__form-footer {
   display: flex;
+
   gap: 20px;
 
   @media (max-width: $max-tablet-width) {
@@ -182,42 +198,45 @@
   max-width: 350px;
 
   @media (min-width: $desktop-width) {
-    margin-left: auto;
     width: 220px;
+    margin-left: auto;
   }
 
   &:hover {
-    background-color: $blue-color;
     color: $white-color;
+
+    background-color: $blue-color;
   }
 }
 
 .sfr__summary {
-  padding-top: 8px;
   display: none;
   flex-direction: column;
-  gap: 15px;
   max-height: 0;
+  padding-top: 8px;
+
   transition: max-height 0.25s ease-out;
+
+  gap: 15px;
 
   @media (max-width: $max-tablet-width) {
     margin-top: 25px;
-    background-color: $white-color;
-    margin-left: -$paddings-mobile;
     margin-right: -$paddings-mobile;
-    padding-left: $paddings-mobile;
+    margin-left: -$paddings-mobile;
     padding-right: $paddings-mobile;
-  }
+    padding-left: $paddings-mobile;
 
+    background-color: $white-color;
+  }
   @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
     padding: 20px;
   }
-
   @media (min-width: $desktop-width) {
-    padding-top: 40px;
     display: none;
-    grid-template-columns: auto 440px;
+    padding-top: 40px;
+
     gap: 35px;
+    grid-template-columns: auto 440px;
   }
 }
 
@@ -228,10 +247,12 @@
     display: grid;
   }
 }
+
 .sfr__summary-image-wrapper {
   display: flex;
   flex-direction: column;
 }
+
 .sfr__summary-title {
   display: block;
   margin: 0;
@@ -245,67 +266,77 @@
   @media (min-width: $tablet-width) {
     font-size: 28px;
   }
-
   @media (min-width: $desktop-width) {
     max-width: 360px;
   }
 }
+
 .sfr__summary-image {
   max-width: 540px;
   margin: 0 auto;
 }
+
 .sfr__subform {
-  padding-top: 25px;
   display: flex;
   flex-direction: column;
+  padding-top: 25px;
+
   gap: 15px;
 
   @media (min-width: $desktop-width) {
     gap: 40px;
   }
 }
-.sfr__subform-equip {
-}
+
 .sfr__subform-equip-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
   gap: 2px;
 }
-.sfr__subform-equip-item {
-}
+
 .sfr__subform-equip-desc-list {
-  margin: 0;
-  padding: 15px;
   display: flex;
   justify-content: space-between;
-  gap: 10px;
-  background-color: $bg2-color;
+  margin: 0;
+  padding: 15px;
+
   font-weight: 600;
   font-size: 18px;
   line-height: 120%;
+
+  background-color: $bg2-color;
+
+  gap: 10px;
 }
+
 .sfr__subform-equip-desc-term {
   margin: 0;
   padding: 0;
 
   color: $grey-color;
 }
+
 .sfr__subform-equip-desc-def {
   margin: 0;
   padding: 0;
 }
+
 .sfr__subform-wrapper {
   display: flex;
   flex-direction: column;
+
   gap: 20px;
 }
+
 .sfr__submit-button {
   @media (min-width: $desktop-width) {
-    max-width: 220px;
     width: 220px;
+    max-width: 220px;
     margin-top: 25px;
     margin-left: auto;
   }

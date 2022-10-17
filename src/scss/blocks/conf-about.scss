@@ -1,8 +1,9 @@
 .conf-about {
   padding: 25px 0;
 
-  background: linear-gradient(180deg, #453fa9 0%, #675fc6 100%);
   color: $white-color;
+
+  background: linear-gradient(180deg, #453fa9 0%, #675fc6 100%);
 
   @media (min-width: $desktop-width) {
     padding: 35px 0 75px;
@@ -16,33 +17,34 @@
     background-position: calc(100% - 95px) 50px;
   }
 }
-.conf-about__content {
 
-}
 .conf-about__main {
-  margin-bottom: 15px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 15px;
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 80px;
     width: 60%;
+    margin-bottom: 80px;
   }
 }
+
 .conf-about__title {
   margin-bottom: 15px;
+
   color: $white-color;
 }
+
 .conf-about__sub-title {
   margin: 0;
   margin-bottom: 15px;
 
-  font-family: $jost-font;
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
-
+  font-family: $jost-font;
 }
+
 .conf-about__text {
   margin: 0;
   margin-bottom: 15px;
@@ -53,59 +55,70 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 50px;
+
     font-size: 16px;
     line-height: 19px;
   }
 }
+
 .conf-about__button {
   @media (min-width: $tablet-width) {
     max-width: 220px;
   }
 }
-.conf-about__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
 
+.conf-about__list {
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
   gap: 8px;
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+
     gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
-.conf-about__item {
-}
+
 .conf-about__link {
-  height: 172px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 15px;
+  height: 172px;
   padding: 25px;
-  background-color: $white-color;
-  text-decoration: none;
+
   color: $black-color;
-  transition: all 0.3s ease;
+  text-decoration: none;
+
+  background-color: $white-color;
   border: 3px solid $blue-color;
   cursor: pointer;
 
+  transition: all 0.3s ease;
+
+  gap: 15px;
+
   & .conf-about__link-text {
-    color: inherit;
-    font-family: $jost-font;
     font-weight: 500;
     font-size: 28px;
     line-height: 34px;
+    font-family: $jost-font;
+    color: inherit;
+
     transition: color 0.3s ease;
   }
 
   & .conf-about__link-icon {
     flex-shrink: 0;
-    fill: $blue-color;
+
     transition: fill 0.3s ease;
+
+    fill: $blue-color;
   }
 
   &:hover {
@@ -119,10 +132,12 @@
       fill: $black-color;
     }
   }
+
   &:focus-visible {
-    outline: none;
     border-color: $button-color;
+    outline: none;
   }
+
   &:active {
     opacity: 0.7;
   }

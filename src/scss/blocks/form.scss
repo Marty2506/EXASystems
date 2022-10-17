@@ -27,11 +27,12 @@
 }
 
 .form__label--checkbox {
-  width: auto;
   display: flex;
-  gap: 20px;
   flex-direction: row;
   align-items: center;
+  width: auto;
+
+  gap: 20px;
 
   &:hover,
   &:focus-visible {
@@ -77,31 +78,33 @@
 }
 
 .form__field[type="number"] {
-  min-width: 73px;
   display: flex;
+  min-width: 73px;
   padding-right: 8px;
 }
 
 .form__field[type="number"]::-webkit-inner-spin-button {
-  opacity: 1;
   width: 8px;
   height: 37px;
+
+  opacity: 1;
 }
 
 
 .form__mark {
   width: 20px;
   height: 20px;
-  border: 1px solid $blue-color;
 
   background-color: $white-color;
+  border: 1px solid $blue-color;
 
-  transition: border 0.5s ease;;
+  transition: border 0.5s ease;
 }
 
 .form__checkbox-label-text {
   margin: 0;
   padding: 0;
+
   font-size: 14px;
   line-height: 130%;
 }
@@ -111,6 +114,7 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .form__checkbox:focus + .form__mark {
   border-color: $button-color;
 }

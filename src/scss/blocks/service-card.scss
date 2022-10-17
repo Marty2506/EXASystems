@@ -3,7 +3,7 @@
   z-index: 1;
 
   height: 370px;
-  padding: 30px 35px 43px 35px;
+  padding: 30px 35px 43px;
 
   background-color: $bg2-color;
   background-repeat: no-repeat;
@@ -13,7 +13,6 @@
   @media (max-width: $max-mobile-width) {
     background-position: calc(100% + 30px) 100%;
   }
-
   @media (min-width: $tablet-width) {
     padding: 30px 105px 30px 30px;
   }
@@ -23,6 +22,7 @@
       color: $blue-color;
     }
   }
+
   &:active {
     opacity: 0.9;
   }
@@ -55,6 +55,7 @@
     }
   }
 }
+
 .service-card__back-link {
   position: absolute;
   top: 0;
@@ -71,11 +72,13 @@
     outline: 2px solid $blue-color;
   }
 }
+
 .service-card__content {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
+
 .service-card__title {
   margin: 0;
   margin-bottom: 15px;
@@ -92,6 +95,7 @@
     margin-bottom: 25px;
   }
 }
+
 .service-card__description {
   margin: 0;
   padding: 0;
@@ -100,6 +104,7 @@
   line-height: 19px;
   color: $grey-color;
 }
+
 .service__card-button {
   align-self: flex-start;
   margin-top: auto;
@@ -120,6 +125,7 @@
     transition: all 0.3s ease;
   }
 }
+
 .service-card--support {
   background-image: url("@img/service-cards/support.webp");
   background-position: calc(100% + 20px) calc(100% + 45px);
@@ -128,18 +134,23 @@
     background-position: calc(100% - 10px) calc(100% + 45px);
   }
 }
+
 .service-card--servers {
   background-image: url("@img/service-cards/servers.webp");
 }
+
 .service-card--tele-systems {
   background-image: url("@img/service-cards/tele-systems.webp");
 }
+
 .service-card--it-consulting {
   background-image: url("@img/service-cards/it-consulting.webp");
 }
+
 .service-card--eng-systems {
   background-image: url("@img/service-cards/eng-systems.webp");
 }
+
 .service-card--safe-region {
   background-image: url("@img/service-cards/safe-region.webp");
 }
