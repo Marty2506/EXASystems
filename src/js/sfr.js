@@ -33,16 +33,16 @@ if (sfrForm) {
     errorTextTag: 'span', // Тег, который будет обрамлять текст ошибки
     errorTextClass: 'form__error-message' // Класс для элемента с текстом ошибки
   }, false);
+
   sfrFormPristine.addValidator(formPhone, (value) => {
     return (value.length === 18);
   }, "Номер неполный", 2, false);
+
   sfrForm.addEventListener('submit', function (e) {
     e.preventDefault();
     var valid = sfrFormPristine.validate();
     // TODO здесь должен написать запрос программист
   });
-
-
 
   const select = document.querySelector('#sfr-messengers');
   const choices = new Choices(select, {

@@ -1,24 +1,26 @@
-const consultationForm = document.querySelector('.services__form');
+const contactsForm = document.querySelector('.contacts__form');
 
-if (consultationForm) {
-  const consultationMaskOptions = {
+if (contactsForm) {
+  const MaskOptions = {
     mask: '+{7} (000) 000-00-00',
   };
-  const consultationFormPhone = document.querySelector('#consultation-phone');
-  IMask(consultationFormPhone, consultationMaskOptions);
+  const formPhone = document.querySelector('#contacts-phone');
+  IMask(formPhone, MaskOptions);
 
-  const consultationFormPristine = new Pristine(consultationForm, {
+  const contactsFormPristine = new Pristine(contactsForm, {
     classTo: 'form__label', // Элемент, на который будут добавляться классы
     errorTextParent: 'form__label', // Элемент, куда будет выводиться текст с ошибкой
     errorTextTag: 'span', // Тег, который будет обрамлять текст ошибки
     errorTextClass: 'form__error-message' // Класс для элемента с текстом ошибки
   }, true);
-  consultationFormPristine.addValidator(consultationFormPhone, (value) => {
+
+  contactsFormPristine.addValidator(formPhone, (value) => {
     return (value.length === 18);
   }, "Номер неполный", 2, false);
-  consultationForm.addEventListener('submit', function (e) {
+
+  contactsForm.addEventListener('submit', function (e) {
     e.preventDefault();
-    var valid = consultationFormPristine.validate();
+    var valid = contactsFormPristine.validate();
     // TODO здесь должен написать запрос программист
   });
 }

@@ -15,6 +15,9 @@ modals.forEach(modal => {
   const closeButton = modal.querySelector('.modal__close-button');
   closeButton.addEventListener('click', hideModal);
 
+  const modalPhone = document.querySelector('#modal-phone');
+  IMask(modalPhone, modalMaskOptions);
+
   const modalForm = document.querySelector('.modal__form');
   const modalPristine = new Pristine(modalForm, {
     classTo: 'form__label', // Элемент, на который будут добавляться классы
@@ -22,13 +25,17 @@ modals.forEach(modal => {
     errorTextTag: 'span', // Тег, который будет обрамлять текст ошибки
     errorTextClass: 'form__error-message' // Класс для элемента с текстом ошибки
   }, true);
+
+  modalPristine.addValidator(modalPhone, (value) => {
+    return (value.length === 18);
+  }, "Номер неполный", 2, false);
+
+
   modalForm.addEventListener('submit', function (e) {
     e.preventDefault();
     var valid = modalPristine.validate();
     // TODO здесь должен написать запрос программист
   });
-  const modalPhone = document.querySelector('#modal-phone');
-  IMask(modalPhone, modalMaskOptions);
 
 });
 
@@ -120,6 +127,12 @@ if (modalOrder) {
     errorTextTag: 'span', // Тег, который будет обрамлять текст ошибки
     errorTextClass: 'form__error-message' // Класс для элемента с текстом ошибки
   }, true);
+
+  modalOrderPristine.addValidator(modalOrderPhone, (value) => {
+    return (value.length === 18);
+  }, "Номер неполный", 2, false);
+
+
   modalOrderForm.addEventListener('submit', function (e) {
     e.preventDefault();
     var valid = modalOrderPristine.validate();

@@ -13,6 +13,12 @@ if (engineerConsForm) {
     errorTextTag: 'span', // Тег, который будет обрамлять текст ошибки
     errorTextClass: 'form__error-message' // Класс для элемента с текстом ошибки
   }, true);
+
+  engineerConsFormPristine.addValidator(formPhone, (value) => {
+    return (value.length === 18);
+  }, "Номер неполный", 2, false);
+
+
   engineerConsForm.addEventListener('submit', function (e) {
     e.preventDefault();
     var valid = engineerConsFormPristine.validate();
