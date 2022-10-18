@@ -19,7 +19,7 @@ var casesLayout = Macy({
       },
       columns: 2
     },
-    1321: {
+    1181: {
       margin: {
         x: 38,
         y: 75

@@ -7,7 +7,7 @@ menuSubs.forEach(submenu => {
   const link = submenu.parentNode.querySelector('.menu__link');
   if (link) {
     link.addEventListener('click', (evt) => {
-      if (!link.classList.contains('menu__link--end') && window.innerWidth < 1321) {
+      if (!link.classList.contains('menu__link--end') && window.innerWidth < 1181) {
         evt.preventDefault();
         submenu.classList.add('menu__sub--active');
         const backButton = submenu.querySelector('.menu__back-button');

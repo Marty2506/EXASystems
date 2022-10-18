@@ -20,7 +20,7 @@ const comparisonSwiperOptions = {
     768: {
       slidesPerView: 2,
     },
-    1321: {
+    1280: {
       slidesPerView: 3,
     },
   }

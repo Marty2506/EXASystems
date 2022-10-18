@@ -1,9 +1,15 @@
+// Paddings
+$pads-d: 30;
+$paddings-mobile: 8px;
+$paddings-desktop: $pads-d * 1px;
+
+
 // Viewports
 $min-mobile-width: 320px;
 $tablet-width: 768px;
-$desktop-width: 1321px; // 1121 + 2*100
-$max-mobile-width: 767px;
-$max-tablet-width: 1320px;
+$desktop-width: 1121px + 2 * $paddings-desktop;
+$max-mobile-width: $tablet-width - 1px;
+$max-tablet-width: $desktop-width - 1px;
 
 // Colors
 $primary-color: #453fa9;
@@ -18,9 +24,7 @@ $aqua-color: #2aa898;
 $blue-color: #0eadff;
 $testcolor: #fffeee;
 
-// Paddings
-$paddings-mobile: 8px;
-$paddings-desktop: 100px;
+
 
 // Font
 $jost-font: "Jost", "Arial", sans-serif;
