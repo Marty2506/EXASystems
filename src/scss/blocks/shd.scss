@@ -1,0 +1,43 @@
+.shd {
+  padding: 25px 0;
+
+  background-color: $bg2-color;
+
+  @media (min-width: $desktop-width) {
+    padding: 30px 0;
+  }
+}
+.shd__content {
+}
+.shd__title {
+  margin-bottom: 22px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
+}
+.shd__form {
+  @media (min-width: $desktop-width) {
+    padding: 55px 57px;
+    background-color: $white-color;
+  }
+}
+.shd__common {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  border: none;
+  gap: 22px;
+
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
+}
+.shd__topology-list {
+}
+.shd__hdd-type-list {
+}
+.shd__ctrl-type-list {
+}

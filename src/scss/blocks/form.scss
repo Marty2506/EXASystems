@@ -147,6 +147,62 @@
   opacity: 0.7;
 }
 
+.form__square-radio-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+.form__square-radio-item {
+  &:not(:first-of-type) {
+    margin-left: -1px;
+  }
+}
+.form__square-radio {
+
+}
+.form__square-radio-input {
+}
+.form__square-radio-mark {
+  display: inline-block;
+  padding: 10px 15px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  color: $grey-color;
+  background-color: $white-color;
+  border: 1px solid #ebebeb;
+  transition: all 0.3s ease;
+  box-sizing: content-box;
+
+  &:hover {
+    position: relative;
+    border-color: $blue-color;
+    border-width: 2px;
+    padding: 9px 14px;
+    background-color: $bg2-color;
+    z-index: 1;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+.form__square-radio-input:checked + .form__square-radio-mark {
+  position: relative;
+  border-color: $blue-color;
+  border-width: 2px;
+  padding: 9px 14px;
+  background-color: $bg2-color;
+  z-index: 1;
+}
+.form__square-radio-input:focus + .form__square-radio-mark {
+  border-color: $blue-color;
+  background-color: $bg2-color;
+}
+
+// Настройка выпадающего селекта
+
 .form-choices {
   position: relative;
 

@@ -20,6 +20,73 @@
       </div>
     </div>
 
+    <section class="shd section">
+      <div class="container">
+        <div class="shd__content section__content">
+          <h1 class="shd__title title">Конфигуратор СХД</h1>
+          <form class="shd__form form" action="" method="post">
+            <fieldset class="shd__common">
+              <legend class="visually-hidden">Общее</legend>
+              <ul class="shd__topology-list form__square-radio-list">
+                <li class="form__square-radio-item">
+                  <label class="form__square-radio">
+                    <input class="form__square-radio-input visually-hidden" type="radio" name="shd-topology" id="" value="FC">
+                    <span class="form__square-radio-mark">FC</span>
+                  </label>
+                </li>
+                <li class="form__square-radio-item">
+                  <label class="form__square-radio">
+                    <input class="form__square-radio-input visually-hidden" type="radio" name="shd-topology" id="" value="SAS">
+                    <span class="form__square-radio-mark">SAS</span>
+                  </label>
+                </li>
+                <li class="form__square-radio-item">
+                  <label class="form__square-radio">
+                    <input class="form__square-radio-input visually-hidden" type="radio" name="shd-topology" id="" value="iSCSi">
+                    <span class="form__square-radio-mark">iSCSi</span>
+                  </label>
+                </li>
+                <li class="form__square-radio-item">
+                  <label class="form__square-radio">
+                    <input class="form__square-radio-input visually-hidden" type="radio" name="shd-topology" id="" value="10GbiSCSI" checked>
+                    <span class="form__square-radio-mark">10GbiSCSI</span>
+                  </label>
+                </li>
+              </ul>
+              <ul class="shd__hdd-type-list form__square-radio-list">
+                <li class="form__square-radio-item">
+                  <label class="form__square-radio">
+                    <input class="form__square-radio-input visually-hidden" type="radio" name="shd-ssd-type" id="" value="2,5" checked>
+                    <span class="form__square-radio-mark">2,5”</span>
+                  </label>
+                </li>
+                <li class="form__square-radio-item">
+                  <label class="form__square-radio">
+                    <input class="form__square-radio-input visually-hidden" type="radio" name="shd-ssd-type" id="" value="3,5">
+                    <span class="form__square-radio-mark">3,5”</span>
+                  </label>
+                </li>
+              </ul>
+              <ul class="shd__ctrl-type-list form__square-radio-list">
+                <li class="form__square-radio-item">
+                  <label class="form__square-radio">
+                    <input class="form__square-radio-input visually-hidden" type="radio" name="shd-ctrl-type" id="" value="single" checked>
+                    <span class="form__square-radio-mark">Single controller</span>
+                  </label>
+                </li>
+                <li class="form__square-radio-item">
+                  <label class="form__square-radio">
+                    <input class="form__square-radio-input visually-hidden" type="radio" name="shd-ctrl-type" id="" value="dual">
+                    <span class="form__square-radio-mark">Dual controller</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </section>
+
     {% include "./blocks/our-advantages.j2" %}
   </main>
 {% endblock content %}
