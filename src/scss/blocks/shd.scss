@@ -41,3 +41,131 @@
 }
 .shd__ctrl-type-list {
 }
+
+.shd__groups {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @media (min-width: $desktop-width) {
+    padding: 20px;
+    gap: 0;
+  }
+}
+.shd__groups-item {
+}
+.shd__group {
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: flex;
+
+
+  @media (max-width: $max-mobile-width) {
+
+  }
+  @media (max-width: $max-tablet-width) {
+    padding: 15px;
+    flex-direction: column;
+    background-color: $white-color;
+  }
+  @media (min-width: $desktop-width) {
+    border-bottom: 1px solid #ebebeb;;
+  }
+}
+.shd__group-title {
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  margin-bottom: 15px;
+  padding-right: 15px;
+  align-items: center;
+  width: 175px;
+  flex-shrink: 0;
+  height: max-content;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 130%;
+
+  color: $blue-color;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 17px;
+  }
+}
+.shd__group-title {
+  &::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+.shd__group--platform .shd__group-title::before {
+  background-image: url("@img/icons/shd-platforms-icon.svg");
+}
+.shd__group--hdd .shd__group-title::before {
+  background-image: url("@img/icons/shd-hdd-icon.svg");
+}
+.shd__group-content {
+  flex-grow: 1;
+}
+.shd__group-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+.shd__group-item {
+}
+.shd__group-row {
+  display: flex;
+  padding: 15px;
+}
+.shd__group-row--centered {
+  align-items: center;
+}
+.shd__group-row-input {
+  order: 4;
+}
+.shd__radio-mark {
+  order: 3;
+}
+.shd__price {
+  flex-shrink: 0;
+  order: 2;
+  margin: 0 10px;
+  font-size: 14px;
+  line-height: 17px;
+  color: $grey-color;
+
+  &::before {
+    content: "+ ";
+  }
+}
+.shd__group-row-text {
+  order: 1;
+  margin-right: auto;
+}
+.shd__hdd-slots-num {
+  margin: 0;
+  margin-right: auto;
+  padding: 0;
+  font-size: 14px;
+  line-height: 130%;
+  color: $grey-color;
+}
+.shd__hdd-slots-num-val {
+  font-weight: 700;
+  color: $black-color;
+}
+.shd__hdd-slots-row {
+  gap: 10px;
+  flex-wrap: wrap;
+}
