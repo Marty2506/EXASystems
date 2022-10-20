@@ -24,7 +24,7 @@
       <div class="container">
         <div class="shd__content section__content">
           <h1 class="shd__title title">Конфигуратор СХД</h1>
-          <form class="shd__form form" action="" method="post">
+          <form class="shd__form form" id="shd-form" action="" method="post">
             <fieldset class="shd__common">
               <legend class="visually-hidden">Общее</legend>
               <ul class="shd__topology-list form__square-radio-list">
@@ -221,6 +221,52 @@
                   </div>
                 </fieldset>
               </li>
+              <li class="shd__groups-item">
+                <fieldset class="shd__group shd__group--hdd-jbod">
+                  <legend class="visually-hidden">Жесткие диски JBOD</legend>
+                  <p class="shd__group-title">Жесткие диски JBOD</p>
+                  <div class="shd__group-content">
+                    <div class="shd__group-row">
+                      <select class="form__select" id="shd-jbod" name="shd-jbod">
+                        <option value="">Добавить JBOD</option>
+                        <option value="JBOD1">JBOD1</option>
+                        <option value="JBOD2">JBOD2</option>
+                        <option value="JBOD3">JBOD3</option>
+                      </select>
+                    </div>
+                  </div>
+                </fieldset>
+              </li>
+              <li class="shd__groups-item">
+                <fieldset class="shd__group shd__group--adapters">
+                  <legend class="visually-hidden">Адаптеры для установки в сервер и опции</legend>
+                  <p class="shd__group-title">Адаптеры для&nbsp;установки в&nbsp;сервер и опции</p>
+                  <div class="shd__group-content">
+                    <div class="shd__group-row shd__group-row--centered shd__group-row--straight">
+                      <span class="shd__group-row-text">EonStor converged host board</span>
+                      <span class="shd__price">860$</span>
+                      <select class="form__select" id="shd-eonstor-converged-port-numbers" name="shd-eonstor-converged-port-numbers">
+                        <option value="">Количество портов</option>
+                        <option value="4 x 8Gb/s FC ports">4 x 8Gb/s FC ports</option>
+                        <option value="2 x 16Gb/s FCports">2 x 16Gb/s FCports</option>
+                        <option value="4 x 10Gb/s iSCSI">4 x 10Gb/s iSCSI</option>
+                        <option value="4 x 10Gb/s FCoE ports">4 x 10Gb/s FCoE ports</option>
+                      </select>
+                    </div>
+                    <div class="shd__group-row shd__group-row--centered shd__group-row--straight">
+                      <span class="shd__group-row-text">EonStor host board</span>
+                      <span class="shd__price">860$</span>
+                      <select class="form__select" id="shd-eonstor-port-numbers" name="shd-eonstor-port-numbers">
+                        <option value="">Количество портов</option>
+                        <option value="4 x 8Gb/s FC ports">4 x 8Gb/s FC ports</option>
+                        <option value="2 x 16Gb/s FCports">2 x 16Gb/s FCports</option>
+                        <option value="4 x 10Gb/s iSCSI">4 x 10Gb/s iSCSI</option>
+                        <option value="4 x 10Gb/s FCoE ports">4 x 10Gb/s FCoE ports</option>
+                      </select>
+                    </div>
+                  </div>
+                </fieldset>
+              </li>
             </ul>
 
           </form>
@@ -237,5 +283,7 @@
 {% endblock %}
 
 {% block js %}
+
+  <script src="./js/shd.min.js"></script>
   <script src="./js/main.min.js"></script>
 {% endblock %}

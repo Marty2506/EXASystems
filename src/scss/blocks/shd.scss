@@ -104,13 +104,19 @@
     height: 32px;
     background-position: center;
     background-repeat: no-repeat;
+    flex-shrink: 0;
   }
 }
 .shd__group--platform .shd__group-title::before {
   background-image: url("@img/icons/shd-platforms-icon.svg");
 }
-.shd__group--hdd .shd__group-title::before {
+.shd__group--hdd .shd__group-title::before,
+.shd__group--hdd-jbod .shd__group-title::before {
   background-image: url("@img/icons/shd-hdd-icon.svg");
+}
+.shd__group--adapters .shd__group-title::before {
+  background-image: url("@img/icons/shd-adapters-icon.svg");
+  align-self: flex-start;
 }
 .shd__group-content {
   flex-grow: 1;
@@ -169,3 +175,20 @@
   gap: 10px;
   flex-wrap: wrap;
 }
+
+.shd__choices {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    max-width: 295px;
+  }
+}
+
+.shd__group-row--straight {
+  & .shd__group-row-text,
+  & .shd__price,
+  & .form__select {
+    order: 0;
+  }
+}
+
