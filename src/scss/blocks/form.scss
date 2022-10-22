@@ -64,7 +64,6 @@
   background-color: #ebf3f8;
   border: none;
   box-shadow: inset 1px 1px 0 rgb(0 0 0 / 15%);
-
 }
 
 .form__field--textarea {
@@ -86,31 +85,36 @@
 
 .form__field[type="number"]::-webkit-inner-spin-button {
   opacity: 0;
+
   appearance: none;
 }
 
 .form__field-number-wrapper {
   position: relative;
+
   display: inline-block;
 }
 
 .form__number-input-button {
   position: absolute;
-  right: 8px;
   top: 50%;
-  padding: 0;
-  margin: 0;
-  background-color: transparent;
+  right: 8px;
 
+  margin: 0;
+  padding: 0;
+
+  background-color: transparent;
   border-width: 0.25rem;
   border-style: solid;
   border-color: #333333 transparent transparent;
   cursor: pointer;
 }
+
 .form__number-input-button--inc {
   border-color: transparent transparent #333333;
   transform: translateY(-150%);
 }
+
 .form__number-input-button--dec {
   transform: translateY(50%);
 }
@@ -172,34 +176,37 @@
 }
 
 .form__square-radio-list {
+  display: flex;
   margin: 0;
   padding: 0;
+
   list-style-type: none;
-  display: flex;
 }
+
 .form__square-radio-item {
   &:not(:first-of-type) {
     margin-left: -1px;
   }
 }
-.form__square-radio {
 
-}
-.form__square-radio-input {
-}
+
 .form__square-radio-mark {
   display: inline-block;
   padding: 10px 15px;
+
   font-weight: 600;
   font-size: 18px;
   line-height: 120%;
   color: $grey-color;
+
   background-color: $white-color;
   border: 1px solid #ebebeb;
+
   transition: background-color, color 0.3s ease;
 
   &:hover {
     color: $blue-color;
+
     background-color: $bg2-color;
   }
 
@@ -207,66 +214,79 @@
     opacity: 0.7;
   }
 }
+
 .form__square-radio-input:checked + .form__square-radio-mark {
   position: relative;
-  border-color: $blue-color;
-  border-width: 2px;
-  padding: 9px 14px;
-  background-color: $bg2-color;
   z-index: 1;
-}
-.form__square-radio-input:focus-visible + .form__square-radio-mark {
-  border-color: $button-color;
+
+  padding: 9px 14px;
+
   background-color: $bg2-color;
+  border-width: 2px;
+  border-color: $blue-color;
+}
+
+.form__square-radio-input:focus-visible + .form__square-radio-mark {
+  background-color: $bg2-color;
+  border-color: $button-color;
 }
 
 .form__radio {
   display: flex;
 }
-.form__radio-input {
-}
+
 .form__radio-mark {
   position: relative;
+
   flex-shrink: 0;
   width: 20px;
   height: 20px;
-  border-radius: 50%;
+
   border: 2px solid $blue-color;
+  border-radius: 50%;
+
   transition: background-color 0.2s ease;
 
   &::before {
+    content: "";
     position: absolute;
     top: 50%;
     left: 50%;
-    content: "";
+
     width: 11px;
     height: 11px;
-    border-radius: 50%;
+
     background-color: $white-color;
+    border-radius: 50%;
     transform: translate(-50%, -50%);
+
     transition: background-color 0.2s ease;
   }
 
   &:hover {
     background: #f7f7fd;
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 1px 2px rgb(0 0 0 / 15%);
 
     &::before {
       background-color: #ebebeb;
     }
   }
 }
+
 .form__radio-input:checked + .form__radio-mark {
   &::before {
     background-color: $blue-color;
   }
 }
+
 .form__radio-input:focus-visible + .form__radio-mark {
   border-color: $button-color;
+
   &::before {
     background-color: $button-color;
   }
 }
+
 .form__radio-text {
   @media (max-width: $max-mobile-width) {
     word-break: break-word;
@@ -365,6 +385,7 @@
   font-size: 14px;
   line-height: 130%;
   color: $black-color;
+
   cursor: default;
 
   &[data-value="Whatsapp"] {
@@ -500,23 +521,26 @@
   }
 
   &[data-type*="select-one"]::after {
-    left: auto;
     right: 10px;
+    left: auto;
   }
 
   & .form-choices__list--dropdown {
     & .form-choices__item {
       color: $black-color;
     }
+
     & .form-choices__paceholder {
       color: $grey-color;
     }
   }
 }
+
 .is-open.form-choices {
   & .form-choices__paceholder {
     color: $grey-color;
   }
+
   & .form-choices__list--dropdown {
     & .is-selected.form-choices__paceholder {
       display: none;

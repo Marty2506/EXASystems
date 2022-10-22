@@ -5,7 +5,9 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
+
     padding: 30px 0;
+
     background-color: transparent;
 
     &::before {
@@ -24,8 +26,7 @@
     }
   }
 }
-.shd__content {
-}
+
 .shd__title {
   margin-bottom: 22px;
 
@@ -33,19 +34,25 @@
     margin-bottom: 30px;
   }
 }
+
 .shd__form {
   gap: 10px;
+
   @media (min-width: $desktop-width) {
     padding: 55px 57px;
+
     background-color: $white-color;
   }
 }
+
 .shd__common {
-  padding: 0;
-  margin: 0;
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
   border: none;
+
   gap: 22px;
 
 
@@ -53,40 +60,41 @@
     justify-content: space-between;
   }
 }
-.shd__topology-list {
-}
-.shd__hdd-type-list {
-}
-.shd__ctrl-type-list {
-}
+
+
+
 
 .shd__groups {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
   gap: 10px;
 
   @media (min-width: $desktop-width) {
     padding: 20px;
+
     gap: 0;
   }
 }
 
 .shd__group {
+  display: flex;
   margin: 0;
   padding: 0;
+
   border: none;
-  display: flex;
 
 
   @media (max-width: $max-mobile-width) {
-
   }
   @media (max-width: $max-tablet-width) {
-    padding: 15px;
     flex-direction: column;
+    padding: 15px;
+
     background-color: $white-color;
   }
   @media (min-width: $desktop-width) {
@@ -100,73 +108,84 @@
 
 .shd__group-title {
   display: flex;
-  gap: 10px;
+  flex-shrink: 0;
+  align-items: center;
+  width: 175px;
+  height: max-content;
   margin: 0;
   margin-bottom: 15px;
   padding-right: 15px;
-  align-items: center;
-  width: 175px;
-  flex-shrink: 0;
-  height: max-content;
 
   font-weight: 700;
   font-size: 14px;
   line-height: 130%;
-
   color: $blue-color;
+
+  gap: 10px;
 
   @media (min-width: $desktop-width) {
     margin-top: 17px;
   }
 }
+
 .shd__group-title {
   &::before {
     content: "";
-    width: 32px;
-    height: 32px;
-    background-position: center;
-    background-repeat: no-repeat;
+
     flex-shrink: 0;
     align-self: flex-start;
+    width: 32px;
+    height: 32px;
+
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
+
 .shd__group--platform .shd__group-title::before {
   background-image: url("@img/icons/shd-platforms-icon.svg");
 }
+
 .shd__group--hdd .shd__group-title::before,
 .shd__group--hdd-jbod .shd__group-title::before {
   background-image: url("@img/icons/shd-hdd-icon.svg");
 }
+
 .shd__group--adapters .shd__group-title::before {
   background-image: url("@img/icons/shd-adapters-icon.svg");
 }
+
 .shd__group--cache .shd__group-title::before {
   background-image: url("@img/icons/shd-cache-icon.svg");
 }
+
 .shd__group--soft .shd__group-title::before {
   background-image: url("@img/icons/shd-cache-icon.svg");
 }
+
 .shd__group--reserve-copy .shd__group-title::before {
   background-image: url("@img/icons/shd-reserve-copy-icon.svg");
 }
+
 .shd__group--add-info .shd__group-title::before {
   content: none;
 }
 
 .shd__group-content {
   display: flex;
-  flex-direction: column;
   flex-grow: 1;
+  flex-direction: column;
 }
+
 .shd__group-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
 }
-.shd__group-item {
-}
+
 .shd__group-row {
   display: flex;
   padding: 15px;
@@ -178,19 +197,24 @@
     margin: auto 0;
   }
 }
+
 .shd__group-row--centered {
   align-items: center;
 }
+
 .shd__group-row-input {
   order: 4;
 }
+
 .shd__radio-mark {
   order: 3;
 }
+
 .shd__price {
   flex-shrink: 0;
   order: 2;
   margin: 0 10px;
+
   font-size: 14px;
   line-height: 17px;
   color: $grey-color;
@@ -199,26 +223,32 @@
     content: "+ ";
   }
 }
+
 .shd__group-row-text {
   order: 1;
-  margin-right: auto;
   max-width: 650px;
+  margin-right: auto;
 }
+
 .shd__hdd-slots-num {
   margin: 0;
   margin-right: auto;
   padding: 0;
+
   font-size: 14px;
   line-height: 130%;
   color: $grey-color;
 }
+
 .shd__hdd-slots-num-val {
   font-weight: 700;
   color: $black-color;
 }
+
 .shd__hdd-slots-row {
-  gap: 10px;
   flex-wrap: wrap;
+
+  gap: 10px;
 }
 
 .shd__choices {
@@ -233,12 +263,14 @@
   @media (max-width: $max-mobile-width) {
     flex-direction: column;
     align-items: flex-start;
+
     gap: 10px;
 
     & .shd__price {
       margin: 0;
     }
   }
+
   & .shd__group-row-text,
   & .shd__price,
   & .form__select {
@@ -247,36 +279,37 @@
 }
 
 .shd__count-wrapper {
-  padding: 15px;
   display: flex;
   flex-direction: column;
+  padding: 15px;
+
   gap: 10px;
 
   @media (max-width: $max-tablet-width) {
     background-color: $white-color;
   }
-
   @media (min-width: $tablet-width) {
     flex-direction: row;
   }
-
   @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
     padding: 15px 30px;
   }
-
   @media (min-width: $desktop-width) {
     padding: 15px 20px;
   }
 }
+
 .shd__count {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  gap: 15px;
+  align-items: center;
 
+  gap: 15px;
 }
+
 .shd__count-text {
   color: $grey-color;
+
   @media (min-width: $desktop-width) {
     width: 175px;
   }
@@ -288,6 +321,7 @@
 
   &:hover {
     color: $white-color;
+
     background-color: $blue-color;
   }
 
@@ -296,4 +330,3 @@
     margin-left: auto;
   }
 }
-
