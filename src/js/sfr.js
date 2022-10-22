@@ -2,15 +2,39 @@ const sfrForm = document.querySelector('#sfr-form');
 
 if (sfrForm) {
   const camsInputs = document.querySelectorAll('.sfr__number-field');
-  const camInputMask = {
-    mask: Number,
-    scale: 0,
-    signed: false,
-    min: 0,
-    max: 99
-  }
   camsInputs.forEach(element => {
-    IMask(element, camInputMask);
+    const mask = IMask(element, {
+      mask: Number,
+      scale: 0,
+      signed: false,
+      min: element.min,
+      max: element.max
+    });
+
+    element.addEventListener('blur', () => {
+      if (element.value === "") {
+        element.value = 0;
+        mask.updateValue();
+      }
+    })
+    const incButton = element.parentNode.querySelector('.form__number-input-button--inc');
+    if (incButton) {
+      incButton.addEventListener('click', () => {
+        element.stepUp();
+        mask.updateValue();
+      })
+    }
+    const decButton = element.parentNode.querySelector('.form__number-input-button--dec');
+    if (decButton) {
+      decButton.addEventListener('click', () => {
+        element.stepDown();
+        mask.updateValue();
+      })
+    }
+    element.parentNode.parentNode.addEventListener('mousedown', (evt) => {
+      evt.preventDefault();
+      element.focus();
+    })
   });
 
   const crossButtons = document.querySelectorAll('.sfr__clear-button');
