@@ -245,6 +245,9 @@
   }
 }
 .form__radio-text {
+  @media (max-width: $max-mobile-width) {
+    word-break: break-word;
+  }
 }
 
 // Настройка выпадающего селекта
@@ -339,6 +342,7 @@
   font-size: 14px;
   line-height: 130%;
   color: $black-color;
+  cursor: default;
 
   &[data-value="Whatsapp"] {
     &::before {
@@ -482,6 +486,16 @@
       color: $black-color;
     }
     & .form-choices__paceholder {
+      color: $grey-color;
+    }
+  }
+}
+.is-open.form-choices {
+  & .form-choices__paceholder {
+    color: $grey-color;
+  }
+  & .form-choices__list--dropdown {
+    & .is-selected.form-choices__paceholder {
       display: none;
     }
   }
