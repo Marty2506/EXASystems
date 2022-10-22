@@ -154,6 +154,8 @@
 }
 
 .shd__group-content {
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
 }
 .shd__group-list {
@@ -171,6 +173,9 @@
 
   @media (max-width: $max-mobile-width) {
     padding: 15px 0;
+  }
+  @media (min-width: $tablet-width) {
+    margin: auto 0;
   }
 }
 .shd__group-row--centered {
@@ -253,6 +258,10 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    padding: 15px 30px;
   }
 
   @media (min-width: $desktop-width) {
