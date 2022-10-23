@@ -64,6 +64,11 @@
   background-color: #ebf3f8;
   border: none;
   box-shadow: inset 1px 1px 0 rgb(0 0 0 / 15%);
+
+  &:hover,
+  &:focus-visible {
+    outline: 2px solid $blue-color;
+  }
 }
 
 .form__field--textarea {
@@ -76,11 +81,6 @@
   display: flex;
   min-width: 73px;
   padding-right: 8px;
-
-  &:hover,
-  &:focus {
-    outline: 2px solid $blue-color;
-  }
 }
 
 .form__field[type="number"]::-webkit-inner-spin-button {
