@@ -1,41 +1,42 @@
-.conf-serv {
-
-}
-
 .conf-serv__filters-list {
   gap: 10px;
 
   @media (min-width: $tablet-width) {
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
   }
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(5, 1fr);
   }
 }
+
 .conf-serv__filters-item {
   width: 100%;
-  max-width: 350px;
+  max-width: $average-mobile-width;
 }
 
 .conf-serv__dropdowns {
   margin-bottom: 20px;
 }
+
 .conf-serv__dropdowns-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
   gap: 10px;
 }
+
 .conf-serv__dropdowns-item {
   width: 100%;
 
   @media (min-width: $tablet-width) {
     max-width: calc(50% - 5px);
   }
-
   @media (min-width: $desktop-width) {
     max-width: 300px;
   }

@@ -36,6 +36,7 @@
   &:hover,
   &:focus-visible {
     outline: none;
+
     &::before {
       background-color: $button-color;
     }
