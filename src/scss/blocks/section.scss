@@ -16,6 +16,22 @@
   flex-direction: column;
 }
 
+.section__main-title {
+  margin: 0;
+  padding: 0;
+  font-family: $jost-font;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 110%;
+
+  @media (min-width: $desktop-width) {
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 110%;
+  }
+}
+
 .section__title {
   margin: 0;
   margin-bottom: 15px;
@@ -25,15 +41,24 @@
   line-height: 115%;
 }
 
-.section__subtitle {
+.section__sub-title {
+  margin: 0;
+  padding: 0;
+  font-family: $jost-font;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 115%;
 
+  @media (min-width: $desktop-width) {
+    font-size: 22px;
+  }
 }
 
 .section__text-content {
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
 }
 
 .section__paragraph {
@@ -117,16 +142,17 @@
   display: flex;
   margin: 0;
   padding: 0;
-  height: 200px;
+  height: 203px;
   overflow: hidden;
   width: 100%;
+  background-color: #d1d0cf;
 }
 
 .section__card-image {
   width: 100%;
-  height: auto;
-  margin: auto;
+  height: 100%;
   object-fit: cover;
+  object-position: center center;
 }
 
 .section__card--with-btn {
@@ -138,6 +164,70 @@
   }
 }
 
-.section__card--with-img {
-
+.section__content--with-big-img {
+  position: relative;
 }
+
+.section__half {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  @media (min-width: $desktop-width) {
+    gap: 30px;
+    max-width: calc(50% - 20px);
+    align-self: flex-end;
+  }
+}
+.section__big-image-wrapper {
+  width: 100%;
+  height: 230px;
+
+  @media (min-width: $desktop-width) {
+    height: 514px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-width: inherit;
+  }
+}
+.section__big-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section__half {
+
+  & .section__text-content {
+    margin-bottom: 0;
+  }
+}
+.section__check-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.section__check-list-item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+
+  &::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url("@img/icons/check-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+.section__button {
+  @media (max-width: $max-mobile-width) {
+    max-width: 100%;
+  }
+}
+
+

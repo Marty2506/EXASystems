@@ -1,4 +1,5 @@
 {% extends "layout.j2" %}
+{% set imageCount = 1%}
 
 {% set page = "templates" %}
 
@@ -59,11 +60,12 @@
           </div>
           <ul class="section__list">
             <li class="section__list-item">
-              <div class="section__card section__card--with-img">
+              <div class="section__card">
                 <div class="section__card-content">
                   <picture class="section__card-image-wrapper">
-                    <source type="image/webp" srcset="https://picsum.photos/400/300?random=1 1x, https://picsum.photos/400/300?random=1 2x">
-                    <img class="section__card-image" src="https://picsum.photos/400/300?random=1" srcset="https://picsum.photos/400/300g?random=1 2x" alt="Описание картинки.">
+                    <source type="image/webp" srcset="https://picsum.photos/400/300?random={{imageCount}} 1x, https://picsum.photos/400/300?random={{imageCount}} 2x">
+                    <img class="section__card-image" src="https://picsum.photos/400/300?random={{imageCount}}" srcset="https://picsum.photos/400/300g?random={{imageCount}} 2x" alt="Описание картинки.">
+                    {% set imageCount = imageCount + 1%}
                   </picture>
                   <p class="section__card-title">Двухфакторная аутентификация пользователей</p>
                   <p class="section__card-paragraph">Для входа в операционную систему Microsoft Windows и корпоративную сеть пользователю необходимо иметь USB-токен или смарт-карту JaCarta.</p>
@@ -71,11 +73,12 @@
               </div>
             </li>
             <li class="section__list-item">
-              <div class="section__card section__card--with-img">
+              <div class="section__card">
                 <div class="section__card-content">
                   <picture class="section__card-image-wrapper">
-                    <source type="image/webp" srcset="https://picsum.photos/400/300?random=2 1x, https://picsum.photos/400/300?random=2 2x">
-                    <img class="section__card-image" src="https://picsum.photos/400/300?random=2" srcset="https://picsum.photos/400/300g?random=2 2x" alt="Описание картинки.">
+                    <source type="image/webp" srcset="https://picsum.photos/400/300?random={{imageCount}} 1x, https://picsum.photos/400/300?random={{imageCount}} 2x">
+                    <img class="section__card-image" src="https://picsum.photos/400/300?random={{imageCount}}" srcset="https://picsum.photos/400/300g?random={{imageCount}} 2x" alt="Описание картинки.">
+                    {% set imageCount = imageCount + 1%}
                   </picture>
                   <p class="section__card-title">Двухфакторная аутентификация пользователей</p>
                   <p class="section__card-paragraph">Для входа в операционную систему Microsoft Windows и корпоративную сеть пользователю необходимо иметь USB-токен или смарт-карту JaCarta.</p>
@@ -83,11 +86,12 @@
               </div>
             </li>
             <li class="section__list-item">
-              <div class="section__card section__card--with-img">
+              <div class="section__card">
                 <div class="section__card-content">
                   <picture class="section__card-image-wrapper">
-                    <source type="image/webp" srcset="https://picsum.photos/400/300?random=3 1x, https://picsum.photos/400/300?random=3 2x">
-                    <img class="section__card-image" src="https://picsum.photos/400/300?random=3" srcset="https://picsum.photos/400/300g?random=3 2x" alt="Описание картинки.">
+                    <source type="image/webp" srcset="https://picsum.photos/400/300?random={{imageCount}} 1x, https://picsum.photos/400/300?random={{imageCount}} 2x">
+                    <img class="section__card-image" src="https://picsum.photos/400/300?random={{imageCount}}" srcset="https://picsum.photos/400/300g?random={{imageCount}} 2x" alt="Описание картинки.">
+                    {% set imageCount = imageCount + 1%}
                   </picture>
                   <p class="section__card-title">Двухфакторная аутентификация пользователей</p>
                   <p class="section__card-paragraph">Для входа в операционную систему Microsoft Windows и корпоративную сеть пользователю необходимо иметь USB-токен или смарт-карту JaCarta.</p>
@@ -109,11 +113,12 @@
           </div>
           <ul class="section__list section__list--four-in-row">
             <li class="section__list-item">
-              <div class="section__card section__card--with-img">
+              <div class="section__card">
                 <div class="section__card-content">
                   <picture class="section__card-image-wrapper">
-                    <source type="image/webp" srcset="https://picsum.photos/400/300?random=1 1x, https://picsum.photos/400/300?random=1 2x">
-                    <img class="section__card-image" src="https://picsum.photos/400/300?random=1" srcset="https://picsum.photos/400/300g?random=1 2x" alt="Описание картинки.">
+                    <source type="image/webp" srcset="https://picsum.photos/400/300?random={{imageCount}} 1x, https://picsum.photos/400/300?random={{imageCount}} 2x">
+                    <img class="section__card-image" src="https://picsum.photos/400/300?random={{imageCount}}" srcset="https://picsum.photos/400/300g?random={{imageCount}} 2x" alt="Описание картинки.">
+                    {% set imageCount = imageCount + 1%}
                   </picture>
                   <p class="section__card-title">Двухфакторная аутентификация пользователей</p>
                   <p class="section__card-paragraph">Для входа в операционную систему Microsoft Windows и корпоративную сеть пользователю необходимо иметь USB-токен или смарт-карту JaCarta.</p>
@@ -121,11 +126,12 @@
               </div>
             </li>
             <li class="section__list-item">
-              <div class="section__card section__card--with-img">
+              <div class="section__card">
                 <div class="section__card-content">
                   <picture class="section__card-image-wrapper">
-                    <source type="image/webp" srcset="https://picsum.photos/400/300?random=2 1x, https://picsum.photos/400/300?random=2 2x">
-                    <img class="section__card-image" src="https://picsum.photos/400/300?random=2" srcset="https://picsum.photos/400/300g?random=2 2x" alt="Описание картинки.">
+                    <source type="image/webp" srcset="https://picsum.photos/400/300?random={{imageCount}} 1x, https://picsum.photos/400/300?random={{imageCount}} 2x">
+                    <img class="section__card-image" src="https://picsum.photos/400/300?random={{imageCount}}" srcset="https://picsum.photos/400/300g?random={{imageCount}} 2x" alt="Описание картинки.">
+                    {% set imageCount = imageCount + 1%}
                   </picture>
                   <p class="section__card-title">Двухфакторная аутентификация пользователей</p>
                   <p class="section__card-paragraph">Для входа в операционную систему Microsoft Windows и корпоративную сеть пользователю необходимо иметь USB-токен или смарт-карту JaCarta.</p>
@@ -133,11 +139,12 @@
               </div>
             </li>
             <li class="section__list-item">
-              <div class="section__card section__card--with-img">
+              <div class="section__card">
                 <div class="section__card-content">
                   <picture class="section__card-image-wrapper">
-                    <source type="image/webp" srcset="https://picsum.photos/400/300?random=3 1x, https://picsum.photos/400/300?random=3 2x">
-                    <img class="section__card-image" src="https://picsum.photos/400/300?random=3" srcset="https://picsum.photos/400/300g?random=3 2x" alt="Описание картинки.">
+                    <source type="image/webp" srcset="https://picsum.photos/400/300?random={{imageCount}} 1x, https://picsum.photos/400/300?random={{imageCount}} 2x">
+                    <img class="section__card-image" src="https://picsum.photos/400/300?random={{imageCount}}" srcset="https://picsum.photos/400/300g?random={{imageCount}} 2x" alt="Описание картинки.">
+                    {% set imageCount = imageCount + 1%}
                   </picture>
                   <p class="section__card-title">Двухфакторная аутентификация пользователей</p>
                   <p class="section__card-paragraph">Для входа в операционную систему Microsoft Windows и корпоративную сеть пользователю необходимо иметь USB-токен или смарт-карту JaCarta.</p>
@@ -145,11 +152,12 @@
               </div>
             </li>
             <li class="section__list-item">
-              <div class="section__card section__card--with-img">
+              <div class="section__card">
                 <div class="section__card-content">
                   <picture class="section__card-image-wrapper">
-                    <source type="image/webp" srcset="https://picsum.photos/400/300?random=4 1x, https://picsum.photos/400/300?random=4 2x">
-                    <img class="section__card-image" src="https://picsum.photos/400/300?random=4" srcset="https://picsum.photos/400/300g?random=4 2x" alt="Описание картинки.">
+                    <source type="image/webp" srcset="https://picsum.photos/400/300?random={{imageCount}} 1x, https://picsum.photos/400/300?random={{imageCount}} 2x">
+                    <img class="section__card-image" src="https://picsum.photos/400/300?random={{imageCount}}" srcset="https://picsum.photos/400/300g?random={{imageCount}} 2x" alt="Описание картинки.">
+                    {% set imageCount = imageCount + 1%}
                   </picture>
                   <p class="section__card-title">Двухфакторная аутентификация пользователей</p>
                   <p class="section__card-paragraph">Для входа в операционную систему Microsoft Windows и корпоративную сеть пользователю необходимо иметь USB-токен или смарт-карту JaCarta.</p>
@@ -157,6 +165,33 @@
               </div>
             </li>
           </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--lb-bg section--with-paddings">
+      <div class="container">
+        <div class="section__content section__content--with-big-img">
+          <div class="section__half">
+            <h2 class="section__main-title">Какие системы мы поддерживаем</h2>
+            <picture class="section__big-image-wrapper">
+              <source type="image/webp" srcset="https://picsum.photos/600/600?random={{imageCount}} 1x, https://picsum.photos/600/600?random={{imageCount}} 2x">
+              <img class="section__big-image" src="https://picsum.photos/600/600?random={{imageCount}}" srcset="https://picsum.photos/600/600?random={{imageCount}} 2x" alt="Описание картинки.">
+              {% set imageCount = imageCount + 1%}
+            </picture>
+            <div class="section__text-content">
+              <p class="section__sub-title">Описательный текст блока на любое неограниченное количество символов</p>
+              <p class="section__card-paragraph">Для входа в операционную систему Microsoft Windows и корпоративную сеть пользователю необходимо иметь USB-токен или смарт-карту JaCarta.</p>
+            </div>
+            <ul class="section__check-list">
+              <li class="section__check-list-item">Компьютерные сети, сервера и АРМ</li>
+              <li class="section__check-list-item">Базы данных</li>
+              <li class="section__check-list-item">Системы связи</li>
+              <li class="section__check-list-item">Системы защиты IT инфраструктуры</li>
+              <li class="section__check-list-item">Корпоративная почта</li>
+            </ul>
+            <button class="section__button button button--blue" type="button">Запросить прайс-лист</button>
+          </div>
         </div>
       </div>
     </section>
