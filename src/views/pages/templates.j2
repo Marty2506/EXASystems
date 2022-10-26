@@ -169,6 +169,7 @@
       </div>
     </section>
 
+
     <section class="section section--lb-bg section--with-paddings">
       <div class="container">
         <div class="section__content section__content--with-big-img">
@@ -196,6 +197,7 @@
       </div>
     </section>
 
+    {% set sectionSwiperCnt = 1 %}
     <section class="section section--lb-bg section--with-paddings">
       <div class="container">
         <div class="section__content section__content--with-slider">
@@ -281,6 +283,19 @@
                   </div>
                 </div>
               </div>
+
+              <button class="section__swiper-button section__swiper-button--prev" id="section-swiper-{{sectionSwiperCnt}}-prev" type="button">
+                <svg class="section__swiper-button-icon" width="12" height="10" viewBox="0 0 12 10">
+                  <use xlink:href="img/sprite.svg#swiper-arrow-icon"></use>
+                </svg>
+                <span class="visually-hidden">Перелестнуть назад</span>
+              </button>
+              <button class="section__swiper-button section__swiper-button--next" id="section-swiper-{{sectionSwiperCnt}}-next" type="button">
+                <svg class="section__swiper-button-icon" width="12" height="10" viewBox="0 0 12 10">
+                  <use xlink:href="img/sprite.svg#swiper-arrow-icon"></use>
+                </svg>
+                <span class="visually-hidden">Перелестнуть назад</span>
+              </button>
             </div>
             <div class="section__text-content">
               <p class="section__sub-title">Описательный текст блока на любое неограниченное количество символов</p>
@@ -298,6 +313,9 @@
         </div>
       </div>
     </section>
+    {% set sectionSwiperCnt = sectionSwiperCnt + 1 %}
+
+
   </main>
 {% endblock content %}
 

@@ -169,6 +169,18 @@
   position: relative;
 }
 
+.section__content--with-big-img {
+  @media (min-width: $desktop-width) {
+    min-height: 514px;
+  }
+}
+
+.section__content--with-slider{
+  @media (min-width: $desktop-width) {
+    min-height: 557px;
+  }
+}
+
 .section__half {
   display: flex;
   flex-direction: column;
@@ -232,6 +244,7 @@
 }
 
 .section__swiper-wrapper {
+  position: relative;
   width: 100%;
 
   @media (min-width: $desktop-width) {
@@ -251,6 +264,10 @@
 .section__swiper-slide {
   height: 232px;
 
+  @media (min-width: $tablet-width) {
+    height: 350px;
+  }
+
   @media (min-width: $desktop-width) {
     height: 450px;
   }
@@ -260,16 +277,93 @@
 
 
 .section__swiper--thumbs {
-  @media (max-width: $max-mobile-width) {
+  @media (max-width: $max-tablet-width) {
     display: none;
   }
 }
 
 .section__swiper-thumb {
-  height: 88px;
+  height: $section-thumbs-height * 1px;
 }
 
 .section__swiper-thumb-wrapper {
 }
 
+.section__swiper-button {
+  position: absolute;
+  bottom: $section-thumbs-height * 0.5px;
+  z-index: 10;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid $blue-color;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: $white-color;
+
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+
+  & .section__swiper-button-icon {
+    transition: fill 0.3s ease;
+
+    fill: $blue-color;
+  }
+
+  &:hover {
+    border-color: $button-color;
+    & .section__swiper-button-icon {
+      fill: $button-color;
+    }
+  }
+
+  &:focus-visible {
+    border-color: $button-color;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+
+  @media (max-width: $max-tablet-width) {
+    bottom: 50%;
+  }
+}
+
+.section__swiper-button--prev {
+  left: 0;
+  transform: translate(-50%, 50%) rotate(180deg);
+
+  @media (max-width: $max-mobile-width) {
+    transform: translate(-$paddings-mobile, 50%) rotate(180deg);
+  }
+}
+
+.section__swiper-button--next {
+  right: 0;
+  transform: translate(50%, 50%);
+
+  @media (max-width: $max-mobile-width) {
+    transform: translate($paddings-mobile, 50%);
+  }
+}
+
+.section__swiper-button--lock {
+  display: none;
+}
+
+.section__swiper-button--disabled {
+  pointer-events: none;
+  border-color: $grey-color;
+
+  & .section__swiper-button-icon {
+    fill: $grey-color;
+  }
+}
 

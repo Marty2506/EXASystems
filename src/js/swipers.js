@@ -32,10 +32,10 @@ if (comparisonSwiperItem) {
 
 const sectionSwipers = document.querySelectorAll('.section__swiper--main');
 
-sectionSwipers.forEach(sectionSwiper => {
+sectionSwipers.forEach((sectionSwiper, index) => {
   const thumbsSwiperItem = sectionSwiper.nextSibling;
   const thumbsSwiperOptions = {
-    loop: true,
+    loop: false,
     spaceBetween: 20,
     slidesPerView: 5,
     freeMode: true,
@@ -47,16 +47,17 @@ sectionSwipers.forEach(sectionSwiper => {
     loop: false,
     slidesPerView: 1,
     speed: 700,
+    navigation: {
+      nextEl: `#section-swiper-${index + 1}-next`,
+      prevEl: `#section-swiper-${index + 1}-prev`,
+      lockClass: "section__swiper-button--lock",
+      disabledClass: "section__swiper-button--disabled",
+    },
     thumbs: {
       swiper: thumbsSwiper,
     },
-    // navigation: {
-    //   nextEl: ".swiper-button--next",
-    //   prevEl: ".swiper-button--prev",
-    //   lockClass: "swiper-button--lock",
-    //   disabledClass: "swiper-button--disabled",
-    // },
   }
+  console.log(mainSwiperOptions);
   const mainSwiper = new Swiper(sectionSwiper, mainSwiperOptions);
 });
 
