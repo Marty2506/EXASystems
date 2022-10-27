@@ -61,4 +61,34 @@ sectionSwipers.forEach((sectionSwiper, index) => {
   const mainSwiper = new Swiper(sectionSwiper, mainSwiperOptions);
 });
 
+const sectionCardSwipers = document.querySelectorAll('.section__card-swiper');
+
+sectionCardSwipers.forEach((sectionCardSwiper, index) => {
+  const swiperOptions = {
+    loop: false,
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    speed: 700,
+    navigation: {
+      nextEl: `#section-card-swiper-${index + 1}-next`,
+      prevEl: `#section-card-swiper-${index + 1}-prev`,
+      lockClass: "section__swiper-button--lock",
+      disabledClass: "section__swiper-button--disabled",
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: "auto",
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      1181: {
+        slidesPerView: 4,
+      },
+    }
+  }
+
+  const cardSwiper = new Swiper(sectionCardSwiper, swiperOptions);
+});
+
 
