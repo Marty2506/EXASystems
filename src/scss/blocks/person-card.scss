@@ -1,0 +1,42 @@
+.person-card {
+  height: 330px;
+  overflow: hidden;
+  background-color: $white-color;
+}
+
+.person-card__info {
+  padding: 15px;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.person-card__name {
+  margin: 0;
+  padding: 0;
+
+  font-family: $jost-font;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.person-card__job-title {
+  margin: 0;
+  padding: 0;
+  line-height: 20px;
+  color: #bbbbbc;
+}
+.person-card__photo-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.person-card__image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: top;
+}
