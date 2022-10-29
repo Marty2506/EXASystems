@@ -18,10 +18,11 @@
 }
 
 .section__header {
-  margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
+
   gap: 10px;
 
   @media (min-width: $desktop-width) {
@@ -32,11 +33,11 @@
 .section__main-title {
   margin: 0;
   padding: 0;
-  font-family: $jost-font;
 
   font-weight: 500;
   font-size: 24px;
   line-height: 110%;
+  font-family: $jost-font;
 
   @media (min-width: $desktop-width) {
     font-weight: 600;
@@ -49,6 +50,7 @@
   margin: 0;
   margin-bottom: 15px;
   padding: 0;
+
   font-weight: 700;
   font-size: 28px;
   line-height: 115%;
@@ -57,10 +59,11 @@
 .section__sub-title {
   margin: 0;
   padding: 0;
-  font-family: $jost-font;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 115%;
+  font-family: $jost-font;
 
   @media (min-width: $desktop-width) {
     font-size: 22px;
@@ -76,31 +79,35 @@
 }
 
 .section__text-content {
-  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 30px;
+
   gap: 10px;
 }
 
 .section__paragraph {
   margin: 0;
   padding: 0;
+
   color: $par-color;
 }
 
 .section__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
   gap: 20px;
 
   @media (min-width: $tablet-width) {
     display: grid;
+
     grid-template-columns: repeat(2, 1fr);
   }
-
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -115,28 +122,30 @@
 .section__list-item {
   width: 100%;
 }
-.section__card {
 
-}
 
 .section__card-content {
   display: flex;
   flex-direction: column;
+
   gap: 20px;
 }
+
 .section__card-title {
   margin: 0;
   padding: 0;
-  font-family: $jost-font;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
+  font-family: $jost-font;
 }
+
 .section__card-paragraph {
   margin: 0;
   padding: 0;
-
 }
+
 .section__card-button {
   width: 100%;
   max-width: $average-mobile-width;
@@ -159,25 +168,29 @@
     opacity: 1;
   }
 }
+
 .section__card-image-wrapper {
   display: flex;
+  width: 100%;
+  height: 203px;
   margin: 0;
   padding: 0;
-  height: 203px;
   overflow: hidden;
-  width: 100%;
+
   background-color: #d1d0cf;
 }
 
 .section__card-image {
   width: 100%;
   height: 100%;
+
   object-fit: cover;
   object-position: center center;
 }
 
 .section__card--with-btn {
   padding: 20px;
+
   background-color: $bg2-color;
 
   @media (min-width: $desktop-width) {
@@ -205,31 +218,37 @@
 .section__half {
   display: flex;
   flex-direction: column;
+
   gap: 15px;
 
   @media (min-width: $desktop-width) {
-    gap: 30px;
-    max-width: calc(50% - 20px);
     align-self: flex-end;
+    max-width: calc(50% - 20px);
+
+    gap: 30px;
   }
 }
+
 .section__big-image-wrapper {
   width: 100%;
   height: 230px;
   overflow: hidden;
 
   @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    max-width: inherit;
     height: 100%;
     max-height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    max-width: inherit;
   }
 }
+
 .section__image {
   width: 100%;
   height: 100%;
+
   object-fit: cover;
 }
 
@@ -242,39 +261,47 @@
 
   & .section__big-image-wrapper {
     @media (min-width: $desktop-width) {
-      left: auto;
       right: 0;
+      left: auto;
     }
   }
 }
-.section__half {
 
+.section__half {
   & .section__text-content {
     margin-bottom: 0;
   }
 }
+
 .section__check-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
   gap: 16px;
 }
+
 .section__check-list-item {
   display: flex;
-  gap: 12px;
   align-items: center;
+
+  gap: 12px;
 
   &::before {
     content: "";
+
     width: 24px;
     height: 24px;
+
     background-image: url("@img/icons/check-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
 }
+
 .section__button {
   @media (max-width: $max-mobile-width) {
     max-width: 100%;
@@ -283,15 +310,18 @@
 
 .section__swiper-wrapper {
   position: relative;
+
   width: 100%;
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    left: 0;
     top: 0;
-    max-width: inherit;
+    left: 0;
+
     display: flex;
     flex-direction: column;
+    max-width: inherit;
+
     gap: 20px;
   }
 }
@@ -302,13 +332,11 @@
   @media (min-width: $tablet-width) {
     height: 350px;
   }
-
   @media (min-width: $desktop-width) {
     height: 450px;
   }
 }
-.section__swiper-slide-wrapper {
-}
+
 
 .section__swiper--thumbs {
   @media (max-width: $max-tablet-width) {
@@ -330,15 +358,14 @@
   align-items: center;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  border: 2px solid $blue-color;
-
   margin: 0;
   padding: 0;
 
   background-color: $white-color;
-
+  border: 2px solid $blue-color;
+  border-radius: 50%;
   cursor: pointer;
+
   transition: border-color 0.3s ease;
 
   & .section__swiper-button-icon {
@@ -349,6 +376,7 @@
 
   &:hover {
     border-color: $button-color;
+
     & .section__swiper-button-icon {
       fill: $button-color;
     }
@@ -369,6 +397,7 @@
 
 .section__swiper-button--prev {
   left: 0;
+
   transform: translate(-50%, 50%) rotate(180deg);
 
   @media (max-width: $max-mobile-width) {
@@ -378,6 +407,7 @@
 
 .section__swiper-button--next {
   right: 0;
+
   transform: translate(50%, 50%);
 
   @media (max-width: $max-mobile-width) {
@@ -390,8 +420,9 @@
 }
 
 .section__swiper-button--disabled {
-  pointer-events: none;
   border-color: #ececec;
+
+  pointer-events: none;
 
   & .section__swiper-button-icon {
     fill: #ececec;
@@ -416,70 +447,81 @@
 }
 
 .section__adv-list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
+
   list-style-type: none;
-  display: flex;
-  flex-direction: column;
+
   gap: 30px;
 
   @media (min-width: $tablet-width) {
     display: grid;
+
+    column-gap: 35px;
+
     grid-template-columns: repeat(2, 1fr);
     row-gap: 45px;
-    column-gap: 35px;
   }
-
   @media (min-width: $desktop-width) {
     margin-bottom: 45px;
+
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 .section__adv-list--single-col {
   margin-bottom: 0;
+
   @media (min-width: $tablet-width) {
     display: flex;
+
     gap: 30px;
   }
 }
+
 .section__adv-list-item {
   display: flex;
-  gap: 15px;
 
+  gap: 15px;
 }
+
 .seaction__adv-icon {
   flex-shrink: 0;
+  align-self: flex-start;
   max-width: 65px;
   max-height: 65px;
-  align-self: flex-start;
 }
+
 .section__adv-text {
   margin: 0;
   padding: 0;
+
   font-weight: 300;
 
   & span {
     font-weight: 700;
   }
 }
-.section__card-swiper-container {
-}
-.section__card-swiper {
-}
+
+
 .section__card-swiper-slide {
   @media (max-width: $max-mobile-width) {
     min-width: 251px;
   }
 }
+
 .section__card-swiper-container {
   position: relative;
 }
 
 .section__card-swiper-buttons {
   display: flex;
-  gap: 12px;
   flex-shrink: 0;
+
+  gap: 12px;
 
   @media (min-width: $desktop-swiper-width) {
     display: none;
@@ -487,10 +529,10 @@
 
   & .section__swiper-button {
     position: static;
-    z-index: auto;
-    left: auto;
     right: auto;
     bottom: auto;
+    left: auto;
+    z-index: auto;
   }
 
   & .section__swiper-button--prev {
@@ -508,10 +550,12 @@
   @media (min-width: $desktop-swiper-width) {
     position: absolute;
     top: 50%;
-    left: -55px;
     right: -55px;
+    left: -55px;
+
     display: flex;
     justify-content: space-between;
+
     transform: translateY(-50%);
   }
 }
@@ -519,8 +563,9 @@
 .section--with-form {
   & .section__half {
     @media (min-width: $desktop-width) {
-      gap: 25px;
       max-width: 480px;
+
+      gap: 25px;
     }
   }
 
@@ -530,10 +575,9 @@
     @media (min-width: $tablet-width) {
       height: 370px;
     }
-
     @media (min-width: $desktop-width) {
-      height: 100%;
       max-width: calc(100% - 480px - 40px);
+      height: 100%;
     }
 
     & .section__image {
@@ -548,6 +592,7 @@
 
 .section__form-label-text {
   color: #2a2a2a;
+
   opacity: 1;
 }
 
