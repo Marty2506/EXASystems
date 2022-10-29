@@ -80,22 +80,6 @@
   border-radius: 10px;
   box-shadow: 4px 4px 11px rgb(0 0 0 / 5%);
 
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   top: 26px;
-  //   right: 26px;
-  //   width: 12px;
-  //   height: 12px;
-  //   opacity: 0;
-
-  //   transition: opacity 0.3s ease;
-
-  //   background-image: url("@img/icons/vendor-arrow-icon.svg");
-  //   background-repeat: no-repeat;
-  //   background-position: center;
-  // }
-
   &:hover {
     // background-color: $bg2-color;
     & .vendors__company-about {
@@ -132,4 +116,8 @@
   color: #bbbbbc;
 
   transition: color 0.3s ease;
+}
+
+.vendors__swiper {
+  padding: 5px 15px 15px 5px;
 }
