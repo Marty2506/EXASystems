@@ -33,7 +33,8 @@ if (shdForm) {
       highlightedState: 'is-highlighted',
       selectedState: 'is-selected',
       flippedState: 'is-flipped'
-    }
+    },
+    allowHTML: true
   }
   const jbodChoice = new Choices(jbodSelect, selectOptions);
 

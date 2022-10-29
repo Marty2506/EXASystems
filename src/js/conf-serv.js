@@ -37,7 +37,9 @@ const selectOptions = {
     highlightedState: 'is-highlighted',
     selectedState: 'is-selected',
     flippedState: 'is-flipped'
-  }
+  },
+  allowHTML: true
+
 }
 
 const confServModelSelect = document.querySelector('#conf-serv-model');

@@ -97,7 +97,8 @@ if (sfrForm) {
       highlightedState: 'is-highlighted',
       selectedState: 'is-selected',
       flippedState: 'is-flipped'
-    }
+    },
+    allowHTML: true
   });
 
   const submitButton = sfrForm.querySelector('.sfr__submit-button');

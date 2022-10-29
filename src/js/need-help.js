@@ -54,7 +54,8 @@ if (needHelpForm) {
       highlightedState: 'is-highlighted',
       selectedState: 'is-selected',
       flippedState: 'is-flipped'
-    }
+    },
+    allowHTML: true
   });
 }
 

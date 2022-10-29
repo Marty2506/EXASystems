@@ -71,6 +71,10 @@
   }
 }
 
+.form__field::placeholder {
+  opacity: 0.7;
+}
+
 .form__field--textarea {
   height: 75px;
 

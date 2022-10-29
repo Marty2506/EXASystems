@@ -515,3 +515,46 @@
     transform: translateY(-50%);
   }
 }
+
+.section--with-form {
+  & .section__half {
+    @media (min-width: $desktop-width) {
+      gap: 25px;
+      max-width: 480px;
+    }
+  }
+
+  & .section__big-image-wrapper {
+    height: 270px;
+
+    @media (min-width: $tablet-width) {
+      height: 370px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 100%;
+      max-width: calc(100% - 480px - 40px);
+    }
+
+    & .section__image {
+      object-fit: contain;
+    }
+  }
+}
+
+.section__form {
+  gap: 25px;
+}
+
+.section__form-label-text {
+  color: #2a2a2a;
+  opacity: 1;
+}
+
+.section__form-checkbox {
+  gap: 10px;
+}
+
+.section__form-checkbox-text {
+  color: $grey-color;
+}

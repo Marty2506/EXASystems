@@ -55,6 +55,7 @@ if (engineerConsForm) {
       highlightedState: 'is-highlighted',
       selectedState: 'is-selected',
       flippedState: 'is-flipped'
-    }
+    },
+    allowHTML: true
   });
 }

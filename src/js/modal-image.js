@@ -44,7 +44,6 @@ certificates.forEach(certificate => {
 });
 
 const certCards = document.querySelectorAll('.cert-card__link');
-console.log(certCards);
 
 certCards.forEach(certCard => {
   certCard.addEventListener('click', (evt) => {

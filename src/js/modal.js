@@ -109,7 +109,8 @@ const messengersChoices = new Choices(messengersSelect, {
     highlightedState: 'is-highlighted',
     selectedState: 'is-selected',
     flippedState: 'is-flipped'
-  }
+  },
+  allowHTML: true
 });
 
 const modalOrder = document.querySelector('.modal--order');
@@ -170,7 +171,8 @@ if (modalOrder) {
        highlightedState: 'is-highlighted',
        selectedState: 'is-selected',
        flippedState: 'is-flipped'
-     }
+     },
+     allowHTML: true
    });
 
     const orderButtons = document.querySelectorAll('.order-button');

@@ -13,6 +13,15 @@ picture {
   height: 100%;
 }
 
+a {
+  color: $blue-color;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $button-color;
+  }
+}
+
 @keyframes showing-animation {
   0% {
     opacity: 0;
