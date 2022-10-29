@@ -40,6 +40,7 @@ sectionSwipers.forEach((sectionSwiper, index) => {
     slidesPerView: 5,
     freeMode: true,
     watchSlidesProgress: true,
+    simulateTouch: false,
   }
   const thumbsSwiper = new Swiper(thumbsSwiperItem, thumbsSwiperOptions);
 
@@ -47,6 +48,7 @@ sectionSwipers.forEach((sectionSwiper, index) => {
     loop: false,
     slidesPerView: 1,
     speed: 700,
+    simulateTouch: false,
     navigation: {
       nextEl: `#section-swiper-${index + 1}-next`,
       prevEl: `#section-swiper-${index + 1}-prev`,
@@ -57,7 +59,6 @@ sectionSwipers.forEach((sectionSwiper, index) => {
       swiper: thumbsSwiper,
     },
   }
-  console.log(mainSwiperOptions);
   const mainSwiper = new Swiper(sectionSwiper, mainSwiperOptions);
 });
 
@@ -69,6 +70,7 @@ sectionCardSwipers.forEach((sectionCardSwiper, index) => {
     slidesPerView: "auto",
     spaceBetween: 20,
     speed: 700,
+    simulateTouch: false,
     navigation: {
       nextEl: `#section-card-swiper-${index + 1}-next`,
       prevEl: `#section-card-swiper-${index + 1}-prev`,

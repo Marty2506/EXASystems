@@ -42,3 +42,16 @@ certificates.forEach(certificate => {
     modalImage.classList.add('modal-image--opened');
   })
 });
+
+const certCards = document.querySelectorAll('.cert-card__link');
+console.log(certCards);
+
+certCards.forEach(certCard => {
+  certCard.addEventListener('click', (evt) => {
+    evt.preventDefault();
+
+    modalImageContent.src = certCard.href;
+
+    modalImage.classList.add('modal-image--opened');
+  })
+});
