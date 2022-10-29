@@ -81,14 +81,9 @@
   box-shadow: 4px 4px 11px rgb(0 0 0 / 5%);
 
   &:hover {
-    // background-color: $bg2-color;
     & .vendors__company-about {
-      // color: $black-color;
       color: $button-color;
     }
-    // &::after {
-    //   opacity: 1;
-    // }
   }
 
   &:focus-visible {

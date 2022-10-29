@@ -9,6 +9,7 @@ $min-mobile-width: 320px;
 $average-mobile-width: 400px;
 $tablet-width: 768px;
 $desktop-width: 1121px + 2 * $paddings-desktop;
+$desktop-swiper-width: 1121px + 2 * $paddings-desktop + 150px;
 $max-mobile-width: $tablet-width - 1px;
 $max-tablet-width: $desktop-width - 1px;
 
