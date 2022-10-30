@@ -39,8 +39,9 @@ sectionSwipers.forEach((sectionSwiper, index) => {
     spaceBetween: 20,
     slidesPerView: 5,
     freeMode: true,
-    watchSlidesProgress: true,
-    simulateTouch: false,
+    watchSlidesProgress: false,
+    simulateTouch: true,
+    grabCursor: true
   }
   const thumbsSwiper = new Swiper(thumbsSwiperItem, thumbsSwiperOptions);
 
@@ -48,7 +49,8 @@ sectionSwipers.forEach((sectionSwiper, index) => {
     loop: false,
     slidesPerView: 1,
     speed: 700,
-    simulateTouch: false,
+    simulateTouch: true,
+    grabCursor: true,
     navigation: {
       nextEl: `#section-swiper-${index + 1}-next`,
       prevEl: `#section-swiper-${index + 1}-prev`,
@@ -70,7 +72,7 @@ sectionCardSwipers.forEach((sectionCardSwiper, index) => {
     slidesPerView: "auto",
     spaceBetween: 20,
     speed: 700,
-    simulateTouch: true,
+    simulateTouch: false,
     watchSlidesProgress: true,
     navigation: {
       nextEl: `#section-card-swiper-${index + 1}-next`,
