@@ -70,7 +70,8 @@ sectionCardSwipers.forEach((sectionCardSwiper, index) => {
     slidesPerView: "auto",
     spaceBetween: 20,
     speed: 700,
-    simulateTouch: false,
+    simulateTouch: true,
+    watchSlidesProgress: true,
     navigation: {
       nextEl: `#section-card-swiper-${index + 1}-next`,
       prevEl: `#section-card-swiper-${index + 1}-prev`,
@@ -85,7 +86,7 @@ sectionCardSwipers.forEach((sectionCardSwiper, index) => {
         slidesPerView: 3,
       },
       1181: {
-        slidesPerView: 4,
+        slidesPerView: 4
       },
     }
   }

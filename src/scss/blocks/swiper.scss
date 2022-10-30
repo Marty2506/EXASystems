@@ -1,23 +1,21 @@
 .swiper {
-  width: 100%;
   height: 100%;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
+  :active {
+    cursor: grabbing;
+  }
 }
 
 .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.swiper {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.swiper-slide {
   background-position: center;
   background-size: cover;
+
 
   @media (max-width: $max-mobile-width) {
     width: 100px;
