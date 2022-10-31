@@ -6,6 +6,7 @@ $button-height: 47;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 220px;
   max-width: 290px;
   height: $button-height + px;
   margin: 0;
@@ -19,6 +20,7 @@ $button-height: 47;
   background-color: $button-color;
   border: none;
   cursor: pointer;
+  border: 2px solid transparent;
 
   transition: all 0.3s ease;
 
@@ -29,7 +31,9 @@ $button-height: 47;
   }
 
   &:focus-visible {
-    outline: 2px solid $blue-color;
+    outline: none;
+    border-color: $blue-color;
+    border-radius: 2px;
   }
 
   &:active {
@@ -38,11 +42,21 @@ $button-height: 47;
 }
 
 .button--blue {
-  min-width: 220px;
-
   &:hover {
     color: $white-color;
 
     background-color: $blue-color;
+  }
+}
+
+.button--alternate {
+  background-color: transparent;
+  color: $blue-color;
+  border: 1px solid $blue-color;
+
+  &:hover,
+  &:focus-visible {
+    color: $button-color;
+    border-color: $button-color;
   }
 }

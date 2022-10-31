@@ -1,0 +1,53 @@
+{% extends "layout.j2" %}
+
+{% set page = "service-template" %}
+
+{% block content %}
+  <main class="page-main">
+    <div class="container">
+      <div class="breadcumbs">
+        <ul class="breadcumbs__list">
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="./index.html">Главная</a>
+          </li>
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="./services-and-solutions.html">Услуги ирешения</a>
+          </li>
+          <li class="breadcumbs__item">
+            <span class="breadcumbs__link breadcumbs__link--current">Шаблон услуги</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="service-header section">
+      <div class="container">
+        <div class="service-header__content section__content">
+          <h1 class="service-header__title section__main-title">Круглосуточная техническая поддержка и администрирование IT-инфраструктуры компании</h1>
+          <div class="service-header__text-content section__text-content">
+            <p class="section__paragraph">Обеспечим вашу компанию непрерывным локальным сервисом, чтобы бизнес работал бесперебойно</p>
+          </div>
+          <ul class="section__check-list">
+            <li class="section__check-list-item">Обеспечиваем доступность сервисов не ниже 99%</li>
+            <li class="section__check-list-item">Бесплатные консультации специалистов на любом этапе</li>
+            <li class="section__check-list-item">Среднее время реагирования - 15 минут</li>
+          </ul>
+          <div class="service-header__buttons">
+            <button class="section__button button button--blue" type="button">Запросить прайс-лист</button>
+            <button class="section__button button button--alternate" type="button">Получить консультацию</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+{% endblock content %}
+
+{% block modal %}
+  {% include "./blocks/modal-image.j2" %}
+{% endblock %}
+
+{% block js %}
+  <script src="./js/engineer-cons.min.js"></script>
+  <script src="./js/modal-image.min.js"></script>
+  <script src="./js/main.min.js"></script>
+{% endblock %}

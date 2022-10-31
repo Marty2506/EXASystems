@@ -1,0 +1,41 @@
+.service-header {
+  padding: 20px 0;
+  background-color: $bg2-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 0;
+    background-image: url("@img/service-header-bg.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 70px 0;
+  }
+}
+
+.service-header__content {
+  gap: 10px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 670px;
+    gap: 35px;
+  }
+}
+
+.service-header__title {
+}
+
+.service-header__text-content {
+  margin: 0;
+}
+
+.service-header__buttons {
+  display: flex;
+  gap: 30px;
+
+  @media (max-width: $max-mobile-width) {
+    flex-direction: column;
+  }
+}
