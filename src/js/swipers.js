@@ -93,6 +93,24 @@ sectionCardSwipers.forEach((sectionCardSwiper, index) => {
     }
   }
 
+  if (sectionCardSwiper.id === "trust-us-swiper") {
+    swiperOptions.breakpoints = {
+      320: {
+        slidesPerView: "auto",
+        spaceBetween: 10
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 45
+      },
+      1181: {
+        slidesPerView: 5,
+        spaceBetween: 45
+      },
+    }
+    console.log(swiperOptions);
+  }
+
   const cardSwiper = new Swiper(sectionCardSwiper, swiperOptions);
 });
 

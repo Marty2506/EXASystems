@@ -11,7 +11,7 @@
             <a class="breadcumbs__link" href="./index.html">Главная</a>
           </li>
           <li class="breadcumbs__item">
-            <a class="breadcumbs__link" href="./services-and-solutions.html">Услуги ирешения</a>
+            <a class="breadcumbs__link" href="./services-and-solutions.html">Услуги и решения</a>
           </li>
           <li class="breadcumbs__item">
             <span class="breadcumbs__link breadcumbs__link--current">Шаблон услуги</span>
@@ -39,6 +39,187 @@
         </div>
       </div>
     </section>
+
+    {% set sectionCardSwiperCnt = 1 %}
+    <section class="section section--with-paddings">
+      <div class="container">
+        <div class="section__content">
+          <div class="section__header">
+            <h3 class="section__title">Нам доверяют</h3>
+            <div class="section__card-swiper-buttons">
+              <button class="section__swiper-button section__swiper-button--prev" id="section-card-swiper-{{sectionCardSwiperCnt}}-prev" type="button">
+                <svg class="section__swiper-button-icon" width="12" height="10" viewBox="0 0 12 10">
+                  <use xlink:href="img/sprite.svg#swiper-arrow-icon"></use>
+                </svg>
+                <span class="visually-hidden">Перелестнуть назад</span>
+              </button>
+              <button class="section__swiper-button section__swiper-button--next" id="section-card-swiper-{{sectionCardSwiperCnt}}-next" type="button">
+                <svg class="section__swiper-button-icon" width="12" height="10" viewBox="0 0 12 10">
+                  <use xlink:href="img/sprite.svg#swiper-arrow-icon"></use>
+                </svg>
+                <span class="visually-hidden">Перелестнуть назад</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="section__card-swiper-container">
+            <div class="section__card-swiper swiper" id="trust-us-swiper">
+              <div class="swiper-wrapper">
+                <div class="section__card-swiper-slide swiper-slide">
+                  <div class="work-with-us__item">
+                    <div class="work-with-us__image-wrapper">
+                      <img src="@img/work-with-us/otkritie-logo.png" alt="Логотип компании Открытие." with="192" height="110">
+                    </div>
+                  </div>
+                </div>
+                <div class="section__card-swiper-slide swiper-slide">
+                  <div class="work-with-us__item">
+                    <div class="work-with-us__image-wrapper">
+                      <img src="@img/work-with-us/rkif-logo.png" alt="Логотип компании Российско-китайский инвестиционный фонд." with="156" height="34">
+                    </div>
+                  </div>
+                </div>
+                <div class="section__card-swiper-slide swiper-slide">
+                  <div class="work-with-us__item">
+                    <div class="work-with-us__image-wrapper">
+                      <img src="@img/work-with-us/ascott-group-logo.png" alt="Логотип компании ascott group." with="97" height="57">
+                    </div>
+                  </div>
+                </div>
+                <div class="section__card-swiper-slide swiper-slide">
+                  <div class="work-with-us__item">
+                    <div class="work-with-us__image-wrapper">
+                      <img src="@img/work-with-us/daf-logo.png" alt="Логотип компании DAF." with="114" height="31">
+                    </div>
+                  </div>
+                </div>
+                <div class="section__card-swiper-slide swiper-slide">
+                  <div class="work-with-us__item">
+                    <div class="work-with-us__image-wrapper">
+                      <img src="@img/work-with-us/logix-pro-logo.png" alt="Логотип компании logixPRO." with="134" height="31">
+                    </div>
+                  </div>
+                </div>
+                <div class="section__card-swiper-slide swiper-slide">
+                  <div class="work-with-us__item">
+                    <div class="work-with-us__image-wrapper">
+                      <img src="@img/work-with-us/pk-print-prof-logo.png" alt="Логотип компании ПК ПринтПроф." with="159" height="29">
+                    </div>
+                  </div>
+                </div>
+                <div class="section__card-swiper-slide swiper-slide">
+                  <div class="work-with-us__item">
+                    <div class="work-with-us__image-wrapper">
+                      <img src="@img/work-with-us/energia-logo.png" alt="Логотип компании Энергия." with="156" height="42">
+                    </div>
+                  </div>
+                </div>
+                <div class="section__card-swiper-slide swiper-slide">
+                  <div class="work-with-us__item">
+                    <div class="work-with-us__image-wrapper">
+                      <img src="@img/work-with-us/mrgroup-logo.png" alt="Логотип компании MR Group." with="143" height="31">
+                    </div>
+                  </div>
+                </div>
+                <div class="section__card-swiper-slide swiper-slide">
+                  <div class="work-with-us__item">
+                    <div class="work-with-us__image-wrapper">
+                      <img src="@img/work-with-us/stilnie-kuhni-logo.png" alt="Логотип компании Стильные кухни." with="135" height="42">
+                    </div>
+                  </div>
+                </div>
+                <div class="section__card-swiper-slide swiper-slide">
+                  <div class="work-with-us__item">
+                    <div class="work-with-us__image-wrapper">
+                      <img src="@img/work-with-us/osnova-logo.png" alt="Логотип группы компаний Основа." with="155" height="45">
+                    </div>
+                  </div>
+                </div>
+                <div class="section__card-swiper-slide swiper-slide">
+                  <div class="work-with-us__item">
+                    <div class="work-with-us__image-wrapper">
+                      <img src="@img/work-with-us/neometria-logo.png" alt="Логотип компании Неометрия." with="140" height="57">
+                    </div>
+                  </div>
+                </div>
+                <div class="section__card-swiper-slide swiper-slide">
+                  <div class="work-with-us__item">
+                    <div class="work-with-us__image-wrapper">
+                      <img src="@img/work-with-us/trexmer-logo.png" alt="Логотип компании Трехмер." with="137" height="56">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section__card-swiper-buttons section__card-swiper-buttons--desktop-only">
+              <button class="section__swiper-button section__swiper-button--prev" id="section-card-swiper-{{sectionCardSwiperCnt}}-prev" type="button">
+                <svg class="section__swiper-button-icon" width="12" height="10" viewBox="0 0 12 10">
+                  <use xlink:href="img/sprite.svg#swiper-arrow-icon"></use>
+                </svg>
+                <span class="visually-hidden">Перелестнуть назад</span>
+              </button>
+              <button class="section__swiper-button section__swiper-button--next" id="section-card-swiper-{{sectionCardSwiperCnt}}-next" type="button">
+                <svg class="section__swiper-button-icon" width="12" height="10" viewBox="0 0 12 10">
+                  <use xlink:href="img/sprite.svg#swiper-arrow-icon"></use>
+                </svg>
+                <span class="visually-hidden">Перелестнуть назад</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {% set sectionCardSwiperCnt = sectionCardSwiperCnt + 1 %}
+
+    <section class="section section--with-paddings">
+      <div class="container">
+        <div class="section__content">
+          <h3 class="section__title">Преимущества</h3>
+          <div class="section__text-content">
+            <p class="section__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nulla consectetur vitae molestiae? Suscipit quas quos praesentium iure voluptatem placeat quasi nihil voluptatibus consequatur. Eum est et accusamus, tenetur numquam, commodi blanditiis omnis libero veniam ratione minus maxime quidem accusantium deserunt consectetur dignissimos.</p>
+          </div>
+          <ul class="section__adv-list">
+            <li class="section__adv-list-item">
+              <img class="seaction__adv-icon" src="@img/feature-gear.svg" alt="" width="45" height="43">
+              <p class="section__adv-text">
+                <span>Опыт внедрения систем</span> на 5 000 пользователей и 15 000 единиц техники
+              </p>
+            </li>
+            <li class="section__adv-list-item">
+              <img class="seaction__adv-icon" src="@img/feature-gear.svg" alt="" width="45" height="43">
+              <p class="section__adv-text">
+                <span>Подбор оптимальных решений под инфраструктуру заказчика</span> в зависимости от задач (мультивендорный подход)
+              </p>
+            </li>
+            <li class="section__adv-list-item">
+              <img class="seaction__adv-icon" src="@img/feature-gear.svg" alt="" width="45" height="43">
+              <p class="section__adv-text">
+                <span>Консультации экспертов в области IT-безопасности</span>
+              </p>
+            </li>
+            <li class="section__adv-list-item">
+              <img class="seaction__adv-icon" src="@img/feature-gear.svg" alt="" width="45" height="43">
+              <p class="section__adv-text">
+                <span>Прозрачность уровня сервиса для бизнеса.</span> Отчётность и параметры согласно вашим требованиям
+              </p>
+            </li>
+            <li class="section__adv-list-item">
+              <img class="seaction__adv-icon" src="@img/feature-gear.svg" alt="" width="45" height="43">
+              <p class="section__adv-text">
+                <span>Возможность оперативного изменения IT-инфраструктуры</span> и ресурсов под динамику бизнеса
+              </p>
+            </li>
+            <li class="section__adv-list-item">
+              <img class="seaction__adv-icon" src="@img/feature-gear.svg" alt="" width="45" height="43">
+              <p class="section__adv-text">
+                <span>Мультивендорная поддержка.</span> Решение всех запросов через единую линию поддержки
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
   </main>
 {% endblock content %}
 
@@ -47,7 +228,8 @@
 {% endblock %}
 
 {% block js %}
-  <script src="./js/engineer-cons.min.js"></script>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/swipers.min.js"></script>
   <script src="./js/modal-image.min.js"></script>
   <script src="./js/main.min.js"></script>
 {% endblock %}
