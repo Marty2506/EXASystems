@@ -1,0 +1,7 @@
+.other-services-swiper__wrapper {
+  @media (max-width: $other-services-slide-mobile-bp) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

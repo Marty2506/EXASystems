@@ -108,7 +108,42 @@ sectionCardSwipers.forEach((sectionCardSwiper, index) => {
         spaceBetween: 45
       },
     }
-    console.log(swiperOptions);
+  }
+
+  if (sectionCardSwiper.id === "other-services-swiper") {
+    swiperOptions.breakpoints = {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      450: {
+        slidesPerView: "auto",
+        spaceBetween: 20
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      1181: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      },
+    }
+    swiperOptions.on = {
+      afterInit: (swiper) => {
+        console.log("afterInit", swiper.currentBreakpoint);
+        if (swiper.currentBreakpoint === "320") {
+          swiper.disable();
+        }
+      },
+      breakpoint: (swiper) => {
+        if (swiper.currentBreakpoint === "320") {
+          swiper.disable();
+        } else {
+          swiper.enable();
+        }
+      }
+    }
   }
 
   const cardSwiper = new Swiper(sectionCardSwiper, swiperOptions);

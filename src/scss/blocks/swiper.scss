@@ -15,10 +15,11 @@
   align-items: center;
   background-position: center;
   background-size: cover;
+  // width: auto;
 
 
   @media (max-width: $max-mobile-width) {
-    width: 100px;
+    width: min-content;
   }
 }
 
