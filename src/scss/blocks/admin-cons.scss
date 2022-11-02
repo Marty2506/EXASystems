@@ -1,0 +1,61 @@
+.admin-cons {
+
+}
+.admin-cons__photo-wrapper {
+  border-radius: 4px;
+  overflow: hidden;
+
+  @media (max-width: $max-tablet-width) {
+    position: relative;
+    border-radius: 4px 4px 0 0;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    height: 315px;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 500px;
+  }
+}
+
+.admin-cons__photo {
+  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+    object-fit: contain;
+  }
+}
+.admin-cons__photo-text-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 11px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  background-color: $white-color;
+  min-height: 86px;
+
+  @media (min-width: $desktop-width) {
+    min-height: 100px;
+    width: 225px;
+    padding: 18px 33px;
+    border-radius: 4px;
+  }
+}
+.admin-cons__name {
+  margin: 0;
+  padding: 0;
+  font-family: $jost-font;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+}
+.admin-cons__job-title {
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: $max-tablet-width) {
+    color: #bbbbbc;
+  }
+}

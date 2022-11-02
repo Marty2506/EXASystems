@@ -1,0 +1,48 @@
+<section class="admin-cons section section--with-paddings">
+  <div class="container">
+    <div class="section__content section__content--with-big-img section__content--image-right">
+      <div class="section__half">
+        <h2 class="section__main-title">Получите консультацию системного администратора ExaSystems с 10-летним опытом</h2>
+        <div class="admin-cons__photo-wrapper section__big-image-wrapper">
+          <picture>
+            <source type="image/webp" srcset="@img/admin-cons.webp">
+            <img class="admin-cons__photo section__image" src="@img/admin-cons.png" alt="">
+          </picture>
+          <div class="admin-cons__photo-text-wrapper">
+            <span class="admin-cons__name">Райан Гослинг</span>
+            <span class="admin-cons__job-title">Системный администратор</span>
+          </div>
+        </div>
+
+        <div class="section__text-content">
+          <p class="section__paragraph">Специалист перезвонит в течение 20 минут и ответит на ваши вопросы</p>
+        </div>
+        <form class="admin-cons__form section__form form" action="https://echo.htmlacademy.ru" method="post" id="admin-cons">
+          <label class="form__label">
+            <span class="section__form-label-text form__label-text form__label-text--black">Ваше имя</span>
+            <input class="form__field" type="text" id="admin-cons-client-name" name="admin-cons-client-name" placeholder="Введите ваше имя">
+          </label>
+          <div class="form__row">
+          <label class="form__label form__label--messengers">
+            <span class="section__form-label-text form__label-text form__label-text--black">Способ связи</span>
+            <select class="form__select" id="admin-cons-messengers" name="admin-cons-messengers">
+              <option value="Whatsapp">Whatsapp</option>
+              <option value="Telegram">Telegram</option>
+              <option value="Телефон">Телефон</option>
+            </select>
+          </label>
+          <label class="form__label">
+            <input class="form__field" type="tel" id="admin-cons-phone" name="admin-cons-phone" placeholder="+7 (999) 999-99-99" required data-pristine-required-message="Обязательно к заполнению">
+          </label>
+        </div>
+          <button class="button form__submit-button" type="submit">Получить консультацию</button>
+          <label class="section__form-checkbox form__label form__label--checkbox">
+            <input class="form__checkbox visually-hidden" type="checkbox" name="admin-cons-politics" id="admin-cons-politics" checked>
+            <span class="form__mark"></span>
+            <span class="section__form-checkbox-text form__checkbox-label-text">Согласен с <a href="#!">Политикой конфиденциальности сайта</a></span>
+          </label>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
