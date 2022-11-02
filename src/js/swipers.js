@@ -67,6 +67,12 @@ sectionSwipers.forEach((sectionSwiper, index) => {
 const sectionCardSwipers = document.querySelectorAll('.section__card-swiper');
 
 sectionCardSwipers.forEach((sectionCardSwiper, index) => {
+  const nav = {
+    nextEl: `.section-card-swiper-${index + 1}-next`,
+    prevEl: `.section-card-swiper-${index + 1}-prev`,
+    lockClass: "section__swiper-button--lock",
+    disabledClass: "section__swiper-button--disabled",
+  }
   const swiperOptions = {
     loop: false,
     slidesPerView: "auto",
@@ -74,12 +80,7 @@ sectionCardSwipers.forEach((sectionCardSwiper, index) => {
     speed: 700,
     simulateTouch: false,
     watchSlidesProgress: true,
-    navigation: {
-      nextEl: `#section-card-swiper-${index + 1}-next`,
-      prevEl: `#section-card-swiper-${index + 1}-prev`,
-      lockClass: "section__swiper-button--lock",
-      disabledClass: "section__swiper-button--disabled",
-    },
+    navigation: nav,
     breakpoints: {
       320: {
         slidesPerView: "auto",
@@ -88,7 +89,7 @@ sectionCardSwipers.forEach((sectionCardSwiper, index) => {
         slidesPerView: 3,
       },
       1181: {
-        slidesPerView: 4
+        slidesPerView: 4,
       },
     }
   }
@@ -131,7 +132,6 @@ sectionCardSwipers.forEach((sectionCardSwiper, index) => {
     }
     swiperOptions.on = {
       afterInit: (swiper) => {
-        console.log("afterInit", swiper.currentBreakpoint);
         if (swiper.currentBreakpoint === "320") {
           swiper.disable();
         }
