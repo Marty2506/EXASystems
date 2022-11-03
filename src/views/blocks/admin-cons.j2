@@ -22,25 +22,36 @@
             <span class="section__form-label-text form__label-text form__label-text--black">Ваше имя</span>
             <input class="form__field" type="text" id="admin-cons-client-name" name="admin-cons-client-name" placeholder="Введите ваше имя">
           </label>
-          <div class="form__row">
-          <label class="form__label form__label--messengers">
+          <div class="form__column">
             <span class="section__form-label-text form__label-text form__label-text--black">Способ связи</span>
-            <select class="form__select" id="admin-cons-messengers" name="admin-cons-messengers">
-              <option value="Whatsapp">Whatsapp</option>
-              <option value="Telegram">Telegram</option>
-              <option value="Телефон">Телефон</option>
-            </select>
-          </label>
-          <label class="form__label">
-            <input class="form__field" type="tel" id="admin-cons-phone" name="admin-cons-phone" placeholder="+7 (999) 999-99-99" required data-pristine-required-message="Обязательно к заполнению">
-          </label>
-        </div>
+            <div class="form__row form__row--always">
+              <label class="form__label form__label--messengers">
+                <select class="form__select" id="admin-cons-messengers" name="admin-cons-messengers">
+                  <option value="Whatsapp">Whatsapp</option>
+                  <option value="Telegram">Telegram</option>
+                  <option value="Телефон">Телефон</option>
+                </select>
+              </label>
+              <label class="form__label">
+                <input class="form__field" type="tel" id="admin-cons-phone" name="admin-cons-phone" placeholder="+7 (999) 999-99-99" required data-pristine-required-message="Обязательно к заполнению">
+              </label>
+            </div>
+          </div>
           <button class="button form__submit-button" type="submit">Получить консультацию</button>
           <label class="section__form-checkbox form__label form__label--checkbox">
             <input class="form__checkbox visually-hidden" type="checkbox" name="admin-cons-politics" id="admin-cons-politics" checked>
             <span class="form__mark"></span>
             <span class="section__form-checkbox-text form__checkbox-label-text">Согласен с <a href="#!">Политикой конфиденциальности сайта</a></span>
           </label>
+          <div class="form__messengers">
+            <p class="form__messengers-write-us">или напишите в мессенджер</p>
+            <a class="messenger messenger--telegram" href="#!">
+              <span class="visually-hidden">Контакт телеграма</span>
+            </a>
+            <a class="messenger messenger--whatsup" href="#!">
+              <span class="visually-hidden">Контакт вотсапа</span>
+            </a>
+          </div>
         </form>
       </div>
     </div>

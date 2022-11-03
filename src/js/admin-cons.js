@@ -33,7 +33,7 @@ if (adminConsForm) {
     shouldSort: false,
     itemSelectText: '',
     classNames: {
-      containerOuter: 'form-choices',
+      containerOuter: 'form-choices form-choices--only-icons',
       containerInner: 'form-choices__inner',
       input: 'form-choices__input',
       inputCloned: 'form-choices__input--cloned',
