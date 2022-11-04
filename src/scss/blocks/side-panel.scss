@@ -1,0 +1,75 @@
+.side-panel {
+  display: none;
+
+  @media (min-width: $side-panel-available) {
+    position: fixed;
+    top: 129px;
+    left: calc(50% + $desktop-width / 2 + 35px);
+    display: flex;
+    flex-direction: column;
+    padding: 14px 0;
+    gap: 21px;
+    width: 135px;
+    min-height: 457px;
+    background: linear-gradient(180deg, #453fa9 0%, #675fc6 100%);
+  }
+}
+.side-panel__button {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  align-items: center;
+  padding: 0 15px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus-visible {
+    outline: none;
+    & .side-panel__button-icon {
+      fill: $button-color;
+    }
+    & .side-panel__button-text {
+      color: $button-color;
+    }
+  }
+  &:active {
+    opacity: 0.7;
+  }
+}
+.side-panel__icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.side-panel__button-icon {
+  fill: $white-color;
+  transition: fill 0.3s ease;
+}
+.side-panel__button-text {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: $white-color;
+  transition: color 0.3s ease;
+}
+
+.side-panel__button--req-price,
+.side-panel__button--get-cons,
+.side-panel__button--get-offer {
+  & .side-panel__icon-wrapper {
+    width: 66px;
+    height: 65px;
+  }
+}
+
+.side-panel__button--go-to-top {
+  & .side-panel__icon-wrapper {
+    width: 24px;
+    height: 24px;
+  }
+}
