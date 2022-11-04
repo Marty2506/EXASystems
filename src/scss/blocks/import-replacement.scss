@@ -46,7 +46,7 @@
   font-weight: 500;
   font-size: 22px;
   line-height: 26px;
-  font-family: "Jost", "Arial", sans-serif;
+  font-family: $jost-font;
 
   @media (max-width: $max-tablet-width) {
     display: none;

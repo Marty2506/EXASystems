@@ -137,7 +137,7 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
-  font-family: "Jost", "Arial", sans-serif;
+  font-family: $jost-font;
 }
 
 .product-page__credit {
@@ -313,7 +313,7 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
-  font-family: "Jost", "Arial", sans-serif;
+  font-family: $jost-font;
 }
 
 .product-page__docs-list {

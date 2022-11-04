@@ -84,7 +84,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 115%;
-  font-family: "Jost", "Arial", sans-serif;
+  font-family: $jost-font;
 
   @media (min-width: $desktop-width) {
     font-size: 20px;

@@ -33,7 +33,7 @@
   font-weight: 600;
   font-size: 24px;
   line-height: 120%;
-  font-family: "Jost", "Arial", sans-serif;
+  font-family: $jost-font;
   color: #000000;
 
   @media (min-width: $desktop-width) {
@@ -124,7 +124,7 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 29px;
-  font-family: "Jost", "Arial", sans-serif;
+  font-family: $jost-font;
 }
 
 .our-advantages__item-info {
@@ -170,7 +170,7 @@
   font-weight: 600;
   font-size: 42px;
   line-height: 114%;
-  font-family: "Jost", "Arial", sans-serif;
+  font-family: $jost-font;
 
   @media (min-width: $desktop-width) {
     font-size: 52px;

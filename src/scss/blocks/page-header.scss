@@ -1,4 +1,8 @@
 .page-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
   padding: 16px 0;
 
   background: linear-gradient(180deg, #453fa9 0%, #675fc6 100%);
@@ -67,7 +71,7 @@
     font-weight: 800;
     font-size: 20px;
     line-height: 29px;
-    font-family: "Jost", "Arial", sans-serif;
+    font-family: $jost-font;
     color: #ffffff;
 
     transition: color 0.3s ease;
@@ -161,16 +165,5 @@
     & .page-header__mail-icon {
       fill: $button-color;
     }
-  }
-}
-
-.page-header--index {
-  padding-bottom: 0;
-
-  @media (min-width: $tablet-width) {
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 30% 100%, 0 calc(90%));
-  }
-  @media (min-width: $desktop-width) {
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 30% 100%, 0 calc(85%));
   }
 }

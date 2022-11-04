@@ -1,4 +1,15 @@
 .index-header {
+  background: linear-gradient(0deg, #453fa9 0%, #675fc6 100%);
+
+  @media (min-width: $tablet-width) {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 30% 100%, 0 calc(90%));
+  }
+  @media (min-width: $desktop-width) {
+    clip-path: polygon(0 0, 100% 0, 100% 72%, 30% 100%, 0 79%);
+  }
+}
+
+.index-header__content {
   position: relative;
 
   display: flex;
@@ -19,16 +30,14 @@
   }
   @media (min-width: $tablet-width) {
     min-height: 510px;
-    padding-top: 40px;
 
     background-position: calc(50% - 50px) 100%;
     background-size: 90%;
   }
   @media (min-width: $desktop-width) {
-    min-height: 670px;
-    padding-top: 65px;
+    min-height: 640px;
 
-    background-position: calc(50% - 50px) calc(100% + 70px);
+    background-position: calc(50% - 50px) calc(100% + 15px);
     background-size: auto;
   }
 }
@@ -43,7 +52,7 @@
   font-weight: 600;
   font-size: 32px;
   line-height: 110%;
-  font-family: "Jost", "Arial", sans-serif;
+  font-family: $jost-font;
   color: $white-color;
 
   @media (min-width: $tablet-width) {

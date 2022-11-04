@@ -46,7 +46,7 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
-  font-family: "Jost", "Arial", sans-serif;
+  font-family: $jost-font;
 
   @media (max-width: $max-mobile-width) {
     margin-bottom: 10px;

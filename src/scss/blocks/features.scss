@@ -10,7 +10,7 @@
   font-weight: 600;
   font-size: 24px;
   line-height: 31px;
-  font-family: "Jost", "Arial", sans-serif;
+  font-family: $jost-font;
 
   @media (min-width: $desktop-width) {
     margin-bottom: 45px;

@@ -24,6 +24,10 @@
     & .page-footer {
       display: none;
     }
+
+    & .page-header {
+      position: static;
+    }
   }
 }
 

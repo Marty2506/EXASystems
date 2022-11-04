@@ -53,7 +53,7 @@
   font-weight: 500;
   font-size: 24px;
   line-height: 110%;
-  font-family: "Jost", "Arial", sans-serif;
+  font-family: $jost-font;
 }
 
 .team__job-title {
@@ -172,7 +172,7 @@
   font-weight: 600;
   font-size: 33px;
   line-height: 115%;
-  font-family: "Jost", "Arial", sans-serif;
+  font-family: $jost-font;
   color: $blue-color;
 
   @media (min-width: $tablet-width) {
