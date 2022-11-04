@@ -33,8 +33,8 @@
             <li class="section__check-list-item">Среднее время реагирования - 15 минут</li>
           </ul>
           <div class="service-header__buttons">
-            <button class="section__button button button--blue" type="button">Запросить прайс-лист</button>
-            <button class="section__button button button--alternate" type="button">Получить консультацию</button>
+            <button class="section__button button button--blue" type="button" data-type="open-pricelist-modal">Запросить прайс-лист</button>
+            <button class="section__button button button--alternate" type="button" data-type="open-cons-modal">Получить консультацию</button>
           </div>
         </div>
       </div>
@@ -240,7 +240,7 @@
               <li class="section__check-list-item">Инженерные системы (СКС, ЛВС, СКУД)</li>
               <li class="section__check-list-item">Программное обеспечение</li>
             </ul>
-            <button class="section__button button button--blue" type="button">Запросить прайс-лист</button>
+            <button class="section__button button button--blue" type="button" data-type="open-pricelist-modal">Запросить прайс-лист</button>
           </div>
         </div>
       </div>
@@ -630,7 +630,6 @@
 
 {% block modal %}
   {% include "./blocks/modal-image.j2" %}
-  {% include "./blocks/modal-offer.j2" %}
 {% endblock %}
 
 {% block js %}

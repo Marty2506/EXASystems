@@ -214,7 +214,7 @@ if (modalOffer) {
   const phoneMaskOptions = {
     mask: '+{7} (000) 000-00-00',
   };
-  const phoneEl= document.querySelector('#modal-offer-phone');
+  const phoneEl = document.querySelector('#modal-offer-phone');
   IMask(phoneEl, phoneMaskOptions);
 
   const mailField = form.querySelector('#modal-offer-mail');
@@ -250,6 +250,154 @@ if (modalOffer) {
   });
 }
 
+const modalCons = document.querySelector('.modal--consultation');
+
+if (modalCons) {
+  const form = document.querySelector('#modal-cons-form');
+  const phoneMaskOptions = {
+    mask: '+{7} (000) 000-00-00',
+  };
+  const phoneEl = document.querySelector('#modal-cons-phone');
+  IMask(phoneEl, phoneMaskOptions);
+
+  const modalConsPristine = new Pristine(form, {
+    classTo: 'form__label', // Элемент, на который будут добавляться классы
+    errorTextParent: 'form__label', // Элемент, куда будет выводиться текст с ошибкой
+    errorTextTag: 'span', // Тег, который будет обрамлять текст ошибки
+    errorTextClass: 'form__error-message' // Класс для элемента с текстом ошибки
+  }, true);
+
+  modalConsPristine.addValidator(phoneEl, (value) => {
+    return (value.length === 18);
+  }, "Номер неполный", 2, false);
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var valid = modalConsPristine.validate();
+    // TODO здесь должен написать запрос программист
+  });
+  modalCons.querySelector('.modal__close-button').addEventListener('click', hideModal);
+
+   // Настраиваем селект
+   const select = document.querySelector('#modal-cons-messengers');
+   const choices = new Choices(select, {
+     placeholder: false,
+     searchEnabled: false,
+     shouldSort: false,
+     itemSelectText: '',
+     classNames: {
+       containerOuter: 'form-choices form-choices--only-icons',
+       containerInner: 'form-choices__inner',
+       input: 'form-choices__input',
+       inputCloned: 'form-choices__input--cloned',
+       list: 'form-choices__list',
+       listItems: 'form-choices__list--multiple',
+       listSingle: 'form-choices__list--single',
+       listDropdown: 'form-choices__list--dropdown',
+       item: 'form-choices__item',
+       itemSelectable: 'form-choices__item--selectable',
+       itemDisabled: 'form-choices__item--disabled',
+       itemOption: 'form-choices__item--choice',
+       group: 'choices__group',
+       groupHeading : 'choices__heading',
+       button: 'choices__button',
+       activeState: 'is-active',
+       focusState: 'is-focused',
+       openState: 'is-open',
+       disabledState: 'is-disabled',
+       highlightedState: 'is-highlighted',
+       selectedState: 'is-selected',
+       flippedState: 'is-flipped'
+     },
+     allowHTML: true
+   });
+
+  const openConsModalButtons = document.querySelectorAll('[data-type="open-cons-modal"]');
+
+  openConsModalButtons.forEach(element => {
+    element.addEventListener('click', () => {
+      modalCons.classList.add('modal--opened');
+    })
+  });
+}
+
+
+const modalPriceList = document.querySelector('.modal--price-list');
+
+if (modalPriceList) {
+  const form = document.querySelector('#modal-pricelist-form');
+  const phoneMaskOptions = {
+    mask: '+{7} (000) 000-00-00',
+  };
+  const phoneEl = document.querySelector('#modal-pricelist-phone');
+  IMask(phoneEl, phoneMaskOptions);
+
+  const mailField = form.querySelector('#modal-pricelist-mail');
+  var mailMaskOptions = {
+    mask: /^\S*@?\S*$/
+  };
+  IMask(mailField, mailMaskOptions);
+
+  const modalPriceListPristine = new Pristine(form, {
+    classTo: 'form__label', // Элемент, на который будут добавляться классы
+    errorTextParent: 'form__label', // Элемент, куда будет выводиться текст с ошибкой
+    errorTextTag: 'span', // Тег, который будет обрамлять текст ошибки
+    errorTextClass: 'form__error-message' // Класс для элемента с текстом ошибки
+  }, true);
+
+  modalPriceListPristine.addValidator(phoneEl, (value) => {
+    return (value.length === 18);
+  }, "Номер неполный", 2, false);
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var valid = modalPriceListPristine.validate();
+    // TODO здесь должен написать запрос программист
+  });
+  modalPriceList.querySelector('.modal__close-button').addEventListener('click', hideModal);
+
+   // Настраиваем селект
+   const select = document.querySelector('#modal-pricelist-messengers');
+   const choices = new Choices(select, {
+     placeholder: false,
+     searchEnabled: false,
+     shouldSort: false,
+     itemSelectText: '',
+     classNames: {
+       containerOuter: 'form-choices form-choices--only-icons',
+       containerInner: 'form-choices__inner',
+       input: 'form-choices__input',
+       inputCloned: 'form-choices__input--cloned',
+       list: 'form-choices__list',
+       listItems: 'form-choices__list--multiple',
+       listSingle: 'form-choices__list--single',
+       listDropdown: 'form-choices__list--dropdown',
+       item: 'form-choices__item',
+       itemSelectable: 'form-choices__item--selectable',
+       itemDisabled: 'form-choices__item--disabled',
+       itemOption: 'form-choices__item--choice',
+       group: 'choices__group',
+       groupHeading : 'choices__heading',
+       button: 'choices__button',
+       activeState: 'is-active',
+       focusState: 'is-focused',
+       openState: 'is-open',
+       disabledState: 'is-disabled',
+       highlightedState: 'is-highlighted',
+       selectedState: 'is-selected',
+       flippedState: 'is-flipped'
+     },
+     allowHTML: true
+   });
+
+  const openPriceListModalButtons = document.querySelectorAll('[data-type="open-pricelist-modal"]');
+
+  openPriceListModalButtons.forEach(element => {
+    element.addEventListener('click', () => {
+      modalPriceList.classList.add('modal--opened');
+    })
+  });
+}
 
 
 

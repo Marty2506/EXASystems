@@ -1,0 +1,51 @@
+<div class="modal section modal--price-list">
+  <div class="modal__wrapper container">
+    <div class="modal__content section__content section__content--with-big-img">
+      <div class="section__half">
+        <p class="section__main-title">Скачайте актуальный прайс-лист</p>
+        <picture class="section__big-image-wrapper">
+          <source type="image/webp" srcset="@img/download-price-list.webp">
+          <img class="modal__image section__image" src="@img/download-price-list.png" alt="">
+        </picture>
+        <div class="section__text-content">
+          <p class="section__paragraph">Описательный текст блока на любое неограниченное количество символов</p>
+          <p class="section__paragraph">Обновлен: 27.09.2022</p>
+        </div>
+        <form class="section__form form" action="https://echo.htmlacademy.ru" method="post" id="modal-pricelist-form">
+          <label class="form__label">
+            <span class="section__form-label-text form__label-text form__label-text--black">Ваше имя</span>
+            <input class="form__field" type="text" id="modal-pricelist-client-name" name="modal-pricelist-client-name" placeholder="Введите ваше имя">
+          </label>
+          <label class="form__label">
+            <span class="section__form-label-text form__label-text form__label-text--black">Куда прислать?</span>
+            <input class="form__field" type="email" id="modal-pricelist-mail" name="modal-pricelist-mail" placeholder="Введите ваш e-mail" data-pristine-email-message="Неправильный формат e-mail">
+          </label>
+          <div class="form__column">
+            <span class="section__form-label-text form__label-text form__label-text--black">Способ связи</span>
+            <div class="form__row form__row--always">
+              <label class="form__label form__label--messengers">
+                <select class="form__select" id="modal-pricelist-messengers" name="modal-pricelist-messengers">
+                  <option value="Whatsapp">Whatsapp</option>
+                  <option value="Telegram">Telegram</option>
+                  <option value="Телефон">Телефон</option>
+                </select>
+              </label>
+              <label class="form__label">
+                <input class="form__field" type="tel" id="modal-pricelist-phone" name="modal-pricelist-phone" placeholder="+7 (999) 999-99-99" required data-pristine-required-message="Обязательно к заполнению">
+              </label>
+            </div>
+          </div>
+          <button class="button form__submit-button" type="submit">Получить прайслист</button>
+          <label class="section__form-checkbox form__label form__label--checkbox">
+            <input class="form__checkbox visually-hidden" type="checkbox" name="modal-pricelist-politics" id="modal-pricelist-politics" checked>
+            <span class="form__mark"></span>
+            <span class="section__form-checkbox-text form__checkbox-label-text">Согласен с <a href="#!">Политикой конфиденциальности сайта</a></span>
+          </label>
+        </form>
+      </div>
+    </div>
+    <button class="modal__close-button" type="button">
+      <span class="visually-hidden">Закрыть окно</span>
+    </button>
+  </div>
+</div>

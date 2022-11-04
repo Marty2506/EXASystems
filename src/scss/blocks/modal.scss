@@ -66,6 +66,7 @@
 .modal__content {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .modal__title {
@@ -200,6 +201,15 @@
     }
     @media (min-width: $desktop-width) {
       max-width: 1203px;
+    }
+  }
+}
+
+.modal--price-list {
+  & .modal__wrapper {
+
+    @media (min-width: $desktop-width) {
+      max-width: 970px;
     }
   }
 }
