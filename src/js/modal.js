@@ -207,6 +207,51 @@ if (modalOrder) {
    });
 }
 
+const modalOffer = document.querySelector('.modal--offer');
+
+if (modalOffer) {
+  const form = document.querySelector('#modal-offer-form');
+  const phoneMaskOptions = {
+    mask: '+{7} (000) 000-00-00',
+  };
+  const phoneEl= document.querySelector('#modal-offer-phone');
+  IMask(phoneEl, phoneMaskOptions);
+
+  const mailField = form.querySelector('#modal-offer-mail');
+  var mailMaskOptions = {
+    mask: /^\S*@?\S*$/
+  };
+  IMask(mailField, mailMaskOptions);
+
+  const modalOfferPristine = new Pristine(form, {
+    classTo: 'form__label', // Элемент, на который будут добавляться классы
+    errorTextParent: 'form__label', // Элемент, куда будет выводиться текст с ошибкой
+    errorTextTag: 'span', // Тег, который будет обрамлять текст ошибки
+    errorTextClass: 'form__error-message' // Класс для элемента с текстом ошибки
+  }, true);
+
+  modalOfferPristine.addValidator(phoneEl, (value) => {
+    return (value.length === 18);
+  }, "Номер неполный", 2, false);
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var valid = modalOfferPristine.validate();
+    // TODO здесь должен написать запрос программист
+  });
+  modalOffer.querySelector('.modal__close-button').addEventListener('click', hideModal);
+
+  const openOfferModalButtons = document.querySelectorAll('[data-type="open-offer-modal"]');
+
+  openOfferModalButtons.forEach(element => {
+    element.addEventListener('click', () => {
+      modalOffer.classList.add('modal--opened');
+    })
+  });
+}
+
+
+
 
 
 
