@@ -33,7 +33,10 @@
             <li class="section__check-list-item">Среднее время реагирования - 15 минут</li>
           </ul>
           <div class="service-header__buttons">
-            <button class="section__button button button--blue" type="button" data-type="open-pricelist-modal">Запросить прайс-лист</button>
+            <div class="service-header__column">
+              <button class="section__button button button--blue" type="button" data-type="open-pricelist-modal">Запросить прайс-лист</button>
+              <span class="service-header__update-date">Обновлен: 27.09.2022</span>
+            </div>
             <button class="section__button button button--alternate" type="button" data-type="open-cons-modal">Получить консультацию</button>
           </div>
         </div>
@@ -624,7 +627,7 @@
     {% set sectionCardSwiperCnt = sectionCardSwiperCnt + 1 %}
     {% include "./blocks/download-cp.j2" %}
     {% include "./blocks/other-services.j2" %}
-    {# {% include "./blocks/side-panel.j2" %} #}
+    {% include "./blocks/side-panel.j2" %}
   </main>
 {% endblock content %}
 
@@ -641,4 +644,5 @@
   <script src="./js/admin-cons.min.js"></script>
   <script src="./js/download-cp.min.js"></script>
   <script src="./js/main.min.js"></script>
+  <script src="./js/side-panel.min.js"></script>
 {% endblock %}
