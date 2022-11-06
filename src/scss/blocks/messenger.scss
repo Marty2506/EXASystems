@@ -1,25 +1,28 @@
 .messenger {
-  flex-shrink: 0;
   display: flex;
+  flex-shrink: 0;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  background-position: center;
+
   background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
 
   &:hover {
     opacity: 0.8;
   }
-  &:focus-visible {}
+
   &:active {
     opacity: 0.7;
   }
 }
+
 .messenger--telegram {
   background-color: #2f89ce;
   background-image: url("@img/icons/messenger-telegram-icon.svg");
   background-position: 42% 50%;
 }
+
 .messenger--whatsup {
   background-color: #48c95f;
   background-image: url("@img/icons/messenger-watsapp-icon.svg");

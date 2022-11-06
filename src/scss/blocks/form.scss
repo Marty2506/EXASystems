@@ -8,6 +8,7 @@
 .form__column {
   display: flex;
   flex-direction: column;
+
   gap: 5px;
 }
 
@@ -567,10 +568,12 @@
 .form-choices--only-icons {
   @media (max-width: $max-mobile-width) {
     max-width: 70px;
+
     font-size: 0;
 
     & .form-choices__item {
       min-height: 40px;
+
       font-size: 0;
     }
 
@@ -590,13 +593,15 @@
 
 .form__messengers {
   display: flex;
-  gap: 5px;
   flex-wrap: wrap;
   align-items: center;
+
+  gap: 5px;
 }
+
 .form__messengers-write-us {
+  max-width: 105px;
   margin: 0;
   margin-right: 15px;
   padding: 0;
-  max-width: 105px;
 }

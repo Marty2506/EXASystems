@@ -19,8 +19,8 @@ $button-height: 47;
 
   background-color: $button-color;
   border: none;
-  cursor: pointer;
   border: 2px solid transparent;
+  cursor: pointer;
 
   transition: all 0.3s ease;
 
@@ -31,9 +31,9 @@ $button-height: 47;
   }
 
   &:focus-visible {
-    outline: none;
     border-color: $blue-color;
     border-radius: 2px;
+    outline: none;
   }
 
   &:active {
@@ -50,13 +50,15 @@ $button-height: 47;
 }
 
 .button--alternate {
-  background-color: transparent;
   color: $blue-color;
+
+  background-color: transparent;
   border: 1px solid $blue-color;
 
   &:hover,
   &:focus-visible {
     color: $button-color;
+
     border-color: $button-color;
   }
 }

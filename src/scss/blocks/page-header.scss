@@ -11,8 +11,10 @@
 .page-header--sticky {
   position: fixed;
   top: 0;
-  width: 100%;
   z-index: 10;
+
+  width: 100%;
+
   animation: showing-animation 0.5s;
 
   @media (min-width: $desktop-width) {
