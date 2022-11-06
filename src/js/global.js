@@ -1,0 +1,1 @@
+const SCROLL_SIZE = 1000;

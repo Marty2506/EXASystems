@@ -1,13 +1,7 @@
 .page-main {
   position: relative;
 
-  padding-top: 76px;
-
   display: flex;
   flex-grow: 1;
   flex-direction: column;
-
-  @media (min-width: $desktop-width) {
-    padding-top: 129px;
-  }
 }

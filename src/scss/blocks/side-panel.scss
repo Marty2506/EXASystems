@@ -3,15 +3,22 @@
 
   @media (min-width: $side-panel-available) {
     position: fixed;
+    z-index: 10;
     top: 129px;
-    left: calc(50% + $desktop-width / 2 + 35px);
-    display: flex;
+    right: 30px;
     flex-direction: column;
     padding: 14px 0;
     gap: 21px;
     width: 135px;
     min-height: 457px;
     background: linear-gradient(180deg, #453fa9 0%, #675fc6 100%);
+  }
+}
+
+.side-panel--active {
+  @media (min-width: $side-panel-available) {
+    display: flex;
+    animation: showing-animation 0.5s;
   }
 }
 .side-panel__button {

@@ -1,14 +1,22 @@
 .page-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
   padding: 16px 0;
 
   background: linear-gradient(180deg, #453fa9 0%, #675fc6 100%);
 
   @media (min-width: $desktop-width) {
     padding: 42px 0;
+  }
+}
+
+.page-header--sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  animation: showing-animation 0.5s;
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 0;
   }
 }
 
