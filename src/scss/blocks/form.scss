@@ -590,12 +590,13 @@
 
 .form__messengers {
   display: flex;
-  gap: 20px;
+  gap: 5px;
   flex-wrap: wrap;
   align-items: center;
 }
 .form__messengers-write-us {
   margin: 0;
+  margin-right: 15px;
   padding: 0;
   max-width: 105px;
 }
