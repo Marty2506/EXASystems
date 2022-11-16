@@ -310,7 +310,29 @@
   }
 }
 
-// Настройка выпадающего селекта
+.form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form__group-title {
+  margin: 0;
+  padding: 0;
+  color: $grey-color;
+}
+.form__group-content {
+}
+
+.form__checkbox-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.form__checkbox-list-item {
+  width: 100%;
+}
+
+// ========================================== Настройка выпадающего селекта
 
 .form-choices {
   position: relative;
