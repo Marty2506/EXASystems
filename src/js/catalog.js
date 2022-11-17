@@ -1,4 +1,5 @@
 const catalogFilters = document.querySelectorAll('.filter');
+const catalogFiltersForm = document.querySelector('#catalog-filters-form')
 
 catalogFilters.forEach(el => {
   el.addEventListener('click', () => {
@@ -44,6 +45,62 @@ catalogSelects.forEach(catalogSelect => {
     },
     allowHTML: true
   });
+});
+
+// Настройка полей от... до...
+
+const fromToCatalogFields = document.querySelectorAll('[data-range-row]');
+const fromToPristine = new Pristine(catalogFiltersForm, {
+  classTo: 'form__range-field-wrapper', // Элемент, на который будут добавляться классы
+  errorTextParent: 'form__range-field-wrapper', // Элемент, куда будет выводиться текст с ошибкой
+  errorTextTag: 'span', // Тег, который будет обрамлять текст ошибки
+  errorTextClass: 'form__error-message' // Класс для элемента с текстом ошибки
+}, true);
+
+fromToCatalogFields.forEach(element => {
+  const fromField = element.querySelector('[data-range="from"]');
+  const toField = element.querySelector('[data-range="to"]');
+  console.log(fromField, toField);
+  // Настройка масок
+  const fromMask = IMask(fromField, {
+    mask: Number,
+    scale: 0,
+    signed: false,
+    min: fromField.min,
+    max: fromField.max
+  });
+  const toMask = IMask(toField, {
+    mask: Number,
+    scale: 0,
+    signed: false,
+    min: toField.min,
+    max: toField.max
+  });
+
+  fromToPristine.addValidator(fromField, (value) => {
+    const returnValue = (Number(value) > Number(toField.value));
+    if (returnValue) {
+      fromField.classList.add('has-error');
+    } else {
+      fromField.classList.remove('has-error');
+    }
+    return !returnValue;
+  }, `больше поля "до"`, 2, false);
+  fromToPristine.addValidator(toField, (value) => {
+    const returnValue = (Number(value) < Number(fromField.value));
+    if (returnValue) {
+      toField.classList.add('has-error');
+    } else {
+      toField.classList.remove('has-error');
+    }
+    return !returnValue;
+  }, `меньше поля "от"`, 3, false);
+  fromField.addEventListener('input', () => {
+    fromToPristine.validate();
+  })
+  toField.addEventListener('input', () => {
+    fromToPristine.validate();
+  })
 });
 
 // TODO: сделать сортировку через селект

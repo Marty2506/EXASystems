@@ -331,6 +331,27 @@
 .form__checkbox-list-item {
   width: 100%;
 }
+.form__range-field-wrapper {
+  position: relative;
+  width: 100%;
+}
+.form__range-field-prep {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+.form__field--range {
+  width: 100%;
+  padding-left: 35px;
+
+  &:focus {
+    background-color: $white-color;
+  }
+}
+.form__field--range.has-error {
+  background-color: $error-field-bg;
+}
 
 // ========================================== Настройка выпадающего селекта
 

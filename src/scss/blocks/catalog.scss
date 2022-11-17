@@ -160,6 +160,17 @@
 }
 .catalog__checkbox-list--manufacturers {
 }
+.catalog__checkbox-list--formfactor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-auto-flow: column;
+}
+.catalog__checkbox-list--power-blocks-cnt {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: column;
+}
 
 .catalog__form-checkbox {
   gap: 15px;

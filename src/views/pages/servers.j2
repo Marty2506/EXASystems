@@ -67,7 +67,7 @@
                 <div class="form__group">
                   <span class="form__group-title">Сортировка</span>
                   <div class="form__group-content">
-                    <select class="form__select" id="catalog__sort" name="catalog__sort">
+                    <select class="form__select" id="catalog-sort" name="catalog-sort">
                       <option value="По умолчанию">По умолчанию</option>
                       <option value="По убыванию цены">По убыванию цены</option>
                       <option value="По возрастанию цены">По возрастанию цены</option>
@@ -116,6 +116,157 @@
                       </li>
                     </ul>
 
+                  </div>
+                </div>
+                <div class="form__group">
+                  <span class="form__group-title">Модель</span>
+                  <div class="form__group-content">
+                    <select class="form__select" id="catalog-model" name="catalog-model">
+                      <option value="">Выберите модель</option>
+                      <option value="Модель 1">Модель 1</option>
+                      <option value="Модель 2">Модель 2</option>
+                      <option value="Модель 3">Модель 3</option>
+                      <option value="Модель 4">Модель 4</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form__group">
+                  <span class="form__group-title">Цена</span>
+                  <div class="form__group-content">
+                    <div class="form__row form__row--always" data-range-row>
+                      <div class="form__range-field-wrapper">
+                        <label class="form__range-field-prep" for="catalog-min-price">от</label>
+                        <input class="form__field form__field--range" type="number" name="catalog-min-price" id="catalog-min-price" min="0" max="9999999" placeholder="0" data-range="from">
+                      </div>
+                      <div class="form__range-field-wrapper">
+                        <label class="form__range-field-prep" for="catalog-max-price">до</label>
+                        <input class="form__field form__field--range" type="number" name="catalog-max-price" id="catalog-max-price" min="0" max="9999999" placeholder="0" data-range="to">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__group">
+                  <span class="form__group-title">Назначение</span>
+                  <div class="form__group-content">
+                    <select class="form__select" id="catalog-purpose" name="catalog-purpose">
+                      <option value="">Выбрать</option>
+                      <option value="Назначение 1">Назначение 1</option>
+                      <option value="Назначение 2">Назначение 2</option>
+                      <option value="Назначение 3">Назначение 3</option>
+                      <option value="Назначение 4">Назначение 4</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form__group">
+                  <span class="form__group-title">Форм-фактор</span>
+                  <div class="form__group-content">
+                    <ul class="catalog__checkbox-list catalog__checkbox-list--formfactor form__checkbox-list">
+                      <li class="form__checkbox-list-item">
+                        <label class="catalog__form-checkbox form__label form__label--checkbox">
+                          <input class="form__checkbox visually-hidden" type="checkbox" name="catalog-formfactor-1u" id="catalog-formfactor-1u" checked>
+                          <span class="form__mark"></span>
+                          <span class="catalog__form-checkbox-text form__checkbox-label-text">1U</span>
+                        </label>
+                      </li>
+                      <li class="form__checkbox-list-item">
+                        <label class="catalog__form-checkbox form__label form__label--checkbox">
+                          <input class="form__checkbox visually-hidden" type="checkbox" name="catalog-formfactor-2u" id="catalog-formfactor-2u">
+                          <span class="form__mark"></span>
+                          <span class="catalog__form-checkbox-text form__checkbox-label-text">2U</span>
+                        </label>
+                      </li>
+                      <li class="form__checkbox-list-item">
+                        <label class="catalog__form-checkbox form__label form__label--checkbox">
+                          <input class="form__checkbox visually-hidden" type="checkbox" name="catalog-formfactor-3u" id="catalog-formfactor-3u">
+                          <span class="form__mark"></span>
+                          <span class="catalog__form-checkbox-text form__checkbox-label-text">3U</span>
+                        </label>
+                      </li>
+                      <li class="form__checkbox-list-item">
+                        <label class="catalog__form-checkbox form__label form__label--checkbox">
+                          <input class="form__checkbox visually-hidden" type="checkbox" name="catalog-formfactor-4u" id="catalog-formfactor-4u">
+                          <span class="form__mark"></span>
+                          <span class="catalog__form-checkbox-text form__checkbox-label-text">4U</span>
+                        </label>
+                      </li>
+                      <li class="form__checkbox-list-item">
+                        <label class="catalog__form-checkbox form__label form__label--checkbox">
+                          <input class="form__checkbox visually-hidden" type="checkbox" name="catalog-formfactor-5u" id="catalog-formfactor-5u">
+                          <span class="form__mark"></span>
+                          <span class="catalog__form-checkbox-text form__checkbox-label-text">5U</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="form__group">
+                  <span class="form__group-title">Количество слотов для HDD</span>
+                  <div class="form__group-content">
+                    <div class="form__row form__row--always" data-range-row>
+                      <div class="form__range-field-wrapper">
+                        <label class="form__range-field-prep" for="catalog-hdd-slots-min">от</label>
+                        <input class="form__field form__field--range" type="number" name="catalog-hdd-slots-min" id="catalog-hdd-slots-min" min="0" max="99" placeholder="0" data-range="from">
+                      </div>
+                      <div class="form__range-field-wrapper">
+                        <label class="form__range-field-prep" for="catalog-hdd-slots-max">до</label>
+                        <input class="form__field form__field--range" type="number" name="catalog-hdd-slots-max" id="catalog-hdd-slots-max" min="0" max="99" placeholder="0" data-range="to">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__group">
+                  <span class="form__group-title">Поколение процессоров</span>
+                  <div class="form__group-content">
+                    <select class="form__select" id="catalog-proc-gen" name="catalog-proc-gen">
+                      <option value="">Выбрать</option>
+                      <option value="Поколение 1">Поколение 1</option>
+                      <option value="Поколение 2">Поколение 2</option>
+                      <option value="Поколение 3">Поколение 3</option>
+                      <option value="Поколение 4">Поколение 4</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form__group">
+                  <span class="form__group-title">Оперативная память, Гб</span>
+                  <div class="form__group-content">
+                    <div class="form__row form__row--always" data-range-row>
+                      <div class="form__range-field-wrapper">
+                        <label class="form__range-field-prep" for="catalog-ram-size-min">от</label>
+                        <input class="form__field form__field--range" type="number" name="catalog-ram-size-min" id="catalog-ram-size-min" min="0" max="1024" placeholder="0" data-range="from">
+                      </div>
+                      <div class="form__range-field-wrapper">
+                        <label class="form__range-field-prep" for="catalog-ram-size-max">до</label>
+                        <input class="form__field form__field--range" type="number" name="catalog-ram-size-max" id="catalog-ram-size-max" min="0" max="1024" placeholder="0" data-range="to">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__group">
+                  <span class="form__group-title">Количество блоков питания</span>
+                  <div class="form__group-content">
+                    <ul class="catalog__checkbox-list catalog__checkbox-list--power-blocks-cnt form__checkbox-list">
+                      <li class="form__checkbox-list-item">
+                        <label class="catalog__form-checkbox form__label form__label--checkbox">
+                          <input class="form__checkbox visually-hidden" type="checkbox" name="catalog-power-blocks-cnt-1" id="catalog-power-blocks-cnt-1" checked>
+                          <span class="form__mark"></span>
+                          <span class="catalog__form-checkbox-text form__checkbox-label-text">1</span>
+                        </label>
+                      </li>
+                      <li class="form__checkbox-list-item">
+                        <label class="catalog__form-checkbox form__label form__label--checkbox">
+                          <input class="form__checkbox visually-hidden" type="checkbox" name="catalog-power-blocks-cnt-2" id="catalog-power-blocks-cnt-2">
+                          <span class="form__mark"></span>
+                          <span class="catalog__form-checkbox-text form__checkbox-label-text">2</span>
+                        </label>
+                      </li>
+                      <li class="form__checkbox-list-item">
+                        <label class="catalog__form-checkbox form__label form__label--checkbox">
+                          <input class="form__checkbox visually-hidden" type="checkbox" name="catalog-power-blocks-cnt-3" id="catalog-power-blocks-cnt-3">
+                          <span class="form__mark"></span>
+                          <span class="catalog__form-checkbox-text form__checkbox-label-text">3</span>
+                        </label>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </form>
