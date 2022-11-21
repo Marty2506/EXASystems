@@ -105,6 +105,21 @@ fromToCatalogFields.forEach(element => {
 
 // TODO: сделать сортировку через селект
 
+// Свернуть развернуть фильтры в мобилке
+const catalogSideFilters = document.querySelector('.catalog__side-filters');
+const catalogSideFiltersTitle = document.querySelector('.catalog__form-title');
+catalogSideFiltersTitle.addEventListener('click', (evt) => {
+  if (window.screen.width >= DESKTOP_WIDTH) {
+    return;
+  }
+  catalogSideFiltersTitle.classList.toggle('catalog__form-title--opened');
+  catalogSideFilters.classList.toggle('catalog__side-filters--mobile-minimized');
+  if (!catalogSideFilters.classList.contains('catalog__side-filters--mobile-minimized')) {
+    catalogSideFilters.scrollIntoView({behavior: 'smooth'}, true);
+  }
+
+})
+
 
 // ТЕСТ ФИЛЬТРОВ
 const productCardList = document.querySelector('.catalog__cards-list');

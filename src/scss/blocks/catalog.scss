@@ -118,12 +118,14 @@
 .catalog__cards-wrapper {
   display: flex;
   flex-direction: column;
+  gap: 30px;
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     gap: 24px;
   }
 }
+
 
 .catalog__content-column {
   flex-shrink: 0;
@@ -134,6 +136,12 @@
 .catalog__side-filters {
   width: 100%;
   background-color: $white-color;
+  align-self: flex-start;
+  padding: 15px;
+  transition: max-height 0.5s ease-out;
+  @media (max-width: $max-mobile-width) {
+    max-height: 2000px;
+  }
 
   @media (min-width: $desktop-width) {
     max-width: 362px;
@@ -142,18 +150,53 @@
   }
 }
 
+.catalog__side-filters--mobile-minimized {
+  @media (max-width: $max-tablet-width) {
+    max-height: 50px;
+    overflow: hidden;
+  }
+}
+
 .catalog__form {
   gap: 30px;
 }
 
 .catalog__form-title {
+  position: relative;
   margin: 0;
   padding: 0;
+  padding-right: 35px;
   font-weight: 600;
   font-size: 16px;
   line-height: 140%;
   text-transform: uppercase;
   color: $blue-color;
+
+  @media (max-width: $max-tablet-width) {
+    padding: 15px;
+    margin: -15px;
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      right: 15px;
+      width: 20px;
+      height: 10px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url("@img/icons/blue-down-arrow.svg");
+      transform: translateY(-50%) rotate(180deg);
+      transition: transform 0.4s ease;
+    }
+  }
+}
+.catalog__form-title--opened {
+  @media (max-width: $max-mobile-width) {
+    &::after {
+      transform: translateY(-50%);
+    }
+  }
 }
 
 .catalog__checkbox-list {
@@ -210,7 +253,7 @@
   display: flex;
   flex-direction: column;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
