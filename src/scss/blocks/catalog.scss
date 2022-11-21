@@ -205,3 +205,13 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+.catalog__cards-list--two-col-desktop {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
