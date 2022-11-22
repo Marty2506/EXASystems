@@ -34,6 +34,16 @@ ol {
   list-style-type: none;
 }
 
+.pads {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
 @keyframes showing-animation {
   0% {
     opacity: 0;

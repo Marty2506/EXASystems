@@ -1,0 +1,107 @@
+.server-conf {
+}
+.server-conf__header {
+  padding-bottom: 0;
+}
+.server-conf__image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.server-conf__image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.server-conf__content {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+.server-conf__descr {
+  width: 100%;
+  order: 1;
+
+  @media (max-width: $max-tablet-width) {
+    padding: 20px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 2;
+    max-width: 423px;
+    padding: 30px;
+  }
+}
+.server-conf__paragraph {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 130%;
+}
+.server-conf__stock {
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 130%;
+  color: $grey-color;
+}
+.server-conf__price-wrapper {
+  display: flex;
+  padding: 11px 0;
+  gap: 10px;
+  align-items: center;
+}
+.server-conf__price {
+  margin: 0;
+  padding: 0;
+  font-family: $jost-font;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+}
+.server-conf__credit-price {
+  margin: 0;
+  padding: 0;
+  color: $grey-color;
+
+  &::before {
+    content: "/ ";
+  }
+
+  &::after {
+    content: " в месяц";
+  }
+}
+.server-conf__info-icon {
+  fill: $grey-color;
+  transition: fill 0.3s ease;
+
+  &:hover {
+    fill: $button-color;
+  }
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.server-conf__order-button {
+  @media (max-width: $max-tablet-width) {
+    width: 100%;
+  }
+  @media (min-width: $desktop-width) {
+    min-width: 130px;
+  }
+}
+
+.server-conf__form {
+  order: 2;
+  @media (min-width: $desktop-width) {
+    order: 1;
+    max-width: 635px;
+  }
+}
