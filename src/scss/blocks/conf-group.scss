@@ -1,0 +1,105 @@
+.conf-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding: 15px 0;
+    padding-right: 15px;
+    flex-direction: row;
+    border-bottom: 1px solid #ebebeb;
+  }
+}
+.conf-group--sub {
+  flex-direction: column;
+  gap: 7px;
+  padding: 0;
+  border: none;
+}
+.conf-group__title {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  width: 175px;
+  height: max-content;
+  margin: 0;
+  padding-top: 3px;
+  padding-right: 15px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 130%;
+  color: $blue-color;
+
+  gap: 10px;
+
+  @media (max-width: $max-mobile-width) {
+    width: initial;
+  }
+}
+.conf-group__title {
+  &::before {
+    flex-shrink: 0;
+    align-self: flex-start;
+    width: 32px;
+    height: 32px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+.conf-group__title--cpu::before {
+  content: "";
+  background-image: url("@img/icons/server-conf-cpu.svg");
+}
+.conf-group__title--ram::before {
+  content: "";
+  background-image: url("@img/icons/server-conf-ram.svg");
+}
+.conf-group__title--raid::before {
+  content: "";
+  background-image: url("@img/icons/server-conf-raid.svg");
+}
+.conf-group__title--hdd::before {
+  content: "";
+  background-image: url("@img/icons/server-conf-hdd.svg");
+}
+.conf-group__title--other-controllers::before {
+  content: "";
+  background-image: url("@img/icons/server-conf-other-ctrl.svg");
+}
+.conf-group__title--other-components::before {
+  content: "";
+  background-image: url("@img/icons/server-conf-other-components.svg");
+}
+.conf-group__title--soft::before {
+  content: "";
+  background-image: url("@img/icons/server-conf-soft.svg");
+}
+.conf-group__content {
+  width: 100%;
+}
+.conf-group__row {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+}
+.conf-group__row + .conf-group__row {
+  margin-top: 10px;
+}
+.conf-group__choices {
+  width: 100%;
+}
+
+.conf-group__info {
+  margin: 12px 0 15px;
+  padding: 0;
+  font-size: 12px;
+  line-height: 130%;
+  color: $grey-color;
+
+  @media (max-width: $max-mobile-width) {
+    margin-top: 0;
+  }
+}

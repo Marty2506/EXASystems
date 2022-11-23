@@ -19,6 +19,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
+    padding-top: 40px;
   }
 }
 .server-conf__descr {
@@ -102,6 +103,21 @@
   order: 2;
   @media (min-width: $desktop-width) {
     order: 1;
+    width: 635px;
     max-width: 635px;
+    padding-top: 20px;
   }
+}
+
+.server-conf__group-list {
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $max-mobile-width) {
+    gap: 10px;
+  }
+}
+
+.server-conf__group-list-item {
+
 }

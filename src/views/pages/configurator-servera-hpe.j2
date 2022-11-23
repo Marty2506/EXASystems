@@ -41,410 +41,205 @@
       <div class="container">
         <div class="server-conf__content section__content">
           <form class="server-conf__form form" id="server-conf-form" action="https://echo.htmlacademy.ru" method="post">
-            <ul class="shd__groups">
-              <li class="shd__groups-item">
-                <fieldset class="shd__group shd__group--platform">
-                  <legend class="visually-hidden">Платформа</legend>
-                  <p class="shd__group-title">Платформа</p>
-                  <div class="shd__group-content">
-                    <ul class="shd__group-list">
-                      <li class="shd__group-item">
-                        <label class="shd__group-row form__radio">
-                          <input class="shd__group-row-input form__radio-input visually-hidden" type="radio" name="shd-platfrom"  value="2ГБ EonStor DS 1000 Gen2 2U/12bay (1012G2-B)" checked>
-                          <span class="shd__radio-mark form__radio-mark"></span>
-                          <span class="shd__price">860$</span>
-                          <span class="shd__group-row-text form__radio-text">2ГБ EonStor DS 1000 Gen2 2U/12bay (1012G2-B)</span>
-                        </label>
-                      </li>
-                      <li class="shd__group-item">
-                        <label class="shd__group-row form__radio">
-                          <input class="shd__group-row-input form__radio-input visually-hidden" type="radio" name="shd-platfrom"  value="2ГБ EonStor DS 1000 Gen2 2U/24bay (1024G2B-B)">
-                          <span class="shd__radio-mark shd__group-row-input form__radio-mark"></span>
-                          <span class="shd__price">610$</span>
-                          <span class="shd__group-row-text form__radio-text">2ГБ EonStor DS 1000 Gen2 2U/24bay (1024G2B-B)</span>
-                        </label>
-                      </li>
-                      <li class="shd__group-item">
-                        <label class="shd__group-row form__radio">
-                          <input class="shd__group-row-input form__radio-input visually-hidden" type="radio" name="shd-platfrom"  value="2ГБ EonStor DS 2000 Gen2 2U/12bay (2012G2-B)">
-                          <span class="shd__radio-mark form__radio-mark"></span>
-                          <span class="shd__price">610$</span>
-                          <span class="shd__group-row-text form__radio-text">2ГБ EonStor DS 2000 Gen2 2U/12bay (2012G2-B)</span>
-                        </label>
-                      </li>
-                      <li class="shd__group-item">
-                        <label class="shd__group-row form__radio">
-                          <input class="shd__group-row-input form__radio-input visually-hidden" type="radio" name="shd-platfrom"  value="2ГБ EonStor DS 2000 Gen2 2U/24bay (2024G2B-B)">
-                          <span class="shd__radio-mark form__radio-mark"></span>
-                          <span class="shd__price">860$</span>
-                          <span class="shd__group-row-text form__radio-text">2ГБ EonStor DS 2000 Gen2 2U/24bay (2024G2B-B)</span>
-                        </label>
-                      </li>
-                    </ul>
-                  </div>
-                </fieldset>
-              </li>
-              <li class="shd__groups-item">
-                <fieldset class="shd__group shd__group--hdd">
-                  <legend class="visually-hidden">Жесткие диски</legend>
-                  <p class="shd__group-title">Жесткие диски</p>
-                  <div class="shd__group-content">
-                    <div class="shd__hdd-slots-row shd__group-row shd__group-row--centered">
-                      <p class="shd__hdd-slots-num">Допустимое количество слотов: <span class="shd__hdd-slots-num-val" id="shd-hdd-slots-num">12</span></p>
-                      <ul class="form__square-radio-list">
-                        <li class="form__square-radio-item">
-                          <label class="form__square-radio">
-                            <input class="form__square-radio-input visually-hidden" type="radio" name="shd-group-hdd"  value="SAS">
-                            <span class="form__square-radio-mark">SAS</span>
-                          </label>
-                        </li>
-                        <li class="form__square-radio-item">
-                          <label class="form__square-radio">
-                            <input class="form__square-radio-input visually-hidden" type="radio" name="shd-group-hdd"  value="SSD">
-                            <span class="form__square-radio-mark">SAS</span>
-                          </label>
-                        </li>
-                        <li class="form__square-radio-item">
-                          <label class="form__square-radio">
-                            <input class="form__square-radio-input visually-hidden" type="radio" name="shd-group-hdd"  value="SATA" checked>
-                            <span class="form__square-radio-mark">SATA</span>
-                          </label>
-                        </li>
-                      </ul>
-                    </div>
-                    <ul class="shd__group-list">
-                      <li class="shd__group-item">
-                        <div class="shd__group-row shd__group-row--centered">
-                          <div class="shd__group-row-input form__field-number-wrapper">
-                            <button class="form__number-input-button form__number-input-button--inc" type="button" tabindex="-1">
-                              <span class="visually-hidden">Увеличить.</span>
-                            </button>
-                            <input class="shd__number-field form__field" type="number" name="shd-hdd-600gb" value="0" min="0" max="12">
-                            <button class="form__number-input-button form__number-input-button--dec" type="button" tabindex="-1">
-                              <span class="visually-hidden">Уменьшить.</span>
-                            </button>
-                          </div>
-                          <span class="shd__price">860$</span>
-                          <span class="shd__group-row-text">600 GB 10,000 rpm SAS12G 2.5</span>
-                        </div>
-                      </li>
-                      <li class="shd__group-item">
-                        <div class="shd__group-row shd__group-row--centered">
-                          <div class="shd__group-row-input form__field-number-wrapper">
-                            <button class="form__number-input-button form__number-input-button--inc" type="button" tabindex="-1">
-                              <span class="visually-hidden">Увеличить.</span>
-                            </button>
-                            <input class="shd__number-field form__field" type="number" name="shd-hdd-1200gb" value="0" min="0" max="12">
-                            <button class="form__number-input-button form__number-input-button--dec" type="button" tabindex="-1">
-                              <span class="visually-hidden">Уменьшить.</span>
-                            </button>
-                          </div>
-                          <span class="shd__price">860$</span>
-                          <span class="shd__group-row-text">1200 GB 10,000 rpm SAS12G 2.5</span>
-                        </div>
-                      </li>
-                      <li class="shd__group-item">
-                        <div class="shd__group-row shd__group-row--centered">
-                          <div class="shd__group-row-input form__field-number-wrapper">
-                            <button class="form__number-input-button form__number-input-button--inc" type="button" tabindex="-1">
-                              <span class="visually-hidden">Увеличить.</span>
-                            </button>
-                            <input class="shd__number-field form__field" type="number" name="shd-hdd-1800gb" value="0" min="0" max="12">
-                            <button class="form__number-input-button form__number-input-button--dec" type="button" tabindex="-1">
-                              <span class="visually-hidden">Уменьшить.</span>
-                            </button>
-                          </div>
-                          <span class="shd__price">860$</span>
-                          <span class="shd__group-row-text">1800 GB 10,000 rpm SAS12G 2.5</span>
-                        </div>
-                      </li>
-                      <li class="shd__group-item">
-                        <div class="shd__group-row shd__group-row--centered">
-                          <div class="shd__group-row-input form__field-number-wrapper">
-                            <button class="form__number-input-button form__number-input-button--inc" type="button" tabindex="-1">
-                              <span class="visually-hidden">Увеличить.</span>
-                            </button>
-                            <input class="shd__number-field form__field" type="number" name="shd-hdd-2tb" value="0" min="0" max="12">
-                            <button class="form__number-input-button form__number-input-button--dec" type="button" tabindex="-1">
-                              <span class="visually-hidden">Уменьшить.</span>
-                            </button>
-                          </div>
-                          <span class="shd__price">860$</span>
-                          <span class="shd__group-row-text">2 TB 7200 rpm 12 Gb SAS 3.5</span>
-                        </div>
-                      </li>
-                      <li class="shd__group-item">
-                        <div class="shd__group-row shd__group-row--centered">
-                          <div class="shd__group-row-input form__field-number-wrapper">
-                            <button class="form__number-input-button form__number-input-button--inc" type="button" tabindex="-1">
-                              <span class="visually-hidden">Увеличить.</span>
-                            </button>
-                            <input class="shd__number-field form__field" type="number" name="shd-hdd-2400gb" value="0" min="0" max="12">
-                            <button class="form__number-input-button form__number-input-button--dec" type="button" tabindex="-1">
-                              <span class="visually-hidden">Уменьшить.</span>
-                            </button>
-                          </div>
-                          <span class="shd__price">860$</span>
-                          <span class="shd__group-row-text">2400 GB 10,000 rpm SAS12G 2.5</span>
-                        </div>
-                      </li>
-                      <li class="shd__group-item">
-                        <div class="shd__group-row shd__group-row--centered">
-                          <div class="shd__group-row-input form__field-number-wrapper">
-                            <button class="form__number-input-button form__number-input-button--inc" type="button" tabindex="-1">
-                              <span class="visually-hidden">Увеличить.</span>
-                            </button>
-                            <input class="shd__number-field form__field" type="number" name="shd-hdd-4tb" value="0" min="0" max="12">
-                            <button class="form__number-input-button form__number-input-button--dec" type="button" tabindex="-1">
-                              <span class="visually-hidden">Уменьшить.</span>
-                            </button>
-                          </div>
-                          <span class="shd__price">860$</span>
-                          <span class="shd__group-row-text">4 TB 7200 rpm 12 Gb SAS 3.5</span>
-                        </div>
-                      </li>
-                      <li class="shd__group-item">
-                        <div class="shd__group-row shd__group-row--centered">
-                          <div class="shd__group-row-input form__field-number-wrapper">
-                            <button class="form__number-input-button form__number-input-button--inc" type="button" tabindex="-1">
-                              <span class="visually-hidden">Увеличить.</span>
-                            </button>
-                            <input class="shd__number-field form__field" type="number" name="shd-hdd-6tb" value="0" min="0" max="12">
-                            <button class="form__number-input-button form__number-input-button--dec" type="button" tabindex="-1">
-                              <span class="visually-hidden">Уменьшить.</span>
-                            </button>
-                          </div>
-                          <span class="shd__price">860$</span>
-                          <span class="shd__group-row-text">6 TB 7200 rpm 12 Gb SAS 3.5</span>
-                        </div>
-                      </li>
-                      <li class="shd__group-item">
-                        <div class="shd__group-row shd__group-row--centered">
-                          <div class="shd__group-row-input form__field-number-wrapper">
-                            <button class="form__number-input-button form__number-input-button--inc" type="button" tabindex="-1">
-                              <span class="visually-hidden">Увеличить.</span>
-                            </button>
-                            <input class="shd__number-field form__field" type="number" name="shd-hdd-8tb" value="0" min="0" max="12">
-                            <button class="form__number-input-button form__number-input-button--dec" type="button" tabindex="-1">
-                              <span class="visually-hidden">Уменьшить.</span>
-                            </button>
-                          </div>
-                          <span class="shd__price">860$</span>
-                          <span class="shd__group-row-text">8 TB 7200 rpm 12 Gb SAS 3.5</span>
-                        </div>
-                      </li>
-                      <li class="shd__group-item">
-                        <div class="shd__group-row shd__group-row--centered">
-                          <div class="shd__group-row-input form__field-number-wrapper">
-                            <button class="form__number-input-button form__number-input-button--inc" type="button" tabindex="-1">
-                              <span class="visually-hidden">Увеличить.</span>
-                            </button>
-                            <input class="shd__number-field form__field" type="number" name="shd-hdd-10tb" value="0" min="0" max="12">
-                            <button class="form__number-input-button form__number-input-button--dec" type="button" tabindex="-1">
-                              <span class="visually-hidden">Уменьшить.</span>
-                            </button>
-                          </div>
-                          <span class="shd__price">860$</span>
-                          <span class="shd__group-row-text">10 TB 7200 rpm 12 Gb SAS 3.5</span>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </fieldset>
-              </li>
-              <li class="shd__groups-item">
-                <fieldset class="shd__group shd__group--hdd-jbod">
-                  <legend class="visually-hidden">Жесткие диски JBOD</legend>
-                  <p class="shd__group-title">Жесткие диски JBOD</p>
-                  <div class="shd__group-content">
-                    <div class="shd__group-row">
-                      <select class="form__select" id="shd-jbod" name="shd-jbod">
-                        <option value="">Добавить JBOD</option>
-                        <option value="JBOD1">JBOD1</option>
-                        <option value="JBOD2">JBOD2</option>
-                        <option value="JBOD3">JBOD3</option>
+            <ul class="server-conf__group-list">
+              <li class="server-conf__group-list-item">
+                <div class="conf-group">
+                  <p class="conf-group__title conf-group__title--cpu">Процессор</p>
+                  <div class="conf-group__content">
+                    <div class="conf-group__row">
+                      <select class="form__select" id="server-conf-cpu-type" name="server-conf-cpu-type">
+                        <option value="">Выбрать из списка</option>
+                        <option value="Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)">Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)</option>
+                        <option value="Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)">Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)</option>
+                        <option value="Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)">Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)</option>
+                        <option value="Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)">Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)</option>
                       </select>
-                    </div>
-                  </div>
-                </fieldset>
-              </li>
-              <li class="shd__groups-item">
-                <fieldset class="shd__group shd__group--adapters">
-                  <legend class="visually-hidden">Адаптеры для установки в сервер и опции</legend>
-                  <p class="shd__group-title">Адаптеры для&nbsp;установки в&nbsp;сервер и опции</p>
-                  <div class="shd__group-content">
-                    <div class="shd__group-row shd__group-row--centered shd__group-row--straight">
-                      <span class="shd__group-row-text">EonStor converged host board</span>
-                      <span class="shd__price">860$</span>
-                      <select class="form__select" id="shd-eonstor-converged-port-numbers" name="shd-eonstor-converged-port-numbers">
-                        <option value="">Количество портов</option>
-                        <option value="4 x 8Gb/s FC ports">4 x 8Gb/s FC ports</option>
-                        <option value="2 x 16Gb/s FCports">2 x 16Gb/s FCports</option>
-                        <option value="4 x 10Gb/s iSCSI">4 x 10Gb/s iSCSI</option>
-                        <option value="4 x 10Gb/s FCoE ports">4 x 10Gb/s FCoE ports</option>
-                      </select>
-                    </div>
-                    <div class="shd__group-row shd__group-row--centered shd__group-row--straight">
-                      <span class="shd__group-row-text">EonStor host board</span>
-                      <span class="shd__price">860$</span>
-                      <select class="form__select" id="shd-eonstor-port-numbers" name="shd-eonstor-port-numbers">
-                        <option value="">Количество портов</option>
-                        <option value="4 x 8Gb/s FC ports">4 x 8Gb/s FC ports</option>
-                        <option value="2 x 16Gb/s FCports">2 x 16Gb/s FCports</option>
-                        <option value="4 x 10Gb/s iSCSI">4 x 10Gb/s iSCSI</option>
-                        <option value="4 x 10Gb/s FCoE ports">4 x 10Gb/s FCoE ports</option>
-                      </select>
-                    </div>
-                  </div>
-                </fieldset>
-              </li>
-              <li class="shd__groups-item">
-                <fieldset class="shd__group shd__group--cache">
-                  <legend class="visually-hidden">Cache</legend>
-                  <p class="shd__group-title">Cache</p>
-                  <div class="shd__group-content">
-                    <ul class="shd__group-list">
-                      <li class="shd__group-item">
-                        <label class="shd__group-row form__radio">
-                          <input class="shd__group-row-input form__radio-input visually-hidden" type="radio" name="shd-cache"  value="4GB DDR-IV DIMM module for EonStor DS 3000U,DS4000U,DS4000 Gen2, GS/GSe, and EonServ 7000 series">
-                          <span class="shd__radio-mark form__radio-mark"></span>
-                          <span class="shd__price">860$</span>
-                          <span class="shd__group-row-text form__radio-text">4GB DDR-IV DIMM module for EonStor DS 3000U,DS4000U,DS4000 Gen2, GS/GSe, and EonServ 7000 series</span>
-                        </label>
-                      </li>
-                      <li class="shd__group-item">
-                        <label class="shd__group-row form__radio">
-                          <input class="shd__group-row-input form__radio-input visually-hidden" type="radio" name="shd-cache"  value="8GB DDR-IV DIMM module for EonStor DS 3000U,DS4000U,DS4000 Gen2, GS/GSe, and EonServ 7000 series">
-                          <span class="shd__radio-mark shd__group-row-input form__radio-mark"></span>
-                          <span class="shd__price">610$</span>
-                          <span class="shd__group-row-text form__radio-text">8GB DDR-IV DIMM module for EonStor DS 3000U,DS4000U,DS4000 Gen2, GS/GSe, and EonServ 7000 series</span>
-                        </label>
-                      </li>
-                      <li class="shd__group-item">
-                        <label class="shd__group-row form__radio">
-                          <input class="shd__group-row-input form__radio-input visually-hidden" type="radio" name="shd-cache"  value="16GB DDR-IV DIM module for EonStor DS 4000U, CS and GS families">
-                          <span class="shd__radio-mark form__radio-mark"></span>
-                          <span class="shd__price">610$</span>
-                          <span class="shd__group-row-text form__radio-text">16GB DDR-IV DIM module for EonStor DS 4000U, CS and GS families</span>
-                        </label>
-                      </li>
-                      <li class="shd__group-item">
-                        <label class="shd__group-row form__radio">
-                          <input class="shd__group-row-input form__radio-input visually-hidden" type="radio" name="shd-cache"  value="32GB DDR-IV DIMM module for EonStor DS 3000U,DS4000U,DS4000 Gen2, GS/GSe, and EonServ 7000 series">
-                          <span class="shd__radio-mark form__radio-mark"></span>
-                          <span class="shd__price">860$</span>
-                          <span class="shd__group-row-text form__radio-text">32GB DDR-IV DIMM module for EonStor DS 3000U,DS4000U,DS4000 Gen2, GS/GSe, and EonServ 7000 series</span>
-                        </label>
-                      </li>
-                      <li class="shd__group-item">
-                        <label class="shd__group-row form__radio">
-                          <input class="shd__group-row-input form__radio-input visually-hidden" type="radio" name="shd-cache"  value="не требуется" checked>
-                          <span class="shd__radio-mark form__radio-mark"></span>
-                          <span class="shd__group-row-text form__radio-text">не требуется</span>
-                        </label>
-                      </li>
-                    </ul>
-                  </div>
-                </fieldset>
-              </li>
-              <li class="shd__groups-item">
-                <fieldset class="shd__group shd__group--soft">
-                  <legend class="visually-hidden">Программное обеспечение</legend>
-                  <p class="shd__group-title">Программное<br>обеспечение</p>
-                  <div class="shd__group-content">
-                    <ul class="shd__group-list">
-                      <li class="shd__group-item">
-                        <label class="shd__group-row form__radio">
-                          <input class="shd__group-row-input form__radio-input visually-hidden" type="radio" name="shd-soft"  value="Лицензия EonStor DS Advanced Automated Storage Tiering (2 уровня)">
-                          <span class="shd__radio-mark form__radio-mark"></span>
-                          <span class="shd__price">860$</span>
-                          <span class="shd__group-row-text form__radio-text">Лицензия EonStor DS Advanced Automated Storage Tiering (4 уровня)</span>
-                        </label>
-                      </li>
-                      <li class="shd__group-item">
-                        <label class="shd__group-row form__radio">
-                          <input class="shd__group-row-input form__radio-input visually-hidden" type="radio" name="shd-soft"  value="8GB DDR-IV DIMM module for EonStor DS 3000U,DS4000U,DS4000 Gen2, GS/GSe, and EonServ 7000 series">
-                          <span class="shd__radio-mark shd__group-row-input form__radio-mark"></span>
-                          <span class="shd__price">610$</span>
-                          <span class="shd__group-row-text form__radio-text">8GB DDR-IV DIMM module for EonStor DS 3000U,DS4000U,DS4000 Gen2, GS/GSe, and EonServ 7000 series</span>
-                        </label>
-                      </li>
-                      <li class="shd__group-item">
-                        <label class="shd__group-row form__radio">
-                          <input class="shd__group-row-input form__radio-input visually-hidden" type="radio" name="shd-soft"  value="Лицензия кэширования на SSD для EonStor DS Infortrand EonStor DS SSD Cache License for selected models">
-                          <span class="shd__radio-mark form__radio-mark"></span>
-                          <span class="shd__price">610$</span>
-                          <span class="shd__group-row-text form__radio-text">Лицензия кэширования на SSD для EonStor DS Infortrand EonStor DS SSD Cache License for selected models</span>
-                        </label>
-                      </li>
-                      <li class="shd__group-item">
-                        <label class="shd__group-row form__radio">
-                          <input class="shd__group-row-input form__radio-input visually-hidden" type="radio" name="shd-soft"  value="Лицензия удалённой репликации для EonStor DS">
-                          <span class="shd__radio-mark form__radio-mark"></span>
-                          <span class="shd__price">860$</span>
-                          <span class="shd__group-row-text form__radio-text">Лицензия удалённой репликации для EonStor DS</span>
-                        </label>
-                      </li>
-                      <li class="shd__group-item">
-                        <label class="shd__group-row form__radio">
-                          <input class="shd__group-row-input form__radio-input visually-hidden" type="radio" name="shd-soft"  value="Лицензия улучшенной локальной репликации для EonStor DS (Snapshot и Volume Copy/Mirror)">
-                          <span class="shd__radio-mark form__radio-mark"></span>
-                          <span class="shd__price">860$</span>
-                          <span class="shd__group-row-text form__radio-text">Лицензия улучшенной локальной репликации для EonStor DS (Snapshot и Volume Copy/Mirror)</span>
-                        </label>
-                      </li>
-                    </ul>
-                  </div>
-                </fieldset>
-              </li>
-              <li class="shd__groups-item">
-                <fieldset class="shd__group shd__group--reserve-copy">
-                  <legend class="visually-hidden">Резервное копирование</legend>
-                  <p class="shd__group-title">Резервное<br>копирование</p>
-                  <div class="shd__group-content">
-                    <div class="shd__group-row shd__group-row--centered">
-                      <div class="shd__group-row-input form__field-number-wrapper">
+                      <div class="form__field-number-wrapper">
                         <button class="form__number-input-button form__number-input-button--inc" type="button" tabindex="-1">
                           <span class="visually-hidden">Увеличить.</span>
                         </button>
-                        <input class="shd__number-field form__field" type="number" name="shd-reserve-copy" value="0" min="0" max="99">
+                        <input class="form__field" type="number" name="server-conf-cpu-num" value="0" min="0" max="99">
                         <button class="form__number-input-button form__number-input-button--dec" type="button" tabindex="-1">
-                          <span class="visually-hidden">Увеличить.</span>
+                          <span class="visually-hidden">Уменьшить.</span>
                         </button>
                       </div>
-                      <span class="shd__price">860$</span>
-                      <span class="shd__group-row-text">Veeam Backup & Replication (Standard)</span>
                     </div>
                   </div>
-                </fieldset>
+                </div>
               </li>
-              <li class="shd__groups-item">
-                <fieldset class="shd__group shd__group--add-info">
-                  <legend class="visually-hidden">Дополнительная информация</legend>
-                  <p class="shd__group-title">Дополнительная информация</p>
-                  <div class="shd__group-content">
-                    <div class="shd__group-row shd__group-row--centered">
-                      <span class="shd__group-row-text">Все необходимые кабели, винты и прочее учтены в заказе</span>
+              <li class="server-conf__group-list-item">
+                <div class="conf-group">
+                  <p class="conf-group__title conf-group__title--ram">Оперативная память</p>
+                  <div class="conf-group__content">
+                    <div class="conf-group__row">
+                      <select class="form__select" id="server-conf-ram-type" name="server-conf-ram-type">
+                        <option value="">Выбрать из списка</option>
+                        <option value="Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)">Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)</option>
+                        <option value="Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)">Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)</option>
+                        <option value="Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)">Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)</option>
+                        <option value="Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)">Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)</option>
+                      </select>
+                      <div class="form__field-number-wrapper">
+                        <button class="form__number-input-button form__number-input-button--inc" type="button" tabindex="-1">
+                          <span class="visually-hidden">Увеличить.</span>
+                        </button>
+                        <input class="form__field" type="number" name="server-conf-cpu-num" value="0" min="0" max="99">
+                        <button class="form__number-input-button form__number-input-button--dec" type="button" tabindex="-1">
+                          <span class="visually-hidden">Уменьшить.</span>
+                        </button>
+                      </div>
                     </div>
                   </div>
-                </fieldset>
+                </div>
+              </li>
+              <li class="server-conf__group-list-item">
+                <div class="conf-group">
+                  <p class="conf-group__title conf-group__title--raid">RAID-контроллер</p>
+                  <div class="conf-group__content">
+                    <div class="conf-group__row">
+                      <select class="form__select" id="server-conf-raid-type" name="server-conf-raid-type">
+                        <option value="">Выбрать из списка</option>
+                        <option value="Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)">Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)</option>
+                        <option value="Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)">Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)</option>
+                        <option value="Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)">Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)</option>
+                        <option value="Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)">Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="server-conf__group-list-item">
+                <div class="conf-group">
+                  <p class="conf-group__title conf-group__title--hdd">Жесткие диски</p>
+                  <div class="conf-group__content">
+                    <p class="conf-group__info">Для добавления SAS дисков, сначала выберите RAID-контролеер</p>
+                    <div class="conf-group__row">
+                      <div class="conf-group conf-group--sub">
+                        <p class="conf-group__title">SATA</p>
+                        <div class="conf-group__content">
+                          <div class="conf-group__row">
+                            <select class="form__select" id="server-conf-sata-type" name="server-conf-sata-type">
+                              <option value="">Выбрать из списка</option>
+                              <option value="Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)">Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)</option>
+                              <option value="Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)">Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)</option>
+                              <option value="Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)">Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)</option>
+                              <option value="Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)">Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)</option>
+                            </select>
+                            <div class="form__field-number-wrapper">
+                              <button class="form__number-input-button form__number-input-button--inc" type="button" tabindex="-1">
+                                <span class="visually-hidden">Увеличить.</span>
+                              </button>
+                              <input class="form__field" type="number" name="server-conf-sata-num" value="0" min="0" max="99">
+                              <button class="form__number-input-button form__number-input-button--dec" type="button" tabindex="-1">
+                                <span class="visually-hidden">Уменьшить.</span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="conf-group__row">
+                      <div class="conf-group conf-group--sub">
+                        <p class="conf-group__title">SAS</p>
+                        <div class="conf-group__content">
+                          <div class="conf-group__row">
+                            <select class="form__select" id="server-conf-sas-type" name="server-conf-sas-type">
+                              <option value="">Выбрать из списка</option>
+                              <option value="Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)">Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)</option>
+                              <option value="Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)">Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)</option>
+                              <option value="Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)">Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)</option>
+                              <option value="Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)">Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)</option>
+                            </select>
+                            <div class="form__field-number-wrapper">
+                              <button class="form__number-input-button form__number-input-button--inc" type="button" tabindex="-1">
+                                <span class="visually-hidden">Увеличить.</span>
+                              </button>
+                              <input class="form__field" type="number" name="server-conf-sas-num" value="0" min="0" max="99">
+                              <button class="form__number-input-button form__number-input-button--dec" type="button" tabindex="-1">
+                                <span class="visually-hidden">Уменьшить.</span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="conf-group__row">
+                      <div class="conf-group conf-group--sub">
+                        <p class="conf-group__title">SSD</p>
+                        <div class="conf-group__content">
+                          <div class="conf-group__row">
+                            <select class="form__select" id="server-conf-ssd-type" name="server-conf-ssd-type">
+                              <option value="">Выбрать из списка</option>
+                              <option value="Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)">Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)</option>
+                              <option value="Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)">Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)</option>
+                              <option value="Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)">Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)</option>
+                              <option value="Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)">Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)</option>
+                            </select>
+                            <div class="form__field-number-wrapper">
+                              <button class="form__number-input-button form__number-input-button--inc" type="button" tabindex="-1">
+                                <span class="visually-hidden">Увеличить.</span>
+                              </button>
+                              <input class="form__field" type="number" name="server-conf-ssd-num" value="0" min="0" max="99">
+                              <button class="form__number-input-button form__number-input-button--dec" type="button" tabindex="-1">
+                                <span class="visually-hidden">Уменьшить.</span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="server-conf__group-list-item">
+                <div class="conf-group">
+                  <p class="conf-group__title conf-group__title--other-controllers">Прочие контроллеры</p>
+                  <div class="conf-group__content">
+                    <div class="conf-group__row">
+                      <select class="form__select" id="server-conf-other-controllers" name="server-conf-other-controllers">
+                        <option value="">Выбрать из списка</option>
+                        <option value="Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)">Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)</option>
+                        <option value="Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)">Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)</option>
+                        <option value="Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)">Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)</option>
+                        <option value="Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)">Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="server-conf__group-list-item">
+                <div class="conf-group">
+                  <p class="conf-group__title conf-group__title--other-components">Прочие компоненты</p>
+                  <div class="conf-group__content">
+                    <div class="conf-group__row">
+                      <select class="form__select" id="server-conf-other-components" name="server-conf-other-components">
+                        <option value="">Выбрать из списка</option>
+                        <option value="Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)">Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)</option>
+                        <option value="Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)">Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)</option>
+                        <option value="Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)">Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)</option>
+                        <option value="Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)">Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="server-conf__group-list-item">
+                <div class="conf-group">
+                  <p class="conf-group__title conf-group__title--soft">Программное обеспечение</p>
+                  <div class="conf-group__content">
+                    <div class="conf-group__row">
+                      <select class="form__select" id="server-conf-soft-type" name="server-conf-soft-type">
+                        <option value="">Выбрать из списка</option>
+                        <option value="Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)">Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)</option>
+                        <option value="Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)">Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)</option>
+                        <option value="Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)">Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)</option>
+                        <option value="Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)">Intel Xeon E5-2630L (6C 15M Cache 2.00 GHz)</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
               </li>
             </ul>
-            <div class="shd__count-wrapper">
-              <div class="shd__count">
-                <span class="shd__count-text">Количество</span>
-                <div class="form__field-number-wrapper">
-                  <button class="form__number-input-button form__number-input-button--inc" type="button" tabindex="-1">
-                    <span class="visually-hidden">Увеличить.</span>
-                  </button>
-                  <input class="form__field" type="number" name="shd-count" value="1" min="1" max="99">
-                  <button class="form__number-input-button form__number-input-button--dec" type="button" tabindex="-1">
-                    <span class="visually-hidden">Увеличить.</span>
-                  </button>
-                </div>
-              </div>
-              <button class="shd__submit-button form__submit-buttom button" type="submit">Отправить заявку</button>
-            </div>
           </form>
           <div class="server-conf__descr">
             <p class="server-conf__paragraph">Серверы HPE ProLiant DL380 Gen10 предназначены для решения сложных ресурсоемких задач, включая виртуализацию и облачную работы, рекомендуются к использованию средними и крупными компаниями с развитой инфраструктурой.</p>

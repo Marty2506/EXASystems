@@ -10,7 +10,7 @@ serverConfSelects.forEach(serverConfSelect => {
     shouldSort: false,
     itemSelectText: '',
     classNames: {
-      containerOuter: 'form-choices form-choices--righted',
+      containerOuter: 'form-choices form-choices--righted conf-group__choices',
       containerInner: 'form-choices__inner',
       input: 'form-choices__input',
       inputCloned: 'form-choices__input--cloned',
@@ -37,3 +37,4 @@ serverConfSelects.forEach(serverConfSelect => {
     allowHTML: true
   });
 });
+

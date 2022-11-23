@@ -575,6 +575,10 @@
   }
 }
 
+.form-choices__list--dropdown.is-active {
+  z-index: 10;
+}
+
 .form-choices--righted {
   & .form-choices__item {
     padding: 11px 12px;
