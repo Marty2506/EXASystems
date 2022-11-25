@@ -267,6 +267,21 @@
               </svg>
             </div>
           </div>
+          <form class="server-conf__summary-contact-form form section__from" id="server-conf-contact-form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="form__label">
+              <span class="section__form-label-text form__label-text form__label-text--black">Ваше имя</span>
+              <input class="form__field server-conf__form-field" type="text" id="server-conf-client-name" name="server-conf-client-name" placeholder="Введите ваше имя">
+            </label>
+            <label class="form__label">
+              <span class="section__form-label-text form__label-text form__label-text--black">E-mail</span>
+              <input class="form__field server-conf__form-field" type="email" id="server-conf-mail" name="server-conf-mail" placeholder="Введите ваш e-mail" data-pristine-email-message="Неправильный формат e-mail">
+            </label>
+            <label class="form__label">
+              <span class="section__form-label-text form__label-text form__label-text--black">Номер телефона для связи</span>
+              <input class="form__field server-conf__form-field" type="tel" id="server-conf-phone" name="server-conf-phone" placeholder="+7 (999) 999-99-99" required data-pristine-required-message="Обязательно к заполнению">
+            </label>
+            <button class="button form__submit-button server-conf__form-submit-button" type="submit">Получить конфигурацию</button>
+          </form>
         </div>
       </div>
     </section>

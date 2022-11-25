@@ -125,17 +125,27 @@
 }
 
 .server-conf__summary {
-  padding: 20px 20px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding: 20px;
   margin-left: -$paddings-mobile;
   margin-right: -$paddings-mobile;
 
   @media (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 90px;
     padding: 50px 40px;
   }
 }
 .server-conf__config-list {
   display: flex;
   flex-direction: column;
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    max-width: 585px;
+  }
 }
 .server-conf__summary-title {
   margin: 0;
@@ -198,4 +208,22 @@
   font-size: 18px;
   line-height: 110%;
   color: $grey-color;
+}
+
+.server-conf__summary-contact-form {
+  width: 100%;
+  gap: 20px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 345px;
+    padding-top: 20px;
+  }
+}
+
+.server-conf__form-field {
+  background-color: $white-color;
+}
+
+.server-conf__form-submit-button {
+  max-width: initial;
 }

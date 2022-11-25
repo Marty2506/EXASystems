@@ -69,7 +69,7 @@ if (serverConfigItem) {
 
 
 // Образец группы
-{/* <div class="conf-group conf-group--summary">
+/* <div class="conf-group conf-group--summary">
       <p class="conf-group__title conf-group__title--cpu">Процессор</p>
       <div class="conf-group__content">
         <div class="conf-group__row">
@@ -78,7 +78,7 @@ if (serverConfigItem) {
         </div>
       <div>
     </div>
-*/}
+*/
 function createConfGroup(baseDomEl) {
   const group = document.createElement("div");
   group.classList.add('conf-group', 'conf-group--summary');
@@ -110,6 +110,7 @@ function createConfGroup(baseDomEl) {
       title.textContent = baseDomElTitle.textContent;
 
       const baseDomElChilds = baseDomEl.querySelectorAll('.conf-group--sub');
+      // Если есть подгруппы, например для жестких дисков
       if (baseDomElChilds.length > 0) {
         baseDomElChilds.forEach(baseDomElChild => {
           const childGroup = createConfGroup(baseDomElChild);
@@ -123,6 +124,7 @@ function createConfGroup(baseDomEl) {
       const choice = baseDomEl.querySelector('.form__select').choices.getValue(true);
       chosenComponent.textContent = choice;
       const cnt = baseDomEl.querySelector('input[type="number"]');
+      // Убираем группы с нулевым кол-вом, агде нет поля с кол-вом убираем это поле
       if (cnt) {
         if (parseInt(cnt.value) === 0) return null;
         chosenComponentCnt.textContent = cnt.value;
@@ -144,7 +146,7 @@ function updateServerConfig() {
       return value.choices.getValue(true);
     })
     if (selects.some((value) => {
-      return value.choices.getValue(true);
+      return value.choices.getValue(true); // Проверка, что в селекте что-то выбрано
     })) {
       const group = createConfGroup(position);
       if (group) fragment.appendChild(createConfGroup(position));
@@ -163,3 +165,39 @@ function updateServerConfig() {
   serverConfigItem.appendChild(fragment);
 }
 
+
+// Форма отправки
+
+const serverConfSummaryForm = document.querySelector('#server-conf-contact-form');
+
+if (serverConfSummaryForm) {
+  const phoneMaskOptions = {
+    mask: '+{7} (000) 000-00-00',
+  };
+  const phoneEl = document.querySelector('#server-conf-phone');
+  IMask(phoneEl, phoneMaskOptions);
+
+  const mailField = serverConfSummaryForm.querySelector('#server-conf-mail');
+  var mailMaskOptions = {
+    mask: /^\S*@?\S*$/
+  };
+  IMask(mailField, mailMaskOptions);
+
+  const serverConfSummaryPristine = new Pristine(serverConfSummaryForm, {
+    classTo: 'form__label', // Элемент, на который будут добавляться классы
+    errorTextParent: 'form__label', // Элемент, куда будет выводиться текст с ошибкой
+    errorTextTag: 'span', // Тег, который будет обрамлять текст ошибки
+    errorTextClass: 'form__error-message' // Класс для элемента с текстом ошибки
+  }, true);
+
+  serverConfSummaryPristine.addValidator(phoneEl, (value) => {
+    return (value.length === 18);
+  }, "Номер неполный", 2, false);
+
+  serverConfSummaryForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var valid = serverConfSummaryPristine.validate();
+    // TODO здесь должен написать запрос программист
+    // TODO нужно конфигурацию как-то в форму подгрузить. Кто должен делать?
+  });
+}
