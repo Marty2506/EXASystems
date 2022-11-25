@@ -38,8 +38,8 @@ numberInputsWithArrows.forEach(element => {
       mask.updateValue();
     })
   }
-  element.parentNode.parentNode.addEventListener('mousedown', (evt) => {
-    evt.preventDefault();
-    element.focus();
-  })
+  // element.parentNode.parentNode.addEventListener('mousedown', (evt) => {
+  //   evt.preventDefault();
+  //   element.focus();
+  // })
 });

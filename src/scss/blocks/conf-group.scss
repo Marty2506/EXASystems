@@ -23,8 +23,7 @@
   align-items: center;
   width: 175px;
   height: max-content;
-  margin: 0;
-  padding-top: 3px;
+  margin: auto 0;
   padding-right: 15px;
 
   font-weight: 700;
@@ -77,11 +76,20 @@
   content: "";
   background-image: url("@img/icons/server-conf-soft.svg");
 }
+
+.conf-group__title--long {
+  margin: 0;
+  margin-top: 3px;
+}
+
 .conf-group__content {
+  display: flex;
+  flex-direction: column;
   width: 100%;
 }
 .conf-group__row {
   display: flex;
+  align-items: center;
   gap: 15px;
   width: 100%;
 }
@@ -101,5 +109,29 @@
 
   @media (max-width: $max-mobile-width) {
     margin-top: 0;
+  }
+}
+
+.conf-group--summary {
+  background-color: $white-color;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 20px;
+  }
+
+  & .conf-group__content {
+    gap: 10px;
+    justify-content: center;
+  }
+}
+.conf-group--summary.conf-group--sub {
+  padding: 0;
+
+  &:first-child {
+    @media (min-width: $tablet-width) {
+      padding-top: 10px;
+    }
   }
 }

@@ -16,10 +16,12 @@
 .server-conf__content {
   display: flex;
   flex-direction: column;
+  padding-bottom: 20px;
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     padding-top: 40px;
+    padding-bottom: 70px;
   }
 }
 .server-conf__descr {
@@ -120,4 +122,80 @@
 
 .server-conf__group-list-item {
 
+}
+
+.server-conf__summary {
+  padding: 20px 20px;
+  margin-left: -$paddings-mobile;
+  margin-right: -$paddings-mobile;
+
+  @media (min-width: $desktop-width) {
+    padding: 50px 40px;
+  }
+}
+.server-conf__config-list {
+  display: flex;
+  flex-direction: column;
+}
+.server-conf__summary-title {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+
+  font-family: $jost-font;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 110%;
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+}
+.server-conf__config {
+  @media (max-width: $max-mobile-width) {
+    padding: 10px 0;
+    background-color: $white-color;
+  }
+}
+.conf-group__chosen-component {
+  margin: 0;
+  padding: 0;
+
+  font-size: 12px;
+  line-height: 130%;
+  color: $grey-color;
+}
+.conf-group__chosen-component-cnt {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+
+  &::before {
+    content: "х";
+
+    font-family: $jost-font;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 110%;
+    color: $grey-color;
+  }
+}
+
+.server-conf__summary-price {
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+  }
+}
+.server-conf__summary-price--hidden {
+  display: none;
+}
+
+.server-conf__no-conf-text {
+  font-size: 18px;
+  line-height: 110%;
+  color: $grey-color;
 }
