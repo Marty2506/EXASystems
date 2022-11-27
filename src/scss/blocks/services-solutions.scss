@@ -101,6 +101,9 @@
 
   transition: color 0.3s ease;
 
+  word-break: break-word;
+  word-wrap: break-word;
+
   gap: 15px;
 
   & .services-solutions__card-title-icon {
@@ -148,6 +151,7 @@
   text-decoration: none;
 
   transition: color 0.3s ease;
+
 
   &:hover {
     color: $blue-color;
