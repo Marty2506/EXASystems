@@ -1,0 +1,105 @@
+{% extends "layout.j2" %}
+
+{% set page = "os" %}
+
+{% block content %}
+  <main class="page-main">
+    <div class="container">
+      <div class="breadcumbs">
+        <ul class="breadcumbs__list">
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="./index.html">Главная</a>
+          </li>
+          <li class="breadcumbs__item">
+            {# TODO поправить ссылку #}
+            <a class="breadcumbs__link" href="./#!.html">Каталог</a>
+          </li>
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="./software.html">Программное обеспечение</a>
+          </li>
+          <li class="breadcumbs__item">
+            <span class="breadcumbs__link breadcumbs__link--current">Операционные системы</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section class="os-catalog services-solutions section">
+      <div class="container">
+        <div class="services-solutions__content section__content">
+          <h1 class="os-catalog__title services-solutions__title title">Операционные системы</h1>
+          <ul class="os-catalog__list services-solutions__list">
+            <li class="os-catalog__item os-catalog__card services-solutions__card">
+              <div class="os-catalog__card-content services-solutions__card-content">
+                <h3 class="services-solutions__card-title">
+                  <a class="services-solutions__card-title-link" href="#!">
+                    Microsoft Windows
+                    <svg class="services-solutions__card-title-icon" width="14" height="14" viewBox="0 0 14 14">
+                      <use xlink:href="img/sprite.svg#services-arrow-icon"></use>
+                    </svg>
+                  </a>
+                </h3>
+                <p class="section__paragraph">Простое и надежное решение повседневных задач</p>
+              </div>
+              <div class="os-catalog__image-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="@img/os-windows.webp 1x">
+                  <img class="os-catalog__image" src="@img/os-windows.png" alt="" width="432" height="313">
+                </picture>
+              </div>
+            </li>
+            <li class="os-catalog__item os-catalog__card services-solutions__card">
+              <div class="os-catalog__card-content services-solutions__card-content">
+                <h3 class="services-solutions__card-title">
+                  <a class="services-solutions__card-title-link" href="#!">
+                    Astra Linux
+                    <svg class="services-solutions__card-title-icon" width="14" height="14" viewBox="0 0 14 14">
+                      <use xlink:href="img/sprite.svg#services-arrow-icon"></use>
+                    </svg>
+                  </a>
+                </h3>
+                <p class="section__paragraph">Простое и надежное решение повседневных задач</p>
+              </div>
+              <div class="os-catalog__image-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="@img/os-astra-linux.webp 1x">
+                  <img class="os-catalog__image" src="@img/os-astra-linux.png" alt="" width="568" height="317">
+                </picture>
+              </div>
+            </li>
+            <li class="os-catalog__item os-catalog__card services-solutions__card">
+              <div class="os-catalog__card-content services-solutions__card-content">
+                <h3 class="services-solutions__card-title">
+                  <a class="services-solutions__card-title-link" href="#!">
+                    Red Soft
+                    <svg class="services-solutions__card-title-icon" width="14" height="14" viewBox="0 0 14 14">
+                      <use xlink:href="img/sprite.svg#services-arrow-icon"></use>
+                    </svg>
+                  </a>
+                </h3>
+                <p class="section__paragraph">Простое и надежное решение повседневных задач</p>
+              </div>
+              <div class="os-catalog__image-wrapper">
+                <picture>
+                  <source type="image/webp" srcset="@img/os-redsoft.webp 1x">
+                  <img class="os-catalog__image" src="@img/os-redsoft.png" alt="" width="432" height="298">
+                </picture>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    {% include "./blocks/soft-imp-rep.j2" %}
+  </main>
+{% endblock content %}
+
+{% block modal %}
+  {% include "./blocks/modal-image.j2" %}
+{% endblock %}
+
+{% block js %}
+  <script src="./js/modal-image.min.js"></script>
+  <script src="./js/main.min.js"></script>
+{% endblock %}
