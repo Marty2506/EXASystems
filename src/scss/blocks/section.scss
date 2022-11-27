@@ -10,6 +10,27 @@
   &--lb-bg {
     background-color: $bg2-color;
   }
+
+  &--clipped {
+    position: relative;
+    @media (min-width: $desktop-width) {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+        width: 100%;
+        height: 100%;
+
+        background-color: $bg2-color;
+
+        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 100px), 70% 100%, 0 calc(100% - 220px));
+      }
+    }
+
+  }
 }
 
 .section__content {
@@ -28,6 +49,20 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 35px;
   }
+}
+
+.section__main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.section__side-image-wrapper {
+}
+
+.section__side-image {
+  width: 100%;
+  object-fit: cover;
 }
 
 .section__main-title {

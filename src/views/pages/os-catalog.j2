@@ -1,6 +1,6 @@
 {% extends "layout.j2" %}
 
-{% set page = "os" %}
+{% set page = "os-catalog" %}
 
 {% block content %}
   <main class="page-main">
@@ -31,7 +31,7 @@
             <li class="os-catalog__item os-catalog__card services-solutions__card">
               <div class="os-catalog__card-content services-solutions__card-content">
                 <h3 class="services-solutions__card-title">
-                  <a class="services-solutions__card-title-link" href="#!">
+                  <a class="services-solutions__card-title-link" href="./os-page.html">
                     Microsoft Windows
                     <svg class="services-solutions__card-title-icon" width="14" height="14" viewBox="0 0 14 14">
                       <use xlink:href="img/sprite.svg#services-arrow-icon"></use>
@@ -50,7 +50,7 @@
             <li class="os-catalog__item os-catalog__card services-solutions__card">
               <div class="os-catalog__card-content services-solutions__card-content">
                 <h3 class="services-solutions__card-title">
-                  <a class="services-solutions__card-title-link" href="#!">
+                  <a class="services-solutions__card-title-link" href="./os-page.html">
                     Astra Linux
                     <svg class="services-solutions__card-title-icon" width="14" height="14" viewBox="0 0 14 14">
                       <use xlink:href="img/sprite.svg#services-arrow-icon"></use>
@@ -69,7 +69,7 @@
             <li class="os-catalog__item os-catalog__card services-solutions__card">
               <div class="os-catalog__card-content services-solutions__card-content">
                 <h3 class="services-solutions__card-title">
-                  <a class="services-solutions__card-title-link" href="#!">
+                  <a class="services-solutions__card-title-link" href="./os-page.html">
                     Red Soft
                     <svg class="services-solutions__card-title-icon" width="14" height="14" viewBox="0 0 14 14">
                       <use xlink:href="img/sprite.svg#services-arrow-icon"></use>
@@ -96,10 +96,9 @@
 {% endblock content %}
 
 {% block modal %}
-  {% include "./blocks/modal-image.j2" %}
+
 {% endblock %}
 
 {% block js %}
-  <script src="./js/modal-image.min.js"></script>
   <script src="./js/main.min.js"></script>
 {% endblock %}

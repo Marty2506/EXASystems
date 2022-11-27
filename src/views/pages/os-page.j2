@@ -1,0 +1,83 @@
+{% extends "layout.j2" %}
+
+{% set page = "os-page" %}
+
+{% block content %}
+  <main class="page-main">
+    <div class="container">
+      <div class="breadcumbs">
+        <ul class="breadcumbs__list">
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="./index.html">Главная</a>
+          </li>
+          <li class="breadcumbs__item">
+            {# TODO поправить ссылку #}
+            <a class="breadcumbs__link" href="./#!.html">Каталог</a>
+          </li>
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="./software.html">Программное обеспечение</a>
+          </li>
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="./os-catalog.html">Операционные системы</a>
+          </li>
+          <li class="breadcumbs__item">
+            <span class="breadcumbs__link breadcumbs__link--current">Kaspersky OS</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="os section pads section--clipped">
+      <div class="container">
+        <div class="os__content section__content">
+          <div class="os__main section__main">
+            <h1 class="section__main-title">Kaspersky OS</h1>
+            <p class="os__description">KasperskyOS – защищенная микроядерная операционная система. Это не очередной дистрибутив Linux, а собственная разработка, способная успешно конкурировать на международных рынках. Заложенный в KasperskyOS принцип кибериммунности позволяет разрабатывать безопасные решения из потенциально небезопасных компонентов.</p>
+            <ul class="os__advs-list">
+              <li class="os__advs-item">
+                <dl class="os__adv os__adv--safety">
+                  <dt class="os__adv-title">Безопасность</dt>
+                  <dd class="os__adv-desc">Невозможность неавторизованных действий</dd>
+                </dl>
+              </li>
+              <li class="os__advs-item">
+                <dl class="os__adv os__adv--reliability">
+                  <dt class="os__adv-title">Надежность</dt>
+                  <dd class="os__adv-desc">Исполнение критичных функций в любых ситуациях</dd>
+                </dl>
+              </li>
+              <li class="os__advs-item">
+                <dl class="os__adv os__adv--flexibility">
+                  <dt class="os__adv-title">Гибкость</dt>
+                  <dd class="os__adv-desc">Конфигурация решений под конкретные запросы</dd>
+                </dl>
+              </li>
+              <li class="os__advs-item">
+                <dl class="os__adv os__adv--opacity">
+                  <dt class="os__adv-title">Прозрачность</dt>
+                  <dd class="os__adv-desc">Строгий контроль системных процессов и легкость аудита</dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+          <div class="os__image-wrapper section__side-image-wrapper">
+            <picture>
+              <source type="image/webp" srcset="@img/os-page-kaspersky.webp 1x">
+              <img class="os__image section__side-image" src="@img/os-page-kaspersky.png" alt="Изображение комплекта Kaspersky OS" width="661" height="501">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {% include "./blocks/soft-imp-rep.j2" %}
+  </main>
+{% endblock content %}
+
+{% block modal %}
+
+{% endblock %}
+
+{% block js %}
+  <script src="./js/main.min.js"></script>
+{% endblock %}
