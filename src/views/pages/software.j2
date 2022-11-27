@@ -1,0 +1,118 @@
+{% extends "layout.j2" %}
+
+{% set page = "software" %}
+
+{% block content %}
+  <main class="page-main">
+    <div class="container">
+      <div class="breadcumbs">
+        <ul class="breadcumbs__list">
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="./index.html">Главная</a>
+          </li>
+          <li class="breadcumbs__item">
+            {# TODO поправить ссылку #}
+            <a class="breadcumbs__link" href="./#!.html">Каталог</a>
+          </li>
+          <li class="breadcumbs__item">
+            <span class="breadcumbs__link breadcumbs__link--current">Программное обеспечение</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="soft-catalog section">
+      <div class="soft-catalog__header section__content pads bg--lg">
+        <div class="container">
+          <div class="soft-catalog__header-content">
+            <h1 class="title">Программное обеспечение</h1>
+            <p class="section__paragraph">Современный софт для оборудования</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="soft-catalog__main section__content pads">
+          <ul class="soft-catalog__list">
+            <li class="soft-catalog__item">
+              <div class="equipment-card equipment-card--soft">
+                <div class="equipment-card__content">
+                  <a class="equipment-card__title" href="./#!.html">Операционные системы</a>
+                </div>
+                <picture>
+                  <source type="image/webp" srcset="@img/soft-catalog/card-os.webp 1x">
+                  <img class="equipment-card__image equipment-card__image--os" src="@img/soft-catalog/card-os.png" alt="">
+                </picture>
+              </div>
+            </li>
+            <li class="soft-catalog__item">
+              <div class="equipment-card equipment-card--soft">
+                <div class="equipment-card__content">
+                  <a class="equipment-card__title" href="./#!.html">Серверное ПО</a>
+                </div>
+                <picture>
+                  <source type="image/webp" srcset="@img/soft-catalog/card-server-soft.webp 1x">
+                  <img class="equipment-card__image equipment-card__image--server-soft" src="@img/soft-catalog/card-server-soft.png" alt="">
+                </picture>
+              </div>
+            </li>
+            <li class="soft-catalog__item">
+              <div class="equipment-card equipment-card--soft">
+                <div class="equipment-card__content">
+                  <a class="equipment-card__title" href="./#!.html">защита систем и информации</a>
+                </div>
+                <picture>
+                  <source type="image/webp" srcset="@img/soft-catalog/card-def.webp 1x">
+                  <img class="equipment-card__image equipment-card__image--def" src="@img/soft-catalog/card-def.png" alt="">
+                </picture>
+              </div>
+            </li>
+            <li class="soft-catalog__item">
+              <div class="equipment-card equipment-card--soft">
+                <div class="equipment-card__content">
+                  <a class="equipment-card__title" href="./#!.html">Офисные программы</a>
+                </div>
+                <picture>
+                  <source type="image/webp" srcset="@img/soft-catalog/card-office.webp 1x">
+                  <img class="equipment-card__image equipment-card__image--office" src="@img/soft-catalog/card-office.png" alt="">
+                </picture>
+              </div>
+            </li>
+            <li class="soft-catalog__item">
+              <div class="equipment-card equipment-card--soft">
+                <div class="equipment-card__content">
+                  <a class="equipment-card__title" href="./#!.html">Облачные решения</a>
+                </div>
+                <picture>
+                  <source type="image/webp" srcset="@img/soft-catalog/card-cloud.webp 1x">
+                  <img class="equipment-card__image equipment-card__image--cloud" src="@img/soft-catalog/card-cloud.png" alt="">
+                </picture>
+              </div>
+            </li>
+            <li class="soft-catalog__item">
+              <div class="equipment-card equipment-card--soft">
+                <div class="equipment-card__content">
+                  <a class="equipment-card__title" href="./#!.html">Графика и дизайн</a>
+                </div>
+                <picture>
+                  <source type="image/webp" srcset="@img/soft-catalog/card-design.webp 1x">
+                  <img class="equipment-card__image equipment-card__image--design" src="@img/soft-catalog/card-design.png" alt="">
+                </picture>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    {% include "./blocks/consultation.j2" %}
+  </main>
+{% endblock content %}
+
+{% block modal %}
+
+{% endblock %}
+
+{% block js %}
+  <script src="./js/engineer-cons.min.js"></script>
+  <script src="./js/main.min.js"></script>
+{% endblock %}

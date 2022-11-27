@@ -237,4 +237,55 @@
       bottom: -30px;
     }
   }
+
+  &--os,
+  &--server-soft,
+  &--def,
+  &--office,
+  &--cloud,
+  &--design {
+    transform: initial;
+    top: initial;
+    left: initial;
+    right: 0;
+    bottom: 0;
+
+    @media (max-width: $max-mobile-width) {
+      right: -55px;
+    }
+  }
+
+  &--server-soft,
+  &--def,
+  &--office {
+    bottom: 30px;
+  }
+
+  &--cloud {
+    right: 30px;
+    bottom: 30px;
+
+    @media (max-width: $max-mobile-width) {
+      right: -10px;
+    }
+  }
+
+  &--design {
+    right: 15px;
+    bottom: 10px;
+  }
+}
+
+
+.equipment-card--soft {
+  height: 313px;
+
+  & .equipment-card__title {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    text-transform: uppercase;
+    max-width: 70%;
+  }
 }
