@@ -1,0 +1,199 @@
+{% extends "layout.j2" %}
+
+{% set page = "server-comparison" %}
+
+{% block content %}
+  <main class="page-main">
+    <div class="container">
+      <div class="breadcumbs">
+        <ul class="breadcumbs__list">
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="./index.html">Главная</a>
+          </li>
+          <li class="breadcumbs__item">
+            {# TODO поправить ссылку #}
+            <a class="breadcumbs__link" href="#!">Каталог</a>
+          </li>
+          <li class="breadcumbs__item">
+            <span class="breadcumbs__link breadcumbs__link--current">Сравнение серверов</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="serv-comp section pads">
+      <div class="container">
+        <div class="serv-comp__content section__content">
+          <h1 class="title">Сравнение серверов</h1>
+          <div class="serv-comp__main">
+            <div class="serv-comp__row">
+              <div class="serv-comp__param-wrapper">
+                <div class="serv-comp__param-name-wrapper serv-comp__param-name-wrapper--mobile-hidden">
+                  <span class="serv-comp__param-name serv-comp__param-name--hidden">Наименование товара</span>
+                </div>
+                <div class="serv-comp__param-values">
+                  <div class="serv-comp__param-value-wrapper serv-comp__product-name-wrapper">
+                    <a class="serv-comp__product-name" href="#!">Lenovo SR630 R440-7106</a>
+                    <div class="serv-comp__product-photo-wrapper">
+                      <img class="serv-comp__product-photo" src="@img/serv-comp-1.png" alt="Lenovo SR630 R440-7106" width="417" height="170">
+                    </div>
+                  </div>
+                  <div class="serv-comp__param-value-wrapper serv-comp__product-name-wrapper">
+                    <a class="serv-comp__product-name" href="#!">Lenovo SR630 R440-7106</a>
+                    <div class="serv-comp__product-photo-wrapper">
+                      <img class="serv-comp__product-photo" src="@img/serv-comp-1.png" alt="Lenovo SR630 R440-7106">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="serv-comp__row">
+              <div class="serv-comp__param-wrapper">
+                <div class="serv-comp__param-name-wrapper">
+                  <span class="serv-comp__param-name">Тип процессора</span>
+                </div>
+                <div class="serv-comp__param-values">
+                  <div class="serv-comp__param-value-wrapper">
+                    <div class="serv-comp__param-value">Intel</div>
+                  </div>
+                  <div class="serv-comp__param-value-wrapper">
+                    <div class="serv-comp__param-value">Intel</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="serv-comp__row">
+              <div class="serv-comp__param-wrapper">
+                <div class="serv-comp__param-name-wrapper">
+                  <span class="serv-comp__param-name">Поколение процессора</span>
+                </div>
+                <div class="serv-comp__param-values">
+                  <div class="serv-comp__param-value-wrapper">
+                    <div class="serv-comp__param-value">Intel Xeon Scalable серии 8100/8200</div>
+                  </div>
+                  <div class="serv-comp__param-value-wrapper">
+                    <div class="serv-comp__param-value">Intel Xeon Scalable серии 8100/8200</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="serv-comp__row">
+              <div class="serv-comp__param-wrapper">
+                <div class="serv-comp__param-name-wrapper">
+                  <span class="serv-comp__param-name">Цена</span>
+                </div>
+                <div class="serv-comp__param-values">
+                  <div class="serv-comp__param-value-wrapper">
+                    <div class="serv-comp__param-value">582 940 ₽ / 24 290 ₽ в месяц</div>
+                  </div>
+                  <div class="serv-comp__param-value-wrapper">
+                    <div class="serv-comp__param-value">582 940 ₽ / 24 290 ₽ в месяц</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="serv-comp__row">
+              <div class="serv-comp__param-wrapper">
+                <div class="serv-comp__param-name-wrapper">
+                  <span class="serv-comp__param-name">Количество ядер процессора</span>
+                </div>
+                <div class="serv-comp__param-values">
+                  <div class="serv-comp__param-value-wrapper">
+                    <div class="serv-comp__param-value">1U</div>
+                  </div>
+                  <div class="serv-comp__param-value-wrapper">
+                    <div class="serv-comp__param-value">1U</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="serv-comp__row">
+              <div class="serv-comp__param-wrapper">
+                <div class="serv-comp__param-name-wrapper">
+                  <span class="serv-comp__param-name">Слоты для HDD</span>
+                </div>
+                <div class="serv-comp__param-values">
+                  <div class="serv-comp__param-value-wrapper">
+                    <div class="serv-comp__param-value">8</div>
+                  </div>
+                  <div class="serv-comp__param-value-wrapper">
+                    <div class="serv-comp__param-value">8</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="serv-comp__row">
+              <div class="serv-comp__param-wrapper">
+                <div class="serv-comp__param-name-wrapper">
+                  <span class="serv-comp__param-name">Оперативная память</span>
+                </div>
+                <div class="serv-comp__param-values">
+                  <div class="serv-comp__param-value-wrapper">
+                    <div class="serv-comp__param-value">4 слота от 2 до 32 Гб</div>
+                  </div>
+                  <div class="serv-comp__param-value-wrapper">
+                    <div class="serv-comp__param-value">4 слота от 2 до 32 Гб</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="serv-comp__row">
+              <div class="serv-comp__param-wrapper">
+                <div class="serv-comp__param-name-wrapper">
+                  <span class="serv-comp__param-name">Объем памяти</span>
+                </div>
+                <div class="serv-comp__param-values">
+                  <div class="serv-comp__param-value-wrapper">
+                    <div class="serv-comp__param-value">3 Тбайт (24 X 128 Гбайт) LRDIMM</div>
+                  </div>
+                  <div class="serv-comp__param-value-wrapper">
+                    <div class="serv-comp__param-value">3 Тбайт (24 X 128 Гбайт) LRDIMM</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="serv-comp__row">
+              <div class="serv-comp__param-wrapper">
+                <div class="serv-comp__param-name-wrapper">
+                  <span class="serv-comp__param-name">Количество блоков питания</span>
+                </div>
+                <div class="serv-comp__param-values">
+                  <div class="serv-comp__param-value-wrapper">
+                    <div class="serv-comp__param-value">3</div>
+                  </div>
+                  <div class="serv-comp__param-value-wrapper">
+                    <div class="serv-comp__param-value">2</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="serv-comp__row">
+              <div class="serv-comp__param-wrapper">
+                <div class="serv-comp__param-name-wrapper serv-comp__param-name-wrapper--mobile-hidden">
+                  <span class="serv-comp__param-name serv-comp__param-name--hidden">Ссылка на товар</span>
+                </div>
+                <div class="serv-comp__param-values">
+                  <div class="serv-comp__param-value-wrapper">
+                    <div class="serv-comp__param-value"><a class="serv-comp__link" href="#!">Перейти к товару</a></div>
+                  </div>
+                  <div class="serv-comp__param-value-wrapper">
+                    <div class="serv-comp__param-value"><a class="serv-comp__link" href="#!">Перейти к товару</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+{% endblock content %}
+
+{% block modal %}
+
+{% endblock %}
+
+{% block js %}
+  <script src="./js/main.min.js"></script>
+{% endblock %}
