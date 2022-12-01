@@ -13,6 +13,7 @@
 
   &--clipped {
     position: relative;
+
     @media (min-width: $desktop-width) {
       &::before {
         content: "";
@@ -29,7 +30,6 @@
         clip-path: polygon(0 0, 100% 0, 100% calc(100% - 100px), 70% 100%, 0 calc(100% - 220px));
       }
     }
-
   }
 }
 
@@ -455,7 +455,7 @@
 }
 
 .section__swiper-button--lock {
-  display: none;
+  visibility: hidden;
 }
 
 .section__swiper-button--disabled {
