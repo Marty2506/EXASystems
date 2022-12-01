@@ -14,6 +14,7 @@
     padding: 30px;
   }
 }
+
 .lic-card__content {
   position: relative;
 
@@ -23,6 +24,7 @@
 
   gap: 17px;
 }
+
 .lic-card__title {
   margin: 0;
   padding: 0;
@@ -33,6 +35,7 @@
   font-family: $jost-font;
   color: $blue-color;
 }
+
 .lic-card__text {
   margin: 0;
   padding: 0;
@@ -41,12 +44,14 @@
   line-height: 18px;
   color: $grey-color;
 }
+
 .lic-card__list {
   display: flex;
   flex-direction: column;
 
   gap: 10px;
 }
+
 .lic-card__item {
   display: flex;
 
@@ -69,12 +74,14 @@
     background-position: center;
   }
 }
+
 .lic-card__image-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
+
 .lic-card__image {
   max-height: 200px;
 }
@@ -83,6 +90,7 @@
   .lic-card__content {
     padding-right: 90px;
   }
+
   .lic-card__image-wrapper {
     position: absolute;
     top: 0;

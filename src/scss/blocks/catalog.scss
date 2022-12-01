@@ -143,15 +143,15 @@
   background-color: $white-color;
 
   transition: max-height 0.5s ease-out;
+
   @media (max-width: $max-mobile-width) {
     max-height: 2000px;
   }
-
   @media (min-width: $desktop-width) {
     max-width: 362px;
     padding: 35px;
 
-    box-shadow: 10px 10px 35px rgba(178, 176, 199, 0.25);
+    box-shadow: 10px 10px 35px rgb(178 176 199 / 25%);
   }
 }
 
@@ -182,6 +182,7 @@
   @media (max-width: $max-tablet-width) {
     margin: -15px;
     padding: 15px;
+
     &::after {
       content: "";
       position: absolute;
@@ -201,6 +202,7 @@
     }
   }
 }
+
 .catalog__form-title--opened {
   @media (max-width: $max-mobile-width) {
     &::after {
@@ -218,6 +220,7 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, auto);
 }
+
 .catalog__checkbox-list--power-blocks-cnt {
   display: grid;
 
@@ -228,6 +231,7 @@
 .catalog__form-checkbox {
   gap: 15px;
 }
+
 .catalog__form-checkbox-text {
   font-size: 14px;
   line-height: 130%;
