@@ -25,6 +25,20 @@
       <div class="container">
         <div class="serv-comp__content section__content">
           <h1 class="title">Сравнение серверов</h1>
+          <div class="serv-comp__buttons section__card-swiper-buttons">
+            <button class="section__swiper-button section__swiper-button--prev" type="button" id="serv-comp-prev">
+              <svg class="section__swiper-button-icon" width="12" height="10" viewBox="0 0 12 10">
+                <use xlink:href="img/sprite.svg#swiper-arrow-icon"></use>
+              </svg>
+              <span class="visually-hidden">Назад</span>
+            </button>
+            <button class="section__swiper-button section__swiper-button--next" type="button" id="serv-comp-next">
+              <svg class="section__swiper-button-icon" width="12" height="10" viewBox="0 0 12 10">
+                <use xlink:href="img/sprite.svg#swiper-arrow-icon"></use>
+              </svg>
+              <span class="visually-hidden">Вперед</span>
+            </button>
+          </div>
           <div class="serv-comp__main">
             <div class="serv-comp__row">
               <div class="serv-comp__param-wrapper">
@@ -195,5 +209,6 @@
 {% endblock %}
 
 {% block js %}
+  <script src="./js/serv-comp.min.js"></script>
   <script src="./js/main.min.js"></script>
 {% endblock %}

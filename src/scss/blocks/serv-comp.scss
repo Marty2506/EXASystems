@@ -1,6 +1,8 @@
 .serv-comp {
 }
 .serv-comp__content {
+  position: relative;
+  overflow: hidden;
 }
 .serv-comp__main {
 }
@@ -43,6 +45,9 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 130%;
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: break-word;
 }
 .serv-comp__param-name--hidden {
   // visually-hidden
@@ -61,10 +66,15 @@
 .serv-comp__param-values {
   display: flex;
   width: 100%;
+  transition: transform 0.2s ease-out;
 }
 .serv-comp__param-value-wrapper {
   background-color: $white-color;
   border: 1px solid #ebebeb;
+
+  @media (max-width: $max-tablet-width) {
+    width: 152px;
+  }
 }
 .serv-comp__product-name-wrapper {
   display: flex;
@@ -75,6 +85,9 @@
   font-weight: 600;
   color: #000;
   text-decoration: none;
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: break-word;
 
   @media (min-width: $desktop-width) {
     font-family: $jost-font;
@@ -94,8 +107,26 @@
 .serv-comp__param-value {
   line-height: 130%;
   color: #2a2a2a;
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: break-word;
 }
 .serv-comp__link {
   font-size: 14px;
   line-height: 17px;
+}
+
+.serv-comp__buttons {
+  padding-bottom: 10px;
+  margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+  }
+}
+.serv-comp__buttons--hidden {
+  display: none;
 }
