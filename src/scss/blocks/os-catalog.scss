@@ -1,14 +1,10 @@
-.os-catalog {
-}
+
 .os-catalog__title {
   margin-bottom: 35px;
 }
-.os-catalog__list {
-}
-.os-catalog__item {
-}
-.os-catalog__card {
-}
+
+
+
 .os-catalog__card-content {
   justify-content: center;
 }
@@ -16,9 +12,10 @@
   max-width: 568px;
 }
 .os-catalog__image {
+  width: auto;
   min-height: 243px;
   max-height: 313px;
-  width: auto;
+
   object-fit: contain;
   @media (min-width: $tablet-width) {
     height: 313px;

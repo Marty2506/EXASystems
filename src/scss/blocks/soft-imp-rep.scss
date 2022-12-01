@@ -1,8 +1,8 @@
-.soft-imp-rep {
-}
+
 .soft-imp-rep__content {
   display: flex;
   flex-direction: row;
+
   gap: 20px;
 
   @media (max-width: $max-mobile-width) {
@@ -28,6 +28,7 @@
 .soft-imp-rep__list {
   @media (min-width: $tablet-width) {
     padding-top: 20px;
+
     grid-template-columns: repeat(1, 1fr);
   }
   @media (min-width: $desktop-width) {
@@ -36,13 +37,12 @@
 }
 .soft-imp-rep__image-wrapper {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 
   @media (min-width: $desktop-width) {
     max-width: 30%;
   }
-
 }
 .soft-imp-rep__image {
   max-width: 334px;

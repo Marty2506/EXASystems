@@ -54,14 +54,15 @@
 .section__main {
   display: flex;
   flex-direction: column;
+
   gap: 30px;
 }
 
-.section__side-image-wrapper {
-}
+
 
 .section__side-image {
   width: 100%;
+
   object-fit: cover;
 }
 

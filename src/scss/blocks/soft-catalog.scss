@@ -1,9 +1,9 @@
-.soft-catalog {
-}
+
 .soft-catalog__header {
   @media (min-width: $desktop-width) {
     padding-top: 35px;
     padding-bottom: 40px;
+
     background-image: url("@img/soft-catalog/header-bg.webp");
     background-repeat: no-repeat;
     background-position: calc(50% + 430px) 0;
@@ -14,22 +14,21 @@
     max-width: 70%;
   }
 }
-.soft-catalog__main {
-}
+
 .soft-catalog__list {
   display: flex;
   flex-direction: column;
+
   gap: 10px;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+
     gap: 22px;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(3, 1fr);
   }
-}
-.soft-catalog__item {
 }

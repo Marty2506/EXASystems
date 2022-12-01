@@ -244,11 +244,12 @@
   &--office,
   &--cloud,
   &--design {
-    transform: initial;
     top: initial;
-    left: initial;
     right: 0;
     bottom: 0;
+    left: initial;
+
+    transform: initial;
 
     @media (max-width: $max-mobile-width) {
       right: -55px;
@@ -281,11 +282,12 @@
   height: 313px;
 
   & .equipment-card__title {
-    font-family: inherit;
+    max-width: 70%;
+
     font-weight: 700;
     font-size: 22px;
     line-height: 27px;
+    font-family: inherit;
     text-transform: uppercase;
-    max-width: 70%;
   }
 }

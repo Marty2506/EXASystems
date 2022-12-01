@@ -1,36 +1,42 @@
 .lic-card {
-  container-type: inline-size;
-  container-name: lic;
   display: flex;
   flex-direction: column;
-  gap: 17px;
-  padding: 15px;
   width: 100%;
+  padding: 15px;
+
   background-color: $bg2-color;
+
+  container-name: lic;
+  container-type: inline-size;
+  gap: 17px;
 
   @media (min-width: $desktop-width) {
     padding: 30px;
   }
 }
 .lic-card__content {
-  width: 100%;
   position: relative;
+
   display: flex;
   flex-direction: column;
+  width: 100%;
+
   gap: 17px;
 }
 .lic-card__title {
   margin: 0;
   padding: 0;
-  font-family: $jost-font;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
+  font-family: $jost-font;
   color: $blue-color;
 }
 .lic-card__text {
   margin: 0;
   padding: 0;
+
   font-size: 15px;
   line-height: 18px;
   color: $grey-color;
@@ -38,30 +44,35 @@
 .lic-card__list {
   display: flex;
   flex-direction: column;
+
   gap: 10px;
 }
 .lic-card__item {
   display: flex;
-  gap: 5px;
+
   font-weight: 600;
   font-size: 15px;
   line-height: 18px;
   color: #282828;
 
+  gap: 5px;
+
   &::before {
     content: "";
+
+    flex-shrink: 0;
     width: 18px;
     height: 18px;
+
     background-image: url("@img/icons/lic-card-check-icon.svg");
     background-repeat: no-repeat;
     background-position: center;
-    flex-shrink: 0;
   }
 }
 .lic-card__image-wrapper {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   width: 100%;
 }
 .lic-card__image {
@@ -76,6 +87,7 @@
     position: absolute;
     top: 0;
     right: 0;
+
     width: 85px;
     height: 140px;
   }
