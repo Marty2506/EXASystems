@@ -18,7 +18,7 @@ function addProductToCompare(num = 1) {
     }
   });
 }
-addProductToCompare(5);
+// addProductToCompare(3);
 showButtons();
 
 window.addEventListener('resize', showButtons);
