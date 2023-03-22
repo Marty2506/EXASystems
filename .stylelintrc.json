@@ -1,27 +1,25 @@
 {
-  "extends": "stylelint-config-standard-scss",
-  "plugins": [
-    "stylelint-scss"
-  ],
+  "extends": ["stylelint-config-standard", "stylelint-config-standard-scss"],
   "rules": {
-    "at-rule-no-unknown": null,
-    "scss/at-rule-no-unknown": [
-      true,
-      {
-        "ignoreAtRules": ["function", "include", "mixin", "return", "use"]
-      }
-    ],
     "at-rule-empty-line-before": [
       "always",
       {
         "except": ["after-same-name", "first-nested"],
-        "ignore": ["after-comment", "blockless-after-same-name-blockless", "blockless-after-blockless"]
+        "ignore": ["after-comment"]
       }
     ],
-    "selector-class-pattern": "^[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$|^Mui.*$",
+    "rule-empty-line-before": [
+      "always-multi-line",
+      {
+        "ignore": ["inside-block"]
+      }
+    ],
+    "selector-class-pattern": null,
     "color-hex-case": "lower",
-    "color-hex-length": "long",
+    "color-hex-length": null,
     "color-no-invalid-hex": true,
+    "font-family-name-quotes": "always-where-recommended",
+    "number-leading-zero": "always",
     "number-max-precision": 3,
     "number-no-trailing-zeros": true,
     "length-zero-no-unit": true,
@@ -34,6 +32,7 @@
     "value-list-comma-space-after": "always",
     "property-case": "lower",
     "property-no-vendor-prefix": true,
+    "declaration-empty-line-before": null,
     "declaration-colon-space-after": "always",
     "declaration-colon-space-before": "never",
     "declaration-block-no-duplicate-properties": true,
@@ -56,15 +55,7 @@
     "no-invalid-double-slash-comments": true,
     "no-invalid-position-at-import-rule": null,
     "no-missing-end-of-source-newline": true,
-    "scss/dollar-variable-pattern": null,
-    "scss/at-import-partial-extension": null,
-    "scss/double-slash-comment-empty-line-before": null,
-    "scss/comment-no-empty": null,
-    "declaration-empty-line-before": null,
-    "number-leading-zero": "always",
-    "font-family-name-quotes":"always-unless-keyword",
-    "declaration-block-no-redundant-longhand-properties": null,
-    "keyframes-name-pattern": null
-
+    "import-notation": null,
+    "no-descending-specificity": null
   }
 }
