@@ -1,7 +1,7 @@
 {
-  "name": "phg",
+  "name": "EXA Systems",
   "version": "1.0.0",
-  "description": "СБорка для powerhouse gym",
+  "description": "СБорка для EXASystems",
   "main": "gulpfile.js",
   "type": "module",
   "scripts": {
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Marty2506/my-gulp.git"
+    "url": "git+https://github.com/Marty2506/EXASystems"
   },
   "author": "Marty",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Marty2506/phg/issues"
+    "url": "https://github.com/Marty2506/EXASystems/issues"
   },
-  "homepage": "https://github.com/Marty2506/phg#readme",
+  "homepage": "https://github.com/Marty2506/EXASystems#readme",
   "devDependencies": {
     "@babel/core": "^7.20.5",
     "@babel/preset-env": "^7.20.2",

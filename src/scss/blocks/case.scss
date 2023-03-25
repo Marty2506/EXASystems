@@ -7,17 +7,23 @@
   }
 }
 
+.case__content {
+  position: relative;
+  @media (width >= $desktop-width) {
+    display: grid;
+    grid-template-columns: 720px 1fr;
+    grid-template-rows: repeat(10, auto);
+    column-gap: 125px;
+  }
+}
+
 .case__header {
   display: flex;
   flex-direction: column;
   margin-bottom: 17px;
 
-  gap: 17px;
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 25px;
-
-    gap: 30px;
+  @media (width >= $desktop-width) {
+    margin-bottom: 40px;
   }
 }
 
@@ -29,6 +35,53 @@
     flex-direction: row;
     justify-content: space-between;
   }
+}
+.case__metrics-wrapper {
+  @media (width >= $desktop-width) {
+    grid-column: -1 / -2;
+    grid-row: 1 / -1;
+  }
+}
+.case__metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, max-content));
+  row-gap: 12px;
+  column-gap: 25px;
+  margin-bottom: 25px;
+
+  @media (width >= $desktop-width) {
+    position: sticky;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.case__metrics-item {
+}
+.case__metrics-item-wrapper {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-family: $jost-font;
+}
+.case__metrics-name {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 126%;
+  color: #2a2a2a;
+}
+.case__metrics-value {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  line-height: 126%;
+  font-size: 30px;
+  color: #2596ff;
 }
 
 .case__date {
@@ -91,12 +144,7 @@
 }
 
 .case__title {
-  margin-bottom: 17px;
-
-  @media (min-width: $desktop-width) {
-    width: 70%;
-    margin: 0;
-  }
+  margin-bottom: 10px;
 }
 
 .case__logo-wrapper {
@@ -116,58 +164,130 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 25px;
+  gap: 0;
+}
 
-  @media (min-width: $desktop-width) {
-    display: grid;
-    margin-bottom: 37px;
+.case__daw-list {
+  margin-bottom: 20px;
+}
 
-    column-gap: 50px;
+.case__sub-title {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 140%;
+  margin-bottom: 12px;
+  text-transform: uppercase;
 
-    grid-template-columns: 2fr 1fr;
+  @media (width >= $desktop-width) {
+    font-size: 26px;
   }
 }
 
-.case__left {
-  @media (max-width: $max-tablet-width) {
-    margin-bottom: 25px;
-  }
+.case__text-par {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
 }
 
-.case__right {
+.case__text-title {
+  margin: 0;
+  padding: 0;
+  font-family: $jost-font;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 20px;
+}
+
+// .case__photos {
+//   display: flex;
+//   flex-grow: 0;
+//   flex-direction: column;
+
+//   gap: 10px;
+
+//   @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
+//     display: grid;
+
+//     gap: 15px;
+//     grid-template-columns: repeat(2, 323px);
+//   }
+// }
+
+.case__big-photo-wrapper,
+.case__photo-wrapper {
   display: flex;
-
-  @media (min-width: $desktop-width) {
-    justify-content: flex-end;
-  }
+  text-decoration: none;
 }
 
-.case__photos {
-  display: flex;
-  flex-grow: 0;
-  flex-direction: column;
+.case__big-photo-wrapper {
+  margin-top: 20px;
+  margin-bottom: 40px;
 
-  gap: 10px;
-
-  @media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
-    display: grid;
-
-    gap: 15px;
-    grid-template-columns: repeat(2, 323px);
+  @media (width < $desktop-width) {
+    margin-bottom: 20px;
   }
 }
 
 .case__photo-wrapper {
-  display: flex;
   max-width: 325px;
-
-  text-decoration: none;
+  min-width: 230px;
 }
 
 .case__photo {
   display: block;
 }
 
-.case__footer {
-  display: flex;
-  justify-content: space-between;
+.case__gallery {
 }
+.case__gallery-swiper-wrapper {
+}
+.case__gallery-swiper {
+}
+.case__gallery-swiper-buttons {
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+.case__gallery-grid {
+  @media (width >= $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+}
+.case__gallery-swiper-slide {
+  @media (width >= $tablet-width) {
+    margin: 0;
+
+    & .case__photo-wrapper {
+      position: relative;
+      flex-grow: 1;
+
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #2596ff;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      &:hover {
+        &::after {
+          opacity: 0.3;
+        }
+      }
+    }
+
+    & .case__photo {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+

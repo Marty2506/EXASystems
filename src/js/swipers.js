@@ -1,5 +1,5 @@
 // Comparison Swiper
-const comparisonSwiperItem = document.querySelector('.comparison__swiper');
+const comparisonSwiperItem = document.querySelector(".comparison__swiper");
 
 if (comparisonSwiperItem) {
   const comparisonSwiperOptions = {
@@ -25,12 +25,15 @@ if (comparisonSwiperItem) {
       1280: {
         slidesPerView: 3,
       },
-    }
-  }
-  var comparisonSwiper = new Swiper(comparisonSwiperItem, comparisonSwiperOptions);
+    },
+  };
+  var comparisonSwiper = new Swiper(
+    comparisonSwiperItem,
+    comparisonSwiperOptions
+  );
 }
 
-const sectionSwipers = document.querySelectorAll('.section__swiper--main');
+const sectionSwipers = document.querySelectorAll(".section__swiper--main");
 
 sectionSwipers.forEach((sectionSwiper, index) => {
   const thumbsSwiperItem = sectionSwiper.nextSibling;
@@ -41,8 +44,8 @@ sectionSwipers.forEach((sectionSwiper, index) => {
     freeMode: true,
     watchSlidesProgress: false,
     simulateTouch: true,
-    grabCursor: true
-  }
+    grabCursor: true,
+  };
   const thumbsSwiper = new Swiper(thumbsSwiperItem, thumbsSwiperOptions);
 
   const mainSwiperOptions = {
@@ -60,11 +63,11 @@ sectionSwipers.forEach((sectionSwiper, index) => {
     thumbs: {
       swiper: thumbsSwiper,
     },
-  }
+  };
   const mainSwiper = new Swiper(sectionSwiper, mainSwiperOptions);
 });
 
-const sectionCardSwipers = document.querySelectorAll('.section__card-swiper');
+const sectionCardSwipers = document.querySelectorAll(".section__card-swiper");
 
 sectionCardSwipers.forEach((sectionCardSwiper, index) => {
   const nav = {
@@ -72,7 +75,7 @@ sectionCardSwipers.forEach((sectionCardSwiper, index) => {
     prevEl: `.section-card-swiper-${index + 1}-prev`,
     lockClass: "section__swiper-button--lock",
     disabledClass: "section__swiper-button--disabled",
-  }
+  };
   const swiperOptions = {
     loop: false,
     slidesPerView: "auto",
@@ -91,45 +94,45 @@ sectionCardSwipers.forEach((sectionCardSwiper, index) => {
       1181: {
         slidesPerView: 4,
       },
-    }
-  }
+    },
+  };
 
   if (sectionCardSwiper.id === "trust-us-swiper") {
     swiperOptions.breakpoints = {
       320: {
         slidesPerView: "auto",
-        spaceBetween: 10
+        spaceBetween: 10,
       },
       768: {
         slidesPerView: 3,
-        spaceBetween: 45
+        spaceBetween: 45,
       },
       1181: {
         slidesPerView: 5,
-        spaceBetween: 45
+        spaceBetween: 45,
       },
-    }
+    };
   }
 
   if (sectionCardSwiper.id === "other-services-swiper") {
     swiperOptions.breakpoints = {
       320: {
         slidesPerView: 1,
-        spaceBetween: 20
+        spaceBetween: 20,
       },
       450: {
         slidesPerView: "auto",
-        spaceBetween: 20
+        spaceBetween: 20,
       },
       768: {
         slidesPerView: 2,
-        spaceBetween: 20
+        spaceBetween: 20,
       },
       1181: {
         slidesPerView: 3,
-        spaceBetween: 20
+        spaceBetween: 20,
       },
-    }
+    };
     swiperOptions.on = {
       afterInit: (swiper) => {
         if (swiper.currentBreakpoint === "320") {
@@ -142,11 +145,35 @@ sectionCardSwipers.forEach((sectionCardSwiper, index) => {
         } else {
           swiper.enable();
         }
-      }
-    }
+      },
+    };
+  }
+
+  if (sectionCardSwiper.dataset.caseSwiper != undefined) {
+    swiperOptions.breakpoints = {
+      320: {
+        slidesPerView: "auto",
+        spaceBetween: 10,
+      },
+      768: {
+        spaceBetween: 0,
+      },
+    };
+    swiperOptions.on = {
+      afterInit: (swiper) => {
+        if (swiper.currentBreakpoint !== "320") {
+          swiper.disable();
+        }
+      },
+      breakpoint: (swiper) => {
+        if (swiper.currentBreakpoint === "320") {
+          swiper.enable();
+        } else {
+          swiper.disable();
+        }
+      },
+    };
   }
 
   const cardSwiper = new Swiper(sectionCardSwiper, swiperOptions);
 });
-
-

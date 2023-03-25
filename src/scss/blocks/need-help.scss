@@ -39,7 +39,7 @@
     font-weight: 700;
     font-size: 28px;
     line-height: 115%;
-    font-family: "Proxima Nova", "Arial", sans-serif;
+    font-family: "Proxima Nova", Arial, sans-serif;
   }
 }
 
@@ -74,7 +74,7 @@
   font-weight: 500;
   font-size: 20px;
   line-height: 22px;
-  font-family: "Jost";
+  font-family: Jost;
   color: $white-color;
 
   @media (min-width: $desktop-width) {

@@ -212,7 +212,9 @@
     display: none;
   }
 }
+
 // Нужен для js при выравнивании высот
+
 .comparison__characteristics-item--mobile {
   & .comparison__characteristics-name {
     @media (max-width: $max-mobile-width) {

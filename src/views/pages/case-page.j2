@@ -20,8 +20,8 @@
       </div>
     </div>
     {% include "./blocks/case.j2" %}
-    {% include "./blocks/other-projects.j2" %}
-    {% include "./blocks/subscribe-section.j2" %}
+    {# {% include "./blocks/other-projects.j2" %} #}
+    {# {% include "./blocks/subscribe-section.j2" %} #}
   </main>
 {% endblock content %}
 
@@ -30,6 +30,8 @@
 {% endblock %}
 
 {% block js %}
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/swipers.min.js"></script>
   <script src="./js/macy.min.js"></script>
   <script src="./js/other-projects.min.js"></script>
   <script src="./js/subscribe-form.min.js"></script>
