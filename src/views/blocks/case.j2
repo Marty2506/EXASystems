@@ -123,6 +123,43 @@
             </div>
           </div>
         </div>
+
+        {# Вендоры #}
+        <div class="vendors">
+          <div class="section__content">
+            <h3 class="visually-hidden">Вендоры, используемые в проекте</h3>
+            <p class="case__sub-title">В ПРОЕКТЕ ИСПОЛЬЗОВАЛИ ПРОДУКТЫ ВЕНДОРОВ:</p>
+            {% set sectionCardSwiperCnt = sectionCardSwiperCnt + 1 %}
+            {% set SLIDES_NUM = 5 %}
+            <div class="vendors__swiper-container section__card-swiper-container">
+              <div class="section__card-swiper swiper" data-case-swiper>
+                <div class="case__gallery-swiper-buttons section__card-swiper-buttons">
+                  <button class="section__swiper-button section__swiper-button--prev section-card-swiper-{{sectionCardSwiperCnt}}-prev" type="button">
+                    <svg class="section__swiper-button-icon" width="12" height="10" viewBox="0 0 12 10">
+                      <use xlink:href="img/sprite.svg#swiper-arrow-icon"></use>
+                    </svg>
+                    <span class="visually-hidden">Перелестнуть назад</span>
+                  </button>
+                  <button class="section__swiper-button section__swiper-button--next section-card-swiper-{{sectionCardSwiperCnt}}-next" type="button">
+                    <svg class="section__swiper-button-icon" width="12" height="10" viewBox="0 0 12 10">
+                      <use xlink:href="img/sprite.svg#swiper-arrow-icon"></use>
+                    </svg>
+                    <span class="visually-hidden">Перелестнуть вперед</span>
+                  </button>
+                </div>
+                <div class="case__gallery-grid swiper-wrapper">
+                    {% for slideIndex in range(SLIDES_NUM) %}
+                      <div class="section__card-swiper-slide swiper-slide">
+                        <a class="vendors__item-wrapper vendors__item-wrapper--case" href="./vendor-page.html">
+                          <img class="vendors__company-logo" width="136" height="41" src="@img/postgrespro-logo.svg" alt="Логотип компании PostgresPro.">
+                          <p class="vendors__company-about">Системы управления базами данных</p>
+                        </a>
+                      </div>
+                    {% endfor %}
+                  </div>
+              </div>
+            </div>
+        </section>
       </div>
     </div>
   </div>

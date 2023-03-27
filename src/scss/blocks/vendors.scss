@@ -93,8 +93,17 @@
   }
 }
 
+.vendors__item-wrapper--case {
+  height: initial;
+  padding-bottom: 26px;
+  box-shadow: none;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+}
+
 .vendors__company-logo {
   max-width: 100%;
+  margin-bottom: 10px;
 
   object-fit: contain;
 }
