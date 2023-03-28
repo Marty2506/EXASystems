@@ -7,6 +7,11 @@
   }
 }
 
+.case--no-pads {
+  margin: 0;
+  padding: 0;
+}
+
 .case__content {
   position: relative;
   @media (width >= $desktop-width) {

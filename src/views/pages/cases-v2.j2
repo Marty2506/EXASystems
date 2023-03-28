@@ -1,0 +1,161 @@
+{% extends "layout.j2" %}
+
+{% set page = "cases-v2" %}
+
+{% block content %}
+  <main class="page-main">
+    <h1 class="visually-hidden">Кейсы</h1>
+    <div class="container">
+      <div class="breadcumbs">
+        <ul class="breadcumbs__list">
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="./index.html">Главная</a>
+          </li>
+          <li class="breadcumbs__item">
+            <span class="breadcumbs__link breadcumbs__link--current">Кейсы</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    {% set CASES_NUM = 5 %}
+    <section class="cases">
+      <div class="container">
+        <div class="cases__content">
+          <h1 class="cases__title title">Реализованные проекты</h1>
+          <ul class="cases__list">
+            {% for index in range(CASES_NUM) %}
+              <li class="cases__card case--no-pads">
+                <div class="cases__card-main">
+                  <div class="cases__card-header">
+                    <h2 class="cases__card-title">Проектирование и монтаж&nbsp;СКС, ЭОМ Офиса компании «ОТКРЫТИЕ БРОКЕР»</h2>
+                    <img class="case__logo" src="@img/otkritie-logo.svg" alt="Логотип компании Открытие брокер" width="151" height="46">
+                  </div>
+                  <ul class="cases__card-metrics">
+                    <li class="case__metrics-item">
+                      <dl class="case__metrics-item-wrapper">
+                        <dt class="cases__card-metrics-name case__metrics-name">Срок:</dt>
+                        <dd class="cases__card-metrics-value case__metrics-value">14 дней</dd>
+                      </dl>
+                    </li>
+                    <li class="case__metrics-item">
+                      <dl class="case__metrics-item-wrapper">
+                        <dt class="cases__card-metrics-name case__metrics-name">Площадь:</dt>
+                        <dd class="cases__card-metrics-value case__metrics-value">3 500 м2</dd>
+                      </dl>
+                    </li>
+                  </ul>
+                  <div class="cases__card-daw-list daw-list daw-list--result">
+                    <ul class="cases__card-daw-list-list daw-list__list">
+                      <li class="daw-list__item">В ходе реализации проекта были выполнены проектирование и монтаж СКС, Электроснабжения и бесперебойного питания офиса;</li>
+                      <li class="daw-list__item">СКС построена с применением материалов и компонентов Hyperline, с оптимальным соотношением «цена/качество», что позволило сократить расходы без снижения качества и надежности коммутации оборудования;</li>
+                      <li class="daw-list__item">Все электрощиты перебраны, старые автоматы заменены, проведена профилактика контактов, составлены и актуализированы схемы электрощитов;</li>
+                      <li class="daw-list__item">Восстановлена исполнительная документация по кондиционированию и освещению;</li>
+                      <li class="daw-list__item">ИТ-инфраструктура нового офисного помещения запущена в срок.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="cases__card-gallery">
+                  <a class="cases__card-big-img-wrapper" href="@img/cases/photo-1-big.webp" data-case-card-original>
+                    <picture>
+                      <source type="image/webp" srcset="@img/cases/photo-1-big.webp 1x">
+                      <img class="cases__card-big-img" src="@img/cases/photo-1-big.jpg" alt="" width="679" height="389" loading="lazy">
+                    </picture>
+                  </a>
+                  <div class="cases__card-gallery-previews">
+                    {% set PREVIEWS_NUM = 6 %}
+                    {% for index in range(PREVIEWS_NUM) %}
+                      <a class="cases__card-gallery-preview" href="@img/cases/photo-1-big.webp" data-case-card-preview>
+                        <picture>
+                          <source type="image/webp" srcset="@img/cases/photo-1.webp 1x">
+                          <img class="cases__card-preview-img" src="@img/cases/photo-1.jpg" alt="" width="104" height="71" loading="lazy">
+                        </picture>
+                      </a>
+                    {% endfor %}
+                  </div>
+                </div>
+              </li>
+            {% endfor%}
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    {# {% include "./blocks/completed-projects.j2" %} #}
+    {# <section class="reviews">
+      <div class="container">
+        <div class="reviews__content">
+          <div class="reviews__header">
+            <h2 class="reviews__title title">Клиенты о нас</h2>
+            <a class="reviews__all-link next-link" href="reviews.html">
+              <span class="next-link__text">Все отзывы</span>
+            </a>
+          </div>
+          <ul class="reviews__list reviews__list--video">
+            <li class="reviews__item">
+              <div class="reviews__video-review">
+                <div class="reviews__video-container">
+                  <iframe class="reviews__video" src="https://www.youtube.com/embed/nSaFstyQQbs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="reviews__video-about">
+                  <div class="reviews__video-person">
+                    <p class="reviews__video-person-name">Евгений Иванов</p>
+                    <p class="reviews__video-person-job">Директор Ascott Group</p>
+                  </div>
+                  <img class="reviews__video-company-logo" src="@img/svp-logo.png" alt="Логотип компании SVP">
+                </div>
+              </div>
+            </li>
+            <li class="reviews__item">
+              <div class="reviews__video-review">
+                <div class="reviews__video-container">
+                  <iframe class="reviews__video" src="https://www.youtube.com/embed/nSaFstyQQbs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="reviews__video-about">
+                  <div class="reviews__video-person">
+                    <p class="reviews__video-person-name">Евгений Иванов</p>
+                    <p class="reviews__video-person-job">Директор Ascott Group</p>
+                  </div>
+                  <img class="reviews__video-company-logo" src="@img/svp-logo.png" alt="Логотип компании SVP">
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="reviews__list reviews__list--letter">
+            <li class="reviews__item">
+              <div class="reviews__letter">
+                <a class="reviews__letter-link" href="#!">
+                  <img class="reviews__letter-image" src="@img/review-letter.jpg" alt="">
+                </a>
+                <div class="reviews__letter-text-container">
+                  <img class="reviews__letter-company-logo" src="@img/spaarman-logo.png" alt="Логотип компании SVP">
+                  <p class="reviews__letter-text">Немецкая логистическая компания <b>C. Spaarmann GmbH</b> рекомендует команду Exasystems к сотрудничеству, которая произвела ее успешный переход на удаленный режим работы и снизила расходы на ИТ.</p>
+                </div>
+              </div>
+            </li>
+            <li class="reviews__item">
+              <div class="reviews__letter">
+                <a class="reviews__letter-link" href="#!">
+                  <img class="reviews__letter-image" src="@img/review-letter.jpg" alt="">
+                </a>
+                <div class="reviews__letter-text-container">
+                  <img class="reviews__letter-company-logo" src="@img/spaarman-logo.png" alt="Логотип компании SVP">
+                  <p class="reviews__letter-text">Немецкая логистическая компания <b>C. Spaarmann GmbH</b> рекомендует команду Exasystems к сотрудничеству, которая произвела ее успешный переход на удаленный режим работы и снизила расходы на ИТ.</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+    {% include "./blocks/subscribe-section.j2" %} #}
+  </main>
+{% endblock content %}
+
+{% block js %}
+  <script src="./js/macy.min.js"></script>
+  <script src="./js/cases.min.js"></script>
+  {# <script src="./js/subscribe-form.min.js"></script> #}
+  <script src="./js/main.min.js"></script>
+{% endblock %}
