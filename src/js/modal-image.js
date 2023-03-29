@@ -86,3 +86,15 @@ clickableRewiews.forEach((element) => {
     modalImage.classList.add("modal-image--opened");
   });
 });
+
+function addImageModalOpener(evt) {
+  evt.preventDefault();
+  modalImageContent.src = evt.target.href;
+  modalImage.classList.add("modal-image--opened");
+}
+
+const caseBigImages = document.querySelectorAll("[data-case-card-original]");
+
+caseBigImages.forEach((element) => {
+  element.addEventListener("click", addImageModalOpener);
+});

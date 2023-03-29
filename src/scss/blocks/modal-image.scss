@@ -12,6 +12,12 @@
   overflow: auto;
 
   background-color: rgb(0 0 0 / 90%);
+
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .modal-image--opened {

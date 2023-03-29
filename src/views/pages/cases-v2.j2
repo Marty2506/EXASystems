@@ -65,10 +65,10 @@
                   <div class="cases__card-gallery-previews">
                     {% set PREVIEWS_NUM = 6 %}
                     {% for index in range(PREVIEWS_NUM) %}
-                      <a class="cases__card-gallery-preview" href="@img/cases/photo-1-big.webp" data-case-card-preview>
+                      <a class="cases__card-gallery-preview" href="@img/cases/photo-{{ index % (PREVIEWS_NUM/2) + 1 }}-big.webp" data-case-card-preview>
                         <picture>
-                          <source type="image/webp" srcset="@img/cases/photo-1.webp 1x">
-                          <img class="cases__card-preview-img" src="@img/cases/photo-1.jpg" alt="" width="104" height="71" loading="lazy">
+                          <source type="image/webp" srcset="@img/cases/photo-{{ index % (PREVIEWS_NUM/2) + 1 }}.webp 1x">
+                          <img class="cases__card-preview-img" src="@img/cases/photo-{{ index % (PREVIEWS_NUM/2) + 1 }}.jpg" alt="" width="104" height="71" loading="lazy">
                         </picture>
                       </a>
                     {% endfor %}
@@ -153,9 +153,13 @@
   </main>
 {% endblock content %}
 
+{% block modal %}
+  {% include "./blocks/modal-image.j2" %}
+{% endblock %}
+
 {% block js %}
-  <script src="./js/macy.min.js"></script>
-  <script src="./js/cases.min.js"></script>
+  <script src="./js/modal-image.min.js"></script>
+  <script src="./js/cases-v2.min.js"></script>
   {# <script src="./js/subscribe-form.min.js"></script> #}
   <script src="./js/main.min.js"></script>
 {% endblock %}
