@@ -175,5 +175,14 @@ sectionCardSwipers.forEach((sectionCardSwiper, index) => {
     };
   }
 
+  if (sectionCardSwiper.id === "other-projects-cases-swiper") {
+    swiperOptions.breakpoints = {
+      320: {
+        slidesPerView: "auto",
+        spaceBetween: 10,
+      },
+    };
+  }
+
   const cardSwiper = new Swiper(sectionCardSwiper, swiperOptions);
 });

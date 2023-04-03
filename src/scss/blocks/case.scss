@@ -49,7 +49,7 @@
 }
 .case__metrics {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, max-content));
+  grid-template-columns: repeat(auto-fit, minmax(160px, max-content));
   row-gap: 12px;
   column-gap: 25px;
   margin-bottom: 25px;

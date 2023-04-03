@@ -1,10 +1,19 @@
 .cases {
   margin-bottom: 30px;
 }
+
+.cases--with-swiper {
+  padding-top: 20px;
+
+  @media (width >= $desktop-width) {
+    padding-top: 50px;
+  }
+}
 .cases__content {
   display: flex;
   flex-direction: column;
 }
+
 .cases__title {
   font-size: 30px;
 
@@ -12,6 +21,24 @@
     font-size: 36px;
   }
 }
+
+.cases__header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  gap: 30px;
+
+  & .cases__title {
+    margin-bottom: 0;
+  }
+
+  @media (width >= $desktop-width) {
+    margin-bottom: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .cases__list {
   display: flex;
   flex-direction: column;
@@ -27,8 +54,9 @@
   gap: 15px;
 
   @media (width >= $desktop-width) {
+    width: 100%;
     display: grid;
-    grid-template-columns: 380px 1fr;
+    grid-template-columns: 400px 1fr;
     gap: 68px;
   }
 }
@@ -42,6 +70,7 @@
   flex-direction: column;
 }
 .cases__card-title {
+  display: block;
   margin: 0;
   margin-bottom: 15px;
   padding: 0;
@@ -54,6 +83,13 @@
     font-size: 26px;
   }
 }
+
+.cases__card-title-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
 .cases__card-metrics {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(125px, max-content));
@@ -131,4 +167,28 @@
 
 .cases__card-big-img--update {
   animation: showing-animation 1s;
+}
+
+
+// Для свайпера
+.cases__swiper-buttons {
+  position: relative;
+  display: flex;
+  gap: 10px;
+}
+
+.cases__swiper-button {
+  position: initial;
+  left: initial;
+  bottom: initial;
+  --btn-rotation: 0deg;
+  transform: rotate(var(--btn-rotation));
+
+  &--prev {
+    --btn-rotation: 180deg;
+  }
+}
+
+.cases__swiper-slide {
+  width: 100%;
 }
