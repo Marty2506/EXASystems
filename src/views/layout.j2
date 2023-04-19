@@ -10,6 +10,14 @@
   {# <link rel="icon" href="favicon.ico"> #}
   <link rel="preload" as="style" href="css/style.min.css" >
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="./js/global.min.js" defer></script>
+  <script src="./js/burger.min.js" defer></script>
+  <script src="./js/pristine.min.js" defer></script>
+  <script src="./js/choices.min.js" defer></script>
+  <script src="./js/imask.js" defer></script>
+  <script src="./js/modal.min.js" defer></script>
+  <script src="./js/menu.min.js" defer></script>
+  {% block js %}{% endblock %}
 </head>
 <body class="page__body">
   {% include "header.j2" %}
@@ -27,13 +35,5 @@
   {% block modal %}{% endblock %}
 
 
-  <script src="./js/global.min.js"></script>
-  <script src="./js/burger.min.js"></script>
-  <script src="./js/pristine.min.js"></script>
-  <script src="./js/choices.min.js"></script>
-  <script src="./js/imask.js"></script>
-  <script src="./js/modal.min.js"></script>
-  <script src="./js/menu.min.js"></script>
-  {% block js %}{% endblock %}
 </body>
 </html>

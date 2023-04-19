@@ -1,13 +1,70 @@
 <header class="page-header">
-  <div class="page-header__container container">
+  <div class="page-header__container">
     <div class="page-header__row">
-      <a class="page-header__logo logo" href="./index.html" >
+      {# <a class="page-header__logo logo" href="./index.html" >
         <img class="page-header__logo-image1" src="@img/logo-header-part1.svg" alt="Логотип EXASystems">
         <img class="page-header__logo-image2" src="@img/logo-header-part2.svg" alt="">
-      </a>
+      </a> #}
       <div class="menu menu--no-js">
+        <div class="menu__secondary">
+          <div class="container">
+            <ul class="menu__list">
+              {% for link in upperMenu %}
+                <li class="menu__item">
+                  <a class="menu__link menu__link--upper-menu" href="{{ link.href}}.html">{{ link.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
         <div class="menu__main">
-          <ul class="menu__list">
+          <div class="container">
+            <div class="menu__main-container">
+              <a class="page-header__logo logo" href="./index.html" >
+                <img class="page-header__logo-image" src="@img/exa-header-logo.png" alt="Логотип EXASystems" width="159" height="27">
+              </a>
+              <ul class="menu__list">
+                {% for link in mainMenu %}
+                  {% if link.subMenu %}
+                    <li class="menu__item">
+                      <a class="menu__link menu__link--has-dropdown" href="{{ link.href}}.html">
+                        {{ link.title }}
+                        <svg class="menu__link-dropdown-icon" width="9" height="5" viewBox="0 0 9 5">
+                          <use xlink:href="img/sprite.svg#dropdown-icon"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  {% else %}
+                    <li class="menu__item">
+                      <a class="menu__link menu__link" href="{{ link.href}}.html">{{ link.title }}</a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+              <div class="page-header__buttons">
+                <div class="page-header__contacts">
+                  <a class="page-header__phone-button" href="tel:+74955404708">
+                    <span>+7 495 540 47 08</span>
+                    <div class="page-header__phone-icon-wrapper">
+                      <svg class="page-header__phone-icon" width="12" height="14" viewBox="0 0 12 14">
+                        <use xlink:href="img/sprite.svg#phone-icon"></use>
+                      </svg>
+                    </div>
+                  </a>
+                  <a class="page-header__mail-button" href="mailto:info@exasystems.ru">
+                    <span>info@exasystems.ru</span>
+                    <svg class="page-header__mail-icon" width="16" height="12" viewBox="0 0 16 12">
+                      <use xlink:href="img/sprite.svg#mail-icon"></use>
+                    </svg>
+                  </a>
+                </div>
+                <button class="burger">
+                  <span class="visually-hidden">Открыть меню.</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          {# <ul class="menu__list">
             {% for link in menu %}
               {% if link.desktopHidden %}
                 <li class="menu__item menu__item--desktop-hidden">
@@ -46,10 +103,7 @@
                 {% endif %}
               </li>
             {% endfor %}
-            <li class="menu__item menu__item--configurator">
-              <a class="menu__link menu__link--end menu__link--configurator" href="configurators.html">Конфигуратор</a>
-            </li>
-          </ul>
+          </ul> #}
         </div>
         <div class="menu__contacts">
           <a class="menu__phone" href="tel:+74955404708">8 (495) 540-47-08</a>
@@ -57,7 +111,7 @@
           <a class="menu__back-call-button button" href="#!">Обратный звонок</a>
         </div>
       </div>
-      <div class="page-header__buttons">
+      {# <div class="page-header__buttons">
         <div class="page-header__contacts">
           <a class="page-header__phone-button" href="tel:+74955404708">
             <span>+7 495 540 47 08</span>
@@ -77,7 +131,7 @@
         <button class="burger">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
-      </div>
+      </div> #}
     </div>
   </div>
 </header>

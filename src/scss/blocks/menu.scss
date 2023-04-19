@@ -2,6 +2,7 @@
   display: none;
   flex-direction: column;
   overflow: hidden;
+  width: 100%;
 
   color: #ffffff;
 
@@ -9,8 +10,8 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    color: $menu-link-color-desktop;
 
     background: none;
   }
@@ -41,23 +42,37 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
+    padding: 10px 0;
   }
 }
 
+.menu__main-container {
+  display: flex;
+  align-items: center;
+}
+
 .menu__list {
-  margin: 0;
-  padding: 0;
-
-  list-style-type: none;
-
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    margin-left: 32px;
-
-    gap: 12px;
   }
+}
+.menu__secondary {
+  @media (width >= $desktop-width) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: $secondary-menu-color;
+  }
+}
+
+.menu__main .menu__list {
+  @media (width >= $desktop-width) {
+    margin-left: 3em;
+  }
+}
+
+.menu__secondary .menu__list {
+  justify-content: flex-end;
 }
 
 .menu__item {
@@ -103,17 +118,19 @@
 }
 
 .menu__link {
+  color: inherit;
+  display: flex;
   @media (max-width: $max-tablet-width) {
     position: relative;
 
-    display: flex;
+
     padding: 13px 0;
 
     font-weight: 500;
     font-size: 18px;
     line-height: 26px;
     font-family: $jost-font;
-    color: inherit;
+
     text-decoration: none;
 
     &::after {
@@ -132,12 +149,10 @@
     }
   }
   @media (min-width: $desktop-width) {
-    padding: 3px;
+    padding: 5px 10px;
 
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 16px;
-    color: #ffffff;
+    font-size: 16px;
+    line-height: 130%;
     text-decoration: none;
 
     transition: color 0.3s ease;
@@ -145,6 +160,39 @@
     &:hover {
       color: $button-color;
     }
+  }
+}
+
+.menu__link--has-dropdown {
+  @media (width >= $desktop-width) {
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.menu__link-dropdown-icon {
+  transition: fill 0.3s ease;
+  fill: $menu-link-color-desktop;
+
+  @media (width < $desktop-width) {
+    display: none;
+  }
+}
+
+.menu__link--has-dropdown:hover .menu__link-dropdown-icon {
+  fill: $button-color;
+}
+
+.menu__item:last-child .menu__link {
+  @media (width >= $desktop-width) {
+    margin-right: -10px;
+  }
+}
+
+.menu__link--upper-menu {
+  @media (width >= $desktop-width) {
+    font-size: 14px;
+    padding: 5px 10px;
   }
 }
 

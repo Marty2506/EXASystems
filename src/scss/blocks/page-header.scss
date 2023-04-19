@@ -1,11 +1,5 @@
 .page-header {
-  padding: 16px 0;
 
-  background: linear-gradient(180deg, #453fa9 0%, #675fc6 100%);
-
-  @media (min-width: $desktop-width) {
-    padding: 42px 0;
-  }
 }
 
 .page-header--sticky {
@@ -23,7 +17,7 @@
 }
 
 .page-header__row {
-  display: flex;
+  // display: flex;
 }
 
 .page-header__logo {
@@ -33,9 +27,9 @@
   justify-content: flex-start;
   align-items: flex-start;
 
-  @media (min-width: $desktop-width) {
-    width: 193px;
-  }
+  // @media (min-width: $desktop-width) {
+  //   width: 193px;
+  // }
 
   & img {
     display: block;
@@ -78,11 +72,11 @@
 
 
   & span {
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 29px;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 36px;
     font-family: $jost-font;
-    color: #ffffff;
+    color: #2a2a2a;
 
     transition: color 0.3s ease;
 
@@ -118,11 +112,7 @@
   transition: background-color 0.3s ease;
 
   @media (min-width: $desktop-width) {
-    width: 18px;
-    height: 18px;
-
-    background-color: $blue-color;
-    border-radius: 1px;
+    display: none;
   }
 }
 
@@ -154,7 +144,7 @@
   & span {
     font-size: 13px;
     line-height: 16px;
-    color: #ffffff;
+    color: $menu-link-color-desktop;
 
     transition: color 0.3s ease;
 
@@ -164,7 +154,7 @@
   & .page-header__mail-icon {
     transition: fill 0.3s ease;
 
-    fill: $bg2-color;
+    fill: $menu-link-color-desktop;
   }
 
   &:hover {

@@ -188,5 +188,400 @@
       "href": "contacts",
       "desktopHidden": true
     }
+  ],
+  "mainMenu": [
+    {
+      "title": "Импортозамещение 2023",
+      "href": "import-replacement",
+      "subMenu" : [
+        {
+          "title": "Вендоры",
+          "href": "vendors",
+          "subMenu" : [
+            {
+              "title": "iru",
+              "href": "vendor-page",
+              "vendor": true,
+              "iconLink": "@img/work-with-us/daf-logo.png",
+              "iconWidth": "120",
+              "iconHegiht": "46"
+            },
+            {
+              "title": "iru",
+              "href": "vendor-page",
+              "vendor": true,
+              "iconLink": "@img/work-with-us/daf-logo.png",
+              "iconWidth": "120",
+              "iconHegiht": "46"
+            }
+          ]
+        },
+        {
+          "title": "Решения",
+          "href": "services-and-solutions",
+          "subMenu" : [
+            {
+              "title": "Проекты",
+              "href": "cases-v2"
+            },
+            {
+              "title": "О нас",
+              "href": "about"
+            },
+            {
+              "title": "Отзывы",
+              "href": "reviews"
+            },
+            {
+              "title": "Вендоры",
+              "href": "vendors"
+            },
+            {
+              "title": "Блог",
+              "href": "blog"
+            },
+            {
+              "title": "Контакты",
+              "href": "contacts"
+            }
+          ]
+        },
+        {
+          "title": "Оборудование",
+          "href": "equipment",
+          "subMenu" : [
+            {
+              "title": "Проекты",
+              "href": "cases-v2"
+            },
+            {
+              "title": "О нас",
+              "href": "about"
+            },
+            {
+              "title": "Отзывы",
+              "href": "reviews"
+            },
+            {
+              "title": "Вендоры",
+              "href": "vendors"
+            },
+            {
+              "title": "Блог",
+              "href": "blog"
+            },
+            {
+              "title": "Контакты",
+              "href": "contacts"
+            }
+          ]
+        },
+        {
+          "title": "ПО",
+          "href": "software",
+          "subMenu" : [
+            {
+              "title": "Проекты",
+              "href": "cases-v2"
+            },
+            {
+              "title": "О нас",
+              "href": "about"
+            },
+            {
+              "title": "Отзывы",
+              "href": "reviews"
+            },
+            {
+              "title": "Вендоры",
+              "href": "vendors"
+            },
+            {
+              "title": "Блог",
+              "href": "blog"
+            },
+            {
+              "title": "Контакты",
+              "href": "contacts"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Решения",
+      "href": "services-and-solutions",
+      "subMenu" : [
+        {
+          "title": "IT-инфраструктура",
+          "href": "it-infrastructure",
+          "subMenu" : [
+            {
+              "title": "Базовые инфраструктурные сервисы Microsoft",
+              "href": "ms-services"
+            },
+            {
+              "title": "Резервное копирование",
+              "href": "backup"
+            },
+            {
+              "title": "Корпоративная почта",
+              "href": "corporate-mail"
+            },
+            {
+              "title": "Внедрение и настройка СУБД",
+              "href": "subd"
+            },
+            {
+              "title": "Мониторинг инфраструктуры",
+              "href": "infrastructure-monitoring"
+            },
+            {
+              "title": "Виртуализация серверов",
+              "href": "servers-virtualization"
+            },
+            {
+              "title": "Виртуализация рабочих станций (VDI)",
+              "href": "vdi"
+            }
+          ]
+        },
+        {
+          "title": "Телекоммуникационные системы",
+          "href": "telecommunication-systems",
+          "subMenu" : [
+            {
+              "title": "Голосовая связь",
+              "href": "voice-communication"
+            },
+            {
+              "title": "Объединенные коммуникации",
+              "href": "unified-communications"
+            },
+            {
+              "title": "Видеоконференцсвязь",
+              "href": "videoconferencing"
+            },
+            {
+              "title": "Корпоративные сети передачи данных",
+              "href": "corporate-data-networks"
+            },
+            {
+              "title": "Сетевая безопасность",
+              "href": "network-security"
+            }
+          ]
+        },
+        {
+          "title": "Информационная безопасность",
+          "href": "information-security",
+          "subMenu" : [
+            {
+              "title": "Двухфакторная аутентификация и управление жизненным циклом средств аутентификации",
+              "href": "two-factor-authentication"
+            },
+            {
+              "title": "Менеджер паролей",
+              "href": "password-manager"
+            },
+            {
+              "title": "Службы федерации",
+              "href": "federation-Services"
+            },
+            {
+              "title": "Инфраструктура открытых ключей (PKI)",
+              "href": "pki"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Услуги",
+      "href": "services-and-solutions",
+      "subMenu" : [
+        {
+          "title": "IT-консалтинг",
+          "href": "it-consulting",
+          "subMenu" : [
+            {
+              "title": "Повышение осведомленности сотрудников в вопросах информационной безопасности",
+              "href": "service-template"
+            },
+            {
+              "title": "Повышение осведомленности сотрудников в вопросах информационной безопасности",
+              "href": "service-template"
+            },
+            {
+              "title": "Повышение осведомленности сотрудников в вопросах информационной безопасности",
+              "href": "service-template"
+            }
+          ]
+        },
+        {
+          "title": "Телекоммуникационные системы",
+          "href": "telecommunication-systems",
+          "subMenu" : [
+            {
+              "title": "Техническая поддержка",
+              "href": "service-template"
+            },
+            {
+              "title": "Аутсорсинг IT-отдела",
+              "href": "service-template"
+            },
+            {
+              "title": "Внедерение системы управления IT-инфраструктурой (ITSM)",
+              "href": "service-template"
+            }
+          ]
+        },
+        {
+          "title": "Информационная безопасность",
+          "href": "information-security",
+          "subMenu" : [
+            {
+              "title": "Структурированные кабельные системы (СКС)",
+              "href": "service-template"
+            },
+            {
+              "title": "Локальные вычислительные сети",
+              "href": "service-template"
+            },
+            {
+              "title": "Беспроводные локальные вычислительные сети",
+              "href": "service-template"
+            },
+            {
+              "title": "Системы видеонаблюдения",
+              "href": "service-template"
+            },
+            {
+              "title": "Системы контроля доступа (СКУД)",
+              "href": "service-template"
+            },
+            {
+              "title": "Безопасный регион",
+              "href": "service-template"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Продукты",
+      "href": "equipment",
+      "subMenu" : [
+        {
+          "title": "Вендоры",
+          "href": "vendors",
+          "subMenu" : [
+            {
+              "title": "iru",
+              "href": "vendor-page",
+              "vendor": true,
+              "iconLink": "@img/work-with-us/daf-logo.png",
+              "iconWidth": "120",
+              "iconHegiht": "46"
+            },
+            {
+              "title": "iru",
+              "href": "vendor-page",
+              "vendor": true,
+              "iconLink": "@img/work-with-us/daf-logo.png",
+              "iconWidth": "120",
+              "iconHegiht": "46"
+            }
+          ]
+        },
+        {
+          "title": "Серверное оборудование",
+          "href": "servers",
+          "subMenu" : [
+            {
+              "title": "Exapower",
+              "href": "product-page",
+              "hasIconAfterTitle": true,
+              "iconLink": "@img/os-windows.png",
+              "iconWidth": "34",
+              "iconHegiht": "17"
+            },
+            {
+              "title": "Lenovo",
+              "href": "product-page"
+            },
+            {
+              "title": "HPE",
+              "href": "product-page"
+            },
+            {
+              "title": "DELL",
+              "href": "product-page"
+            }
+          ]
+        },
+        {
+          "title": "Серверное оборудование",
+          "href": "servers",
+          "subMenu" : [
+            {
+              "title": "Процессоры",
+              "href": "catalog"
+            },
+            {
+              "title": "Блок питания",
+              "href": "catalog"
+            },
+            {
+              "title": "Вентиляторы",
+              "href": "catalog"
+            },
+            {
+              "title": "Дисковые корзины",
+              "href": "catalog"
+            },
+            {
+              "title": "Жесткие диски SDD",
+              "href": "catalog"
+            },
+            {
+              "title": "Контроллеры",
+              "href": "catalog"
+            },
+            {
+              "title": "Серверные платформы",
+              "href": "catalog"
+            }
+
+          ]
+        }
+      ]
+    }
+  ],
+  "upperMenu" : [
+    {
+      "title": "Проекты",
+      "href": "cases-v2"
+    },
+    {
+      "title": "О нас",
+      "href": "about"
+    },
+    {
+      "title": "Отзывы",
+      "href": "reviews"
+    },
+    {
+      "title": "Вендоры",
+      "href": "vendors"
+    },
+    {
+      "title": "Блог",
+      "href": "blog"
+    },
+    {
+      "title": "Контакты",
+      "href": "contacts"
+    }
   ]
 }
