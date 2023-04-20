@@ -1,12 +1,17 @@
 .menu {
-  display: none;
+  // display: none;
+  display: flex;
   flex-direction: column;
   overflow: hidden;
   width: 100%;
 
   color: #ffffff;
 
-  background: linear-gradient(180deg, #453fa9 0%, #675fc6 100%);
+  // background: linear-gradient(180deg, #453fa9 0%, #675fc6 100%);
+
+  @media (width < $desktop-width) {
+    padding: 10px 0;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -38,10 +43,7 @@
 }
 
 .menu__main {
-  margin-bottom: 25px;
-
   @media (min-width: $desktop-width) {
-    margin-bottom: 0;
     padding: 10px 0;
   }
 }
@@ -58,6 +60,9 @@
   }
 }
 .menu__secondary {
+  @media (width < $desktop-width) {
+    display: none;
+  }
   @media (width >= $desktop-width) {
     padding-top: 5px;
     padding-bottom: 5px;
@@ -66,6 +71,9 @@
 }
 
 .menu__main .menu__list {
+  @media (width < $desktop-width) {
+    display: none;
+  }
   @media (width >= $desktop-width) {
     margin-left: 3em;
   }
@@ -281,14 +289,12 @@
 }
 
 .menu__contacts {
-  display: flex;
+  margin-top: auto;
+  padding-top: 30px;
+  display: none;
   flex-direction: column;
 
   font-family: $jost-font;
-
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
 }
 
 .menu__phone {
@@ -321,4 +327,45 @@
   text-decoration: none;
 
   clip-path: none;
+}
+
+.menu--opened {
+  @media (width < $desktop-width) {
+    position: relative;
+    padding-bottom: 0;
+    background: linear-gradient(180deg, #453fa9 0%, #675fc6 100%);
+    flex-grow: 1;
+
+    & .menu__secondary {
+      display: block;
+    }
+
+    & .menu__list {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    & .menu__main {
+      order: -1;
+    }
+
+    & .page-header__buttons {
+      position: absolute;
+      top: 10px;
+      right: calc((100% - $tablet-width) / 2 + $paddings-mobile);
+    }
+
+    & .menu__contacts {
+      display: flex;
+    }
+  }
+
+  @media (width < $tablet-width) {
+    & .page-header__buttons {
+      position: absolute;
+      top: 10px;
+      right: $paddings-mobile;
+    }
+  }
 }
