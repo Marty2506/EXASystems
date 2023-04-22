@@ -1,7 +1,7 @@
 <header class="page-header">
   <div class="menu menu--no-js">
     <div class="menu__secondary">
-      <div class="container">
+      <div class="menu__mobile-container container">
         <ul class="menu__list">
           {% for link in upperMenu %}
             <li class="menu__item">
@@ -12,7 +12,7 @@
       </div>
     </div>
     <div class="menu__main">
-      <div class="container">
+      <div class="menu__mobile-container container">
         <div class="menu__main-container">
           <a class="page-header__logo logo" href="./index.html" >
             <img class="page-header__logo-image" src="@img/exa-header-logo.png" alt="Логотип EXASystems" width="159" height="27">
@@ -21,16 +21,58 @@
             {% for link in mainMenu %}
               {% if link.subMenu %}
                 <li class="menu__item">
-                  <a class="menu__link menu__link--has-dropdown" href="{{ link.href}}.html">
+                  <a class="menu__link menu__link--has-dropdown" href="{{ link.href }}.html">
                     {{ link.title }}
                     <svg class="menu__link-dropdown-icon" width="9" height="5" viewBox="0 0 9 5">
                       <use xlink:href="img/sprite.svg#dropdown-icon"></use>
                     </svg>
                   </a>
+                  <div class="menu__sub">
+                    <button class="menu__back-button" type="button">Назад</button>
+                    <ul class="menu__list">
+                      {% for subLink in link.subMenu %}
+                        {% if subLink.subMenu %}
+                          <li class="menu__item">
+                            <a class="menu__link menu__link--has-dropdown" href="{{ subLink.href }}.html">
+                              {{ subLink.title }}
+                              <svg class="menu__link-dropdown-icon" width="9" height="5" viewBox="0 0 9 5">
+                                <use xlink:href="img/sprite.svg#dropdown-icon"></use>
+                              </svg>
+                            </a>
+                            <div class="menu__sub">
+                              <button class="menu__back-button" type="button">Назад</button>
+                              <ul class="menu__list">
+                                {% for subSubLink in subLink.subMenu %}
+                                  {% if subSubLink.subMenu %}
+                                    <li class="menu__item">
+                                      <a class="menu__link menu__link--has-dropdown" href="{{ subSubLink.href }}.html">
+                                        {{ subSubLink.title }}
+                                        <svg class="menu__link-dropdown-icon" width="9" height="5" viewBox="0 0 9 5">
+                                          <use xlink:href="img/sprite.svg#dropdown-icon"></use>
+                                        </svg>
+                                      </a>
+                                    </li>
+                                  {% else %}
+                                    <li class="menu__item">
+                                      <a class="menu__link" href="{{ subSubLink.href }}.html">{{ subSubLink.title }}</a>
+                                    </li>
+                                  {% endif%}
+                                {% endfor%}
+                              </ul>
+                            </div>
+                          </li>
+                        {% else %}
+                          <li class="menu__item">
+                            <a class="menu__link" href="{{ subLink.href }}.html">{{ subLink.title }}</a>
+                          </li>
+                        {% endif%}
+                      {% endfor%}
+                    </ul>
+                  </div>
                 </li>
               {% else %}
                 <li class="menu__item">
-                  <a class="menu__link menu__link" href="{{ link.href}}.html">{{ link.title }}</a>
+                  <a class="menu__link" href="{{ link.href}}.html">{{ link.title }}</a>
                 </li>
               {% endif %}
             {% endfor %}

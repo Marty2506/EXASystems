@@ -1,13 +1,10 @@
 .menu {
-  // display: none;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
   width: 100%;
+  overflow-x: hidden;
 
   color: #ffffff;
-
-  // background: linear-gradient(180deg, #453fa9 0%, #675fc6 100%);
 
   @media (width < $desktop-width) {
     padding: 10px 0;
@@ -16,6 +13,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
+
     color: $menu-link-color-desktop;
 
     background: none;
@@ -28,24 +26,21 @@
   }
 }
 
-.menu--opened {
-  @media (max-width: $desktop-width) {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 95;
-
-    display: flex;
-    width: 100%;
-    padding-top: 85px;
-    padding-left: 18px;
-  }
-}
-
 .menu__main {
   @media (min-width: $desktop-width) {
     padding: 10px 0;
+    background-color: #ffffff;
   }
+}
+
+.menu__main--sticky {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+
+  width: 100%;
+
+  animation: showing-animation 0.5s;
 }
 
 .menu__main-container {
@@ -66,6 +61,7 @@
   @media (width >= $desktop-width) {
     padding-top: 5px;
     padding-bottom: 5px;
+
     background-color: $secondary-menu-color;
   }
 }
@@ -119,18 +115,22 @@
   }
 }
 
-.menu__item--configurator {
-  @media (min-width: $desktop-width) {
-    margin-left: 25px;
+.menu__secondary .menu__item {
+  &:first-child {
+    &::before {
+      content: none;
+    }
   }
 }
 
+
 .menu__link {
-  color: inherit;
   display: flex;
+
+  color: inherit;
+
   @media (max-width: $max-tablet-width) {
     position: relative;
-
 
     padding: 13px 0;
 
@@ -138,24 +138,9 @@
     font-size: 18px;
     line-height: 26px;
     font-family: $jost-font;
-
     text-decoration: none;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      right: 18px;
-
-      width: 12px;
-      height: 19px;
-
-      background-image: url("@img/icons/menu-arrow.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      transform: translateY(-50%);
-    }
   }
+
   @media (min-width: $desktop-width) {
     padding: 5px 10px;
 
@@ -172,14 +157,31 @@
 }
 
 .menu__link--has-dropdown {
+  @media (width < $desktop-width) {
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    &::after {
+      content: "";
+
+      width: 12px;
+      height: 19px;
+
+      background-image: url("@img/icons/menu-arrow.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
   @media (width >= $desktop-width) {
     align-items: center;
+
     gap: 10px;
   }
 }
 
 .menu__link-dropdown-icon {
   transition: fill 0.3s ease;
+
   fill: $menu-link-color-desktop;
 
   @media (width < $desktop-width) {
@@ -199,14 +201,9 @@
 
 .menu__link--upper-menu {
   @media (width >= $desktop-width) {
-    font-size: 14px;
     padding: 5px 10px;
-  }
-}
 
-.menu__link--end {
-  &::after {
-    content: none;
+    font-size: 14px;
   }
 }
 
@@ -264,35 +261,11 @@
   }
 }
 
-.menu__link--configurator {
-  @media (min-width: $desktop-width) {
-    display: inline-flex;
-    align-items: center;
-    height: 32px;
-    padding: 0 15px;
-
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 16px;
-    text-transform: uppercase;
-
-    background-color: $blue-color;
-
-    transition: background-color 0.3s ease;
-
-    &:hover {
-      color: #ffffff;
-
-      background-color: $button-color;
-    }
-  }
-}
-
 .menu__contacts {
-  margin-top: auto;
-  padding-top: 30px;
   display: none;
   flex-direction: column;
+  margin-top: auto;
+  padding-top: 30px;
 
   font-family: $jost-font;
 }
@@ -317,9 +290,12 @@
 }
 
 .menu__back-call-button {
-  max-width: calc(100% + 18px);
+  display: flex;
+  flex-grow: 1;
+  max-width: initial;
   height: 65px;
   margin-left: -18px;
+  margin-right: -18px;
 
   font-weight: 500;
   font-size: 19px;
@@ -332,9 +308,17 @@
 .menu--opened {
   @media (width < $desktop-width) {
     position: relative;
-    padding-bottom: 0;
-    background: linear-gradient(180deg, #453fa9 0%, #675fc6 100%);
+    z-index: 95;
+
+    display: flex;
     flex-grow: 1;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 0;
+    padding-left: 18px;
+    padding: 80px 17px 0 17px;
+
+    background: linear-gradient(180deg, #453fa9 0%, #675fc6 100%);
 
     & .menu__secondary {
       display: block;
@@ -342,8 +326,8 @@
 
     & .menu__list {
       display: flex;
-      flex-direction: column;
       flex-grow: 1;
+      flex-direction: column;
     }
 
     & .menu__main {
@@ -358,6 +342,11 @@
 
     & .menu__contacts {
       display: flex;
+    }
+
+    & .menu__mobile-container {
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 
