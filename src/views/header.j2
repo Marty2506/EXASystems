@@ -20,7 +20,7 @@
           <ul class="menu__list">
             {% for link in mainMenu %}
               {% if link.subMenu %}
-                <li class="menu__item">
+                <li class="menu__item menu__item--has-dropdown">
                   <a class="menu__link menu__link--has-dropdown" href="{{ link.href }}.html">
                     {{ link.title }}
                     <svg class="menu__link-dropdown-icon" width="9" height="5" viewBox="0 0 9 5">
@@ -68,6 +68,32 @@
                         {% endif%}
                       {% endfor%}
                     </ul>
+                  </div>
+                  <div class="menu__dropdown">
+                    <div class="menu__dropdown-content container">
+                      <a class="menu__dropdown-title menu__dropdown-link" href="{{ link.href }}.html">{{ link.title }}</a>
+                      <div class="menu__dropdown-main {{ link.themeClass }}">
+                        {% for subMenu in link.subMenu %}
+                          <div class="menu__dropdown-list-wrapper {% if subMenu.href == "vendors" %} menu__dropdown-list-wrapper--vendors {% endif %}">
+                            <a class="menu__dropdown-list-title menu__dropdown-link" href="{{ subMenu.href }}.html">{{ subMenu.title }}</a>
+                            <ul class="menu__dropdown-list">
+                              {% for sublink in subMenu.subMenu %}
+                                <li class="menu__dropdown-list-item">
+                                  {% if sublink.vendor %}
+                                    <a class="menu__dropdown-list-link menu__dropdown-link menu__vendor-link" href="{{ sublink.href }}.html">
+                                      <span class="visually-hidden">{{ sublink.title }}</span>
+                                      <img class="menu__vendor-link-image" src="{{ sublink.iconLink }}" alt="" width="{{ sublink.width }}" height="{{ sublink.height }}">
+                                    </a>
+                                  {% else %}
+                                    <a class="menu__dropdown-list-link menu__dropdown-link" href="{{ sublink.href }}.html">{{ sublink.title }}</a>
+                                  {% endif %}
+                                </li>
+                              {% endfor %}
+                            </ul>
+                          </div>
+                        {% endfor %}
+                      </div>
+                    </div>
                   </div>
                 </li>
               {% else %}

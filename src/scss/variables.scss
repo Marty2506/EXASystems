@@ -3,7 +3,6 @@ $pads-d: 30;
 $paddings-mobile: 8px;
 $paddings-desktop: $pads-d * 1px;
 
-
 // Viewports
 $min-mobile-width: 320px;
 $average-mobile-width: 400px;
@@ -31,6 +30,7 @@ $error-field-bg: #ffe7e7;
 $secondary-menu-color: #fafafa;
 $menu-link-color-desktop: #535353;
 $header-contacts-icon-bg: #4d45b1;
+$menu-dropdown-title-color: #2a2a2a;
 
 // Font
 $jost-font: "Jost", "Arial", sans-serif;
@@ -38,3 +38,4 @@ $jost-font: "Jost", "Arial", sans-serif;
 // Others
 $section-thumbs-height: 88;
 $other-services-slide-mobile-bp: 450px;
+$menu-main-vertical-paddings: 10px;

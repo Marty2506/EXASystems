@@ -92,6 +92,7 @@
     {
       "title": "Импортозамещение 2023",
       "href": "import-replacement",
+      "themeClass": "menu__dropdown-main--theme1",
       "subMenu" : [
         {
           "title": "Вендоры",
@@ -112,7 +113,120 @@
               "iconLink": "@img/work-with-us/daf-logo.png",
               "iconWidth": "120",
               "iconHegiht": "46"
+            },
+            {
+              "title": "iru",
+              "href": "vendor-page",
+              "vendor": true,
+              "iconLink": "@img/work-with-us/daf-logo.png",
+              "iconWidth": "120",
+              "iconHegiht": "46"
+            },
+            {
+              "title": "iru",
+              "href": "vendor-page",
+              "vendor": true,
+              "iconLink": "@img/work-with-us/daf-logo.png",
+              "iconWidth": "120",
+              "iconHegiht": "46"
+            },
+            {
+              "title": "iru",
+              "href": "vendor-page",
+              "vendor": true,
+              "iconLink": "@img/work-with-us/neometria-logo.png",
+              "iconWidth": "120",
+              "iconHegiht": "46"
+            },
+            {
+              "title": "iru",
+              "href": "vendor-page",
+              "vendor": true,
+              "iconLink": "@img/work-with-us/neometria-logo.png",
+              "iconWidth": "120",
+              "iconHegiht": "46"
+            },
+            {
+              "title": "iru",
+              "href": "vendor-page",
+              "vendor": true,
+              "iconLink": "@img/work-with-us/mrgroup-logo.png",
+              "iconWidth": "120",
+              "iconHegiht": "46"
+            },
+            {
+              "title": "iru",
+              "href": "vendor-page",
+              "vendor": true,
+              "iconLink": "@img/work-with-us/mrgroup-logo.png",
+              "iconWidth": "120",
+              "iconHegiht": "46"
+            },
+            {
+              "title": "iru",
+              "href": "vendor-page",
+              "vendor": true,
+              "iconLink": "@img/work-with-us/logix-pro-logo.png",
+              "iconWidth": "120",
+              "iconHegiht": "46"
+            },
+            {
+              "title": "iru",
+              "href": "vendor-page",
+              "vendor": true,
+              "iconLink": "@img/work-with-us/logix-pro-logo.png",
+              "iconWidth": "120",
+              "iconHegiht": "46"
+            },
+            {
+              "title": "iru",
+              "href": "vendor-page",
+              "vendor": true,
+              "iconLink": "@img/work-with-us/energia-logo.png",
+              "iconWidth": "120",
+              "iconHegiht": "46"
+            },
+            {
+              "title": "iru",
+              "href": "vendor-page",
+              "vendor": true,
+              "iconLink": "@img/work-with-us/energia-logo.png",
+              "iconWidth": "120",
+              "iconHegiht": "46"
+            },
+            {
+              "title": "iru",
+              "href": "vendor-page",
+              "vendor": true,
+              "iconLink": "@img/work-with-us/damate-logo.png",
+              "iconWidth": "120",
+              "iconHegiht": "46"
+            },
+            {
+              "title": "iru",
+              "href": "vendor-page",
+              "vendor": true,
+              "iconLink": "@img/work-with-us/damate-logo.png",
+              "iconWidth": "120",
+              "iconHegiht": "46"
+            },
+            {
+              "title": "iru",
+              "href": "vendor-page",
+              "vendor": true,
+              "iconLink": "@img/work-with-us/ascott-group-logo.png",
+              "iconWidth": "120",
+              "iconHegiht": "46"
+            },
+            {
+              "title": "iru",
+              "href": "vendor-page",
+              "vendor": true,
+              "iconLink": "@img/work-with-us/ascott-group-logo.png",
+              "iconWidth": "120",
+              "iconHegiht": "46"
             }
+
           ]
         },
         {
