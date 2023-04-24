@@ -18,13 +18,72 @@
       </div>
     </div>
 
-    <div class="container">
-      <a class="link" href="./cases-v2.html">Кейсы v2</a>
-    </div>
+    {% set CASES_NUM = 5 %}
+    <section class="cases" data-cases-no-swiper>
+      <div class="container">
+        <div class="cases__content">
+          <h1 class="cases__title title">Реализованные проекты</h1>
+          <ul class="cases__list">
+            {% for index in range(CASES_NUM) %}
+              <li class="cases__card case--no-pads">
+                <div class="cases__card-main">
+                  <div class="cases__card-header">
+                    <h2 class="cases__card-title"><a href="./case-page.html" class="cases__card-title-link">Проектирование и монтаж&nbsp;СКС, ЭОМ Офиса компании «ОТКРЫТИЕ БРОКЕР»</a></h2>
+                    <img class="case__logo" src="@img/otkritie-logo.svg" alt="Логотип компании Открытие брокер" width="151" height="46">
+                  </div>
+                  <ul class="cases__card-metrics">
+                    <li class="case__metrics-item">
+                      <dl class="case__metrics-item-wrapper">
+                        <dt class="cases__card-metrics-name case__metrics-name">Срок:</dt>
+                        <dd class="cases__card-metrics-value case__metrics-value">14 дней</dd>
+                      </dl>
+                    </li>
+                    <li class="case__metrics-item">
+                      <dl class="case__metrics-item-wrapper">
+                        <dt class="cases__card-metrics-name case__metrics-name">Площадь:</dt>
+                        <dd class="cases__card-metrics-value case__metrics-value">3 500 м2</dd>
+                      </dl>
+                    </li>
+                  </ul>
+                  <div class="cases__card-daw-list daw-list daw-list--result">
+                    <ul class="cases__card-daw-list-list daw-list__list">
+                      <li class="daw-list__item">В ходе реализации проекта были выполнены проектирование и монтаж СКС, Электроснабжения и бесперебойного питания офиса;</li>
+                      <li class="daw-list__item">СКС построена с применением материалов и компонентов Hyperline, с оптимальным соотношением «цена/качество», что позволило сократить расходы без снижения качества и надежности коммутации оборудования;</li>
+                      <li class="daw-list__item">Все электрощиты перебраны, старые автоматы заменены, проведена профилактика контактов, составлены и актуализированы схемы электрощитов;</li>
+                      <li class="daw-list__item">Восстановлена исполнительная документация по кондиционированию и освещению;</li>
+                      <li class="daw-list__item">ИТ-инфраструктура нового офисного помещения запущена в срок.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="cases__card-gallery">
+                  <a class="cases__card-big-img-wrapper" href="@img/cases/photo-1-big.webp" data-case-card-original>
+                    <picture>
+                      <source type="image/webp" srcset="@img/cases/photo-1-big.webp 1x">
+                      <img class="cases__card-big-img" src="@img/cases/photo-1-big.jpg" alt="" width="679" height="389" loading="lazy">
+                    </picture>
+                  </a>
+                  <div class="cases__card-gallery-previews">
+                    {% set PREVIEWS_NUM = 6 %}
+                    {% for index in range(PREVIEWS_NUM) %}
+                      <a class="cases__card-gallery-preview" href="@img/cases/photo-{{ index % (PREVIEWS_NUM/2) + 1 }}-big.webp" data-case-card-preview>
+                        <picture>
+                          <source type="image/webp" srcset="@img/cases/photo-{{ index % (PREVIEWS_NUM/2) + 1 }}.webp 1x">
+                          <img class="cases__card-preview-img" src="@img/cases/photo-{{ index % (PREVIEWS_NUM/2) + 1 }}.jpg" alt="" width="104" height="71" loading="lazy">
+                        </picture>
+                      </a>
+                    {% endfor %}
+                  </div>
+                </div>
+              </li>
+            {% endfor%}
+          </ul>
+          {% include "./blocks/spinner.j2" %}
+        </div>
+      </div>
+    </section>
 
-
-    {% include "./blocks/completed-projects.j2" %}
-    <section class="reviews">
+    {# {% include "./blocks/completed-projects.j2" %} #}
+    {# <section class="reviews">
       <div class="container">
         <div class="reviews__content">
           <div class="reviews__header">
@@ -91,13 +150,17 @@
 
       </div>
     </section>
-    {% include "./blocks/subscribe-section.j2" %}
+    {% include "./blocks/subscribe-section.j2" %} #}
   </main>
 {% endblock content %}
 
+{% block modal %}
+  {% include "./blocks/modal-image.j2" %}
+{% endblock %}
+
 {% block js %}
-  <script src="./js/macy.min.js"></script>
-  <script src="./js/cases.min.js"></script>
-  <script src="./js/subscribe-form.min.js"></script>
-  <script src="./js/main.min.js"></script>
+  <script src="./js/modal-image.min.js" defer></script>
+  <script src="./js/cases.min.js" defer></script>
+  {# <script src="./js/subscribe-form.min.js"></script> #}
+  <script src="./js/main.min.js" defer></script>
 {% endblock %}

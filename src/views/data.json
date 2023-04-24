@@ -88,107 +88,6 @@
       "href": "contacts"
     }
   ],
-  "menu": [
-    {
-      "title": "Услуги и решения",
-      "href": "services-and-solutions",
-      "subMenu" : [
-        {
-          "title": "Программное обеспечение",
-          "href": "tech-support",
-          "subMenu" : [
-            {
-              "title": "СУБД",
-              "href": "subd"
-            },
-            {
-              "title": "Информационная безопасность",
-              "href": "info-safety"
-            },
-            {
-              "title": "Резервное копирование",
-              "href": "reserve-copy"
-            },
-            {
-              "title": "Операционные системы",
-              "href": "os"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Оборудование",
-      "href": "equipment",
-      "subMenu" : [
-        {
-          "title": "Серверы",
-          "href": "servers"
-        },
-        {
-          "title": "Комплектующие для серверов",
-          "href": "servers-accessories"
-        },
-        {
-          "title": "Сетевое оборудование",
-          "href": "network-hardware"
-        },
-        {
-          "title": "Системы хранения данных",
-          "href": "data-systems"
-        },
-        {
-          "title": "Оборудование для защиты питания",
-          "href": "power-defense-hardware"
-        },
-        {
-          "title": "Серверные шкафы и стойки",
-          "href": "server-closets"
-        },
-        {
-          "title": "Программное обеспечение",
-          "href": "software"
-        }
-      ]
-    },
-    {
-      "title": "Импортозамещение",
-      "href": "import-replacement",
-      "subMenu" : [
-        {
-          "title": "Тест1",
-          "href": "test1"
-        },
-        {
-          "title": "Тест2",
-          "href": "test2"
-        }
-      ]
-    },
-    {
-      "title": "Кейсы",
-      "href": "cases"
-    },
-    {
-      "title": "О нас",
-      "href": "about"
-    },
-    {
-      "title": "Отзывы",
-      "href": "reviews",
-      "desktopHidden": true
-    },
-    {
-      "title": "Блог",
-      "href": "blog",
-      "desktopHidden": true
-    },
-    {
-      "title": "Контакты",
-      "href": "contacts",
-      "desktopHidden": true
-    }
-  ],
   "mainMenu": [
     {
       "title": "Импортозамещение 2023",
@@ -222,7 +121,7 @@
           "subMenu" : [
             {
               "title": "Проекты",
-              "href": "cases-v2"
+              "href": "cases"
             },
             {
               "title": "О нас",
@@ -252,7 +151,7 @@
           "subMenu" : [
             {
               "title": "Проекты",
-              "href": "cases-v2"
+              "href": "cases"
             },
             {
               "title": "О нас",
@@ -282,7 +181,7 @@
           "subMenu" : [
             {
               "title": "Проекты",
-              "href": "cases-v2"
+              "href": "cases"
             },
             {
               "title": "О нас",
@@ -561,7 +460,7 @@
   "upperMenu" : [
     {
       "title": "Проекты",
-      "href": "cases-v2"
+      "href": "cases"
     },
     {
       "title": "О нас",
