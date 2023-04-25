@@ -73,25 +73,51 @@
                     <div class="menu__dropdown-content container">
                       <a class="menu__dropdown-title menu__dropdown-link" href="{{ link.href }}.html">{{ link.title }}</a>
                       <div class="menu__dropdown-main {{ link.themeClass }}">
-                        {% for subMenu in link.subMenu %}
-                          <div class="menu__dropdown-list-wrapper {% if subMenu.href == "vendors" %} menu__dropdown-list-wrapper--vendors {% endif %}">
-                            <a class="menu__dropdown-list-title menu__dropdown-link" href="{{ subMenu.href }}.html">{{ subMenu.title }}</a>
-                            <ul class="menu__dropdown-list">
-                              {% for sublink in subMenu.subMenu %}
-                                <li class="menu__dropdown-list-item">
-                                  {% if sublink.vendor %}
-                                    <a class="menu__dropdown-list-link menu__dropdown-link menu__vendor-link" href="{{ sublink.href }}.html">
-                                      <span class="visually-hidden">{{ sublink.title }}</span>
-                                      <img class="menu__vendor-link-image" src="{{ sublink.iconLink }}" alt="" width="{{ sublink.width }}" height="{{ sublink.height }}">
-                                    </a>
-                                  {% else %}
-                                    <a class="menu__dropdown-list-link menu__dropdown-link" href="{{ sublink.href }}.html">{{ sublink.title }}</a>
-                                  {% endif %}
-                                </li>
-                              {% endfor %}
-                            </ul>
-                          </div>
-                        {% endfor %}
+                        <div class="menu__dropdown-main-lists-container">
+                          {% for subMenu in link.subMenu %}
+                            <div class="menu__dropdown-list-wrapper {% if subMenu.href == "vendors" %} menu__dropdown-list-wrapper--vendors {% endif %}">
+                              <a class="menu__dropdown-list-title menu__dropdown-link" href="{{ subMenu.href }}.html">{{ subMenu.title }}</a>
+                              <ul class="menu__dropdown-list">
+                                {% for sublink in subMenu.subMenu %}
+                                  <li class="menu__dropdown-list-item">
+                                    {% if sublink.vendor %}
+                                      <a class="menu__dropdown-list-link menu__dropdown-link menu__vendor-link" href="{{ sublink.href }}.html">
+                                        <span class="visually-hidden">{{ sublink.title }}</span>
+                                        <img class="menu__vendor-link-image" src="{{ sublink.iconLink }}" alt="" width="{{ sublink.width }}" height="{{ sublink.height }}">
+                                      </a>
+                                    {% elif sublink.hasIconAfterTitle %}
+                                      <a class="menu__dropdown-list-link menu__dropdown-list-link--with-icon menu__dropdown-link" href="{{ sublink.href }}.html">
+                                        {{ sublink.title }}
+                                        <img src="{{ sublink.iconLink }}" alt="" width="{{ sublink.iconWidth }}" height="{{ sublink.iconHegiht }}">
+                                      </a>
+                                    {% else %}
+                                      <a class="menu__dropdown-list-link menu__dropdown-link" href="{{ sublink.href }}.html">{{ sublink.title }}</a>
+                                    {% endif %}
+                                  </li>
+                                {% endfor %}
+                              </ul>
+                            </div>
+                          {% endfor %}
+                        </div>
+                        {% if link.themeClass == "menu__dropdown-main--theme2" %}
+                          <ul class="menu__cards">
+                            {% set MENU_CARDS_NUM = 4 %}
+                            {% for cardIndex in range(MENU_CARDS_NUM) %}
+                              <li class="menu__cards-item card">
+                                <div class="card__content">
+                                  <div class="card__image-wrapper">
+                                    <picture>
+                                      <source type="image/webp" srcset="@img/service-card-1.webp 1x">
+                                      <img class="card__image" src="@img/service-card-1.jpg" alt="" width="262" height="181">
+                                    </picture>
+                                  </div>
+                                  <p class="card__title">Обследование IT-инфраструктуры</p>
+                                  <a class="card__link" href="service-page.html"></a>
+                                </div>
+                              </li>
+                            {% endfor %}
+                          </ul>
+                        {% endif %}
                       </div>
                     </div>
                   </div>

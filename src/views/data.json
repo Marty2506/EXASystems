@@ -324,6 +324,7 @@
     {
       "title": "Решения",
       "href": "services-and-solutions",
+      "themeClass": "menu__dropdown-main--theme2",
       "subMenu" : [
         {
           "title": "IT-инфраструктура",
@@ -412,6 +413,7 @@
     {
       "title": "Услуги",
       "href": "services-and-solutions",
+      "themeClass": "menu__dropdown-main--theme2",
       "subMenu" : [
         {
           "title": "IT-консалтинг",
@@ -484,6 +486,7 @@
     {
       "title": "Продукты",
       "href": "equipment",
+      "themeClass": "menu__dropdown-main--theme1",
       "subMenu" : [
         {
           "title": "Вендоры",
@@ -504,7 +507,120 @@
               "iconLink": "@img/work-with-us/daf-logo.png",
               "iconWidth": "120",
               "iconHegiht": "46"
+            },
+            {
+              "title": "iru",
+              "href": "vendor-page",
+              "vendor": true,
+              "iconLink": "@img/work-with-us/daf-logo.png",
+              "iconWidth": "120",
+              "iconHegiht": "46"
+            },
+            {
+              "title": "iru",
+              "href": "vendor-page",
+              "vendor": true,
+              "iconLink": "@img/work-with-us/daf-logo.png",
+              "iconWidth": "120",
+              "iconHegiht": "46"
+            },
+            {
+              "title": "iru",
+              "href": "vendor-page",
+              "vendor": true,
+              "iconLink": "@img/work-with-us/neometria-logo.png",
+              "iconWidth": "120",
+              "iconHegiht": "46"
+            },
+            {
+              "title": "iru",
+              "href": "vendor-page",
+              "vendor": true,
+              "iconLink": "@img/work-with-us/neometria-logo.png",
+              "iconWidth": "120",
+              "iconHegiht": "46"
+            },
+            {
+              "title": "iru",
+              "href": "vendor-page",
+              "vendor": true,
+              "iconLink": "@img/work-with-us/mrgroup-logo.png",
+              "iconWidth": "120",
+              "iconHegiht": "46"
+            },
+            {
+              "title": "iru",
+              "href": "vendor-page",
+              "vendor": true,
+              "iconLink": "@img/work-with-us/mrgroup-logo.png",
+              "iconWidth": "120",
+              "iconHegiht": "46"
+            },
+            {
+              "title": "iru",
+              "href": "vendor-page",
+              "vendor": true,
+              "iconLink": "@img/work-with-us/logix-pro-logo.png",
+              "iconWidth": "120",
+              "iconHegiht": "46"
+            },
+            {
+              "title": "iru",
+              "href": "vendor-page",
+              "vendor": true,
+              "iconLink": "@img/work-with-us/logix-pro-logo.png",
+              "iconWidth": "120",
+              "iconHegiht": "46"
+            },
+            {
+              "title": "iru",
+              "href": "vendor-page",
+              "vendor": true,
+              "iconLink": "@img/work-with-us/energia-logo.png",
+              "iconWidth": "120",
+              "iconHegiht": "46"
+            },
+            {
+              "title": "iru",
+              "href": "vendor-page",
+              "vendor": true,
+              "iconLink": "@img/work-with-us/energia-logo.png",
+              "iconWidth": "120",
+              "iconHegiht": "46"
+            },
+            {
+              "title": "iru",
+              "href": "vendor-page",
+              "vendor": true,
+              "iconLink": "@img/work-with-us/damate-logo.png",
+              "iconWidth": "120",
+              "iconHegiht": "46"
+            },
+            {
+              "title": "iru",
+              "href": "vendor-page",
+              "vendor": true,
+              "iconLink": "@img/work-with-us/damate-logo.png",
+              "iconWidth": "120",
+              "iconHegiht": "46"
+            },
+            {
+              "title": "iru",
+              "href": "vendor-page",
+              "vendor": true,
+              "iconLink": "@img/work-with-us/ascott-group-logo.png",
+              "iconWidth": "120",
+              "iconHegiht": "46"
+            },
+            {
+              "title": "iru",
+              "href": "vendor-page",
+              "vendor": true,
+              "iconLink": "@img/work-with-us/ascott-group-logo.png",
+              "iconWidth": "120",
+              "iconHegiht": "46"
             }
+
           ]
         },
         {
@@ -515,7 +631,7 @@
               "title": "Exapower",
               "href": "product-page",
               "hasIconAfterTitle": true,
-              "iconLink": "@img/os-windows.png",
+              "iconLink": "@img/icons/exapower-icon.png",
               "iconWidth": "34",
               "iconHegiht": "17"
             },
@@ -566,6 +682,233 @@
               "href": "catalog"
             }
 
+          ]
+        },
+        {
+          "title": "Серверное оборудование",
+          "href": "servers",
+          "subMenu" : [
+            {
+              "title": "Процессоры",
+              "href": "catalog"
+            },
+            {
+              "title": "Блок питания",
+              "href": "catalog"
+            },
+            {
+              "title": "Вентиляторы",
+              "href": "catalog"
+            },
+            {
+              "title": "Дисковые корзины",
+              "href": "catalog"
+            },
+            {
+              "title": "Жесткие диски SDD",
+              "href": "catalog"
+            },
+            {
+              "title": "Контроллеры",
+              "href": "catalog"
+            },
+            {
+              "title": "Серверные платформы",
+              "href": "catalog"
+            }
+
+          ]
+        },
+        {
+          "title": "Серверное оборудование",
+          "href": "servers",
+          "subMenu" : [
+            {
+              "title": "Процессоры",
+              "href": "catalog"
+            },
+            {
+              "title": "Блок питания",
+              "href": "catalog"
+            },
+            {
+              "title": "Вентиляторы",
+              "href": "catalog"
+            },
+            {
+              "title": "Дисковые корзины",
+              "href": "catalog"
+            },
+            {
+              "title": "Жесткие диски SDD",
+              "href": "catalog"
+            },
+            {
+              "title": "Контроллеры",
+              "href": "catalog"
+            },
+            {
+              "title": "Серверные платформы",
+              "href": "catalog"
+            }
+
+          ]
+        },
+        {
+          "title": "Серверное оборудование",
+          "href": "servers",
+          "subMenu" : [
+            {
+              "title": "Exapower",
+              "href": "product-page",
+              "hasIconAfterTitle": true,
+              "iconLink": "@img/icons/exapower-icon.png",
+              "iconWidth": "34",
+              "iconHegiht": "17"
+            },
+            {
+              "title": "Lenovo",
+              "href": "product-page"
+            },
+            {
+              "title": "HPE",
+              "href": "product-page"
+            },
+            {
+              "title": "DELL",
+              "href": "product-page"
+            }
+          ]
+        },
+        {
+          "title": "Серверное оборудование",
+          "href": "servers",
+          "subMenu" : [
+            {
+              "title": "Процессоры",
+              "href": "catalog"
+            },
+            {
+              "title": "Блок питания",
+              "href": "catalog"
+            },
+            {
+              "title": "Вентиляторы",
+              "href": "catalog"
+            },
+            {
+              "title": "Дисковые корзины",
+              "href": "catalog"
+            },
+            {
+              "title": "Жесткие диски SDD",
+              "href": "catalog"
+            },
+            {
+              "title": "Контроллеры",
+              "href": "catalog"
+            },
+            {
+              "title": "Серверные платформы",
+              "href": "catalog"
+            }
+
+          ]
+        },
+        {
+          "title": "Серверное оборудование",
+          "href": "servers",
+          "subMenu" : [
+            {
+              "title": "Процессоры",
+              "href": "catalog"
+            },
+            {
+              "title": "Блок питания",
+              "href": "catalog"
+            },
+            {
+              "title": "Вентиляторы",
+              "href": "catalog"
+            },
+            {
+              "title": "Дисковые корзины",
+              "href": "catalog"
+            },
+            {
+              "title": "Жесткие диски SDD",
+              "href": "catalog"
+            },
+            {
+              "title": "Контроллеры",
+              "href": "catalog"
+            },
+            {
+              "title": "Серверные платформы",
+              "href": "catalog"
+            }
+
+          ]
+        },
+        {
+          "title": "Серверное оборудование",
+          "href": "servers",
+          "subMenu" : [
+            {
+              "title": "Процессоры",
+              "href": "catalog"
+            },
+            {
+              "title": "Блок питания",
+              "href": "catalog"
+            },
+            {
+              "title": "Вентиляторы",
+              "href": "catalog"
+            },
+            {
+              "title": "Дисковые корзины",
+              "href": "catalog"
+            },
+            {
+              "title": "Жесткие диски SDD",
+              "href": "catalog"
+            },
+            {
+              "title": "Контроллеры",
+              "href": "catalog"
+            },
+            {
+              "title": "Серверные платформы",
+              "href": "catalog"
+            }
+
+          ]
+        },
+        {
+          "title": "Серверное оборудование",
+          "href": "servers",
+          "subMenu" : [
+            {
+              "title": "Exapower",
+              "href": "product-page",
+              "hasIconAfterTitle": true,
+              "iconLink": "@img/icons/exapower-icon.png",
+              "iconWidth": "34",
+              "iconHegiht": "17"
+            },
+            {
+              "title": "Lenovo",
+              "href": "product-page"
+            },
+            {
+              "title": "HPE",
+              "href": "product-page"
+            },
+            {
+              "title": "DELL",
+              "href": "product-page"
+            }
           ]
         }
       ]
