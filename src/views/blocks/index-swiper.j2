@@ -1,0 +1,31 @@
+{% set INDEX_SWIPER_SLIDES_NUM = 3 %}
+<section class="index-about-us">
+  <h2 class="visually-hidden">Чем мы занимаемся</h2>
+  <div class="container">
+    <div class="index-about-us__content">
+      <div class="index-swiper swiper" id="index-swiper">
+        <div class="swiper-wrapper">
+          {% for index in range (INDEX_SWIPER_SLIDES_NUM) %}
+            <div class="index-swiper__slide swiper-slide">
+              <div class="index-swiper__slide-container">
+                <div class="index-swiper__slide-main">
+                  <p class="index-swiper__slide-title">Поставляем оборудованиеи внедряем it-решения</p>
+                  <p class="index-swiper__slide-text">СКС построена с применением материалов и компонентов Hyperline, с оптимальным соотношением «цена/качество», что позволило сократить расходы без снижения качества и надежности коммутации оборудования</p>
+                  <a class="button index-swiper__slide-button" href="#!">Подробнее</a>
+                </div>
+                <div class="index-swiper__image-wrapper">
+                  <picture>
+                    <source type="image/webp" srcset="@img/index-swiper-slide-1.webp 1x">
+                    <img class="index-swiper__slide-image" src="@img/index-swiper-slide-1.jpg" alt="" width="630" height="513">
+                  </picture>
+                </div>
+              </div>
+              <a class="index-swiper__slide-link" href="#!"></a>
+            </div>
+          {% endfor %}
+        </div>
+        <div class="index-swiper__pagination swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</section>

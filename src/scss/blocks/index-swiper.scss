@@ -1,0 +1,90 @@
+.index-swiper {
+}
+.index-swiper__slide {
+  background-color: $primary-color;
+  color: #fff;
+  cursor: default;
+}
+.index-swiper__slide-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  @media (width >= $tablet-width) {
+    display: grid;
+    grid-template-columns: 45% 55%;
+  }
+}
+.index-swiper__slide-main {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 21px;
+
+  @media (width >= $desktop-width) {
+    padding: 37px 50px;
+  }
+}
+.index-swiper__slide-title {
+  margin: 0;
+  padding: 0;
+  font-family: $jost-font;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 115%;
+
+  @media (width >= $desktop-width) {
+    font-size: 50px;
+  }
+}
+.index-swiper__slide-text {
+  margin: 0;
+  margin-top: 15px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 130%;
+
+  @media (width >= $desktop-width) {
+    margin-top: 20px;
+  }
+}
+.index-swiper__slide-button {
+  min-height: 57px;
+  max-width: 240px;
+  margin-top: 25px;
+  z-index: 2;
+
+  @media (width < $tablet-width) {
+    display: none;
+  }
+}
+.index-swiper__image-wrapper {
+  position: relative;
+  @include image-layering;
+
+  @media (width < $tablet-width) {
+    height: 0;
+    padding-bottom: 52.5%;
+  }
+}
+.index-swiper__slide-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-grow: 1;
+}
+
+.index-swiper__slide-link {
+  @include container-link;
+}
+
+.index-swiper__pagination {
+  position: initial;
+  padding: 12px 0;
+
+  @media (width >= $desktop-width) {
+    padding: 15px 0;
+  }
+}

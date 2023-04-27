@@ -19,7 +19,6 @@
 
   // width: auto;
 
-
   @media (max-width: $max-mobile-width) {
     width: min-content;
   }
@@ -104,4 +103,8 @@
 
 .swiper-slide-thumb-active {
   border: solid 2px $blue-color;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $blue-color;
 }
