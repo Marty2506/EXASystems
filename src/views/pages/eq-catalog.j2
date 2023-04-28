@@ -1,0 +1,104 @@
+{% extends "layout.j2" %}
+
+{% set page = "eq-catalog" %}
+
+{% block content %}
+  <main class="page-main">
+    <div class="container">
+      <div class="breadcumbs">
+        <ul class="breadcumbs__list">
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="./index.html">Главная</a>
+          </li>
+          <li class="breadcumbs__item">
+            <span class="breadcumbs__link breadcumbs__link--current">Оборудование</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    {% set EQ_CARDS_NUM = 9 %}
+    <section class="eq-catalog">
+      <div class="container">
+        <div class="eq-catalog__content">
+          <h1 class="visually-hidden">Каталог оборудования</h1>
+          <ul class="eq-catalog__list">
+            {% for cardIndex in range(EQ_CARDS_NUM) %}
+              {% if cardIndex % 3 == 0 %}
+                <li class="eq-catalog__list-item eq-card">
+                  <div class="eq-card__content">
+                    <div class="eq-card__image-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="@img/cards/eq-card-1.webp 1x">
+                        <img class="eq-card__image" src="@img/cards/eq-card-1.jpg" alt="" width="262" height="181">
+                      </picture>
+                      <a class="eq-card__image-link" href="vendors.html"></a>
+                    </div>
+                    <a class="eq-card__title" href="vendors.html">Серверное оборудование</a>
+                    <ul class="eq-card__list">
+                      <li class="eq-card__list-item">
+                        <a class="eq-card__list-link" href="vendors.html">
+                          Exapower
+                          <img src="@img/icons/exapower-icon.png" alt="" width="34" height="17">
+                        </a>
+                      </li>
+                      <li class="eq-card__list-item">
+                        <a class="eq-card__list-link" href="vendors.html">Lenovo</a>
+                      </li>
+                      <li class="eq-card__list-item">
+                        <a class="eq-card__list-link" href="vendors.html">HPE</a>
+                      </li>
+                      <li class="eq-card__list-item">
+                        <a class="eq-card__list-link" href="vendors.html">DELL</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              {% else %}
+                <li class="eq-catalog__list-item eq-card">
+                  <div class="eq-card__content">
+                    <div class="eq-card__image-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="@img/cards/eq-card-2.webp 1x">
+                        <img class="eq-card__image" src="@img/cards/eq-card-2.jpg" alt="" width="262" height="181">
+                      </picture>
+                      <a class="eq-card__image-link" href="eq-subcatalog.html"></a>
+                    </div>
+                    <a class="eq-card__title" href="eq-subcatalog.html">Серверное оборудование</a>
+                    <ul class="eq-card__list">
+                      <li class="eq-card__list-item">
+                        <a class="eq-card__list-link" href="eq-subcatalog.html">Процессоры</a>
+                      </li>
+                      <li class="eq-card__list-item">
+                        <a class="eq-card__list-link" href="eq-subcatalog.html">Блоки питания</a>
+                      </li>
+                      <li class="eq-card__list-item">
+                        <a class="eq-card__list-link" href="eq-subcatalog.html">Вентиляторы</a>
+                      </li>
+                      <li class="eq-card__list-item">
+                        <a class="eq-card__list-link" href="eq-subcatalog.html">Дисковые корзины</a>
+                      </li>
+                      <li class="eq-card__list-item">
+                        <a class="eq-card__list-link" href="eq-subcatalog.html">Жесткие диски SDD</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              {% endif %}
+
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+{% endblock content %}
+
+{% block modal %}
+
+{% endblock %}
+
+{% block js %}
+  <script src="./js/main.min.js"></script>
+{% endblock %}

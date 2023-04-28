@@ -5,7 +5,7 @@
   "nav": [
     {
       "title": "Оборудование",
-      "href": "equipment",
+      "href": "eq-catalog",
       "subNav" : [
         {
           "title": "Серверы",
@@ -261,7 +261,7 @@
         },
         {
           "title": "Оборудование",
-          "href": "equipment",
+          "href": "eq-catalog",
           "subMenu" : [
             {
               "title": "Проекты",
@@ -485,7 +485,7 @@
     },
     {
       "title": "Продукты",
-      "href": "equipment",
+      "href": "eq-catalog",
       "themeClass": "menu__dropdown-main--theme1",
       "subMenu" : [
         {
