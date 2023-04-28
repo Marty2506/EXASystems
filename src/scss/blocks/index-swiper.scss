@@ -4,7 +4,10 @@
   background-color: $primary-color;
   color: #fff;
   cursor: default;
+  border-radius: 5px;
+  overflow: hidden;
 }
+
 .index-swiper__slide-container {
   display: flex;
   flex-direction: column;
