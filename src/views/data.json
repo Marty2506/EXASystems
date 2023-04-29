@@ -625,11 +625,11 @@
         },
         {
           "title": "Серверное оборудование",
-          "href": "servers",
+          "href": "eq-subcatalog",
           "subMenu" : [
             {
               "title": "Exapower",
-              "href": "product-page",
+              "href": "vendor-page",
               "hasIconAfterTitle": true,
               "iconLink": "@img/icons/exapower-icon.png",
               "iconWidth": "34",
@@ -637,130 +637,130 @@
             },
             {
               "title": "Lenovo",
-              "href": "product-page"
+              "href": "vendor-page"
             },
             {
               "title": "HPE",
-              "href": "product-page"
+              "href": "vendor-page"
             },
             {
               "title": "DELL",
-              "href": "product-page"
+              "href": "vendor-page"
             }
           ]
         },
         {
           "title": "Серверное оборудование",
-          "href": "servers",
+          "href": "eq-subcatalog",
           "subMenu" : [
             {
               "title": "Процессоры",
-              "href": "catalog"
+              "href": "category-catalog"
             },
             {
               "title": "Блок питания",
-              "href": "catalog"
+              "href": "category-catalog"
             },
             {
               "title": "Вентиляторы",
-              "href": "catalog"
+              "href": "category-catalog"
             },
             {
               "title": "Дисковые корзины",
-              "href": "catalog"
+              "href": "category-catalog"
             },
             {
               "title": "Жесткие диски SDD",
-              "href": "catalog"
+              "href": "category-catalog"
             },
             {
               "title": "Контроллеры",
-              "href": "catalog"
+              "href": "category-catalog"
             },
             {
               "title": "Серверные платформы",
-              "href": "catalog"
+              "href": "category-catalog"
             }
 
           ]
         },
         {
           "title": "Серверное оборудование",
-          "href": "servers",
+          "href": "eq-subcatalog",
           "subMenu" : [
             {
               "title": "Процессоры",
-              "href": "catalog"
+              "href": "category-catalog"
             },
             {
               "title": "Блок питания",
-              "href": "catalog"
+              "href": "category-catalog"
             },
             {
               "title": "Вентиляторы",
-              "href": "catalog"
+              "href": "category-catalog"
             },
             {
               "title": "Дисковые корзины",
-              "href": "catalog"
+              "href": "category-catalog"
             },
             {
               "title": "Жесткие диски SDD",
-              "href": "catalog"
+              "href": "category-catalog"
             },
             {
               "title": "Контроллеры",
-              "href": "catalog"
+              "href": "category-catalog"
             },
             {
               "title": "Серверные платформы",
-              "href": "catalog"
+              "href": "category-catalog"
             }
 
           ]
         },
         {
           "title": "Серверное оборудование",
-          "href": "servers",
+          "href": "eq-subcatalog",
           "subMenu" : [
             {
               "title": "Процессоры",
-              "href": "catalog"
+              "href": "category-catalog"
             },
             {
               "title": "Блок питания",
-              "href": "catalog"
+              "href": "category-catalog"
             },
             {
               "title": "Вентиляторы",
-              "href": "catalog"
+              "href": "category-catalog"
             },
             {
               "title": "Дисковые корзины",
-              "href": "catalog"
+              "href": "category-catalog"
             },
             {
               "title": "Жесткие диски SDD",
-              "href": "catalog"
+              "href": "category-catalog"
             },
             {
               "title": "Контроллеры",
-              "href": "catalog"
+              "href": "category-catalog"
             },
             {
               "title": "Серверные платформы",
-              "href": "catalog"
+              "href": "category-catalog"
             }
 
           ]
         },
         {
           "title": "Серверное оборудование",
-          "href": "servers",
+          "href": "eq-subcatalog",
           "subMenu" : [
             {
               "title": "Exapower",
-              "href": "product-page",
+              "href": "vendor-page",
               "hasIconAfterTitle": true,
               "iconLink": "@img/icons/exapower-icon.png",
               "iconWidth": "34",
@@ -768,130 +768,130 @@
             },
             {
               "title": "Lenovo",
-              "href": "product-page"
+              "href": "vendor-page"
             },
             {
               "title": "HPE",
-              "href": "product-page"
+              "href": "vendor-page"
             },
             {
               "title": "DELL",
-              "href": "product-page"
+              "href": "vendor-page"
             }
           ]
         },
         {
           "title": "Серверное оборудование",
-          "href": "servers",
+          "href": "eq-subcatalog",
           "subMenu" : [
             {
               "title": "Процессоры",
-              "href": "catalog"
+              "href": "category-catalog"
             },
             {
               "title": "Блок питания",
-              "href": "catalog"
+              "href": "category-catalog"
             },
             {
               "title": "Вентиляторы",
-              "href": "catalog"
+              "href": "category-catalog"
             },
             {
               "title": "Дисковые корзины",
-              "href": "catalog"
+              "href": "category-catalog"
             },
             {
               "title": "Жесткие диски SDD",
-              "href": "catalog"
+              "href": "category-catalog"
             },
             {
               "title": "Контроллеры",
-              "href": "catalog"
+              "href": "category-catalog"
             },
             {
               "title": "Серверные платформы",
-              "href": "catalog"
+              "href": "category-catalog"
             }
 
           ]
         },
         {
           "title": "Серверное оборудование",
-          "href": "servers",
+          "href": "eq-subcatalog",
           "subMenu" : [
             {
               "title": "Процессоры",
-              "href": "catalog"
+              "href": "category-catalog"
             },
             {
               "title": "Блок питания",
-              "href": "catalog"
+              "href": "category-catalog"
             },
             {
               "title": "Вентиляторы",
-              "href": "catalog"
+              "href": "category-catalog"
             },
             {
               "title": "Дисковые корзины",
-              "href": "catalog"
+              "href": "category-catalog"
             },
             {
               "title": "Жесткие диски SDD",
-              "href": "catalog"
+              "href": "category-catalog"
             },
             {
               "title": "Контроллеры",
-              "href": "catalog"
+              "href": "category-catalog"
             },
             {
               "title": "Серверные платформы",
-              "href": "catalog"
+              "href": "category-catalog"
             }
 
           ]
         },
         {
           "title": "Серверное оборудование",
-          "href": "servers",
+          "href": "eq-subcatalog",
           "subMenu" : [
             {
               "title": "Процессоры",
-              "href": "catalog"
+              "href": "category-catalog"
             },
             {
               "title": "Блок питания",
-              "href": "catalog"
+              "href": "category-catalog"
             },
             {
               "title": "Вентиляторы",
-              "href": "catalog"
+              "href": "category-catalog"
             },
             {
               "title": "Дисковые корзины",
-              "href": "catalog"
+              "href": "category-catalog"
             },
             {
               "title": "Жесткие диски SDD",
-              "href": "catalog"
+              "href": "category-catalog"
             },
             {
               "title": "Контроллеры",
-              "href": "catalog"
+              "href": "category-catalog"
             },
             {
               "title": "Серверные платформы",
-              "href": "catalog"
+              "href": "category-catalog"
             }
 
           ]
         },
         {
           "title": "Серверное оборудование",
-          "href": "servers",
+          "href": "eq-subcatalog",
           "subMenu" : [
             {
               "title": "Exapower",
-              "href": "product-page",
+              "href": "vendor-page",
               "hasIconAfterTitle": true,
               "iconLink": "@img/icons/exapower-icon.png",
               "iconWidth": "34",
@@ -899,15 +899,15 @@
             },
             {
               "title": "Lenovo",
-              "href": "product-page"
+              "href": "vendor-page"
             },
             {
               "title": "HPE",
-              "href": "product-page"
+              "href": "vendor-page"
             },
             {
               "title": "DELL",
-              "href": "product-page"
+              "href": "vendor-page"
             }
           ]
         }

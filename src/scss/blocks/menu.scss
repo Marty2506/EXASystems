@@ -40,9 +40,14 @@
   z-index: 10;
 
   width: 100%;
+  background-color: #ffffff;
   border-bottom: 1px solid #d0d0d0;
 
   animation: showing-animation 0.5s;
+
+  @media (width < $desktop-width) {
+    padding: 10px 0;
+  }
 }
 
 .menu__main-container {

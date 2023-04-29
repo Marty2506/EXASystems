@@ -1,217 +1,76 @@
 .product-card {
+  background-color: #ffffff;
+  color: $card-font-color;
+  max-width: 400px;
+}
+.product-card__content {
   position: relative;
+  display: flex;
+  flex-direction: column;
+}
 
-  max-width: $average-mobile-width;
-  padding: 20px;
+.product-card__image-wrapper {
+  @include image-wrapper(69.25%);
 
-  background-color: $white-color;
-  border: 1px solid #ebebeb;
-  box-shadow: 2px 2px 10px rgb(178 176 199 / 35%);
-
-  &:hover {
-    & .product-card__title {
-      color: $blue-color;
-      text-decoration: underline;
-    }
-
-    & .product-card__button {
-      visibility: visible;
-      opacity: 1;
-    }
-  }
-
-  &:focus-within {
-    & .product-card__button {
-      visibility: visible;
-      opacity: 1;
-    }
-  }
-
-  &:active {
-    opacity: 0.7;
+  @media (width < $tablet-width) {
+    padding-bottom: 65%;
   }
 }
 
-.product-card__background-link {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
+.product-card_image {
+  @include image-in-wrapper;
+}
 
-  &:focus-visible {
-    outline: 2px solid $blue-color;
+.product-card__main {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px 40px 20px;
+
+  @media (width < $tablet-width) {
+    padding-bottom: 25px;
   }
 }
 
 .product-card__title {
   margin: 0;
-  margin-bottom: 5px;
   padding: 0;
-
+  font-family: $jost-font;
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
-  font-family: $jost-font;
-
-  transition: color 0.3s ease;
-}
-
-.product-card__subtitle {
-  margin: 0;
-  margin-bottom: 10px;
-  padding: 0;
-
-  font-size: 16px;
-  line-height: 19px;
-  color: $grey-color;
-}
-
-.product-card__image-wrapper {
-  position: relative;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.product-card__image {
-  width: 100%;
-  max-height: 197px;
-
-  object-fit: cover;
-}
-
-.product-card__vendor {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  pointer-events: none;
-}
-
-.product-card__price-row {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 22px;
-
-  gap: 5px;
-}
-
-.product-card__prices-wrapper {
-  display: flex;
-  flex-direction: column;
-  margin-right: auto;
+  color: inherit;
 }
 
 .product-card__price {
   margin: 0;
+  margin: 5px;
   padding: 0;
-
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 23px;
   font-family: $jost-font;
+  font-size: 18px;
+  line-height: 115%;
+  color: inherit;
 }
 
-.product-card__credit {
-  margin: 0;
-  padding: 0;
+.product-card__link {
+  @include container-link;
 
-  font-size: 16px;
-  line-height: 19px;
-  color: $grey-color;
-}
-
-.product-card__button {
-  z-index: 1;
-
-  min-width: 130px;
-  margin-left: auto;
-
-  clip-path: none;
-
-  &:focus-visible {
-    &::after {
-      clip-path: none;
-    }
-  }
-
-  &:hover {
-    color: $white-color;
-
-    background-color: $blue-color;
-  }
-
-  @media (min-width: $desktop-width) {
-    visibility: hidden;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: $primary-color;
     opacity: 0;
-  }
-}
-
-.product-card__toolbar {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 15px;
-
-  gap: 30px;
-}
-
-.product-card__toolbar-button {
-  z-index: 1;
-
-  display: flex;
-  align-items: center;
-  padding: 2px 5px;
-
-  font-family: inherit;
-  text-decoration: none;
-
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-
-  gap: 10px;
-
-
-  &:hover {
-    & .product-card__toolbar-button-text {
-      color: $button-color;
-    }
-
-    & .product-card__toolbar-button-icon {
-      fill: $button-color;
-    }
+    transition: opacity 0.4s ease;
   }
 
+  &:hover,
   &:focus-visible {
-    border-radius: 2px;
-    outline: 1px solid $blue-color;
+    outline: none;
+    &::after {
+      opacity: 1;
+    }
   }
-
-  &:active {
-    opacity: 0.7;
-  }
-}
-
-.product-card__toolbar-button-icon {
-  transition: fill 0.3s ease;
-
-  fill: $blue-color;
-}
-
-.product-card__toolbar-button-text {
-  margin: 0;
-  padding: 0;
-
-  font-size: 14px;
-  line-height: 17px;
-  font-family: inherit;
-  color: $blue-color;
-  text-decoration: underline;
-
-  transition: color 0.3s ease;
 }

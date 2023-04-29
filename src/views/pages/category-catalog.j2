@@ -1,0 +1,70 @@
+{% extends "layout.j2" %}
+
+{% set page = "category-catalog" %}
+
+{% block content %}
+  <main class="page-main">
+    <div class="container">
+      <div class="breadcumbs">
+        <ul class="breadcumbs__list">
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="./index.html">Главная</a>
+          </li>
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="./eq-catalog.html">Оборудование</a>
+          </li>
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="./eq-catalog.html">Серверное оборудование</a>
+          </li>
+          <li class="breadcumbs__item">
+            <span class="breadcumbs__link breadcumbs__link--current">Название категории</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    {% set PRODUCT_CARDS_NUM = 9 %}
+    {% set PRODUCT_CARDS = [
+      {"title": "Exapower E100-M6", "price": "от 582 940 ₽"},
+      {"title": "Exapower E140D1R-M6", "price": "от 482 940 ₽"},
+      {"title": "Exapower E100-M6", "price": "от 582 940 ₽"}
+    ] %}
+    <section class="category-catalog">
+      <div class="container">
+        <div class="category-catalog__content">
+          <h1 class="category-catalog__title title">Название категории</h1>
+          <ul class="category-catalog__list">
+            {% for cardIndex in range(PRODUCT_CARDS_NUM) %}
+              <li class="category-catalog__list-item product-card">
+                <div class="product-card__content">
+                  <div class="product-card__image-wrapper">
+                    <picture>
+                      <source type="image/webp" srcset="@img/cards/product-card-{{ (cardIndex % 3) + 1 }}.webp 1x">
+                      <img class="product-card_image" src="@img/cards/product-card-{{ (cardIndex % 3) + 1 }}.jpg" alt="" width="361" height="250" loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="product-card__main">
+                    <h3 class="product-card__title">{{PRODUCT_CARDS[cardIndex % 3].title}}</h3>
+                    <span class="product-card__price">{{PRODUCT_CARDS[cardIndex % 3].price}}</span>
+                  </div>
+                  <a class="product-card__link" href="product-page.html"></a>
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+{% endblock content %}
+
+{% block modal %}
+
+{% endblock %}
+
+{% block js %}
+  <script src="./js/main.min.js"></script>
+{% endblock %}

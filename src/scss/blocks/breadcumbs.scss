@@ -2,6 +2,10 @@
   padding: 23px 0;
 
   color: $grey-color;
+
+  @media (width < $desktop-width) {
+    display: none;
+  }
 }
 
 .breadcumbs__list {
