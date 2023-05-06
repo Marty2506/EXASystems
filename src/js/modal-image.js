@@ -1,7 +1,9 @@
 // Настройки модалки для отображения картинок
 const modalImage = document.querySelector(".modal-image");
+const modalImageContentWrapper = modalImage.querySelector(
+  ".modal-image__content-wrapper"
+);
 const modalImageContent = modalImage.querySelector(".modal-image__content");
-const reveiwsLetters = document.querySelectorAll(".reviews__letter-link");
 const modalImageCLoseButton = modalImage.querySelector(
   ".modal-image__close-button"
 );
@@ -28,73 +30,26 @@ const onOutOfImageModalClick = (evt) => {
 document.addEventListener("keydown", onModalImageEscKeydown);
 document.addEventListener("click", onOutOfImageModalClick);
 
-reveiwsLetters.forEach((reviewsLetter) => {
-  reviewsLetter.addEventListener("click", (evt) => {
-    evt.preventDefault();
+document.addEventListener("click", (evt) => {
+  if (
+    !(evt.target.closest("a") || evt.target).matches(
+      "[data-image-can-open-in-modal]"
+    )
+  )
+    return;
 
-    const reviewsLetterImage = reviewsLetter.querySelector(
-      ".reviews__letter-image"
-    );
-    modalImageContent.src = reviewsLetterImage.src;
-
-    modalImage.classList.add("modal-image--opened");
-  });
-});
-
-const caseImageLinks = document.querySelectorAll(".case__photo-wrapper");
-caseImageLinks.forEach((caseImageLink) => {
-  caseImageLink.addEventListener("click", (evt) => {
-    evt.preventDefault();
-
-    modalImageContent.src = caseImageLink.href;
-
-    modalImage.classList.add("modal-image--opened");
-  });
-});
-
-const certificates = document.querySelectorAll(".certificates__link");
-certificates.forEach((certificate) => {
-  certificate.addEventListener("click", (evt) => {
-    evt.preventDefault();
-
-    modalImageContent.src = certificate.href;
-
-    modalImage.classList.add("modal-image--opened");
-  });
-});
-
-const certCards = document.querySelectorAll(".cert-card__link");
-
-certCards.forEach((certCard) => {
-  certCard.addEventListener("click", (evt) => {
-    evt.preventDefault();
-
-    modalImageContent.src = certCard.href;
-
-    modalImage.classList.add("modal-image--opened");
-  });
-});
-
-const clickableRewiews = document.querySelectorAll("[data-review]");
-
-clickableRewiews.forEach((element) => {
-  element.addEventListener("click", (evt) => {
-    evt.preventDefault();
-
-    modalImageContent.src = element.href;
-
-    modalImage.classList.add("modal-image--opened");
-  });
-});
-
-function addImageModalOpener(evt) {
   evt.preventDefault();
-  modalImageContent.src = evt.target.href;
+  modalImageContent.src = evt.target.closest("a").href;
   modalImage.classList.add("modal-image--opened");
-}
+});
 
-const caseBigImages = document.querySelectorAll("[data-case-card-original]");
-
-caseBigImages.forEach((element) => {
-  element.addEventListener("click", addImageModalOpener);
+modalImageContent.addEventListener("load", () => {
+  modalImageContent.parentNode.classList.remove(
+    "modal-image__content-wrapper--so-big"
+  );
+  if (modalImageContent.naturalHeight > document.body.clientHeight - 50) {
+    modalImageContentWrapper.classList.add(
+      "modal-image__content-wrapper--so-big"
+    );
+  }
 });

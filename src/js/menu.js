@@ -83,8 +83,8 @@ function handleTouchMove(evt) {
 
 window.addEventListener("scroll", (evt) => {
   if (
-    document.body.scrollTop > SCROLL_SIZE ||
-    document.documentElement.scrollTop > SCROLL_SIZE
+    document.body.scrollTop > SCROLL_SIZE + 100 ||
+    document.documentElement.scrollTop > SCROLL_SIZE + 100
   ) {
     mainMenu.classList.add("menu__main--sticky");
   } else {

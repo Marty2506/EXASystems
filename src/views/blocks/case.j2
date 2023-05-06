@@ -46,10 +46,10 @@
             <li class="daw-list__item">Восстановление схем коммутации питания, системы резервирования от ИБП и ДГУ.</li>
           </ul>
         </div>
-        <a class="case__big-photo-wrapper" href="@img/cases/photo-1-big.webp">
+        <a class="case__big-photo-wrapper" href="@img/cases/photo-1-big.webp" data-image-can-open-in-modal>
           <picture>
             <source type="image/webp" srcset="@img/cases/photo-1-big.webp 1x">
-            <img class="case__photo" src="@img/cases/photo-1-big.jpg" alt="Фотография из кейса 1" loading="lazy" width="7222" height="4124">
+            <img class="case__photo" src="@img/cases/photo-1-big.jpg" alt="Фотография из кейса 1" loading="lazy" width="722" height="412">
           </picture>
         </a>
         <div class="case__text-block">
@@ -111,7 +111,7 @@
                 {% set photoCounter = 1 %}
                 {% for imageCount in range(SLIDES_NUM) %}
                   <div class="case__gallery-swiper-slide swiper-slide">
-                    <a class="case__photo-wrapper" href="@img/cases/photo-{{ photoCounter }}-big.jpg">
+                    <a class="case__photo-wrapper" href="@img/cases/photo-{{ photoCounter }}-big.webp" data-image-can-open-in-modal>
                       <picture>
                         <source type="image/webp" srcset="@img/cases/photo-{{ photoCounter }}.webp 1x">
                         <img class="case__photo" src="@img/cases/photo-{{ photoCounter }}.jpg" alt="Фотография из кейса {{ photoCounter }}" loading="lazy" width="230" height="156">
@@ -165,7 +165,7 @@
         <div class="case__reviews">
           <h3 class="case__sub-title">ОТЗЫВ ЗАКАЗЧИКА:</h3>
           <div class="case__review">
-            <a class="case__review-link" href="@img/review-letter.jpg" data-review>
+            <a class="case__review-link" href="@img/review-letter.jpg" data-review data-image-can-open-in-modal>
               <img class="case__review-image" src="@img/review-letter.jpg" alt="">
             </a>
             <div class="case__review-text-container">

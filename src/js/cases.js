@@ -72,7 +72,6 @@ if (casesSectionNoSwiper) {
         const newCardBigImage = newCard.querySelector(
           "[data-case-card-original]"
         );
-        newCardBigImage.addEventListener("click", addImageModalOpener);
         cardList.appendChild(newCard);
         hideSpinner();
         block = false;
