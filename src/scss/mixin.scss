@@ -9,6 +9,8 @@
     width: 100%;
     height: 100%;
     background-color: rgba(77, 69, 177, 28%);
+    transition: opacity 0.3s ease;
+    transition-property: opacity, background-color;
   }
 }
 
