@@ -14,45 +14,58 @@
     opacity: 0.6;
   }
 }
+
 .card__content {
   position: relative;
+
   display: flex;
   flex-direction: column;
 }
+
 .card__image-wrapper {
   position: relative;
+
   height: 0;
   padding-bottom: 69%;
-  border-radius: 3px;
   overflow: hidden;
+
+  border-radius: 3px;
 
   @include image-layering;
 }
+
 .card__image {
   position: absolute;
   top: 0;
   left: 0;
+
   width: 100%;
   height: 100%;
+
   object-fit: cover;
 }
+
 .card__title {
   margin: 0;
-  padding: 0;
   margin-top: 12px;
+  padding: 0;
+
+  font-weight: 300;
   font-size: 16px;
   line-height: 130%;
-  font-weight: 300;
   color: inherit;
 
   transition: color 0.3s ease;
 }
+
 .card__link {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
+
   width: 100%;
   height: 100%;
-  z-index: 1;
+
   text-decoration: none;
 }

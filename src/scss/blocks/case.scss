@@ -14,6 +14,7 @@
 
 .case__content {
   position: relative;
+
   @media (width >= $desktop-width) {
     display: grid;
 
@@ -43,12 +44,14 @@
     justify-content: space-between;
   }
 }
+
 .case__metrics-wrapper {
   @media (width >= $desktop-width) {
     grid-column: -1 / -2;
     grid-row: 1 / -1;
   }
 }
+
 .case__metrics {
   display: grid;
   margin-bottom: 25px;
@@ -79,6 +82,7 @@
 
   gap: 2px;
 }
+
 .case__metrics-name {
   margin: 0;
   padding: 0;
@@ -88,6 +92,7 @@
   line-height: 126%;
   color: #2a2a2a;
 }
+
 .case__metrics-value {
   margin: 0;
   padding: 0;
@@ -227,6 +232,7 @@
 
 .case__big-photo-wrapper {
   position: relative;
+
   margin-top: 20px;
   margin-bottom: 40px;
 
@@ -282,6 +288,7 @@
     display: none;
   }
 }
+
 .case__gallery-grid {
   @media (width >= $tablet-width) {
     display: grid;
@@ -290,6 +297,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 .case__gallery-swiper-slide {
   @media (width >= $tablet-width) {
     margin: 0;
@@ -353,6 +361,7 @@
     gap: 30px;
   }
 }
+
 .case__review-link {
   display: block;
   flex-shrink: 0;
@@ -378,17 +387,20 @@
     max-width: 440px;
   }
 }
+
 .case__review-image {
   @media (width < $tablet-width) {
     width: 100%;
   }
 }
+
 .case__review-text-container {
   display: flex;
   flex-direction: column;
 
   gap: 20px;
 }
+
 .case__review-company-logo {
   align-self: flex-start;
 
@@ -396,6 +408,7 @@
     display: none;
   }
 }
+
 .case__review-text {
   order: 2;
   margin: 0;

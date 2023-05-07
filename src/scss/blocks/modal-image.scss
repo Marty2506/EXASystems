@@ -98,7 +98,7 @@
 
 .modal-image__content-wrapper--so-big {
   @media (width >= $tablet-width) {
-    height: 98%;
     width: auto;
+    height: 98%;
   }
 }

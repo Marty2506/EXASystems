@@ -87,6 +87,7 @@
 
 .page-header__contact-icon-wrapper {
   display: none;
+
   transition: background-color 0.3s ease;
 
   @media (width < $desktop-width) {
@@ -127,6 +128,7 @@
     transition: fill 0.3s ease;
 
     fill: $menu-link-color-desktop;
+
     @media (width < $desktop-width) {
       display: none;
     }

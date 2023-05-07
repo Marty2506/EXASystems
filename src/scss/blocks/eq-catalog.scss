@@ -4,25 +4,25 @@
   @media (width >= $tablet-width) {
     padding-bottom: 50px;
   }
-
   @media (width >= $desktop-width) {
     padding-bottom: 70px;
   }
 }
-.eq-catalog__content {
-}
+
 .eq-catalog__list {
   display: flex;
   flex-direction: column;
+
   gap: 20px;
 
   @media (width >= $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+
     column-gap: 36px;
+
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 50px;
   }
-
   @media (width >= $desktop-width) {
     grid-template-columns: repeat(3, 1fr);
     row-gap: 65px;
