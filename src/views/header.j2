@@ -1,16 +1,5 @@
 <header class="page-header">
   <div class="menu menu--no-js">
-    <div class="menu__secondary">
-      <div class="menu__mobile-container container">
-        <ul class="menu__list">
-          {% for link in upperMenu %}
-            <li class="menu__item">
-              <a class="menu__link menu__link--upper-menu" href="{{ link.href}}.html">{{ link.title }}</a>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
     <div class="menu__main">
       <div class="menu__mobile-container container">
         <div class="menu__main-container">
@@ -70,54 +59,23 @@
                     </ul>
                   </div>
                   <div class="menu__dropdown">
-                    <div class="menu__dropdown-content container">
-                      <a class="menu__dropdown-title menu__dropdown-link" href="{{ link.href }}.html">{{ link.title }}</a>
-                      <div class="menu__dropdown-main {{ link.themeClass }}">
+                    <div class="menu__dropdown-content">
+                      {# <a class="menu__dropdown-title menu__dropdown-link" href="{{ link.href }}.html">{{ link.title }}</a> #}
+                      <div class="menu__dropdown-main">
                         <div class="menu__dropdown-main-lists-container">
                           {% for subMenu in link.subMenu %}
-                            <div class="menu__dropdown-list-wrapper {% if subMenu.href == "vendors" %} menu__dropdown-list-wrapper--vendors {% endif %}">
-                              <a class="menu__dropdown-list-title menu__dropdown-link" href="{{ subMenu.href }}.html">{{ subMenu.title }}</a>
+                            <div class="menu__dropdown-list-wrapper">
+                              <a class="menu__dropdown-link" href="{{ subMenu.href }}.html">{{ subMenu.title }}</a>
                               <ul class="menu__dropdown-list">
                                 {% for sublink in subMenu.subMenu %}
                                   <li class="menu__dropdown-list-item">
-                                    {% if sublink.vendor %}
-                                      <a class="menu__dropdown-list-link menu__dropdown-link menu__vendor-link" href="{{ sublink.href }}.html">
-                                        <span class="visually-hidden">{{ sublink.title }}</span>
-                                        <img class="menu__vendor-link-image" src="{{ sublink.iconLink }}" alt="" width="{{ sublink.width }}" height="{{ sublink.height }}">
-                                      </a>
-                                    {% elif sublink.hasIconAfterTitle %}
-                                      <a class="menu__dropdown-list-link menu__dropdown-list-link--with-icon menu__dropdown-link" href="{{ sublink.href }}.html">
-                                        {{ sublink.title }}
-                                        <img src="{{ sublink.iconLink }}" alt="" width="{{ sublink.iconWidth }}" height="{{ sublink.iconHegiht }}">
-                                      </a>
-                                    {% else %}
-                                      <a class="menu__dropdown-list-link menu__dropdown-link" href="{{ sublink.href }}.html">{{ sublink.title }}</a>
-                                    {% endif %}
+                                    <a class="menu__dropdown-list-link menu__dropdown-link" href="{{ sublink.href }}.html">{{ sublink.title }}</a>
                                   </li>
                                 {% endfor %}
                               </ul>
                             </div>
                           {% endfor %}
                         </div>
-                        {% if link.themeClass == "menu__dropdown-main--theme2" %}
-                          <ul class="menu__cards">
-                            {% set MENU_CARDS_NUM = 4 %}
-                            {% for cardIndex in range(MENU_CARDS_NUM) %}
-                              <li class="menu__cards-item card">
-                                <div class="card__content">
-                                  <div class="card__image-wrapper">
-                                    <picture>
-                                      <source type="image/webp" srcset="@img/service-card-1.webp 1x">
-                                      <img class="card__image" src="@img/service-card-1.jpg" alt="" width="262" height="181">
-                                    </picture>
-                                  </div>
-                                  <p class="card__title">Обследование IT-инфраструктуры</p>
-                                  <a class="card__link" href="service-page.html"></a>
-                                </div>
-                              </li>
-                            {% endfor %}
-                          </ul>
-                        {% endif %}
                       </div>
                     </div>
                   </div>
@@ -157,46 +115,6 @@
           </div>
         </div>
       </div>
-      {# <ul class="menu__list">
-        {% for link in menu %}
-          {% if link.desktopHidden %}
-            <li class="menu__item menu__item--desktop-hidden">
-          {% else %}
-            <li class="menu__item">
-          {% endif %}
-            {% if link.subMenu %}
-              <a class="menu__link" href="{{ link.href}}.html">{{ link.title }}</a>
-              <div class="menu__sub">
-                <button class="menu__back-button" type="button">Назад</button>
-                <ul class="menu__list">
-                  {% for subLink in link.subMenu %}
-                    <li class="menu__item">
-                      {% if subLink.subMenu %}
-                        <a class="menu__link" href="{{ link.href}}.html">{{ subLink.title }}</a>
-                        <div class="menu__sub">
-                          <button class="menu__back-button" type="button">Назад</button>
-                          <ul class="menu__list">
-                            {% for subSubLink in subLink.subMenu %}
-                              <li class="menu__item">
-                                <a class="menu__link menu__link--end" href="{{ link.href}}.html">{{ subSubLink.title }}</a>
-                              </li>
-                            {% endfor %}
-                          </ul>
-                        </div>
-                      {% else %}
-                        <a class="menu__link menu__link--end" href="{{ link.href}}.html">{{ subLink.title }}</a>
-                      {% endif %}
-                    </li>
-                  {% endfor %}
-                </ul>
-              </div>
-
-            {% else %}
-              <a class="menu__link menu__link--end" href="{{ link.href}}.html">{{ link.title }}</a>
-            {% endif %}
-          </li>
-        {% endfor %}
-      </ul> #}
     </div>
     <div class="menu__contacts">
       <a class="menu__phone" href="tel:+74955404708">8 (495) 540-47-08</a>
