@@ -13,7 +13,8 @@ import babel from "gulp-babel";
 import uglify from "gulp-uglify";
 import cssSort from "gulp-csscomb";
 import newer from "gulp-newer";
-import squoosh from "gulp-libsquoosh";
+import sharp from "sharp";
+import through2 from "through2";
 import svgo from "gulp-svgmin";
 import svgstore from "gulp-svgstore";
 import data from "gulp-data";
@@ -205,7 +206,16 @@ const images = () => {
       )
     )
     .pipe(newer(path.build.images))
-    .pipe(squoosh())
+    .pipe(
+      through2.obj(function (file, enc, callback) {
+        return sharp(file.contents)
+          .toBuffer()
+          .then(function (bufer) {
+            file.contents = bufer;
+            return callback(null, file);
+          });
+      })
+    )
     .pipe(gulp.dest(path.build.images))
     .pipe(browserSync.stream());
 };
@@ -223,10 +233,21 @@ const imagesWebp = () => {
     )
     .pipe(newer(path.build.images))
     .pipe(
-      squoosh({
-        webp: {
-          quality: 90,
-        },
+      through2.obj(function (file, enc, callback) {
+        return sharp(file.contents)
+          .webp({
+            quality: 90,
+          })
+          .toBuffer()
+          .then(function (bufer) {
+            file.contents = bufer;
+            return callback(null, file);
+          });
+      })
+    )
+    .pipe(
+      rename({
+        extname: ".webp",
       })
     )
     .pipe(gulp.dest(path.build.images))
