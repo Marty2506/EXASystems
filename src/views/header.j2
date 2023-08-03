@@ -4,7 +4,7 @@
       <div class="menu__mobile-container container">
         <div class="menu__main-container">
           <a class="page-header__logo logo" href="./index.html" >
-            <img class="page-header__logo-image" src="@img/exa-header-logo.png" alt="Логотип EXASystems" width="159" height="27">
+            <img class="page-header__logo-image" src="@img/logos/exa-header-logo.svg" alt="Логотип EXASystems" width="167" height="24">
           </a>
           <ul class="menu__list">
             {% for link in mainMenu %}
@@ -60,7 +60,6 @@
                   </div>
                   <div class="menu__dropdown">
                     <div class="menu__dropdown-content">
-                      {# <a class="menu__dropdown-title menu__dropdown-link" href="{{ link.href }}.html">{{ link.title }}</a> #}
                       <div class="menu__dropdown-main">
                         <div class="menu__dropdown-main-lists-container">
                           {% for subMenu in link.subMenu %}
@@ -89,14 +88,6 @@
           </ul>
           <div class="page-header__buttons">
             <div class="page-header__contacts">
-              <a class="page-header__phone-button" href="tel:+74955404708">
-                <span>+7 495 540 47 08</span>
-                <div class="page-header__phone-icon-wrapper page-header__contact-icon-wrapper">
-                  <svg class="page-header__phone-icon" width="25" height="25" viewBox="0 0 25 25">
-                    <use xlink:href="img/sprite.svg#phone-icon"></use>
-                  </svg>
-                </div>
-              </a>
               <a class="page-header__mail-button" href="mailto:info@exasystems.ru">
                 <span>info@exasystems.ru</span>
                 <svg class="page-header__mail-icon" width="16" height="12" viewBox="0 0 16 12">
@@ -105,6 +96,14 @@
                 <div class="page-header__contact-icon-wrapper">
                   <svg class="page-header__mail-icon-mobile-only" width="31" height="24" viewBox="0 0 31 24">
                     <use xlink:href="img/sprite.svg#mail-icon-mobile-only"></use>
+                  </svg>
+                </div>
+              </a>
+              <a class="page-header__phone-button" href="tel:+74955404708">
+                <span>+7 495 540 47 08</span>
+                <div class="page-header__phone-icon-wrapper page-header__contact-icon-wrapper">
+                  <svg class="page-header__phone-icon" width="25" height="25" viewBox="0 0 25 25">
+                    <use xlink:href="img/sprite.svg#phone-icon"></use>
                   </svg>
                 </div>
               </a>
@@ -117,9 +116,9 @@
       </div>
     </div>
     <div class="menu__contacts">
-      <a class="menu__phone" href="tel:+74955404708">8 (495) 540-47-08</a>
-      <a class="menu__mail" href="mailto:mail@info@exasystems.ru">info@exasystems.ru</a>
-      <a class="menu__back-call-button button" href="#!">Обратный звонок</a>
+      <a class="menu__phone" href="tel:+74955404708">+7 495 540 47 08</a>
+      {# <a class="menu__mail" href="mailto:mail@info@exasystems.ru">info@exasystems.ru</a>
+      <a class="menu__back-call-button button" href="#!">Обратный звонок</a> #}
     </div>
   </div>
 </header>

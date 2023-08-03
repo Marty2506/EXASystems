@@ -119,26 +119,22 @@
   display: flex;
 
   color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 132%;
 
   @media (max-width: $max-tablet-width) {
     position: relative;
 
     padding: 13px 0;
 
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 26px;
-    font-family: $jost-font;
-    text-decoration: none;
+    font-size: 17px;
   }
   @media (min-width: $desktop-width) {
     padding: 5px 10px;
 
     font-size: 15px;
     font-weight: 600;
-    line-height: 134%;
-    text-decoration: none;
-    text-transform: uppercase;
 
     transition: color 0.3s ease;
 
@@ -224,9 +220,10 @@
   padding: 13px 0;
   padding-left: 30px;
 
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 17px;
+  line-height: 132%;
   color: inherit;
+  text-transform: uppercase;
 
   background-color: transparent;
   border: none;
@@ -252,6 +249,7 @@
   flex-direction: column;
   margin-top: auto;
   padding-top: 30px;
+  padding-bottom: 20px;
 
   font-family: $jost-font;
 }
@@ -259,37 +257,36 @@
 .menu__phone {
   display: block;
 
-  font-size: 31px;
-  line-height: 45px;
+  font-size: 26px;
   color: inherit;
   text-decoration: none;
 }
 
-.menu__mail {
-  display: block;
-  margin-bottom: 28px;
+// .menu__mail {
+//   display: block;
+//   margin-bottom: 28px;
 
-  font-size: 20px;
-  line-height: 24px;
-  color: inherit;
-  text-decoration: none;
-}
+//   font-size: 20px;
+//   line-height: 24px;
+//   color: inherit;
+//   text-decoration: none;
+// }
 
-.menu__back-call-button {
-  display: flex;
-  flex-grow: 1;
-  max-width: initial;
-  height: 65px;
-  margin-right: -18px;
-  margin-left: -18px;
+// .menu__back-call-button {
+//   display: flex;
+//   flex-grow: 1;
+//   max-width: initial;
+//   height: 65px;
+//   margin-right: -18px;
+//   margin-left: -18px;
 
-  font-weight: 500;
-  font-size: 19px;
-  line-height: 23px;
-  text-decoration: none;
+//   font-weight: 500;
+//   font-size: 19px;
+//   line-height: 23px;
+//   text-decoration: none;
 
-  clip-path: none;
-}
+//   clip-path: none;
+// }
 
 .menu--opened {
   @media (width < $desktop-width) {
@@ -304,7 +301,7 @@
     padding-bottom: 0;
     padding-left: 18px;
 
-    background: linear-gradient(180deg, #453fa9 0%, #675fc6 100%);
+    background-color: $primary-color;
 
     & .menu__list {
       display: flex;

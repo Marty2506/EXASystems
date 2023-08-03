@@ -17,6 +17,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  max-width: 43%;
 
   & img {
     display: block;
@@ -71,17 +72,23 @@
   }
 
   &:hover {
-    & span {
-      color: $button-color;
-    }
+    @media (pointer: fine) {
+      & span {
+        color: $button-color;
+      }
 
-    & .page-header__phone-icon-wrapper {
-      background-color: #ffffff;
-    }
+      & .page-header__phone-icon-wrapper {
+        background-color: #ffffff;
+      }
 
-    & .page-header__phone-icon {
-      fill: $aqua-color;
+      & .page-header__phone-icon {
+        fill: $aqua-color;
+      }
     }
+  }
+
+  @media (width >= $desktop-width) {
+    order: -1;
   }
 }
 
@@ -135,12 +142,14 @@
   }
 
   &:hover {
-    & span {
-      color: $button-color;
-    }
+    @media (pointer: fine) {
+      & span {
+        color: $button-color;
+      }
 
-    & .page-header__mail-icon {
-      fill: $button-color;
+      & .page-header__mail-icon {
+        fill: $button-color;
+      }
     }
   }
 }
