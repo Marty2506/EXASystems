@@ -191,7 +191,25 @@
       "subMenu" : [
         {
           "title": "IT-КОНСАЛТИНГ И УСЛУГИ",
-          "href": "it-consulting"
+          "href": "it-consulting",
+          "subMenu" : [
+            {
+              "title": "О Услуги технической и сервисной поддержки",
+              "href": "it-consulting"
+            },
+            {
+              "title": "Аутсорсинг серверной ИТ-инфраструктуры",
+              "href": "it-consulting"
+            },
+            {
+              "title": "Обследование ИТ-инфраструктуры и внутренних процессов",
+              "href": "it-consulting"
+            },
+            {
+              "title": "Разработка ИТ-стратегии компании",
+              "href": "it-consulting"
+            }
+          ]
         },
         {
           "title": "ИНФОРМАЦИОННАЯ БЕЗОПАСНОСТЬ",

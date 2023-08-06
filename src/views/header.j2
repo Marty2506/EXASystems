@@ -16,6 +16,7 @@
                       <use xlink:href="img/sprite.svg#dropdown-icon"></use>
                     </svg>
                   </a>
+                  {# Ссылки из меню для мобильного меню #}
                   <div class="menu__sub">
                     <button class="menu__back-button" type="button">Назад</button>
                     <ul class="menu__list">
@@ -58,23 +59,33 @@
                       {% endfor%}
                     </ul>
                   </div>
-                  <div class="menu__dropdown">
+                  {# Ссылки из меню для выпадайки на дэсктопе #}
+                  <div class="menu__dropdown menu__dropdown--lvl1">
                     <div class="menu__dropdown-content">
-                      <div class="menu__dropdown-main">
-                        <div class="menu__dropdown-main-lists-container">
-                          {% for subMenu in link.subMenu %}
-                            <div class="menu__dropdown-list-wrapper">
-                              <a class="menu__dropdown-link" href="{{ subMenu.href }}.html">{{ subMenu.title }}</a>
-                              <ul class="menu__dropdown-list">
-                                {% for sublink in subMenu.subMenu %}
-                                  <li class="menu__dropdown-list-item">
-                                    <a class="menu__dropdown-list-link menu__dropdown-link" href="{{ sublink.href }}.html">{{ sublink.title }}</a>
-                                  </li>
-                                {% endfor %}
-                              </ul>
+                      <div class="menu__dropdown-list">
+                        {% for linkLvl2 in link.subMenu %}
+                          {% if linkLvl2.subMenu %}
+                            <div class="menu__dropdown-list-wrapper menu__dropdown-list-wrapper--has-dropdown">
+                              <a class="menu__dropdown-link" href="{{ subMenu.href }}.html">{{ linkLvl2.title }}</a>
+
+                              <div class="menu__dropdown menu__dropdown--lvl2">
+                                <div class="menu__dropdown-content">
+                                  <ul class="menu__dropdown-list">
+                                    {% for linkLvl3 in linkLvl2.subMenu %}
+                                      <li class="menu__dropdown-list-item">
+                                        <a class="menu__dropdown-link" href="{{ sublink.href }}.html">{{ linkLvl3.title }}</a>
+                                      </li>
+                                    {% endfor %}
+                                  </ul>
+                                </div>
+                              </div>
                             </div>
-                          {% endfor %}
-                        </div>
+                          {% else %}
+                            <div class="menu__dropdown-list-wrapper">
+                              <a class="menu__dropdown-link" href="{{ subMenu.href }}.html">{{ linkLvl2.title }}</a>
+                            </div>
+                          {% endif %}
+                        {% endfor %}
                       </div>
                     </div>
                   </div>
