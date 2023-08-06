@@ -2,92 +2,162 @@
   "debug": false,
   "site_name": "EXASystems",
   "active_menu_link": "link--active",
-  "nav": [
-    {
-      "title": "Оборудование",
-      "href": "eq-catalog",
-      "subNav" : [
-        {
-          "title": "Серверы",
-          "href": "servers"
-        },
-        {
-          "title": "Комплектующие для серверов",
-          "href": "servers-accessories"
-        },
-        {
-          "title": "Сетевое оборудование",
-          "href": "network-hardware"
-        },
-        {
-          "title": "Системы хранения данных",
-          "href": "data-systems"
-        },
-        {
-          "title": "Оборудование для защиты питания",
-          "href": "power-defense-hardware"
-        },
-        {
-          "title": "Серверные шкафы и стойки",
-          "href": "server-closets"
-        },
-        {
-          "title": "Программное обеспечение",
-          "href": "software"
-        }
-      ]
-    },
-    {
-      "title": "Услуги и решения",
-      "href": "services-and-solutions",
-      "subNav" : [
-        {
-          "title": "Техническая поддержка и аутсорсинг",
-          "href": "tech-support"
-        },
-        {
-          "title": "Серверная ИТ-инфраструктура",
-          "href": "server-it"
-        },
-        {
-          "title": "Телекоммуникационные системы",
-          "href": "telecommunication-systems"
-        },
-        {
-          "title": "ИТ-консалтинг",
-          "href": "it-consulting"
-        },
-        {
-          "title": "Инженерные системы",
-          "href": "engineering-systems"
-        },
-        {
-          "title": "Безопасный регион",
-          "href": "safe-region"
-        }
-      ]
-    },
-    {
-      "title": "О нас",
-      "href": "about"
-    },
-    {
-      "title": "Блог",
-      "href": "blog"
-    },
-    {
-      "title": "Кейсы",
-      "href": "cases"
-    },
-    {
-      "title": "Вендоры",
-      "href": "vendors"
-    },
-    {
-      "title": "Контакты",
-      "href": "contacts"
-    }
-  ],
+  "nav": {
+    "top": [
+      {
+        "title": "О компании",
+        "href": "about"
+      },
+      {
+        "title": "Партнеры",
+        "href": "partners"
+      },
+      {
+        "title": "Проекты",
+        "href": "projects"
+      },
+      {
+        "title": "Контакты",
+        "href": "contacts"
+      }
+    ],
+    "bottom": [
+      {
+        "title": "IT-КОНСАЛТИНГ <br>И УСЛУГИ",
+        "href": "it-consulting",
+        "subNav" : [
+          {
+            "title": "Услуги технической и сервисной поддержки",
+            "href": "it-consulting-1"
+          },
+          {
+            "title": "Аутсорсинг серверной IT-инфраструктуры",
+            "href": "it-consulting-2"
+          },
+          {
+            "title": "Обследование IT-инфраструктуры и внутренних процессов",
+            "href": "it-consulting-3"
+          },
+          {
+            "title": "Разработка IT-стратегии компании",
+            "href": "it-consulting-4"
+          }
+        ]
+      },
+      {
+        "title": "ИНФОРМАЦИОННАЯ БЕЗОПАСНОСТЬ",
+        "href": "information-security",
+        "subNav" : [
+          {
+            "title": "Инфраструктура открытых ключей",
+            "href": "information-security-1"
+          },
+          {
+            "title": "Системы многофакторной аутентификации",
+            "href": "information-security-2"
+          },
+          {
+            "title": "Системы антивирусной защиты",
+            "href": "information-security-3"
+          },
+          {
+            "title": "Защита почтовых сервисов от спама и вредоносных программ",
+            "href": "information-security-4"
+          },
+          {
+            "title": "Межсетевые экраны",
+            "href": "information-security-5"
+          },
+          {
+            "title": "Социальная инженерия",
+            "href": "information-security-6"
+          }
+        ]
+      },
+      {
+        "title": "СЕРВЕРНАЯ И СЕТЕВАЯ IT-ИНФРАСТРУКТУРА",
+        "href": "server-and-network-it-infrastructure",
+        "subNav" : [
+          {
+            "title": "Серверное оборудование",
+            "href": "server-and-network-it-infrastructure-1"
+          },
+          {
+            "title": "Системы хранения данных",
+            "href": "server-and-network-it-infrastructure-2"
+          },
+          {
+            "title": "Сетевое оборудования",
+            "href": "server-and-network-it-infrastructure-3"
+          },
+          {
+            "title": "Системы бесперебойного питания",
+            "href": "server-and-network-it-infrastructure-4"
+          },
+          {
+            "title": "Серверные шкафы и стойки",
+            "href": "server-and-network-it-infrastructure-5"
+          },
+          {
+            "title": "Системы резервного копирования данных",
+            "href": "server-and-network-it-infrastructure-6"
+          },
+          {
+            "title": "Системы виртуализации серверов",
+            "href": "server-and-network-it-infrastructure-7"
+          },
+          {
+            "title": "Внедрение инфраструктурных программных решений",
+            "href": "server-and-network-it-infrastructure-8"
+          }
+        ]
+      },
+      {
+        "title": "ТЕЛЕКОММУНИКАЦИОННЫЕ СИСТЕМЫ",
+        "href": "telecommunication-systems",
+        "subNav" : [
+          {
+            "title": "Проектирование и монтаж беспроводных ЛВС",
+            "href": "telecommunication-systems-1"
+          },
+          {
+            "title": "Внедрение систем объединенных коммуникаций",
+            "href": "telecommunication-systems-2"
+          },
+          {
+            "title": "Построение корпоративных VPN-сетей",
+            "href": "telecommunication-systems-3"
+          }
+        ]
+      },
+      {
+        "title": "ИНЖЕНЕРНЫЕ <br>СИСТЕМЫ",
+        "href": "engineering-systems",
+        "subNav" : [
+          {
+            "title": "Монтаж СКС и ЛВС",
+            "href": "engineering-systems-1"
+          },
+          {
+            "title": "Монтаж волоконно-оптических линий связи",
+            "href": "engineering-systems-2"
+          },
+          {
+            "title": "Монтаж систем видеонаблюдения",
+            "href": "engineering-systems-3"
+          }
+        ]
+      },
+      {
+        "title": "БЕЗОПАСНЫЙ РЕГИОН",
+        "href": "security-region"
+      },
+      {
+        "title": "ИМПОРТОЗАМЕЩЕНИЕ",
+        "href": "import-replacement"
+      }
+    ]
+  },
   "mainMenu": [
     {
       "title": "О компании",

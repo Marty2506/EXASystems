@@ -1,0 +1,46 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 5px;
+}
+
+.social__item {
+  display: flex;
+  height: min-content;
+
+  text-decoration: none;
+}
+
+.social__item-icon {
+  @media (width < $desktop-width) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.social__item-icon * {
+  transition: fill 0.3s ease;
+}
+
+.social__item-icon-sec {
+  fill: #ffffff;
+}
+
+.social__item-icon-main {
+  fill: $primary-color;
+}
+
+.social__item {
+  &:hover {
+    @media (pointer: fine) {
+      & .social__item-icon-sec {
+        fill: $primary-color;
+      }
+
+      & .social__item-icon-main {
+        fill: #ffffff;
+      }
+    }
+  }
+}

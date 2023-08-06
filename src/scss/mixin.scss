@@ -82,11 +82,11 @@
       background-color: $bg2-color;
 
       clip-path: polygon(
-        0 0,
-        100% 0,
-        100% calc($height - $right-bottom-height),
-        $center $height,
-        0 calc($height - $left-bottom-height)
+      0 0,
+      100% 0,
+      100% calc($height - $right-bottom-height),
+      $center $height,
+      0 calc($height - $left-bottom-height)
       );
     }
   }
