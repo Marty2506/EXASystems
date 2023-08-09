@@ -1,3 +1,14 @@
 .index-about-us {
   margin-top: 10px;
 }
+
+.index-about-us__container {
+  position: relative;
+  max-width: initial;
+  padding-left: 0;
+  padding-right: 0;
+  @media (width >= $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

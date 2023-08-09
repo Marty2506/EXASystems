@@ -1,7 +1,7 @@
 {% set INDEX_SWIPER_SLIDES_NUM = 3 %}
 <section class="index-about-us">
   <h2 class="visually-hidden">Чем мы занимаемся</h2>
-  <div class="container">
+  <div class="container index-about-us__container">
     <div class="index-about-us__content">
       <div class="index-swiper swiper" id="index-swiper">
         <div class="swiper-wrapper">
@@ -15,8 +15,12 @@
                 </div>
                 <div class="index-swiper__image-wrapper">
                   <picture>
-                    <source type="image/webp" srcset="@img/index-swiper-slide-1.webp 1x">
-                    <img class="index-swiper__slide-image" src="@img/index-swiper-slide-1.jpg" alt="" width="630" height="513" loading="lazy">
+                    <source type="image/webp" media="(min-width: {{desktopWidth}})" srcset="@img/index-swiper-slide-1-desktop.webp 1x">
+                    <source type="image/webp" media="(min-width: {{tabletWidth}})" srcset="@img/index-swiper-slide-1-tablet.webp 1x">
+                    <source type="image/webp" srcset="@img/index-swiper-slide-1-mobile.webp 1x">
+                    <source media="(min-width: {{desktopWidth}})" srcset="@img/index-swiper-slide-1-desktop.jpg 1x">
+                    <source media="(min-width: {{tabletWidth}})" srcset="@img/index-swiper-slide-1-tablet.jpg 1x">
+                    <img class="index-swiper__slide-image" src="@img/index-swiper-slide-1-mobile.jpg" alt="" loading="lazy">
                   </picture>
                 </div>
               </div>

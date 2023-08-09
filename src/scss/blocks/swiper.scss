@@ -105,6 +105,12 @@
   border: solid 2px $blue-color;
 }
 
+.swiper-pagination-bullet {
+  @media (width >= $desktop-width) {
+    background-color: #d9d9d9;
+    opacity: 1;
+  }
+}
 .swiper-pagination-bullet-active {
   background-color: $blue-color;
 }
