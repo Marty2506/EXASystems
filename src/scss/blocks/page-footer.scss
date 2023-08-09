@@ -21,6 +21,14 @@
   }
 }
 
+.page-footer__logo,
+.page-footer__top-nav-list-item {
+  @media (width >= $tablet-width) {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .page-footer__top-nav-list {
   display: flex;
   flex-direction: column;
@@ -31,12 +39,12 @@
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 550px;
-    margin-top: 0;
 
     gap: 10px;
   }
   @media (width >= $desktop-width) {
     margin-left: 50px;
+    margin-top: 0;
   }
 }
 
