@@ -5,13 +5,13 @@
 
   font-weight: 600;
   font-size: 24px;
-  line-height: 110%;
+  line-height: 126%;
   font-family: $jost-font;
   color: $black-color;
 
   @media (min-width: $desktop-width) {
     margin-bottom: 25px;
 
-    font-size: 34px;
+    font-size: 30px;
   }
 }

@@ -1,0 +1,21 @@
+.article {
+  padding-top: 30px;
+  padding-bottom: 20px;
+
+  @media (width >= $desktop-width) {
+    padding-top: 90px;
+  }
+}
+
+.article:last-child {
+  padding-bottom: 70px;
+}
+.article__content {
+}
+.article__title {
+  margin-bottom: 35px;
+
+  @media (width >= $desktop-width) {
+    margin-bottom: 40px;
+  }
+}

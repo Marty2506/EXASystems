@@ -1,0 +1,97 @@
+{% set SOLUTIONS_CARDS = [
+  {
+    "title": "IT-КОНСАЛТИНГ <br>И УСЛУГИ",
+    "list": [
+      "Услуги технической и сервисной поддержки",
+      "Аутсорсинг серверной IT-инфраструктуры",
+      "Обследование IT-инфраструктуры и внутренних процессов",
+      "Разработка IT-стратегии компании"
+    ]
+  },
+  {
+    "title": "ИНФОРМАЦИОННАЯ БЕЗОПАСНОСТЬ",
+    "list": [
+      "Инфраструктура открытых ключей",
+      "Системы многофакторной аутентификации",
+      "Системы антивирусной защиты",
+      "Защита почтовых сервисов от спама и вредоносных программ",
+      "Межсетевые экраны",
+      "Социальная инженерия"
+    ]
+  },
+  {
+    "title": "СЕРВЕРНАЯ И СЕТЕВАЯ IT-ИНФРАСТРУКТУРА",
+    "list": [
+      "Серверное оборудование",
+      "Системы хранения данных",
+      "Сетевое оборудования",
+      "Системы бесперебойного питания",
+      "Серверные шкафы и стойки",
+      "Системы резервного копирования данных",
+      "Системы виртуализации серверов",
+      "Внедрение инфраструктурных программных решений"
+    ]
+  },
+  {
+    "title": "ТЕЛЕКОММУНИКАЦИОННЫЕ СИСТЕМЫ",
+    "list": [
+      "Проектирование и монтаж беспроводных систем",
+      "Внедрение сетей объединенных коммуникаций",
+      "Построение корпоративных VPN-сетей"
+    ]
+  },
+  {
+    "title": "ИНЖЕНЕРНЫЕ <br>СИСТЕМЫ",
+    "list": [
+      "Монтаж СКС и ЛВС",
+      "Монтаж волоконно-оптических линий связи",
+      "Монтаж систем видеонаблюдения"
+    ]
+  },
+  {
+    "title": "БЕЗОПАСНЫЙ РЕГИОН"
+  },
+  {
+    "title": "ИМПОРТОЗАМЕЩЕНИЕ"
+  }
+]%}
+
+<div class="solutions-list">
+  {% for index in range(SOLUTIONS_CARDS.length - 2) %}
+    <div class="solutions-list__item">
+      <div class="solutions-list__item-content">
+        <div class="solutions-list__item-image-wrapper">
+          <picture>
+            <source type="image/webp" srcset="@img/solutions-list/{{ index + 1 }}.webp 1x">
+            <img class="solutions-list__item-image" src="@img/solutions-list/{{ index + 1 }}.jpg" alt="" width="347" height="225" loading="lazy">
+          </picture>
+          <a class="solutions-list__item-image-link" href="#!"></a>
+        </div>
+        <a href="{{ SOLUTIONS_CARDS[index].link | safe}}" class="solutions-list__item-title">{{ SOLUTIONS_CARDS[index].title | safe }}</a>
+        <ul class="solutions-list__list">
+          {% for listIndex in range(SOLUTIONS_CARDS[index].list.length) %}
+            <li class="solutions-list__list-item">
+              <a href="#!" class="solutions-list__list-item-link">{{ SOLUTIONS_CARDS[index].list[listIndex] | safe}}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  {% endfor %}
+  <div class="solutions-list__item solutions-list__item--double">
+    {% for index in range(SOLUTIONS_CARDS.length) %}
+      {% if not SOLUTIONS_CARDS[index].list %}
+        <div class="solutions-list__item-content">
+          <div class="solutions-list__item-image-wrapper solutions-list__item-image-wrapper--mini">
+            <picture>
+              <source type="image/webp" srcset="@img/solutions-list/{{ index + 1 }}.webp 1x">
+              <img class="solutions-list__item-image" src="@img/solutions-list/{{ index + 1 }}.jpg" alt="" width="347" height="160" loading="lazy">
+            </picture>
+            <a class="solutions-list__item-image-link" href="#!"></a>
+          </div>
+          <a href="{{ SOLUTIONS_CARDS[index].link | safe}}" class="solutions-list__item-title">{{ SOLUTIONS_CARDS[index].title | safe }}</a>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
