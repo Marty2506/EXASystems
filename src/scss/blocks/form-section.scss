@@ -1,71 +1,31 @@
 .form-section {
-  padding: 40px 0;
-
-  background: linear-gradient(180deg, #453fa9 0%, #675fc6 100%);
-
-  @media (min-width: $desktop-width) {
-    padding: 70px 0;
+  @media (width < $desktop-width) {
+    padding-bottom: 15px;
   }
 }
 
 .form-section__content {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    justify-content: space-between;
 
-    gap: 50px;
+    gap: 35px;
   }
 }
-
-.form-section__left {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-section__title {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 35px;
-  font-family: $jost-font;
-  color: $white-color;
-
-  @media (min-width: $tablet-width) {
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 115%;
-    font-family: "Proxima Nova", Arial, sans-serif;
-  }
-}
-
-.form-section__description {
-  margin: 0;
-  margin-bottom: 10px;
-  padding: 0;
-
-  color: $white-color;
-
-  @media (min-width: $desktop-width) {
-    max-width: 415px;
-  }
-}
-
 
 .form-section__form-wrapper {
+  padding: 40px 0 15px;
   flex-grow: 1;
   flex-shrink: 0;
   align-self: flex-start;
   width: 100%;
 
-  @media (min-width: $desktop-width) {
-    width: 586px;
-    max-width: 586px;
-    padding: 32px 53px 43px 61px;
-
-    background-color: $white-color;
-    box-shadow: 5px 9px 21px rgb(48 41 131 / 30%);
+  @media (width >= $desktop-width) {
+    padding: 65px 0 55px;
+    max-width: 440px;
   }
 }
 
@@ -92,4 +52,17 @@
   @media (min-width: $desktop-width) {
     color: $black-color;
   }
+}
+
+.form-section__image-wrapper {
+  position: relative;
+  background-color: $aqua-color;
+  flex-grow: 1;
+
+  @media (width < $desktop-width) {
+    @include image-wrapper(65%);
+  }
+}
+.form-section__image {
+  @include image-in-wrapper;
 }
