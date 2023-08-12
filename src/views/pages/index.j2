@@ -17,6 +17,9 @@
         </div>
       </div>
     </article>
+
+    {% set sectionCardSwiperCnt = 1 %}
+    {% include "./blocks/swipers/vendors-swiper.j2" %}
 {#
     {% include "./blocks/cases-swiper.j2" %} #}
 
@@ -132,9 +135,10 @@
 
 {% block js %}
   <script src="./js/swiper-bundle.min.js" defer></script>
-  <script src="./js/swipers.min.js" defer></script>
+  {# <script src="./js/swipers.min.js" defer></script> #}
+  <script src="./js/card-swipers.min.js" defer></script>
   <script src="./js/index-swiper.min.js" defer></script>
   <script src="./js/modal-image.min.js" defer></script>
-  <script src="./js/cases.min.js" defer></script>
+  {# <script src="./js/cases.min.js" defer></script> #}
   <script src="./js/main.min.js" defer></script>
 {% endblock %}

@@ -1,0 +1,85 @@
+.card-swiper {
+}
+
+.card-swiper-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-swiper__slide {
+  @media (width < $tablet-width) {
+    min-width: 251px;
+  }
+}
+
+.card-swiper__button-icon {
+  transition: fill 0.3s ease;
+
+  fill: #fff;
+}
+
+.card-swiper__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+
+  background-color: $blue-color;
+  cursor: pointer;
+  border: none;
+
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    @media (pointer: fine) {
+      background-color: $button-color;
+    }
+  }
+
+  &:focus-visible {
+    background-color: $button-color;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.card-swiper__button--prev {
+  transform: rotate(180deg);
+}
+
+.card-swiper__button--lock {
+  visibility: hidden;
+}
+
+.card-swiper__button--disabled {
+  background-color: #c9c6c6;
+
+  pointer-events: none;
+}
+
+.card-swiper__buttons {
+  display: flex;
+  flex-shrink: 0;
+
+  gap: 12px;
+}
+
+.card-swiper__buttons--desktop-ears {
+  @media (width >= $desktop-width) {
+    position: absolute;
+    top: 50%;
+    right: -80px;
+    left: -80px;
+
+    display: flex;
+    justify-content: space-between;
+
+    transform: translateY(-50%);
+  }
+}

@@ -1,0 +1,106 @@
+{% set VENDORS = [
+  {
+    "name": "Aladdin",
+    "logo": {
+      "width": 130,
+      "height": 100,
+      "src": "@img/vendors/aladdin.webp"
+    }
+  },
+  {
+    "name": "CHECK POINT",
+    "logo": {
+      "width": 198,
+      "height": 95,
+      "src": "@img/vendors/checkpoint.webp"
+    }
+  },
+  {
+    "name": "RADIX",
+    "logo": {
+      "width": 202,
+      "height": 59,
+      "src": "@img/vendors/radix.webp"
+    }
+  },
+  {
+    "name": "КиберПротект",
+    "logo": {
+      "width": 199,
+      "height": 50,
+      "src": "@img/vendors/cyberprotect.webp"
+    }
+  },
+  {
+    "name": "Aladdin",
+    "logo": {
+      "width": 130,
+      "height": 100,
+      "src": "@img/vendors/aladdin.webp"
+    }
+  },
+  {
+    "name": "CHECK POINT",
+    "logo": {
+      "width": 198,
+      "height": 95,
+      "src": "@img/vendors/checkpoint.webp"
+    }
+  },
+  {
+    "name": "RADIX",
+    "logo": {
+      "width": 202,
+      "height": 59,
+      "src": "@img/vendors/radix.webp"
+    }
+  },
+  {
+    "name": "КиберПротект",
+    "logo": {
+      "width": 199,
+      "height": 50,
+      "src": "@img/vendors/cyberprotect.webp"
+    }
+  }
+]%}
+<section class="vendors section article">
+  <div class="container">
+    <div class="article__content">
+      <div class="vendors__header">
+        <h3 class="article__title title">Наши партнеры</h3>
+        <a href="./vendors.html" class="vendors__all-link">Все партнеры</a>
+      </div>
+
+      <div class="vendors__swiper-container card-swiper-container">
+        <div class="vendors__swiper section__card-swiper card-swiper swiper">
+          <div class="swiper-wrapper">
+            {% for vendorItem in VENDORS %}
+              <div class="card-swiper__slide swiper-slide">
+                <a class="vendors__item-wrapper" href="./vendor-page.html">
+                  <p class="visually-hidden">{{ vendorItem.name | safe }}</p>
+                  <img class="vendors__company-logo" width="{{ vendorItem.logo.width | safe }}" height="{{ vendorItem.logo.height | safe }}" src="{{ vendorItem.logo.src | safe }}" alt="Логотип компании {{ vendorItem.name | safe }}.">
+                </a>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="vendors__swiper-buttons card-swiper__buttons card-swiper__buttons--desktop-ears">
+          <button class="card-swiper__button card-swiper__button--prev card-swiper__button-{{sectionCardSwiperCnt}}-prev" type="button">
+            <svg class="card-swiper__button-icon" width="12" height="12" viewBox="0 0 12 12">
+              <use xlink:href="img/sprite.svg#card-swiper-arrow"></use>
+            </svg>
+            <span class="visually-hidden">Перелестнуть назад</span>
+          </button>
+          <button class="card-swiper__button card-swiper__button--next card-swiper__button-{{sectionCardSwiperCnt}}-next" type="button">
+            <svg class="card-swiper__button-icon" width="12" height="12" viewBox="0 0 12 12">
+              <use xlink:href="img/sprite.svg#card-swiper-arrow"></use>
+            </svg>
+            <span class="visually-hidden">Перелестнуть вперед</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% set sectionCardSwiperCnt = sectionCardSwiperCnt + 1 %}
