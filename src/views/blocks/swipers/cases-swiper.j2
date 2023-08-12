@@ -1,0 +1,106 @@
+{% set CASES = [
+  {
+    "name": "Компания 1",
+    "logo": {
+      "width": 64,
+      "height": 66,
+      "src": "@img/cases/logos/rsh.webp"
+    },
+    "description": "В рамках комплексного подхода к ведению проекта, команда EXASystems провела масштабную работу по поставке серверное оборудование из реестра Минпромторга и внедрению системы резервного копирования, что обеспечило надежное хранение и быстрое восстановление данных Заказчика"
+  },
+  {
+    "name": "C. Spaarmann",
+    "logo": {
+      "width": 170,
+      "height": 60,
+      "src": "@img/cases/logos/spaarmann.webp"
+    },
+    "description": "Перед компанией Spaarmann встал вопрос о передаче обязанностей по поддержке, обслуживанию и модернизации ИТ-инфраструктуры внешнему подрядчику. ",
+    "description2": "В результате проделанной работы Заказчик получил современную, безопасную ИТ-инфраструктуру, которая позволяет выполнять задачи своевременно за прогнозируемое время."
+  },
+  {
+    "name": "Компания 3",
+    "logo": {
+      "width": 64,
+      "height": 66,
+      "src": "@img/cases/logos/rsh.webp"
+    },
+    "description": "Разработали и согласовали внутренний нормативный документ «Положение о резервном копировании», включающий в себя реестр всех объектов РК и детальное описание политики РК.Поставили и наладили серверное оборудование. Выполнили внедрение системы резервного копирования"
+  },
+  {
+    "name": "Компания 1",
+    "logo": {
+      "width": 64,
+      "height": 66,
+      "src": "@img/cases/logos/rsh.webp"
+    },
+    "description": "В рамках комплексного подхода к ведению проекта, команда EXASystems провела масштабную работу по поставке серверное оборудование из реестра Минпромторга и внедрению системы резервного копирования, что обеспечило надежное хранение и быстрое восстановление данных Заказчика"
+  },
+  {
+    "name": "C. Spaarmann",
+    "logo": {
+      "width": 170,
+      "height": 60,
+      "src": "@img/cases/logos/spaarmann.webp"
+    },
+    "description": "Перед компанией Spaarmann встал вопрос о передаче обязанностей по поддержке, обслуживанию и модернизации ИТ-инфраструктуры внешнему подрядчику. В результате проделанной работы Заказчик получил современную, безопасную ИТ-инфраструктуру, которая позволяет выполнять задачи своевременно за прогнозируемое время."
+  },
+  {
+    "name": "Компания 3",
+    "logo": {
+      "width": 64,
+      "height": 66,
+      "src": "@img/cases/logos/rsh.webp"
+    },
+    "description": "Разработали и согласовали внутренний нормативный документ «Положение о резервном копировании», включающий в себя реестр всех объектов РК и детальное описание политики РК.Поставили и наладили серверное оборудование. Выполнили внедрение системы резервного копирования"
+  }
+]%}
+<section class="trusted section">
+  <div class="container">
+    <div class="section__content">
+      <h2 class="title">Нам доверяют</h2>
+    </div>
+
+    <div class="card-swiper-container">
+      <div class="cases-swiper card-swiper swiper" id="cases-swiper">
+        <div class="swiper-wrapper">
+          {% for caseItem in CASES %}
+            <div class="cases-swiper__slide card-swiper__slide swiper-slide">
+              <div class="case-card">
+                <div class="case-card__content">
+                  <div class="case-card__main">
+                    <div class="case-card__logo-wrapper">
+                      <img class="case-card__logo" width="{{ caseItem.logo.width | safe }}" height="{{ caseItem.logo.height | safe }}" src="{{ caseItem.logo.src | safe }}" alt="Логотип компании {{ caseItem.name | safe }}.">
+                    </div>
+                    <div class="case-card__description">
+                      <p class="case-card__par">{{ caseItem.description | safe }}</p>
+                      {% if caseItem.description2 %}
+                        <p class="case-card__par">{{ caseItem.description2 | safe }}</p>
+                      {% endif %}
+                    </div>
+                    <a href="#!" class="case-card__more-link">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="cases-swiper__buttons card-swiper__buttons card-swiper__buttons--desktop-ears">
+        <button class="card-swiper__button card-swiper__button--prev card-swiper__button-{{cardSwiperCnt}}-prev" type="button">
+          <svg class="card-swiper__button-icon" width="12" height="12" viewBox="0 0 12 12">
+            <use xlink:href="img/sprite.svg#card-swiper-arrow"></use>
+          </svg>
+          <span class="visually-hidden">Перелестнуть назад</span>
+        </button>
+        <button class="card-swiper__button card-swiper__button--next card-swiper__button-{{cardSwiperCnt}}-next" type="button">
+          <svg class="card-swiper__button-icon" width="12" height="12" viewBox="0 0 12 12">
+            <use xlink:href="img/sprite.svg#card-swiper-arrow"></use>
+          </svg>
+          <span class="visually-hidden">Перелестнуть вперед</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

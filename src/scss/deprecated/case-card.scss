@@ -1,0 +1,133 @@
+.case-card {
+  padding: 16px;
+
+  background-color: $white-color;
+}
+
+.case-card__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 17px;
+
+  gap: 17px;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}
+
+.case-card__dates {
+  display: flex;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
+}
+
+.case-card__date {
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: calc(19 / 16) * 100%;
+  color: $grey-color;
+
+  &:first-of-type {
+    &::after {
+      content: " - ";
+
+      margin-right: 5px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
+}
+
+
+.case-card__title-link {
+  display: inline-flex;
+  margin-bottom: 20px;
+
+  color: #000000;
+  text-decoration: none;
+
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $blue-color;
+  }
+}
+
+.case-card__title {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  font-family: "Proxima Nova", Arial, sans-serif;
+
+  @media (min-width: $desktop-width) {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 110%;
+    font-family: $jost-font;
+  }
+}
+
+.case-card__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+
+  list-style-type: none;
+
+  gap: 10px;
+}
+
+.case-card__item {
+  padding: 8px 10px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  color: $grey-color;
+  text-transform: uppercase;
+
+  background-color: $bg2-color;
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+  }
+}
+
+.case-card__open-case-button {
+  display: inline-block;
+  padding: 8px 10px;
+
+  background-color: $bg2-color;
+
+  transition: all 0.3s ease;
+
+  fill: $blue-color;
+
+  &:hover {
+    background-color: $blue-color;
+
+    fill: $bg2-color;
+  }
+}
+
+.case-card--mini {
+  & .case-card__header {
+    flex-direction: column;
+  }
+}

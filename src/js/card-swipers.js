@@ -27,5 +27,22 @@ cardSwipersItems.forEach((cardSwiperItem, index) => {
       },
     },
   };
+
+  if (cardSwiperItem.id === "cases-swiper") {
+    swiperOptions.breakpoints = {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 45,
+      },
+      1181: {
+        slidesPerView: 3,
+        spaceBetween: 34,
+      },
+    };
+  }
   const cardSwiper = new Swiper(cardSwiperItem, swiperOptions);
 });

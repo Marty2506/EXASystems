@@ -128,3 +128,12 @@
     }
   }
 }
+
+@mixin default-section-pads {
+  padding-top: 30px;
+  padding-bottom: 20px;
+
+  @media (width >= $desktop-width) {
+    padding-top: 90px;
+  }
+}

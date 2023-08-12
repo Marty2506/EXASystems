@@ -1,4 +1,11 @@
 .section {
+  padding-top: 30px;
+  padding-bottom: 20px;
+
+  @media (width >= $desktop-width) {
+    padding-top: 90px;
+  }
+
   &--with-paddings {
     padding: 30px 0;
 
@@ -37,6 +44,10 @@
       }
     }
   }
+}
+
+.section:last-child {
+  padding-bottom: 70px;
 }
 
 .section__content {

@@ -20,7 +20,9 @@
 
     {% set cardSwiperCnt = 1 %}
     {% include "./blocks/swipers/vendors-swiper.j2" %}
+    {% set cardSwiperCnt = cardSwiperCnt + 1 %}
     {% include "./blocks/facts.j2" %}
+    {% include "./blocks/swipers/cases-swiper.j2" %}
 {#
     {% include "./blocks/cases-swiper.j2" %} #}
 
