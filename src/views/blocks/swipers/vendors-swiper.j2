@@ -86,13 +86,13 @@
           </div>
         </div>
         <div class="vendors__swiper-buttons card-swiper__buttons card-swiper__buttons--desktop-ears">
-          <button class="card-swiper__button card-swiper__button--prev card-swiper__button-{{sectionCardSwiperCnt}}-prev" type="button">
+          <button class="card-swiper__button card-swiper__button--prev card-swiper__button-{{cardSwiperCnt}}-prev" type="button">
             <svg class="card-swiper__button-icon" width="12" height="12" viewBox="0 0 12 12">
               <use xlink:href="img/sprite.svg#card-swiper-arrow"></use>
             </svg>
             <span class="visually-hidden">Перелестнуть назад</span>
           </button>
-          <button class="card-swiper__button card-swiper__button--next card-swiper__button-{{sectionCardSwiperCnt}}-next" type="button">
+          <button class="card-swiper__button card-swiper__button--next card-swiper__button-{{cardSwiperCnt}}-next" type="button">
             <svg class="card-swiper__button-icon" width="12" height="12" viewBox="0 0 12 12">
               <use xlink:href="img/sprite.svg#card-swiper-arrow"></use>
             </svg>
@@ -103,4 +103,4 @@
     </div>
   </div>
 </section>
-{% set sectionCardSwiperCnt = sectionCardSwiperCnt + 1 %}
+{% set cardSwiperCnt = cardSwiperCnt + 1 %}
