@@ -1,0 +1,41 @@
+{% extends "layout.j2" %}
+
+{% set page = "solutions-and-services" %}
+
+{% block content %}
+  <main class="page-main">
+    <div class="container">
+      <div class="breadcumbs">
+        <ul class="breadcumbs__list">
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="./index.html">Главная</a>
+          </li>
+          <li class="breadcumbs__item">
+            <span class="breadcumbs__link breadcumbs__link--current">Решения и услуги</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="section section--first-on-page">
+      <div class="container">
+        <div class="section__content">
+          <h1 class="page__title">Решения и услуги</h1>
+          {% include "./blocks/solutions-list.j2" %}
+        </div>
+      </div>
+    </section>
+
+    {% set cardSwiperCnt = 1 %}
+    {% include "./blocks/swipers/vendors-swiper.j2" %}
+    {% set cardSwiperCnt = cardSwiperCnt + 1 %}
+    {% include "./blocks/swipers/cases-swiper.j2" %}
+
+  </main>
+{% endblock content %}
+
+{% block js %}
+  <script src="./js/swiper-bundle.min.js" defer></script>
+  <script src="./js/card-swipers.min.js" defer></script>
+  <script src="./js/main.min.js"></script>
+{% endblock %}

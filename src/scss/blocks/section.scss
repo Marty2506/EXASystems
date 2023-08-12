@@ -18,6 +18,18 @@
     background-color: $bg2-color;
   }
 
+  &--first-on-page {
+    @media (width >= $desktop-width) {
+      padding-top: 50px;
+    }
+  }
+
+  &--last-on-page {
+    @media (width >= $desktop-width) {
+      padding-top: 50px;
+    }
+  }
+
   &--clipped {
     position: relative;
 
@@ -47,7 +59,7 @@
 }
 
 .section:last-child {
-  // margin-bottom: 70px;
+  margin-bottom: 70px;
 }
 
 .section__content {
