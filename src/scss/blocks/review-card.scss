@@ -64,6 +64,8 @@
   font-size: 16px;
   line-height: 19px;
   color: $black-color;
+
+  @include vertical-trimmed-text(10);
 }
 
 .reviews-swiper__slide {

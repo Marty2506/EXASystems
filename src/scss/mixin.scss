@@ -160,3 +160,11 @@
     padding-top: 90px;
   }
 }
+
+@mixin vertical-trimmed-text($rowNum) {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: $rowNum;
+}
