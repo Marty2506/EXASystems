@@ -1,0 +1,115 @@
+{% extends "layout.j2" %}
+
+{% set page = "projects" %}
+
+{% block content %}
+  <main class="page-main">
+    <div class="container">
+      <div class="breadcumbs">
+        <ul class="breadcumbs__list">
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="./index.html">Главная</a>
+          </li>
+          <li class="breadcumbs__item">
+            <span class="breadcumbs__link breadcumbs__link--current">Ключевые проекты</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="page__header">
+      <div class="container">
+        <h1 class="page__title">Ключевые проекты</h1>
+      </div>
+    </div>
+
+    <section class="projects section">
+      <div class="container">
+        <div class="projects__content section__content">
+          <form class="projects__form form" action="https://echo.htmlacademy.ru" method="get" id="projects-form">
+            <div class="projects__selects-wrapper">
+              <label class="projects__form-label form__label">
+                <span class="projects__form-label-text form__label-text">Решения</span>
+                <select class="projects__form-select form__select" id="projects-form-solutions" name="projects-form-solutions" data-form-select-one>
+                  <option value="Все" label="Все">Все</option>
+                  <option value="ИТ-консалтинг и услуги" label="ИТ-консалтинг и услуги">ИТ-консалтинг и услуги</option>
+                  <option value="Информационная безопасность" label="Информационная безопасность">Информационная безопасность</option>
+                  <option value="Системы многофакторной аутентификации" label="Системы многофакторной аутентификации">Системы многофакторной аутентификации</option>
+                  <option value="Межсетевые экраны" label="Межсетевые экраны">Межсетевые экраны</option>
+                  <option value="Серверное оборудование" label="Серверное оборудование">Серверное оборудование</option>
+                  <option value="Сетевое оборудование" label="Сетевое оборудование">Сетевое оборудование</option>
+                  <option value="Системы резервного копирования данных" label="Системы резервного копирования данных">Системы резервного копирования данных</option>
+                  <option value="Телекоммуникационные системы" label="Телекоммуникационные системы">Телекоммуникационные системы</option>
+                  <option value="Инженерные системы" label="Инженерные системы">Инженерные системы</option>
+                  <option value="Безопасный регион" label="Безопасный регион">Безопасный регион</option>
+                  <option value="Импортозамещение" label="Импортозамещение">Импортозамещение</option>
+                </select>
+              </label>
+              <label class="projects__form-label form__label">
+                <span class="projects__form-label-text form__label-text">Отрасль</span>
+                <select class="projects__form-select form__select" id="projects-form-industry" name="projects-form-industry" data-form-select-one>
+                  <option value="Все" label="Все">Все</option>
+                  <option value="Гостинично-ресторанный бизнес" label="Гостинично-ресторанный бизнес">Гостинично-ресторанный бизнес</option>
+                  <option value="Государственный сектор" label="Государственный сектор">Государственный сектор</option>
+                  <option value="Добыча и переработка" label="Добыча и переработка">Добыча и переработка</option>
+                  <option value="Информационные технологии" label="Информационные технологии">Информационные технологии</option>
+                  <option value="Логистика и транспорт" label="Логистика и транспорт">Логистика и транспорт</option>
+                  <option value="Строительство и недвижимость" label="Строительство и недвижимость">Строительство и недвижимость</option>
+                  <option value="Торговля и сфера услуг" label="Торговля и сфера услуг">Торговля и сфера услуг</option>
+                  <option value="Финансовый сектор" label="Финансовый сектор">Финансовый сектор</option>
+                </select>
+              </label>
+              <label class="projects__form-label form__label">
+                <span class="projects__form-label-text form__label-text">Решения</span>
+                <select class="projects__form-select form__select" id="projects-form-vendor" name="projects-form-vendor" data-form-select-one>
+                  <option value="Все" label="Все">Все</option>
+                  {% for i in range(7) %}
+                    <option value="Вендор {{ i + 1 }}" label="Вендор {{ i + 1 }}">Вендор {{ i + 1 }}</option>
+                  {% endfor %}
+                </select>
+              </label>
+            </div>
+          </form>
+          <ol class="projects__list">
+            {% for caseItem in CASES %}
+              <li class="projects__list-item case-card">
+                <div class="case-card__content">
+                  <div class="case-card__main">
+                    <div class="case-card__logo-wrapper">
+                      <img class="case-card__logo" width="{{ caseItem.logo.width | safe }}" height="{{ caseItem.logo.height | safe }}" src="{{ caseItem.logo.src | safe }}" alt="Логотип компании {{ caseItem.name | safe }}.">
+                    </div>
+                    <div class="case-card__description">
+                      <p class="case-card__par">{{ caseItem.description | safe }}</p>
+                      {% if caseItem.description2 %}
+                        <p class="case-card__par">{{ caseItem.description2 | safe }}</p>
+                      {% endif %}
+                    </div>
+                    <a href="#!" class="case-card__more-link">Подробнее</a>
+                  </div>
+                  <div class="case-card__photo-wrapper">
+                    <img class="case-card__photo" src="{{ caseItem.photo.src | safe }}" alt="{{ caseItem.photo.alt | safe }}" width="683" height="448">
+                  </div>
+                </div>
+              </li>
+            {% endfor %}
+          </ol>
+          {% include "./blocks/spinner.j2" %}
+          <button class="projects__show-more" type="button" id="show-more-cases-button">Больше кейсов</button>
+        </div>
+      </div>
+    </section>
+
+    {# {% set cardSwiperCnt = 1 %}
+    {% include "./blocks/swipers/vendors-swiper.j2" %}
+    {% set cardSwiperCnt = cardSwiperCnt + 1 %}
+    {% include "./blocks/swipers/cases-swiper.j2" %} #}
+
+  </main>
+{% endblock content %}
+
+{% block js %}
+  <script src="./js/swiper-bundle.min.js" defer></script>
+  <script src="./js/card-swipers.min.js" defer></script>
+  <script src="./js/projects.min.js" defer></script>
+  <script src="./js/main.min.js"></script>
+{% endblock %}

@@ -1,6 +1,6 @@
 .case-card {
   display: flex;
-  padding: 25px 35px 75px;
+
   background-color: $bg2-color;
   width: 100%;
   height: 100%;
@@ -9,11 +9,22 @@
 .case-card__content {
   display: flex;
   flex-grow: 1;
+
+  @media (width < $desktop-width) {
+    flex-direction: column;
+  }
 }
 .case-card__main {
+  padding: 25px 35px 75px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+
+  &:not(:last-child) {
+    @media (width < $desktop-width) {
+      padding-bottom: 20px;
+    }
+  }
 }
 .case-card__logo-wrapper {
   display: flex;
@@ -28,6 +39,12 @@
   margin-top: 23px;
   margin-bottom: 25px;
   line-height: 125%;
+  // max-height: 200px;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 10;
 }
 .case-card__par {
   @include null-mp;
@@ -37,4 +54,21 @@
 }
 .case-card__more-link {
   margin-top: auto;
+}
+
+.case-card__photo-wrapper {
+  position: relative;
+  width: 100%;
+  @media (width >= $desktop-width) {
+    min-width: 683px;
+    min-height: 448px;
+  }
+  @media (width < $desktop-width) {
+    @include image-wrapper(65%);
+    // flex-grow: 1;
+  }
+}
+
+.case-card__photo {
+  @include image-in-wrapper;
 }

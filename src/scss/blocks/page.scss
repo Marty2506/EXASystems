@@ -15,6 +15,14 @@
   color: $black-color;
 }
 
+.page__header {
+  margin-top: 40px;
+
+  @media (width >= $desktop-width) {
+    margin-top: 40px;
+  }
+}
+
 .page__title {
   margin: 0;
   padding: 0;

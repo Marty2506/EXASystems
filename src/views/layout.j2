@@ -16,7 +16,7 @@
   <script src="./js/pristine.min.js" defer></script>
   <script src="./js/choices.min.js" defer></script>
   <script src="./js/imask.js" defer></script>
-  <script src="./js/modal.min.js" defer></script>
+  {# <script src="./js/modal.min.js" defer></script> #}
   <script src="./js/menu.min.js" defer></script>
   {% block js %}{% endblock %}
 </head>
@@ -28,11 +28,11 @@
   {% include "footer.j2" %}
 
 
-  {% include "./blocks/modal.j2" %}
+  {# {% include "./blocks/modal.j2" %}
   {% include "./blocks/modal-order.j2" %}
   {% include "./blocks/modal-offer.j2" %}
   {% include "./blocks/modal-consultation.j2" %}
-  {% include "./blocks/modal-pricelist.j2" %}
+  {% include "./blocks/modal-pricelist.j2" %} #}
   {% block modal %}{% endblock %}
 
 

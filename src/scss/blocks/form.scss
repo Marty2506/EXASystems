@@ -564,7 +564,7 @@
 
     color: $blue-color;
 
-    border-top: 1px solid #ebebeb;
+    border-top: 1px solid #d4d4d4;
 
     transition: background-color 0.3s ease;
 
@@ -590,6 +590,7 @@
       background-image: url("@img/icons/select-check-icon.svg");
       background-repeat: no-repeat;
       background-position: center;
+      background-size: cover;
       transform: translateY(-50%);
     }
   }
@@ -650,6 +651,66 @@
       }
     }
   }
+}
+
+.form-choices--theme-projects {
+  & .form-choices__inner {
+    width: 100%;
+    overflow: hidden;
+
+    font-size: 16px;
+    line-height: 130%;
+    font-family: inherit;
+
+    background-color: $white-color;
+    border: 0.5px solid #d4d4d4;
+    box-shadow: none;
+
+    & .is-open,
+    & .is-focused {
+      border: 1px solid $blue-color;
+    }
+  }
+
+  & .form-choices__item {
+    padding: 14px 40px 14px 17px;
+    font-size: inherit;
+    color: $light-dark-color;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .form-choices__list--dropdown {
+    word-break: initial;
+
+    & .form-choices__item {
+      transition: 0.3s ease;
+      transition-property: background-color, color;
+      white-space: initial;
+
+      &:hover {
+        background-color: $blue-color;
+        color: $white-color;
+      }
+    }
+  }
+}
+
+// Стрелочка для выпадайки
+.form-choices--theme-projects[data-type*="select-one"]::after {
+  content: "";
+  left: auto;
+  right: 20px;
+
+  border-color: $blue-color transparent transparent;
+
+  pointer-events: none;
+}
+.is-open.form-choices--theme-projects[data-type*="select-one"]::after {
+  margin-top: -7.5px;
+
+  border-color: transparent transparent $blue-color;
 }
 
 .form__label--messengers {
