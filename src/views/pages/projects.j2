@@ -99,17 +99,22 @@
       </div>
     </section>
 
-    {# {% set cardSwiperCnt = 1 %}
-    {% include "./blocks/swipers/vendors-swiper.j2" %}
-    {% set cardSwiperCnt = cardSwiperCnt + 1 %}
+    {% set cardSwiperCnt = 1 %}
+    {% include "./blocks/swipers/reviews-swiper.j2" %}
+    {# {% set cardSwiperCnt = cardSwiperCnt + 1 %}
     {% include "./blocks/swipers/cases-swiper.j2" %} #}
 
   </main>
 {% endblock content %}
 
+{% block modal %}
+  {% include "./blocks/modal-image.j2" %}
+{% endblock %}
+
 {% block js %}
   <script src="./js/swiper-bundle.min.js" defer></script>
   <script src="./js/card-swipers.min.js" defer></script>
   <script src="./js/projects.min.js" defer></script>
+  <script src="./js/modal-image.min.js" defer></script>
   <script src="./js/main.min.js"></script>
 {% endblock %}

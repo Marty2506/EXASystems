@@ -1,0 +1,43 @@
+{% set REVIEWS_NUMBER = 5 %}
+<section class="reviews section">
+  <div class="container">
+    <div class="section__content">
+      <h2 class="title">Клиенты о нас</h2>
+    </div>
+
+    <div class="card-swiper-container">
+      <div class="reviews-swiper card-swiper swiper" id="reviews-swiper">
+        <div class="swiper-wrapper">
+          {% for index in range(REVIEWS_NUMBER) %}
+            <div class="reviews-swiper__slide card-swiper__slide swiper-slide">
+              <div class="review-card">
+                <a class="review-card__link" href="@img/review-letter.jpg" data-review data-image-can-open-in-modal>
+                  <img class="review-card__image" src="@img/review-letter.jpg" alt="" width="195" height="277">
+                </a>
+                <div class="review-card__text-container">
+                  <img class="review-card__company-logo" width="170" height="60" src="@img/cases/logos/spaarmann.webp" alt="Логотип компании C. Spaarmann GmbH.">
+                  <p class="review-card__text">Немецкая логистическая компания <b>C. Spaarmann GmbH</b> рекомендует команду Exasystems к сотрудничеству, которая произвела ее успешный переход на удаленный режим работы и снизила расходы на ИТ.</p>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="cases-swiper__buttons card-swiper__buttons card-swiper__buttons--desktop-ears">
+        <button class="card-swiper__button card-swiper__button--prev card-swiper__button-{{cardSwiperCnt}}-prev" type="button">
+          <svg class="card-swiper__button-icon" width="12" height="12" viewBox="0 0 12 12">
+            <use xlink:href="img/sprite.svg#card-swiper-arrow"></use>
+          </svg>
+          <span class="visually-hidden">Перелестнуть назад</span>
+        </button>
+        <button class="card-swiper__button card-swiper__button--next card-swiper__button-{{cardSwiperCnt}}-next" type="button">
+          <svg class="card-swiper__button-icon" width="12" height="12" viewBox="0 0 12 12">
+            <use xlink:href="img/sprite.svg#card-swiper-arrow"></use>
+          </svg>
+          <span class="visually-hidden">Перелестнуть вперед</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

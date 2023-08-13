@@ -44,5 +44,21 @@ cardSwipersItems.forEach((cardSwiperItem, index) => {
       },
     };
   }
+
+  if (cardSwiperItem.id === "reviews-swiper") {
+    swiperOptions.breakpoints = {
+      320: {
+        slidesPerView: "auto",
+      },
+      768: {
+        slidesPerView: "auto",
+        spaceBetween: 27,
+      },
+      1181: {
+        slidesPerView: 2,
+        spaceBetween: 27,
+      },
+    };
+  }
   const cardSwiper = new Swiper(cardSwiperItem, swiperOptions);
 });
