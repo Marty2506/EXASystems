@@ -1,6 +1,6 @@
 {% extends "layout.j2" %}
 
-{% set page = "case-page" %}
+{% set page = "project-page" %}
 
 {% block content %}
   <main class="page-main">
@@ -19,11 +19,12 @@
         </ul>
       </div>
     </div>
+
     {% include "./blocks/case.j2" %}
-    {% set sectionCardSwiperCnt = 2 %}
-    {% include "./blocks/cases-swiper.j2" %}
-    {# {% include "./blocks/other-projects.j2" %} #}
-    {# {% include "./blocks/subscribe-section.j2" %} #}
+
+    {% set cardSwiperCnt = 1 %}
+    {% include "./blocks/swipers/cases-swiper.j2" %}
+
   </main>
 {% endblock content %}
 
@@ -33,7 +34,7 @@
 
 {% block js %}
   <script src="./js/swiper-bundle.min.js" defer></script>
-  <script src="./js/swipers.min.js" defer></script>
+  <script src="./js/card-swipers.min.js" defer></script>
   {# <script src="./js/other-projects.min.js"></script>
   <script src="./js/subscribe-form.min.js"></script> #}
   <script src="./js/modal-image.min.js" defer></script>
