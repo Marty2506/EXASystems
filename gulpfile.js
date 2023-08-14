@@ -24,6 +24,7 @@ import htmlmin from "gulp-htmlmin";
 import { dir } from "console";
 import sourcemaps from "gulp-sourcemaps";
 import minmax from "postcss-media-minmax";
+import zip from "gulp-zip";
 
 /**
  *  Основные директории
@@ -323,6 +324,15 @@ const devTasks = gulp.parallel(
 // Построение сценариев выполнения задач
 export const dev = gulp.series(clean, devTasks, gulp.parallel(watcher, server));
 export const build = gulp.series(clean, mainTasks);
+
+export const zipBuild = () => {
+  const date = new Date().toLocaleDateString();
+  console.log(date);
+  return gulp
+    .src(`${dirs.dest}/**/*`)
+    .pipe(zip(`exa-${date}.zip`))
+    .pipe(gulp.dest(dirs.dest));
+};
 
 // Задача по умолчанию
 gulp.task("default", dev);

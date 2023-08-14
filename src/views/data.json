@@ -291,5 +291,172 @@
       },
       "description": "Разработали и согласовали внутренний нормативный документ «Положение о резервном копировании», включающий в себя реестр всех объектов РК и детальное описание политики РК.Поставили и наладили серверное оборудование. Выполнили внедрение системы резервного копирования"
     }
+  ],
+  "partners": [
+    {
+      "name": "Aladdin",
+      "logo": {
+        "width": 103,
+        "height": 79,
+        "src": "@img/vendors/aladdin.webp"
+      },
+      "status": "Золотой партнер",
+      "description": "AppDynamics в сотрудничестве с Сisco - лидер отрасли с непревзойдённым видением будущего в области управления производительностью приложений и AIOps",
+      "url": "#!"
+    },
+    {
+      "name": "CHECK POINT",
+      "logo": {
+        "width": 174,
+        "height": 83,
+        "src": "@img/vendors/checkpoint.webp"
+      },
+      "status": "Золотой партнер",
+      "description": "AppDynamics в сотрудничестве с Сisco - лидер отрасли с непревзойдённым видением будущего в области управления производительностью приложений и AIOps",
+      "url": "#!"
+    },
+    {
+      "name": "RADIX",
+      "logo": {
+        "width": 176,
+        "height": 51,
+        "src": "@img/vendors/radix.webp"
+      },
+      "status": "Золотой партнер",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum atque sunt autem assumenda repellendus harum facilis distinctio saepe tenetur soluta fugit, deleniti asperiores corporis ratione blanditiis eos tempore numquam temporibus ex quisquam labore commodi magni impedit? Dicta ex expedita magnam omnis dignissimos laudantium eveniet et, voluptatem quibusdam ipsa quae voluptatibus.",
+      "url": "#!"
+    },
+    {
+      "name": "CHECK POINT",
+      "logo": {
+        "width": 174,
+        "height": 83,
+        "src": "@img/vendors/checkpoint.webp"
+      },
+      "status": "Золотой партнер",
+      "description": "AppDynamics в сотрудничестве с Сisco - лидер отрасли с непревзойдённым видением будущего в области управления производительностью приложений и AIOps",
+      "url": "#!"
+    },
+    {
+      "name": "RADIX",
+      "logo": {
+        "width": 176,
+        "height": 51,
+        "src": "@img/vendors/radix.webp"
+      },
+      "status": "Золотой партнер",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum atque sunt autem assumenda repellendus harum facilis distinctio saepe tenetur soluta fugit, deleniti asperiores corporis ratione blanditiis eos tempore numquam temporibus ex quisquam labore commodi magni impedit? Dicta ex expedita magnam omnis dignissimos laudantium eveniet et, voluptatem quibusdam ipsa quae voluptatibus.",
+      "url": "#!"
+    },
+    {
+      "name": "Aladdin",
+      "logo": {
+        "width": 103,
+        "height": 79,
+        "src": "@img/vendors/aladdin.webp"
+      },
+      "status": "Золотой партнер",
+      "description": "AppDynamics в сотрудничестве с Сisco - лидер отрасли с непревзойдённым видением будущего в области управления производительностью приложений и AIOps",
+      "url": "#!"
+    },
+    {
+      "name": "Aladdin",
+      "logo": {
+        "width": 103,
+        "height": 79,
+        "src": "@img/vendors/aladdin.webp"
+      },
+      "status": "Золотой партнер",
+      "description": "AppDynamics в сотрудничестве с Сisco - лидер отрасли с непревзойдённым видением будущего в области управления производительностью приложений и AIOps",
+      "url": "#!"
+    },
+    {
+      "name": "CHECK POINT",
+      "logo": {
+        "width": 174,
+        "height": 83,
+        "src": "@img/vendors/checkpoint.webp"
+      },
+      "status": "Золотой партнер",
+      "description": "AppDynamics в сотрудничестве с Сisco - лидер отрасли с непревзойдённым видением будущего в области управления производительностью приложений и AIOps",
+      "url": "#!"
+    },
+    {
+      "name": "RADIX",
+      "logo": {
+        "width": 176,
+        "height": 51,
+        "src": "@img/vendors/radix.webp"
+      },
+      "status": "Золотой партнер",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum atque sunt autem assumenda repellendus harum facilis distinctio saepe tenetur soluta fugit, deleniti asperiores corporis ratione blanditiis eos tempore numquam temporibus ex quisquam labore commodi magni impedit? Dicta ex expedita magnam omnis dignissimos laudantium eveniet et, voluptatem quibusdam ipsa quae voluptatibus.",
+      "url": "#!"
+    },
+    {
+      "name": "RADIX",
+      "logo": {
+        "width": 176,
+        "height": 51,
+        "src": "@img/vendors/radix.webp"
+      },
+      "status": "Золотой партнер",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum atque sunt autem assumenda repellendus harum facilis distinctio saepe tenetur soluta fugit, deleniti asperiores corporis ratione blanditiis eos tempore numquam temporibus ex quisquam labore commodi magni impedit? Dicta ex expedita magnam omnis dignissimos laudantium eveniet et, voluptatem quibusdam ipsa quae voluptatibus.",
+      "url": "#!"
+    },
+    {
+      "name": "Aladdin",
+      "logo": {
+        "width": 103,
+        "height": 79,
+        "src": "@img/vendors/aladdin.webp"
+      },
+      "status": "Золотой партнер",
+      "description": "AppDynamics в сотрудничестве с Сisco - лидер отрасли с непревзойдённым видением будущего в области управления производительностью приложений и AIOps",
+      "url": "#!"
+    },
+    {
+      "name": "Aladdin",
+      "logo": {
+        "width": 103,
+        "height": 79,
+        "src": "@img/vendors/aladdin.webp"
+      },
+      "status": "Золотой партнер",
+      "description": "AppDynamics в сотрудничестве с Сisco - лидер отрасли с непревзойдённым видением будущего в области управления производительностью приложений и AIOps",
+      "url": "#!"
+    },
+    {
+      "name": "RADIX",
+      "logo": {
+        "width": 176,
+        "height": 51,
+        "src": "@img/vendors/radix.webp"
+      },
+      "status": "Золотой партнер",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum atque sunt autem assumenda repellendus harum facilis distinctio saepe tenetur soluta fugit, deleniti asperiores corporis ratione blanditiis eos tempore numquam temporibus ex quisquam labore commodi magni impedit? Dicta ex expedita magnam omnis dignissimos laudantium eveniet et, voluptatem quibusdam ipsa quae voluptatibus.",
+      "url": "#!"
+    },
+    {
+      "name": "CHECK POINT",
+      "logo": {
+        "width": 174,
+        "height": 83,
+        "src": "@img/vendors/checkpoint.webp"
+      },
+      "status": "Золотой партнер",
+      "description": "AppDynamics в сотрудничестве с Сisco - лидер отрасли с непревзойдённым видением будущего в области управления производительностью приложений и AIOps",
+      "url": "#!"
+    },
+    {
+      "name": "RADIX",
+      "logo": {
+        "width": 176,
+        "height": 51,
+        "src": "@img/vendors/radix.webp"
+      },
+      "status": "Золотой партнер",
+      "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum atque sunt autem assumenda repellendus harum facilis distinctio saepe tenetur soluta fugit, deleniti asperiores corporis ratione blanditiis eos tempore numquam temporibus ex quisquam labore commodi magni impedit? Dicta ex expedita magnam omnis dignissimos laudantium eveniet et, voluptatem quibusdam ipsa quae voluptatibus.",
+      "url": "#!"
+    }
   ]
 }

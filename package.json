@@ -44,6 +44,7 @@
     "gulp-svgmin": "^4.1.0",
     "gulp-svgstore": "^9.0.0",
     "gulp-uglify": "^3.0.2",
+    "gulp-zip": "^5.1.0",
     "postcss-bem-linter": "^3.3.0",
     "postcss-media-minmax": "^5.0.0",
     "postcss-scss": "^4.0.6",

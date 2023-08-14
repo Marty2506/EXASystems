@@ -1,0 +1,84 @@
+{% extends "layout.j2" %}
+
+{% set page = "partners" %}
+
+{% block content %}
+  <main class="page-main">
+    <div class="container">
+      <div class="breadcumbs">
+        <ul class="breadcumbs__list">
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="./index.html">Главная</a>
+          </li>
+          <li class="breadcumbs__item">
+            <span class="breadcumbs__link breadcumbs__link--current">Партнеры</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="page__header">
+      <div class="container">
+        <h1 class="page__title">Партнеры</h1>
+      </div>
+    </div>
+
+    <section class="partners section">
+      <div class="container">
+        <div class="partners__content section__content">
+          <form class="partners__form form" action="https://echo.htmlacademy.ru" method="get" id="partners-form">
+            <div class="partners__selects-wrapper">
+              <label class="partners__form-label form__label">
+                <span class="partners__form-label-text form__label-text">Решения</span>
+                <select class="partners__form-select form__select" id="partners-form-solutions" name="partners-form-solutions" data-form-select-one>
+                  <option value="Все" label="Все">Все</option>
+                  <option value="ИТ-консалтинг и услуги" label="ИТ-консалтинг и услуги">ИТ-консалтинг и услуги</option>
+                  <option value="Информационная безопасность" label="Информационная безопасность">Информационная безопасность</option>
+                  <option value="Системы многофакторной аутентификации" label="Системы многофакторной аутентификации">Системы многофакторной аутентификации</option>
+                  <option value="Межсетевые экраны" label="Межсетевые экраны">Межсетевые экраны</option>
+                  <option value="Серверное оборудование" label="Серверное оборудование">Серверное оборудование</option>
+                  <option value="Сетевое оборудование" label="Сетевое оборудование">Сетевое оборудование</option>
+                  <option value="Системы резервного копирования данных" label="Системы резервного копирования данных">Системы резервного копирования данных</option>
+                  <option value="Телекоммуникационные системы" label="Телекоммуникационные системы">Телекоммуникационные системы</option>
+                  <option value="Инженерные системы" label="Инженерные системы">Инженерные системы</option>
+                  <option value="Безопасный регион" label="Безопасный регион">Безопасный регион</option>
+                  <option value="Импортозамещение" label="Импортозамещение">Импортозамещение</option>
+                </select>
+              </label>
+            </div>
+          </form>
+          <ul class="partners__list">
+            {% for partnerItem in partners %}
+              <li class="partners__item">
+                <div class="partners__item-wrapper">
+                  <p class="visually-hidden">{{ partnerItem.name | safe }}</p>
+                  <img class="partners__logo" width="{{ partnerItem.logo.width | safe }}" height="{{ partnerItem.logo.height | safe }}" src="{{ partnerItem.logo.src | safe }}" alt="Логотип компании {{ partnerItem.name | safe }}.">
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
+          <div class="partners__info-list-container">
+            <ul class="partners__info-list">
+              {% for partnerItem in partners %}
+                <li class="partners__info-list-item">
+                  <div class="partners__info-wrapper">
+                    <img class="partners__logo partners__logo--in-info" width="{{ partnerItem.logo.width | safe }}" height="{{ partnerItem.logo.height | safe }}" src="{{ partnerItem.logo.src | safe }}" alt="Логотип компании {{ partnerItem.name | safe }}.">
+                    <p class="partners__info-description">{{ partnerItem.description | safe }}</p>
+                    <p class="partners__info-status">Статус: <span class="partners__info-status-value">{{ partnerItem.status | safe }}</span></p>
+                    <a href="{{ partnerItem.url | safe }}" class="partners__info-link">Сайт партнера</a>
+                  </div>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+{% endblock content %}
+
+{% block js %}
+  <script src="./js/partners.min.js" defer></script>
+  <script src="./js/main.min.js"></script>
+{% endblock %}
