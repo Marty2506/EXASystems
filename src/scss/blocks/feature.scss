@@ -24,13 +24,37 @@
   font-family: $jost-font;
 }
 
-.feature__desription {
+.feature__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature__desription,
+.feature__list-item {
   margin: 0;
   padding: 0;
 
   font-size: 16px;
   line-height: 19px;
-  color: $grey-color;
+  color: inherit;
+}
+
+.feature__list-item {
+  position: relative;
+  padding-left: 20px;
+  &::before {
+    content: "";
+    position: absolute;
+
+    top: 0.4em;
+    left: 7px;
+
+    width: 0.25em;
+    height: 0.25em;
+
+    background-color: #2a2a2a;
+    border-radius: 50%;
+  }
 }
 
 .feature--adv {
@@ -115,5 +139,52 @@
 
     background-image: url("@img/feature-phone.svg");
     background-position: 0 0;
+  }
+}
+
+//
+
+.feature--list-with-pencil {
+  &::before {
+    width: 60px;
+    height: 60px;
+
+    background-image: url("@img/features/list-with-pencil.svg");
+  }
+}
+
+.feature--gear-with-wrench {
+  &::before {
+    width: 60px;
+    height: 60px;
+
+    background-image: url("@img/features/gear-with-wrench.svg");
+  }
+}
+
+.feature--gear-with-star {
+  &::before {
+    width: 60px;
+    height: 60px;
+
+    background-image: url("@img/features/gear-with-star.svg");
+  }
+}
+
+.feature--shield-with-man {
+  &::before {
+    width: 65px;
+    height: 60px;
+
+    background-image: url("@img/features/shield-with-man.svg");
+  }
+}
+
+.feature--search {
+  &::before {
+    width: 65px;
+    height: 60px;
+
+    background-image: url("@img/features/search.svg");
   }
 }

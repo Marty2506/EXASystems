@@ -1,0 +1,79 @@
+{% extends "layout.j2" %}
+
+{% set page = "about" %}
+
+{% block content %}
+  <main class="page-main">
+    <div class="container">
+      <div class="breadcumbs">
+        <ul class="breadcumbs__list">
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="./index.html">Главная</a>
+          </li>
+          <li class="breadcumbs__item">
+            <span class="breadcumbs__link breadcumbs__link--current">О компании</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="about section">
+      <div class="container">
+        <div class="section__content">
+          <h1 class="about__page-title page__title">О компании</h1>
+          <p class="about__paragraph page__paragraph">Компания EXASystems – надежный поставщик ИТ-оборудования и ИТ-услуг для бизнеса. Накопленный успешный опыт позволяет предоставлять клиентам наилучшие решения на всех этапах ведения проекта от разработки и внедрения до сервисной поддержки.</p>
+
+          <div class="about__features">
+            <h2 class="about__features-title title">Наши ценности</h2>
+            <ul class="about__features-list">
+              <li class="about__feature feature feature--list-with-pencil">
+                <p class="feature__title">Основные принципы работы:</p>
+                <ul class="feature__list">
+                  <li class="feature__list-item">Профессионализм</li>
+                  <li class="feature__list-item">Ответственность</li>
+                  <li class="feature__list-item">Клиентоориентированность</li>
+                  <li class="feature__list-item">Порядочность</li>
+                </ul>
+              </li>
+              <li class="about__feature feature feature--shield-with-man">
+                <p class="feature__title">Надежный пул партнеров”</p>
+                <p class="feature__desription">Мы сотрудничаем с ведущими российскими и мировыми ИТ-компаниями: разработчиками, производителями и дистрибьюторами оборудования.</p>
+              </li>
+              <li class="about__feature feature feature--gear-with-star">
+                <p class="feature__title">Опыт специалистов</p>
+                <p class="feature__desription">Наша команда имеет большой опыт по внедрению продуктов лидеров рынка. В процесс работы над каждым проектом вовлечены собственники компании, что позволяет быстро и эффективно справляться с любыми задачами.</p>
+              </li>
+              <li class="about__feature feature feature--search">
+                <p class="feature__title">Индивидуальный подход</p>
+                <p class="feature__desription">Мы подбираем индивидуальные решения в соответствии с требованиями, учитываем все детали для дальнейшего успешного развития бизнеса Клиента.</p>
+              </li>
+              <li class="about__feature feature feature--gear-with-wrench">
+                <p class="feature__title">Гарантированный результат</p>
+                <p class="feature__desription">Вы получаете стабильную и бесперебойную работу ИТ-инфраструктуры компании.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {% include "./blocks/facts.j2" %}
+
+    {% set cardSwiperCnt = 1 %}
+    {# {% include "./blocks/swipers/reviews-swiper.j2" %} #}
+    {# {% set cardSwiperCnt = cardSwiperCnt + 1 %}
+    {% include "./blocks/swipers/cases-swiper.j2" %} #}
+
+  </main>
+{% endblock content %}
+
+{% block modal %}
+  {% include "./blocks/modal-image.j2" %}
+{% endblock %}
+
+{% block js %}
+  <script src="./js/swiper-bundle.min.js" defer></script>
+  <script src="./js/card-swipers.min.js" defer></script>
+  <script src="./js/modal-image.min.js" defer></script>
+  <script src="./js/main.min.js"></script>
+{% endblock %}
