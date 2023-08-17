@@ -1,27 +1,33 @@
 .facts {
-  padding: 50px 0 80px 0;
+  padding: 50px 0 80px;
+
+  color: #ffffff;
+
   background-color: $primary-color;
-  color: #fff;
 
   @media (width >= $desktop-width) {
-    padding: 115px 0 130px 0;
     margin-top: 40px;
+    padding: 115px 0 130px;
   }
 }
 
 .facts:last-child {
   margin-bottom: 0;
 }
+
 .facts__content {
   display: flex;
   flex-direction: column;
 }
+
 .facts__title {
   color: inherit;
 }
+
 .facts__numbers {
   display: flex;
   flex-direction: column;
+
   gap: 15px;
 
   @media (width >= $desktop-width) {
@@ -29,12 +35,14 @@
     justify-content: space-between;
   }
 }
+
 .facts__numbers-item {
   display: flex;
   flex-direction: column;
 
   @media (width >= $desktop-width) {
     position: relative;
+
     width: 285px;
     margin-right: 84px;
     padding-bottom: 27px;
@@ -42,89 +50,109 @@
     &::after {
       content: "";
       position: absolute;
+      bottom: 0;
+
       width: 100%;
       height: 1px;
-      bottom: 0;
-      background-color: rgba(255, 255, 255, 0.57);
+
+      background-color: rgb(255 255 255 / 57%);
     }
   }
 }
+
 .facts__numbers-value {
-  @include null-mp;
-  font-family: $jost-font;
+  font-weight: 600;
   font-size: 55px;
   line-height: 125%;
-  font-weight: 600;
+  font-family: $jost-font;
+
+  @include null-mp;
 
   @media (width >= $desktop-width) {
     font-size: 89px;
   }
 }
+
 .facts__numbers-text {
-  @include null-mp;
-  font-size: 18px;
+  max-width: 90%;
+
   font-weight: 500;
+  font-size: 18px;
   line-height: 125%;
   color: $almost-white-color;
-  max-width: 90%;
+
+  @include null-mp;
 }
+
 .facts__quote-wrapper {
-  margin-top: 40px;
   display: grid;
-  grid-template-areas:
-    "quote quote"
+  margin-top: 40px;
+
+  column-gap: 18px;
+
+  grid-template-areas: "quote quote"
     "photo info";
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 18px;
   row-gap: 24px;
 
   @media (width >= $desktop-width) {
-    grid-template-areas:
-      "photo quote"
+    margin-top: 55px;
+
+    column-gap: 0;
+
+    grid-template-areas: "photo quote"
       "photo info";
     grid-template-columns: 378px 1fr;
     row-gap: 0;
-    column-gap: 0;
-    margin-top: 55px;
   }
 }
+
 .facts__photo-wrapper {
-  grid-area: photo;
-  overflow: hidden;
-  border-radius: 50%;
   max-width: 290px;
+  overflow: hidden;
+
+  border-radius: 50%;
+
+  grid-area: photo;
 }
-.facts__photo-image {
-}
+
 .facts__quoute-main {
   grid-area: quote;
 }
+
 .facts__quoute-text {
-  @include null-mp;
-  font-size: 25px;
-  color: $almost-white-color;
   font-weight: 600;
+  font-size: 25px;
   line-height: 125%;
+  color: $almost-white-color;
+
+  @include null-mp;
 
   @media (width >= $desktop-width) {
     font-size: 33px;
   }
 }
+
 .facts__quote-person-info {
-  grid-area: info;
   display: flex;
   flex-direction: column;
   align-self: center;
+
+  grid-area: info;
 }
+
 .facts__quote-person-name {
-  @include null-mp;
-  font-size: 22px;
-  color: $almost-white-color;
   font-weight: 600;
+  font-size: 22px;
   line-height: 125%;
-}
-.facts__quote-person-job-title {
-  @include null-mp;
   color: $almost-white-color;
+
+  @include null-mp;
+}
+
+.facts__quote-person-job-title {
   line-height: 125%;
+  color: $almost-white-color;
+
+  @include null-mp;
 }

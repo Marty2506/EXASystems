@@ -315,10 +315,10 @@
   position: relative;
 
   display: none;
-  padding: 10px;
-  padding-right: 25px;
   width: max-content;
   max-width: 500px;
+  padding: 10px;
+  padding-right: 25px;
 
   color: $dark-color;
 
@@ -419,13 +419,15 @@
 
 .menu__dropdown-list-wrapper--has-dropdown {
   position: relative;
+
   @media (width >= $desktop-width) {
     &:hover,
     &:focus-within {
       & .menu__dropdown--lvl2 {
         position: absolute;
-        left: 100%;
         top: -10px;
+        left: 100%;
+
         // top: calc(100% - $menu-main-vertical-paddings);
         z-index: 100;
 

@@ -1,6 +1,3 @@
-.case {
-}
-
 .case--no-pads {
   margin: 0;
   padding: 0;
@@ -16,14 +13,14 @@
 }
 
 .case__header-image-wrapper {
-  width: 100%;
   position: relative;
 
-  @media (width >= $desktop-width) {
-    margin-top: 15px;
-    height: 254px;
-  }
+  width: 100%;
 
+  @media (width >= $desktop-width) {
+    height: 254px;
+    margin-top: 15px;
+  }
   @media (width < $desktop-width) {
     @include image-wrapper(55%);
   }
@@ -128,8 +125,8 @@
 
 .case__text-par {
   margin: 0;
-  padding: 0;
   margin-top: 12px;
+  padding: 0;
 }
 
 .case__text-list {

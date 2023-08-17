@@ -73,11 +73,11 @@
   font-size: 14px;
   line-height: 130%;
   font-family: inherit;
+  color: $dark-color;
 
   background-color: #ebf3f8;
   border: none;
   box-shadow: inset 1px 1px 0 rgb(0 0 0 / 15%);
-  color: $dark-color;
 
   &:hover,
   &:focus-visible {
@@ -87,6 +87,7 @@
 
 .form__field::placeholder {
   color: $grey-color;
+
   opacity: 0.7;
 }
 
@@ -201,6 +202,7 @@
   color: $button-color;
 
   transform: translateY(calc(100% + 3px));
+
   // opacity: 0.7;
 }
 
@@ -674,42 +676,48 @@
 
   & .form-choices__item {
     padding: 14px 40px 14px 17px;
+    overflow: hidden;
+
     font-size: inherit;
     color: $light-dark-color;
-    text-overflow: ellipsis;
-    overflow: hidden;
     white-space: nowrap;
+    text-overflow: ellipsis;
   }
 
   .form-choices__list--dropdown {
-    word-break: initial;
     max-height: 450px;
-    overflow-y: visible;
     overflow-x: hidden;
+    overflow-y: visible;
+
+    word-break: initial;
 
     & .form-choices__item {
-      transition: 0.3s ease;
-      transition-property: background-color, color;
       white-space: initial;
 
+      transition: 0.3s ease;
+      transition-property: background-color, color;
+
       &:hover {
-        background-color: $blue-color;
         color: $white-color;
+
+        background-color: $blue-color;
       }
     }
   }
 }
 
 // Стрелочка для выпадайки
+
 .form-choices--theme-projects[data-type*="select-one"]::after {
   content: "";
-  left: auto;
   right: 20px;
+  left: auto;
 
   border-color: $blue-color transparent transparent;
 
   pointer-events: none;
 }
+
 .is-open.form-choices--theme-projects[data-type*="select-one"]::after {
   margin-top: -7.5px;
 

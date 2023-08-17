@@ -41,11 +41,11 @@
 
 .feature__list-item {
   position: relative;
+
   padding-left: 20px;
   &::before {
     content: "";
     position: absolute;
-
     top: 0.4em;
     left: 7px;
 
@@ -132,6 +132,7 @@
     background-position: 0 0;
   }
 }
+
 .feature--phone {
   &::before {
     width: 62px;

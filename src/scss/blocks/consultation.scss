@@ -1,8 +1,10 @@
 .consultation {
-  padding: 0;
   margin-top: 70px;
-  background-color: $primary-color;
+  padding: 0;
+
   color: $white-color;
+
+  background-color: $primary-color;
 
   @media (width < $desktop-width) {
     padding-bottom: 20px;
@@ -26,18 +28,21 @@
 }
 
 .consultation__title {
-  color: inherit;
   margin: 0;
+
   line-height: 110%;
+  color: inherit;
 
   @media (width >= $desktop-width) {
     font-size: 34px;
   }
 }
+
 .consultation__par {
   margin: 0;
   margin-top: 10px;
   padding: 0;
+
   font-size: 18px;
   color: inherit;
 

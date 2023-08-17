@@ -1,16 +1,16 @@
 .projects {
   padding: 0;
 }
-.projects__content {
-}
-.projects__form {
-}
+
+
 .projects__selects-wrapper {
   display: flex;
+
   gap: 20px;
 
   @media (width < $desktop-width) {
     flex-direction: column;
+
     gap: 18px;
   }
 }
@@ -20,31 +20,36 @@
 }
 
 .projects__list {
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
+
   gap: 30px;
 
   @media (width >= $desktop-width) {
     margin-top: 45px;
+
     gap: 37px;
   }
 }
 
 .projects__show-more {
   display: flex;
-  background-color: transparent;
-  border: none;
-  margin: 20px auto;
   width: fit-content;
+  margin: 20px auto;
   padding: 5px;
-  color: $blue-color;
+
   font-size: 18px;
   line-height: 126%;
-  text-decoration: underline;
   font-family: $jost-font;
-  transition: color 0.3s ease;
+  color: $blue-color;
+  text-decoration: underline;
+
+  background-color: transparent;
+  border: none;
   cursor: pointer;
+
+  transition: color 0.3s ease;
 
   &:hover {
     @media (pointer: fine) {
@@ -52,6 +57,7 @@
     }
   }
 }
+
 .projects__show-more--hidden {
   display: none;
 }

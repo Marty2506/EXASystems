@@ -1,12 +1,13 @@
 .person-card {
-  max-width: 530px;
   // flex-grow: 1;
   align-self: flex-start;
+  max-width: 530px;
 }
 
 .person-card__content {
   display: flex;
   flex-direction: column;
+
   gap: 25px;
 }
 
@@ -25,15 +26,15 @@
   font-size: 24px;
   line-height: 110%;
   font-family: $jost-font;
-  color: #000;
+  color: #000000;
 }
 
 .person-card__job-title {
   margin: 0;
   padding: 0;
 
-  line-height: normal;
   font-size: 18px;
+  line-height: normal;
   color: $dark-color;
 }
 
@@ -41,11 +42,12 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 15px;
+
   font-size: 18px;
   line-height: 115%;
+  color: $light-dark-color;
 
   gap: 15px;
-  color: $light-dark-color;
 
   @media (width >= 430px) {
     max-width: 90%;
@@ -77,6 +79,7 @@
 .person-card__photo-wrapper {
   display: flex;
   overflow: hidden;
+
   border-radius: 5px;
 }
 

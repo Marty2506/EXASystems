@@ -1,5 +1,5 @@
 .page-footer {
-  padding: 55px 0 40px 0;
+  padding: 55px 0 40px;
 
   color: $dark-color;
 
@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .page-footer__top {
   position: relative;
 
@@ -43,8 +44,8 @@
     gap: 10px;
   }
   @media (width >= $desktop-width) {
-    margin-left: 50px;
     margin-top: 0;
+    margin-left: 50px;
   }
 }
 
@@ -57,17 +58,18 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
 .page-footer__social {
   @media (width < $desktop-width) {
     position: absolute;
     top: 0;
     right: 0;
   }
-
   @media (width >= $desktop-width) {
     margin-left: auto;
   }
 }
+
 .page-footer__contacts {
   display: flex;
   flex-direction: column;
@@ -77,13 +79,13 @@
   @media (width < $desktop-width) {
     margin-top: 15px;
   }
-
   @media (width >= $desktop-width) {
     align-items: flex-end;
     margin-top: -7px;
     margin-left: 45px;
   }
 }
+
 .page-footer__phone-button {
   display: flex;
   align-items: center;
@@ -115,6 +117,7 @@
     }
   }
 }
+
 .page-footer__mail-button {
   display: flex;
   align-items: center;
@@ -154,6 +157,7 @@
     }
   }
 }
+
 .page-footer__bottom {
   margin-top: 30px;
 
@@ -192,6 +196,7 @@
     max-width: 275px;
   }
 }
+
 .page-footer__bottom-nav-list-link {
   font-weight: 600;
   font-size: 18px;
@@ -204,6 +209,7 @@
     font-size: 20px;
   }
 }
+
 .page-footer__bottom-nav-sub-list {
   display: flex;
   flex-direction: column;
@@ -212,6 +218,7 @@
 
   gap: 10px;
 }
+
 .page-footer__bottom-nav-sub-list-item {
   position: relative;
 
@@ -230,6 +237,7 @@
     transform: rotate(45deg);
   }
 }
+
 .page-footer__bottom-nav-sub-list-link {
   font-weight: 300;
   font-size: 16px;
@@ -251,9 +259,11 @@
 
   gap: 15px;
 }
+
 .page-footer__politics-link {
   color: inherit;
 }
+
 .page-footer__politics-text {
   margin: 0;
   padding: 0;

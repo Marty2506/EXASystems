@@ -1,8 +1,6 @@
-.card-swiper {
-}
-
 .card-swiper-container {
   position: relative;
+
   display: flex;
   flex-direction: column;
 }
@@ -16,7 +14,7 @@
 .card-swiper__button-icon {
   transition: fill 0.3s ease;
 
-  fill: #fff;
+  fill: #ffffff;
 }
 
 .card-swiper__button {
@@ -29,8 +27,8 @@
   padding: 0;
 
   background-color: $blue-color;
-  cursor: pointer;
   border: none;
+  cursor: pointer;
 
   transition: background-color 0.3s ease;
 
