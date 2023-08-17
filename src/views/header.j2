@@ -66,14 +66,14 @@
                         {% for linkLvl2 in link.subMenu %}
                           {% if linkLvl2.subMenu %}
                             <div class="menu__dropdown-list-wrapper menu__dropdown-list-wrapper--has-dropdown">
-                              <a class="menu__dropdown-link" href="{{ subMenu.href }}.html">{{ linkLvl2.title }}</a>
+                              <a class="menu__dropdown-link" href="{{ linkLvl2.href }}.html">{{ linkLvl2.title }}</a>
 
                               <div class="menu__dropdown menu__dropdown--lvl2">
                                 <div class="menu__dropdown-content">
                                   <ul class="menu__dropdown-list">
                                     {% for linkLvl3 in linkLvl2.subMenu %}
                                       <li class="menu__dropdown-list-item">
-                                        <a class="menu__dropdown-link" href="{{ sublink.href }}.html">{{ linkLvl3.title }}</a>
+                                        <a class="menu__dropdown-link" href="{{ linkLvl3.href }}.html">{{ linkLvl3.title }}</a>
                                       </li>
                                     {% endfor %}
                                   </ul>
@@ -82,7 +82,7 @@
                             </div>
                           {% else %}
                             <div class="menu__dropdown-list-wrapper">
-                              <a class="menu__dropdown-link" href="{{ subMenu.href }}.html">{{ linkLvl2.title }}</a>
+                              <a class="menu__dropdown-link" href="{{ linkLvl2.href }}.html">{{ linkLvl2.title }}</a>
                             </div>
                           {% endif %}
                         {% endfor %}

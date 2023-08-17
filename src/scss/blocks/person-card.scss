@@ -1,0 +1,87 @@
+.person-card {
+  max-width: 530px;
+}
+
+.person-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.person-card__info {
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+.person-card__name {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 110%;
+  font-family: $jost-font;
+  color: #000;
+}
+
+.person-card__job-title {
+  margin: 0;
+  padding: 0;
+
+  line-height: normal;
+  font-size: 18px;
+  color: $dark-color;
+}
+
+.person-card__about-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 115%;
+
+  gap: 15px;
+  color: $light-dark-color;
+
+  @media (width >= 430px) {
+    max-width: 90%;
+  }
+}
+
+.person-card__about-item {
+  position: relative;
+
+  padding-left: 34px;
+
+  font-size: 16px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0.4em;
+    left: 9px;
+
+    width: 9px;
+    height: 14px;
+
+    background-image: url("@img/icons/team-list-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.person-card__photo-wrapper {
+  display: flex;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.person-card__image {
+  width: 100%;
+  height: auto;
+
+  object-fit: contain;
+  object-position: top;
+}
