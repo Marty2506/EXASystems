@@ -77,10 +77,10 @@
           <div class="swiper-wrapper">
             {% for vendorItem in VENDORS %}
               <div class="card-swiper__slide swiper-slide">
-                <a class="vendors__item-wrapper" href="./vendor-page.html">
+                <div class="vendors__item-wrapper">
                   <p class="visually-hidden">{{ vendorItem.name | safe }}</p>
                   <img class="vendors__company-logo" width="{{ vendorItem.logo.width | safe }}" height="{{ vendorItem.logo.height | safe }}" src="{{ vendorItem.logo.src | safe }}" alt="Логотип компании {{ vendorItem.name | safe }}.">
-                </a>
+                </div>
               </div>
             {% endfor %}
           </div>
