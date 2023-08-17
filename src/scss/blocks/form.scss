@@ -683,6 +683,9 @@
 
   .form-choices__list--dropdown {
     word-break: initial;
+    max-height: 450px;
+    overflow-y: visible;
+    overflow-x: hidden;
 
     & .form-choices__item {
       transition: 0.3s ease;
