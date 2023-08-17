@@ -1,5 +1,7 @@
 .person-card {
   max-width: 530px;
+  // flex-grow: 1;
+  align-self: flex-start;
 }
 
 .person-card__content {

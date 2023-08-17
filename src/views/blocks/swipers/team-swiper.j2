@@ -1,0 +1,52 @@
+<section class="team section">
+  <div class="container">
+    <div class="section__content">
+      <div class="team__header">
+        <h3 class="article__title title">Команда EXASystems</h3>
+        <a href="./partners.html" class="vendors__all-link">Команда</a>
+      </div>
+
+      <div class="card-swiper-container">
+        <div class="section__card-swiper card-swiper swiper" id="team-swiper">
+          <div class="swiper-wrapper">
+            {% for teammate in team %}
+              <div class="card-swiper__slide swiper-slide">
+                <div class="person-card">
+                  <div class="person-card__content">
+                    <div class="person-card__photo-wrapper">
+                      <img class="person-card__image" src="{{teammate.photo.src | safe }}" alt="Фотография {{teammate.name | safe}}" width="{{teammate.photo.width | safe}}" height="{{teammate.photo.height | safe}}" loading="lazy">
+                    </div>
+                    <div class="person-card__info">
+                      <p class="person-card__name">{{teammate.name | safe}}</p>
+                      <p class="person-card__job-title">{{teammate.jobTitle | safe}}</p>
+                      <ul class="person-card__about-list">
+                        {% for bioItem in teammate.bioList %}
+                          <li class="person-card__about-item">{{bioItem | safe}}</li>
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="team__swiper-buttons card-swiper__buttons card-swiper__buttons--desktop-ears">
+          <button class="card-swiper__button card-swiper__button--prev card-swiper__button-{{cardSwiperCnt}}-prev" type="button">
+            <svg class="card-swiper__button-icon" width="12" height="12" viewBox="0 0 12 12">
+              <use xlink:href="img/sprite.svg#card-swiper-arrow"></use>
+            </svg>
+            <span class="visually-hidden">Перелестнуть назад</span>
+          </button>
+          <button class="card-swiper__button card-swiper__button--next card-swiper__button-{{cardSwiperCnt}}-next" type="button">
+            <svg class="card-swiper__button-icon" width="12" height="12" viewBox="0 0 12 12">
+              <use xlink:href="img/sprite.svg#card-swiper-arrow"></use>
+            </svg>
+            <span class="visually-hidden">Перелестнуть вперед</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% set cardSwiperCnt = cardSwiperCnt + 1 %}

@@ -60,5 +60,21 @@ cardSwipersItems.forEach((cardSwiperItem, index) => {
       },
     };
   }
+
+  if (cardSwiperItem.id === "team-swiper") {
+    swiperOptions.breakpoints = {
+      320: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 27,
+      },
+      1181: {
+        slidesPerView: 2,
+        spaceBetween: 27,
+      },
+    };
+  }
   const cardSwiper = new Swiper(cardSwiperItem, swiperOptions);
 });
