@@ -61,12 +61,12 @@
 }
 
 .facts__numbers-value {
+  @include null-mp;
+
   font-weight: 600;
   font-size: 55px;
   line-height: 125%;
   font-family: $jost-font;
-
-  @include null-mp;
 
   @media (width >= $desktop-width) {
     font-size: 89px;
@@ -90,7 +90,8 @@
 
   column-gap: 18px;
 
-  grid-template-areas: "quote quote"
+  grid-template-areas:
+    "quote quote"
     "photo info";
   grid-template-columns: repeat(2, 1fr);
   row-gap: 24px;
@@ -100,7 +101,8 @@
 
     column-gap: 0;
 
-    grid-template-areas: "photo quote"
+    grid-template-areas:
+      "photo quote"
       "photo info";
     grid-template-columns: 378px 1fr;
     row-gap: 0;

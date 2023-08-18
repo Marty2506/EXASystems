@@ -1,0 +1,36 @@
+{% extends "layout.j2" %}
+
+{% set page = "vacancies" %}
+
+{% block content %}
+  <main class="page-main">
+    <div class="container">
+      <div class="breadcumbs">
+        <ul class="breadcumbs__list">
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="./index.html">Главная</a>
+          </li>
+          <li class="breadcumbs__item">
+            <span class="breadcumbs__link breadcumbs__link--current">Команда</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="vacancies section">
+      <div class="container">
+        <div class="section__content">
+          <h1 class="vacancies__page-title page__title">Вакансии</h1>
+          <p class="vacancies__paragraph">Компания EXASystems постоянно растёт и развивается, расширяя границы своей деятельности и присутствие на рынке.</p>
+          <p class="vacancies__paragraph">Мы заинтересованы в поиске новых специалистов в сфере информационных технологий, которые будут вместе с командой единомышленников развивать бизнес.</p>
+          <button class="vacancies__send-button button">Отправить резюме</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+{% endblock content %}
+
+{% block js %}
+  <script src="./js/main.min.js"></script>
+{% endblock %}

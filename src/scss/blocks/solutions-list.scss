@@ -67,6 +67,8 @@
 }
 
 .solutions-list__item-title {
+  @include null-mp;
+
   display: block;
   margin-top: 15px;
   font-weight: 600;
@@ -74,8 +76,6 @@
   line-height: 135%;
   color: inherit;
   text-decoration: none;
-
-  @include null-mp;
 
   @media (width < $tablet-width) {
     font-size: 18px;

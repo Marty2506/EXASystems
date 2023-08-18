@@ -39,6 +39,7 @@
 }
 
 .eq-card__title {
+  @include null-mp;
   margin-top: 15px;
 
   font-weight: 500;
@@ -47,8 +48,6 @@
   font-family: $jost-font;
   color: inherit;
   text-decoration: none;
-
-  @include null-mp;
 }
 
 .eq-card__list {

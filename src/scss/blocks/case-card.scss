@@ -44,17 +44,12 @@
 }
 
 .case-card__description {
-  display: box;
-  -webkit-box-orient: vertical;
   margin-top: 23px;
   margin-bottom: 25px;
-  overflow: hidden;
 
   line-height: 125%;
-  text-overflow: ellipsis;
 
-  @include null-mp;
-  -webkit-line-clamp: 10;
+  @include vertical-trimmed-text(10);
 }
 
 .case-card__par {
