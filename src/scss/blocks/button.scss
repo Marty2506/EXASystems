@@ -24,9 +24,12 @@ $button-height: 47;
   transition: all 0.3s ease;
 
   &:hover {
-    color: $button-color;
-
-    background-color: $white-color;
+    @media (pointer: fine) {
+      @media (width >= $desktop-width) {
+        color: $button-color;
+        background-color: $white-color;
+      }
+    }
   }
 
   &:focus-visible {
@@ -42,9 +45,12 @@ $button-height: 47;
 
 .button--blue {
   &:hover {
-    color: $white-color;
-
-    background-color: $blue-color;
+    @media (pointer: fine) {
+      @media (width >= $desktop-width) {
+        color: $white-color;
+        background-color: $blue-color;
+      }
+    }
   }
 }
 

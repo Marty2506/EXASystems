@@ -1,0 +1,25 @@
+.simplebar-vertical {
+  // position: relative;
+  transform: translateX(50%);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1px;
+    height: 100%;
+    background-color: $primary-color;
+    z-index: -1;
+  }
+}
+
+.simplebar-scrollbar {
+  width: 11px;
+  background-color: $primary-color;
+  border-radius: 50px;
+
+  &::before {
+    content: none;
+  }
+}

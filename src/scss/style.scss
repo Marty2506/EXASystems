@@ -6,6 +6,8 @@
 // @import "./vendor/choices/base.min.scss";
 @import "./vendor/choices/choices.min";
 @import "./vendor/swiper/swiper-bundle";
+@import "./vendor/simplebar.scss";
+@import "./blocks/simplebar.scss"; // переопредление стилей
 
 //
 @import "./blocks/visually-hidden";
@@ -67,6 +69,8 @@
 @import "./blocks/about";
 @import "./blocks/person-card";
 @import "./blocks/team";
+@import "./blocks/vacancy-card.scss";
+@import "./blocks/vacancies";
 
 // @import "./blocks/subscribe-section";
 

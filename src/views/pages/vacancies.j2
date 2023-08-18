@@ -17,13 +17,59 @@
       </div>
     </div>
 
-    <section class="vacancies section">
+    <section class="vacancies vacancies--first-on-page section">
       <div class="container">
         <div class="section__content">
           <h1 class="vacancies__page-title page__title">Вакансии</h1>
           <p class="vacancies__paragraph">Компания EXASystems постоянно растёт и развивается, расширяя границы своей деятельности и присутствие на рынке.</p>
           <p class="vacancies__paragraph">Мы заинтересованы в поиске новых специалистов в сфере информационных технологий, которые будут вместе с командой единомышленников развивать бизнес.</p>
-          <button class="vacancies__send-button button">Отправить резюме</button>
+          <button class="vacancies__send-button button button--blue">Отправить резюме</button>
+          <ul class="vacancies__list">
+            {% for vacancy in vacancies %}
+              <li class="vacancy-card">
+                <div class="vacancy-card__content">
+                  <p class="vacancy-card__title title">{{ vacancy.title | safe }}</p>
+
+                  <div class="vacancy-card__block">
+                    <p class="vacancy-card__text">Чем предстоит заниматься:</p>
+                    <ul class="vacancy-card__list">
+                      <li class="vacancy-card__list-item">Прием‚ расчет‚ оформление и ведение заказов</li>
+                      <li class="vacancy-card__list-item">Отчетность‚ ведение клиентской базы</li>
+                    </ul>
+                  </div>
+
+                  <div class="vacancy-card__block">
+                    <p class="vacancy-card__text">Мы ожидаем:</p>
+                    <ul class="vacancy-card__list">
+                      <li class="vacancy-card__list-item">Опыт работы в фитнес-клубах от 3 лет</li>
+                      <li class="vacancy-card__list-item">Желание и умение работать с людьми</li>
+                      <li class="vacancy-card__list-item">Коммуникабельность‚ работоспособность‚ внимательность</li>
+                    </ul>
+                  </div>
+
+                  <div class="vacancy-card__block">
+                    <p class="vacancy-card__text">Мы предлагаем:</p>
+                    <ul class="vacancy-card__list">
+                      <li class="vacancy-card__list-item">Прием‚ расчет‚ оформление и ведение заказов</li>
+                      <li class="vacancy-card__list-item">Отчетность‚ ведение клиентской базы</li>
+                      <li class="vacancy-card__list-item">Отчетность‚ ведение клиентской базы</li>
+                      <li class="vacancy-card__list-item">Отчетность‚ ведение клиентской базы</li>
+                      <li class="vacancy-card__list-item">Отчетность‚ ведение клиентской базы</li>
+                      <li class="vacancy-card__list-item">Отчетность‚ ведение клиентской базы</li>
+                      <li class="vacancy-card__list-item">Отчетность‚ ведение клиентской базы</li>
+                      <li class="vacancy-card__list-item">Отчетность‚ ведение клиентской базы</li>
+                      <li class="vacancy-card__list-item">Отчетность‚ ведение клиентской базы</li>
+                      <li class="vacancy-card__list-item">Отчетность‚ ведение клиентской базы</li>
+                      <li class="vacancy-card__list-item">Отчетность‚ ведение клиентской базы</li>
+                      <li class="vacancy-card__list-item">Отчетность‚ ведение клиентской базы</li>
+                      <li class="vacancy-card__list-item">Отчетность‚ ведение клиентской базы</li>
+                      <li class="vacancy-card__list-item">Отчетность‚ ведение клиентской базы</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
         </div>
       </div>
     </section>
@@ -32,5 +78,7 @@
 {% endblock content %}
 
 {% block js %}
-  <script src="./js/main.min.js"></script>
+  <script src="./js/simplebar.min.js" defer></script>
+  <script src="./js/simplebar-prefs.min.js" defer></script>
+  <script src="./js/main.min.js" defer></script>
 {% endblock %}

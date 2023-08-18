@@ -1,0 +1,72 @@
+.vacancy-card {
+  position: relative;
+  background-color: #f9f9f9;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 8px;
+    background-color: $primary-color;
+  }
+
+  @media (width >= $desktop-width) {
+    // padding: 40px 70px;
+    height: 620px;
+  }
+}
+.vacancy-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+
+  overflow-y: auto;
+
+  @media (width >= $desktop-width) {
+    padding: 40px 70px;
+    // height: 620px;
+  }
+}
+.vacancy-card__title {
+  margin: 0;
+  padding: 0;
+}
+.vacancy-card__block {
+  display: flex;
+  flex-direction: column;
+}
+.vacancy-card__text {
+  margin: 0;
+  padding: 0;
+}
+.vacancy-card__list {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.vacancy-card__list-item {
+  position: relative;
+
+  padding-left: 34px;
+
+  font-size: 16px;
+  color: #515151;
+  font-weight: 300;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0.4em;
+    left: 9px;
+
+    width: 9px;
+    height: 14px;
+
+    background-image: url("@img/icons/team-list-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
