@@ -177,17 +177,37 @@
   border-color: $button-color;
 }
 
-.form__submit-button {
-  max-width: 206px;
+.form__submit-button,
+.form__file-button {
+  font-size: 16px;
+  font-weight: 600;
+  max-width: 330px;
+  height: 62px;
 
   @media (max-width: $max-mobile-width) {
     max-width: 100%;
   }
+}
 
+.form__file-button-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form__file-button-selected {
+  display: block;
+  word-wrap: break-word;
+}
+
+.form__submit-button {
   &:hover {
-    color: $white-color;
-
-    background-color: $blue-color;
+    @media (pointer: fine) {
+      @media (width >= $desktop-width) {
+        color: $white-color;
+        background-color: $blue-color;
+      }
+    }
   }
 }
 

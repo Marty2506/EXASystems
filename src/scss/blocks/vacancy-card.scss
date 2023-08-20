@@ -2,6 +2,9 @@
   position: relative;
   background-color: #f9f9f9;
 
+  height: 670px;
+  max-width: 550px;
+
   &::before {
     content: "";
     position: absolute;
@@ -12,7 +15,7 @@
     background-color: $primary-color;
   }
 
-  @media (width >= $desktop-width) {
+  @media (width >= $tablet-width) {
     // padding: 40px 70px;
     height: 620px;
   }
@@ -21,6 +24,8 @@
   display: flex;
   flex-direction: column;
   gap: 27px;
+
+  padding: 25px 40px;
 
   overflow-y: auto;
 

@@ -4,6 +4,7 @@ $button-height: 47;
   position: relative;
 
   display: flex;
+  gap: 10px;
   justify-content: center;
   align-items: center;
   min-width: 220px;
@@ -23,11 +24,20 @@ $button-height: 47;
 
   transition: all 0.3s ease;
 
+  & .button__icon {
+    transition: fill 0.3s ease;
+    fill: $button-color;
+  }
+
   &:hover {
     @media (pointer: fine) {
       @media (width >= $desktop-width) {
         color: $button-color;
         background-color: $white-color;
+
+        & .button__icon {
+          fill: $button-color;
+        }
       }
     }
   }
@@ -44,11 +54,18 @@ $button-height: 47;
 }
 
 .button--blue {
+  & .button__icon {
+    fill: $blue-color;
+  }
   &:hover {
     @media (pointer: fine) {
       @media (width >= $desktop-width) {
         color: $white-color;
         background-color: $blue-color;
+      }
+
+      & .button__icon {
+        fill: $white-color;
       }
     }
   }
@@ -60,10 +77,23 @@ $button-height: 47;
   background-color: transparent;
   border: 1px solid $blue-color;
 
-  &:hover,
+  & .button__icon {
+    fill: $blue-color;
+  }
+
+  &:hover {
+    @media (pointer: fine) {
+      color: $button-color;
+      border-color: $button-color;
+    }
+
+    & .button__icon {
+      fill: $button-color;
+    }
+  }
+
   &:focus-visible {
     color: $button-color;
-
     border-color: $button-color;
   }
 }

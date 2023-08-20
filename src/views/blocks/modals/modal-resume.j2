@@ -1,0 +1,54 @@
+<div class="modal modal--resume">
+
+  <div class="modal__wrapper">
+    <button class="modal__close-button" type="button">
+      <span class="visually-hidden">Закрыть окно</span>
+    </button>
+    <div class="modal__content">
+      <div class="section__half">
+        <h2 class="visually-hidden">Модальное окно для отправки резюме</h2>
+        <p class="modal__title">Заполните поля ниже и отправьте резюме</p>
+        <form class="modal__form form" action="https://echo.htmlacademy.ru" method="post" id="modal-resume-form">
+          <label class="form__label">
+            <span class="form__label-text">Имя</span>
+            <input class="form__field" type="text" id="modal-resume-first-name" name="modal-resume-first-name" placeholder="Введите имя">
+          </label>
+          <label class="form__label">
+            <span class="form__label-text">Фамилия</span>
+            <input class="form__field" type="text" id="modal-resume-second-name" name="modal-resume-second-name" placeholder="Введите имя">
+          </label>
+          <label class="form__label">
+            <span class="form__label-text">Почта</span>
+            <input class="form__field" type="email" id="modal-resume-mail" name="modal-resume-mail" placeholder="pochta@mail.ru" data-pristine-email-message="Неправильный формат e-mail">
+          </label>
+          <label class="form__label">
+            <span class="form__label-text">Телефон</span>
+            <input class="form__field" type="tel" id="modal-resume-phone" name="modal-resume-phone" placeholder="+7 (999) 999-99-99" required data-pristine-required-message="Обязательно к заполнению">
+          </label>
+          <label class="form__label">
+            <span class="form__label-text">Дополнительная информация</span>
+            <textarea class="modal__form-textarea form__field--textarea form__field" name="modal-resume-add-info" id="modal-resume-add-info" cols="30" rows="7" placeholder="Дополнительная информация, например, ссылка на резюме"></textarea>
+          </label>
+          <div class="form__column">
+            <div class="form__file-button-wrapper">
+              <label class="button button--alternate form__file-button">
+                <input class="visually-hidden" type="file" id="modal-resume-file" name="modal-resume-file" accept=".doc, .docx, .pdf">
+                <svg class="button__icon" width="25" height="25" viewBox="0 0 25 25">
+                  <use xlink:href="img/sprite.svg#clip-icon"></use>
+                </svg>
+                Прикрепить файл
+              </label>
+              <span class="form__file-button-selected" id="modeal-resume-selected-file"></span>
+            </div>
+            <button class="button form__submit-button" type="submit">Отправить резюме</button>
+            <label class="section__form-checkbox form__label form__label--checkbox">
+              <input class="form__checkbox visually-hidden" type="checkbox" name="modal-offer-politics" id="modal-offer-politics" checked>
+              <span class="form__mark"></span>
+              <span class="section__form-checkbox-text form__checkbox-label-text">Согласен с <a href="#!">Политикой конфиденциальности сайта</a></span>
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

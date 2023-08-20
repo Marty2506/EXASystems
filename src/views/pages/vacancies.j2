@@ -23,7 +23,7 @@
           <h1 class="vacancies__page-title page__title">Вакансии</h1>
           <p class="vacancies__paragraph">Компания EXASystems постоянно растёт и развивается, расширяя границы своей деятельности и присутствие на рынке.</p>
           <p class="vacancies__paragraph">Мы заинтересованы в поиске новых специалистов в сфере информационных технологий, которые будут вместе с командой единомышленников развивать бизнес.</p>
-          <button class="vacancies__send-button button button--blue">Отправить резюме</button>
+          <button class="vacancies__send-button button button--blue" data-button-type="open-resume-modal">Отправить резюме</button>
           <ul class="vacancies__list">
             {% for vacancy in vacancies %}
               <li class="vacancy-card">
@@ -76,6 +76,10 @@
 
   </main>
 {% endblock content %}
+
+{% block modal %}
+  {% include "./blocks/modals/modal-resume.j2" %}
+{% endblock %}
 
 {% block js %}
   <script src="./js/simplebar.min.js" defer></script>

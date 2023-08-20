@@ -1,8 +1,10 @@
 .vacancies {
 }
+
 .vacancies--first-on-page {
   padding-top: 30px;
 }
+
 .vacancies__page-title {
   margin-bottom: 15px;
 
@@ -10,6 +12,7 @@
     margin-bottom: 30px;
   }
 }
+
 .vacancies__paragraph {
   margin: 0;
   padding: 0;
@@ -18,28 +21,28 @@
     max-width: 50%;
   }
 }
+
 .vacancies__paragraph + .vacancies__paragraph {
   margin-top: 20px;
 }
+
 .vacancies__send-button {
   margin-top: 15px;
   height: 62px;
   font-size: 16px;
   font-weight: 600;
-
-  &:hover {
-    @media (pointer: fine) {
-    }
-  }
 }
 
 .vacancies__list {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+
   margin-top: 35px;
 
   @media (width >= $desktop-width) {
     margin-top: 65px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 35px;
   }
 }
