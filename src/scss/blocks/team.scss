@@ -19,8 +19,6 @@
   }
 }
 
-
-
 .team__header {
   display: flex;
   justify-content: space-between;
@@ -32,5 +30,11 @@
 
   @media (width < $tablet-width) {
     display: none;
+  }
+}
+
+.team__swiper-buttons {
+  @media (width < $ears-swiper-buttons-available) {
+    margin-top: 15px;
   }
 }

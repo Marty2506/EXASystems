@@ -13,6 +13,7 @@ $desktop-swiper-width: 1121px + 2 * $paddings-desktop + 150px;
 $max-mobile-width: $tablet-width - 1px;
 $max-tablet-width: $desktop-width - 1px;
 $side-panel-available: $desktop-width;
+$ears-swiper-buttons-available: $desktop-width + 100px;
 
 // Colors
 $primary-color: #444089;

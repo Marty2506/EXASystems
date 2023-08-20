@@ -1,24 +1,6 @@
-.vendors__header {
-  display: flex;
-  justify-content: space-between;
-}
-
-.vendors__all-link {
-  font-size: 18px;
-  font-family: $jost-font;
-
-  @media (width < $tablet-width) {
-    display: none;
-  }
-}
-
 .vendors__content {
   display: flex;
   flex-direction: column;
-}
-
-.vendors__title {
-  margin-bottom: 15px;
 }
 
 .vendors__description {
@@ -97,12 +79,8 @@
   transition: color 0.3s ease;
 }
 
-.vendors__swiper {
-  // padding: 5px 15px 15px 5px;
-}
-
 .vendors__swiper-buttons {
-  @media (width < $desktop-width) {
+  @media (width < $ears-swiper-buttons-available) {
     margin-top: 15px;
   }
 }

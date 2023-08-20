@@ -72,7 +72,23 @@ cardSwipersItems.forEach((cardSwiperItem, index) => {
       },
       1181: {
         slidesPerView: 2,
+        spaceBetween: 70,
+      },
+    };
+  }
+
+  if (cardSwiperItem.id === "vacancies-swiper") {
+    swiperOptions.breakpoints = {
+      320: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
         spaceBetween: 27,
+      },
+      1181: {
+        slidesPerView: 2,
+        spaceBetween: 37,
       },
     };
   }

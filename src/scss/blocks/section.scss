@@ -73,8 +73,21 @@
 
   gap: 10px;
 
-  @media (min-width: $desktop-width) {
+  & .section__title {
+    margin-bottom: 0;
+  }
+
+  @media (width >= $tablet-width) {
     margin-bottom: 35px;
+  }
+}
+
+.section__all-link {
+  font-size: 18px;
+  font-family: $jost-font;
+
+  @media (width < $tablet-width) {
+    display: none;
   }
 }
 

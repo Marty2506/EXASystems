@@ -3,7 +3,9 @@
   background-color: #f9f9f9;
 
   height: 670px;
-  max-width: 550px;
+  // max-width: 550px;
+  width: 100%;
+  margin-right: 12px;
 
   &::before {
     content: "";

@@ -1,0 +1,79 @@
+<section class="vacancies section">
+  <div class="container">
+    <div class="section__content">
+      <div class="section__header">
+        <h3 class="section__title title">Вакансии</h3>
+        <a href="./vacancies.html" class="section__all-link">Все вакансии</a>
+      </div>
+
+      <div class="card-swiper-container">
+        <div class="section__card-swiper card-swiper swiper" id="vacancies-swiper">
+          <div class="swiper-wrapper">
+            {% for vacancy in vacancies %}
+              <div class="card-swiper__slide swiper-slide">
+                <div class="vacancy-card">
+                  <div class="vacancy-card__content">
+                    <p class="vacancy-card__title title">{{ vacancy.title | safe }}</p>
+
+                    <div class="vacancy-card__block">
+                      <p class="vacancy-card__text">Чем предстоит заниматься:</p>
+                      <ul class="vacancy-card__list">
+                        <li class="vacancy-card__list-item">Прием‚ расчет‚ оформление и ведение заказов</li>
+                        <li class="vacancy-card__list-item">Отчетность‚ ведение клиентской базы</li>
+                      </ul>
+                    </div>
+
+                    <div class="vacancy-card__block">
+                      <p class="vacancy-card__text">Мы ожидаем:</p>
+                      <ul class="vacancy-card__list">
+                        <li class="vacancy-card__list-item">Опыт работы в фитнес-клубах от 3 лет</li>
+                        <li class="vacancy-card__list-item">Желание и умение работать с людьми</li>
+                        <li class="vacancy-card__list-item">Коммуникабельность‚ работоспособность‚ внимательность</li>
+                      </ul>
+                    </div>
+
+                    <div class="vacancy-card__block">
+                      <p class="vacancy-card__text">Мы предлагаем:</p>
+                      <ul class="vacancy-card__list">
+                        <li class="vacancy-card__list-item">Прием‚ расчет‚ оформление и ведение заказов</li>
+                        <li class="vacancy-card__list-item">Отчетность‚ ведение клиентской базы</li>
+                        <li class="vacancy-card__list-item">Отчетность‚ ведение клиентской базы</li>
+                        <li class="vacancy-card__list-item">Отчетность‚ ведение клиентской базы</li>
+                        <li class="vacancy-card__list-item">Отчетность‚ ведение клиентской базы</li>
+                        <li class="vacancy-card__list-item">Отчетность‚ ведение клиентской базы</li>
+                        <li class="vacancy-card__list-item">Отчетность‚ ведение клиентской базы</li>
+                        <li class="vacancy-card__list-item">Отчетность‚ ведение клиентской базы</li>
+                        <li class="vacancy-card__list-item">Отчетность‚ ведение клиентской базы</li>
+                        <li class="vacancy-card__list-item">Отчетность‚ ведение клиентской базы</li>
+                        <li class="vacancy-card__list-item">Отчетность‚ ведение клиентской базы</li>
+                        <li class="vacancy-card__list-item">Отчетность‚ ведение клиентской базы</li>
+                        <li class="vacancy-card__list-item">Отчетность‚ ведение клиентской базы</li>
+                        <li class="vacancy-card__list-item">Отчетность‚ ведение клиентской базы</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="vacancies__swiper-buttons card-swiper__buttons card-swiper__buttons--desktop-ears card-swiper__buttons--default-top-margin">
+          <button class="card-swiper__button card-swiper__button--prev card-swiper__button-{{ cardSwiperCnt }}-prev" type="button">
+            <svg class="card-swiper__button-icon" width="12" height="12" viewBox="0 0 12 12">
+              <use xlink:href="img/sprite.svg#card-swiper-arrow"></use>
+            </svg>
+            <span class="visually-hidden">Перелестнуть назад</span>
+          </button>
+          <button class="card-swiper__button card-swiper__button--next card-swiper__button-{{ cardSwiperCnt }}-next" type="button">
+            <svg class="card-swiper__button-icon" width="12" height="12" viewBox="0 0 12 12">
+              <use xlink:href="img/sprite.svg#card-swiper-arrow"></use>
+            </svg>
+            <span class="visually-hidden">Перелестнуть вперед</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% set cardSwiperCnt = cardSwiperCnt + 1 %}
