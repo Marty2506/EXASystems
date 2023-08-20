@@ -1,0 +1,98 @@
+{% extends "layout.j2" %}
+
+{% set page = "contacts" %}
+
+{% block content %}
+  <main class="page-main">
+    <div class="container">
+      <div class="breadcumbs">
+        <ul class="breadcumbs__list">
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="./index.html">Главная</a>
+          </li>
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="./about.html">О компании</a>
+          </li>
+          <li class="breadcumbs__item">
+            <span class="breadcumbs__link breadcumbs__link--current">Контакты</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="contacts contacts--page section section--first-on-page">
+      <div class="contacts__container container">
+        <div class="section__content">
+          <h1 class="contacts__title page__title">Контакты</h1>
+          <div class="contacts__content">
+            <div class="contacts__contacts">
+              <div class="contacts__items-wrapper">
+                <a class="contacts__item contacts__item--phone" href="tel:+74955404708">+7 (495) 540-47-08</a>
+                <a class="contacts__item contacts__item--mail" href="mailto:mail@info@exasystems.ru">info@exasystems.ru</a>
+                <p class="contacts__item contacts__item--time">Работаем с 9 до 18 в будни</p>
+                <div class="contacts__item contacts__item--address">
+                  <div class="contacts__item-content">
+                    <span>Адрес офиса:</span>
+                    105122, Россия, г. Москва, Щелковское шоссе, д. 5, стр. 1, офис 538.
+                  </div>
+                </div>
+                <div class="contacts__item contacts__item--address">
+                  <div class="contacts__item-content">
+                    <span>Адрес склада:</span>
+                    105122, Россия, г. Москва, Щелковское шоссе, д. 5, стр. 1
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contacts__questions">
+              <p class="contacts__sub-title title">Остались вопросы?</p>
+              <p class="contacts__questions-info">Проконсультирем, поможем подобрать оборудование и решить задачи IT-инфраструтуры компании</p>
+              <form class="contacts__form form" action="https://echo.htmlacademy.ru" method="get" id="contacts-form">
+                <label class="form__label">
+                  <span class="contacts__label-text form__label-text">Ваше имя</span>
+                  <input class="form__field" type="text" id="contacts-form-client-name" name="contacts-form-client-name" placeholder="Введите ваше имя">
+                </label>
+                <label class="form__label">
+                  <span class="contacts__label-text form__label-text">Компания</span>
+                  <input class="form__field" type="text" id="contacts-form-company-name" name="contacts-form-company-name" placeholder="Введите название компании">
+                </label>
+                <div class="form__row">
+                  <label class="form__label form__label--messengers">
+                    <span class="form__label-text">Способ связи</span>
+                    <select class="form__select" id="contacts-form-messengers" name="contacts-form-messengers">
+                      <option value="Whatsapp">Whatsapp</option>
+                      <option value="Telegram">Telegram</option>
+                      <option value="Телефон">Телефон</option>
+                    </select>
+                  </label>
+                  <label class="form__label">
+                    <span class="form__label-text"></span>
+                    <input class="form__field" type="tel" id="contacts-form-phone" name="contacts-form-phone" placeholder="+7 (999) 999-99-99" required data-pristine-required-message="Обязательно к заполнению">
+                  </label>
+                </div>
+                <div class="form__column">
+                  <button class="button form__submit-button" type="submit">Получить консультацию</button>
+                  <label class="form__label form__label--checkbox">
+                    <input class="form__checkbox visually-hidden" type="checkbox" name="contacts-form-politics" id="contacts-form-politics" checked>
+                    <span class="form__mark"></span>
+                    <span class="form__checkbox-label-text">Согласен с <a href="#!">Политикой конфиденциальности сайта</a></span>
+                  </label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contacts__map">
+        <span class="visually-hidden">Мы на карте.</span>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac561ee9a96e3f25b83c49ff300f715d718cceee8ef46433bf8fd89d04dc67461&amp;source=constructor" width="600" height="450" scroll=false></iframe>
+      </div>
+    </section>
+
+  </main>
+{% endblock content %}
+
+{% block js %}
+  <script src="./js/contacts.min.js" defer></script>
+  <script src="./js/main.min.js" defer></script>
+{% endblock %}
