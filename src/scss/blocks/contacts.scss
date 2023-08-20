@@ -1,17 +1,9 @@
-.contacts--page {
-  &:last-child {
-    margin-bottom: 0;
-    padding-bottom: 0;
+.contacts {
+  @media (width >= $desktop-width) {
+    padding-top: 50px;
   }
 }
 .contacts__container {
-  @media (max-width: $max-mobile-width) {
-    padding-bottom: 265px;
-
-    background-image: url("@img/contacts-buildings.png");
-    background-repeat: no-repeat;
-    background-position: -115px calc(100% + 240px);
-  }
 }
 
 .contacts__content {
@@ -19,19 +11,13 @@
   flex-direction: column;
   margin-bottom: 30px;
 
-  @media (min-width: $tablet-width) {
-    padding-bottom: 300px;
-
-    background-image: url("@img/contacts-buildings.png");
-    background-repeat: no-repeat;
-    background-position: 0 calc(100% + 240px);
+  @media (width >= $tablet-width) {
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: 30px;
   }
-  @media (min-width: $desktop-width) {
-    flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 270px;
 
-    background-position: 0 calc(100% + 105px);
+  @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 380px 1fr;
     gap: 240px;
@@ -43,7 +29,10 @@
   flex-shrink: 0;
   flex-direction: column;
   padding-bottom: 40px;
-  max-width: 380px;
+
+  @media (width >= $tablet-width) {
+    max-width: 380px;
+  }
 }
 
 .contacts__title {
@@ -156,7 +145,9 @@ a.contacts__item {
   flex-direction: column;
   gap: 19px;
 
-  max-width: 410px;
+  @media (width >= $tablet-width) {
+    max-width: 410px;
+  }
 
   @media (width >= $desktop-width) {
     margin-right: 90px;
@@ -212,5 +203,32 @@ a.contacts__item {
     height: 843px;
 
     filter: invert(1) grayscale(0.5);
+  }
+}
+
+.contacts--page {
+  &:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  & .contacts__container {
+    @media (max-width: $max-mobile-width) {
+      padding-bottom: 265px;
+
+      background-image: url("@img/contacts-buildings.png");
+      background-repeat: no-repeat;
+      background-position: -115px calc(100% + 240px);
+    }
+  }
+
+  & .contacts__content {
+    @media (min-width: $tablet-width) {
+      padding-bottom: 270px;
+
+      background-image: url("@img/contacts-buildings.png");
+      background-repeat: no-repeat;
+      background-position: 0 calc(100% + 105px);
+    }
   }
 }
