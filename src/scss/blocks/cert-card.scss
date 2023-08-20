@@ -15,18 +15,10 @@
 
   &:hover {
     border-color: $blue-color;
-
-    & .cert-card__link::after {
-      opacity: 1;
-    }
   }
 
   &:focus-within {
     border-color: $blue-color;
-  }
-
-  @media (min-width: $tablet-width) {
-    max-height: 500px;
   }
 
   @media (width >= $desktop-width) {
@@ -48,6 +40,7 @@
 }
 
 .cert-card__photo-wrapper {
+  position: relative;
   order: 2;
   display: flex;
   width: 100%;
@@ -56,9 +49,12 @@
   background-color: $aqua-color;
   overflow: hidden;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.08);
+
+  @include image-hover;
 }
 
 .cert-card__image {
+  position: relative;
   display: block;
   width: 100%;
 
@@ -90,4 +86,26 @@
   padding: 0;
 
   color: $dark-color;
+}
+
+.cert-card--in-swiper {
+  border-color: transparent;
+  padding: 0;
+
+  & .cert-card__info {
+    padding: 0;
+  }
+
+  &:hover {
+    @media (pointer: fine) {
+      border-color: transparent;
+      @media (width >= $desktop-width) {
+        & .cert-card__photo-wrapper {
+          &::after {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
 }
