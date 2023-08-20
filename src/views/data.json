@@ -553,5 +553,61 @@
     {
       "title": "Менеджер по работе с клиентами"
     }
+  ],
+  "certificates": [
+    {
+      "companyName": "Hyperline",
+      "type": "Сертифицированный инсталлятор",
+      "imgPreviewSrc": "@img/certs/1-preview.webp",
+      "imgFullSrc": "img/certs/1-full.webp"
+    },
+    {
+      "companyName": "Hyperline",
+      "type": "Сертифицированный инсталлятор",
+      "imgPreviewSrc": "@img/certs/2-preview.webp",
+      "imgFullSrc": "img/certs/2-full.webp"
+    },
+    {
+      "companyName": "Hyperline",
+      "type": "Сертифицированный инсталлятор",
+      "imgPreviewSrc": "@img/certs/3-preview.webp",
+      "imgFullSrc": "img/certs/3-full.webp"
+    },
+    {
+      "companyName": "Hyperline",
+      "type": "Сертифицированный инсталлятор",
+      "imgPreviewSrc": "@img/certs/3-preview.webp",
+      "imgFullSrc": "img/certs/3-full.webp"
+    },
+    {
+      "companyName": "Hyperline",
+      "type": "Сертифицированный инсталлятор",
+      "imgPreviewSrc": "@img/certs/1-preview.webp",
+      "imgFullSrc": "img/certs/1-full.webp"
+    },
+    {
+      "companyName": "Hyperline",
+      "type": "Сертифицированный инсталлятор",
+      "imgPreviewSrc": "@img/certs/2-preview.webp",
+      "imgFullSrc": "img/certs/2-full.webp"
+    },
+    {
+      "companyName": "Hyperline",
+      "type": "Сертифицированный инсталлятор",
+      "imgPreviewSrc": "@img/certs/1-preview.webp",
+      "imgFullSrc": "img/certs/1-full.webp"
+    },
+    {
+      "companyName": "Hyperline",
+      "type": "Сертифицированный инсталлятор",
+      "imgPreviewSrc": "@img/certs/3-preview.webp",
+      "imgFullSrc": "img/certs/3-full.webp"
+    },
+    {
+      "companyName": "Hyperline",
+      "type": "Сертифицированный инсталлятор",
+      "imgPreviewSrc": "@img/certs/2-preview.webp",
+      "imgFullSrc": "img/certs/2-full.webp"
+    }
   ]
 }

@@ -1,0 +1,53 @@
+{% extends "layout.j2" %}
+
+{% set page = "certificates" %}
+
+{% block content %}
+  <main class="page-main">
+    <div class="container">
+      <div class="breadcumbs">
+        <ul class="breadcumbs__list">
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="./index.html">Главная</a>
+          </li>
+          <li class="breadcumbs__item">
+            <span class="breadcumbs__link breadcumbs__link--current">Сертификаты</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    {% set certificateCounter = 1 %}
+    <section class="certificates section section--first-on-page">
+      <div class="container">
+        <div class="certificates__content">
+          <h1 class="certificates__title page__title">Сертификаты</h1>
+          <ul class="certificates__list">
+            {% for certItem in certificates %}
+              <li class=" certificates__item cert-card">
+                <div class="cert-card__info">
+                  <p class="cert-card__company">{{ certItem.companyName | safe }}</p>
+                  <p class="cert-card__description">{{ certItem.type | safe }}</p>
+                </div>
+                <picture class="cert-card__photo-wrapper">
+                  <img class="cert-card__image" src="{{ certItem.imgPreviewSrc | safe }}" alt="" width="324" height="255">
+                </picture>
+                <a class="cert-card__link" href="{{ certItem.imgFullSrc | safe }}" data-image-can-open-in-modal></a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+{% endblock content %}
+
+{% block modal %}
+  {% include "./blocks/modals/modal-image.j2" %}
+{% endblock %}
+
+{% block js %}
+  <script src="./js/modal-image.min.js" defer></script>
+  <script src="./js/main.min.js" defer></script>
+{% endblock %}

@@ -1,0 +1,36 @@
+.certificates {
+}
+
+.certificates__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.certificates__title {
+  margin-bottom: 27px;
+}
+
+.certificates__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
+  gap: 30px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 32px;
+  }
+}
+
+.certificates__item {
+}

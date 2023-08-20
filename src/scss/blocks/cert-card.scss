@@ -1,0 +1,93 @@
+.cert-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 28px 0 0 31px;
+  width: 100%;
+  // min-width: 242px;
+  // max-height: 336px;
+
+  background-color: $white-color;
+  border: 1px solid #cfcfcf;
+  gap: 25px;
+
+  transition: border-color 0.3s ease;
+
+  &:hover {
+    border-color: $blue-color;
+
+    & .cert-card__link::after {
+      opacity: 1;
+    }
+  }
+
+  &:focus-within {
+    border-color: $blue-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-height: 500px;
+  }
+
+  @media (width >= $desktop-width) {
+    padding: 34px 0 0 31px;
+  }
+}
+
+.cert-card__link {
+  background-color: transparent;
+
+  transition: background-color 0.3s ease;
+
+  @include container-link;
+
+  &:focus-visible {
+    outline: solid 2px $blue-color;
+    outline-offset: -2px;
+  }
+}
+
+.cert-card__photo-wrapper {
+  order: 2;
+  display: flex;
+  width: 100%;
+  flex-grow: 1;
+  aspect-ratio: 324/255;
+  background-color: $aqua-color;
+  overflow: hidden;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.08);
+}
+
+.cert-card__image {
+  display: block;
+  width: 100%;
+
+  object-fit: cover;
+}
+
+.cert-card__info {
+  order: 1;
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  gap: 8px;
+
+  padding-left: 16px;
+}
+
+.cert-card__company {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+.cert-card__description {
+  margin: 0;
+  padding: 0;
+
+  color: $dark-color;
+}
