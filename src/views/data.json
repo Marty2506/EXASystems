@@ -28,133 +28,133 @@
         "subNav" : [
           {
             "title": "Услуги технической и сервисной поддержки",
-            "href": "it-consulting-1"
+            "href": "service-page"
           },
           {
             "title": "Аутсорсинг серверной IT-инфраструктуры",
-            "href": "it-consulting-2"
+            "href": "service-page"
           },
           {
             "title": "Обследование IT-инфраструктуры и внутренних процессов",
-            "href": "it-consulting-3"
+            "href": "service-page"
           },
           {
             "title": "Разработка IT-стратегии компании",
-            "href": "it-consulting-4"
+            "href": "service-page"
           }
         ]
       },
       {
         "title": "ИНФОРМАЦИОННАЯ БЕЗОПАСНОСТЬ",
-        "href": "information-security",
+        "href": "#!",
         "subNav" : [
           {
             "title": "Инфраструктура открытых ключей",
-            "href": "information-security-1"
+            "href": "service-page"
           },
           {
             "title": "Системы многофакторной аутентификации",
-            "href": "information-security-2"
+            "href": "service-page"
           },
           {
             "title": "Системы антивирусной защиты",
-            "href": "information-security-3"
+            "href": "service-page"
           },
           {
             "title": "Защита почтовых сервисов от спама и вредоносных программ",
-            "href": "information-security-4"
+            "href": "service-page"
           },
           {
             "title": "Межсетевые экраны",
-            "href": "information-security-5"
+            "href": "service-page"
           },
           {
             "title": "Социальная инженерия",
-            "href": "information-security-6"
+            "href": "service-page"
           }
         ]
       },
       {
         "title": "СЕРВЕРНАЯ И СЕТЕВАЯ IT-ИНФРАСТРУКТУРА",
-        "href": "server-and-network-it-infrastructure",
+        "href": "#!",
         "subNav" : [
           {
             "title": "Серверное оборудование",
-            "href": "server-and-network-it-infrastructure-1"
+            "href": "#!"
           },
           {
             "title": "Системы хранения данных",
-            "href": "server-and-network-it-infrastructure-2"
+            "href": "#!"
           },
           {
             "title": "Сетевое оборудования",
-            "href": "server-and-network-it-infrastructure-3"
+            "href": "#!"
           },
           {
             "title": "Системы бесперебойного питания",
-            "href": "server-and-network-it-infrastructure-4"
+            "href": "#!"
           },
           {
             "title": "Серверные шкафы и стойки",
-            "href": "server-and-network-it-infrastructure-5"
+            "href": "#!"
           },
           {
             "title": "Системы резервного копирования данных",
-            "href": "server-and-network-it-infrastructure-6"
+            "href": "#!"
           },
           {
             "title": "Системы виртуализации серверов",
-            "href": "server-and-network-it-infrastructure-7"
+            "href": "#!"
           },
           {
             "title": "Внедрение инфраструктурных программных решений",
-            "href": "server-and-network-it-infrastructure-8"
+            "href": "#!"
           }
         ]
       },
       {
         "title": "ТЕЛЕКОММУНИКАЦИОННЫЕ СИСТЕМЫ",
-        "href": "telecommunication-systems",
+        "href": "#!",
         "subNav" : [
           {
             "title": "Проектирование и монтаж беспроводных ЛВС",
-            "href": "telecommunication-systems-1"
+            "href": "service-page"
           },
           {
             "title": "Внедрение систем объединенных коммуникаций",
-            "href": "telecommunication-systems-2"
+            "href": "service-page"
           },
           {
             "title": "Построение корпоративных VPN-сетей",
-            "href": "telecommunication-systems-3"
+            "href": "service-page"
           }
         ]
       },
       {
         "title": "ИНЖЕНЕРНЫЕ <br>СИСТЕМЫ",
-        "href": "engineering-systems",
+        "href": "#!",
         "subNav" : [
           {
             "title": "Монтаж СКС и ЛВС",
-            "href": "engineering-systems-1"
+            "href": "service-page"
           },
           {
             "title": "Монтаж волоконно-оптических линий связи",
-            "href": "engineering-systems-2"
+            "href": "service-page"
           },
           {
             "title": "Монтаж систем видеонаблюдения",
-            "href": "engineering-systems-3"
+            "href": "service-page"
           }
         ]
       },
       {
         "title": "БЕЗОПАСНЫЙ РЕГИОН",
-        "href": "security-region"
+        "href": "#!"
       },
       {
         "title": "ИМПОРТОЗАМЕЩЕНИЕ",
-        "href": "import-replacement"
+        "href": "#!"
       }
     ]
   },
@@ -194,46 +194,46 @@
           "href": "it-consulting",
           "subMenu" : [
             {
-              "title": "О Услуги технической и сервисной поддержки",
-              "href": "it-consulting"
+              "title": "Услуги технической и сервисной поддержки",
+              "href": "service-page"
             },
             {
               "title": "Аутсорсинг серверной ИТ-инфраструктуры",
-              "href": "it-consulting"
+              "href": "service-page"
             },
             {
               "title": "Обследование ИТ-инфраструктуры и внутренних процессов",
-              "href": "it-consulting"
+              "href": "service-page"
             },
             {
               "title": "Разработка ИТ-стратегии компании",
-              "href": "it-consulting"
+              "href": "service-page"
             }
           ]
         },
         {
           "title": "ИНФОРМАЦИОННАЯ БЕЗОПАСНОСТЬ",
-          "href": "it-consulting"
+          "href": "#!"
         },
         {
           "title": "СЕРВЕРНАЯ И СЕТЕВАЯ IT-ИНФРАСТРУКТУРА",
-          "href": "it-consulting"
+          "href": "#!"
         },
         {
           "title": "ТЕЛЕКОММУНИКАЦИОННЫЕ СИСТЕМЫ",
-          "href": "it-consulting"
+          "href": "#!"
         },
         {
           "title": "ИНЖЕНЕРНЫЕ СИСТЕМЫ",
-          "href": "it-consulting"
+          "href": "#!"
         },
         {
           "title": "БЕЗОПАСНЫЙ РЕГИОН",
-          "href": "it-consulting"
+          "href": "#!"
         },
         {
           "title": "ИМПОРТОЗАМЕЩЕНИЕ",
-          "href": "it-consulting"
+          "href": "#!"
         }
       ]
     },
