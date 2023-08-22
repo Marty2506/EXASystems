@@ -89,6 +89,18 @@
 
     background-color: $primary-color;
     transform: rotate(45deg);
+
+    transition: transform 0.4s ease;
+  }
+
+  &:hover {
+    @media (pointer: fine) {
+      @media (width >= $desktop-width) {
+        &::before {
+          transform: rotate(90deg);
+        }
+      }
+    }
   }
 }
 @mixin image-in-wrapper {
