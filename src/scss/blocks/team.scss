@@ -37,4 +37,8 @@
   @media (width < $ears-swiper-buttons-available) {
     margin-top: 15px;
   }
+
+  @media (width > $ears-swiper-buttons-available) {
+    top: calc(50% - 195px);
+  }
 }
