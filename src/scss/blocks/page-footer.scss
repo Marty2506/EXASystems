@@ -222,20 +222,7 @@
 .page-footer__bottom-nav-sub-list-item {
   position: relative;
 
-  padding-left: 17px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0.5em;
-    left: 0;
-
-    width: 0.3em;
-    height: 0.3em;
-
-    background-color: $primary-color;
-    transform: rotate(45deg);
-  }
+  @include list-item-style(17px);
 }
 
 .page-footer__bottom-nav-sub-list-link {
