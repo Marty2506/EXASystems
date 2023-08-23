@@ -84,3 +84,9 @@ function clearSelection() {
     );
   });
 }
+
+window.addEventListener("load", () => {
+  if (window.screen.width >= DESKTOP_WIDTH) {
+    partnersItems.item(0).click();
+  }
+});
