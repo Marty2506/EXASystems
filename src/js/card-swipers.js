@@ -28,6 +28,25 @@ cardSwipersItems.forEach((cardSwiperItem, index) => {
     },
   };
 
+  if (cardSwiperItem.id === "vendors-swiper") {
+    swiperOptions.breakpoints = {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      530: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      1181: {
+        slidesPerView: 4,
+      },
+    };
+  }
+
   if (cardSwiperItem.id === "cases-swiper") {
     swiperOptions.breakpoints = {
       320: {

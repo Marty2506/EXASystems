@@ -80,7 +80,18 @@
 }
 
 .vendors__swiper-buttons {
-  @media (width < $ears-swiper-buttons-available) {
-    margin-top: 15px;
+  @media (width < $desktop-width) {
+    position: absolute;
+    top: 50%;
+    left: -80px;
+    right: -80px;
+    transform: translateY(-50%);
+    margin-top: 0;
+    justify-content: space-between;
+    z-index: 1;
+  }
+  @media (width < $tablet-width + 150px) {
+    right: 0;
+    left: 0;
   }
 }
