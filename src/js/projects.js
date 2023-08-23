@@ -74,8 +74,8 @@ if (solutionsSelectItem) {
   solutionsSelectItem.choice = formSelectChoice;
   // solutionsSelectItem.addEventListener('change', updatePrograms.bind(formSelectChoice));
   solutionsSelectItem.addEventListener("change", () => {
-    // filterCasesCards();
-    // TODO написать фильтрацию если понадобится
+    // Фильтрация фейковая!!! Чисто для наглядности
+    filterCasesCardsFake(solutionsSelectItem);
   });
 }
 
@@ -86,7 +86,10 @@ if (industrySelectItem) {
   );
   industrySelectItem.choice = formSelectChoice;
   // solutionsSelectItem.addEventListener('change', updatePrograms.bind(formSelectChoice));
-  industrySelectItem.addEventListener("change", () => {});
+  industrySelectItem.addEventListener("change", () => {
+    // Фильтрация фейковая!!! Чисто для наглядности
+    filterCasesCardsFake(industrySelectItem);
+  });
 }
 
 if (vendorSelectItem) {
@@ -96,5 +99,27 @@ if (vendorSelectItem) {
   );
   vendorSelectItem.choice = formSelectChoice;
   // solutionsSelectItem.addEventListener('change', updatePrograms.bind(formSelectChoice));
-  vendorSelectItem.addEventListener("change", () => {});
+  vendorSelectItem.addEventListener("change", () => {
+    // Фильтрация фейковая!!! Чисто для наглядности
+    filterCasesCardsFake(vendorSelectItem);
+  });
+}
+
+function filterCasesCardsFake(el) {
+  const cards = casesList.childNodes;
+  const solutionFilter = el.choice.getValue(true);
+  const firstChoice =
+    el.choice.choiceList.element.firstChild.dataset.value.toString();
+  cards.forEach((card) => {
+    card.classList.remove("case-card--hidden");
+  });
+
+  if (solutionFilter.toString() !== firstChoice) {
+    cards.forEach((card, index) => {
+      if (index === 0) {
+        return;
+      }
+      card.classList.add("case-card--hidden");
+    });
+  }
 }
