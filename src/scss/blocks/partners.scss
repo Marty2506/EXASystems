@@ -80,6 +80,10 @@
   }
 }
 
+.partners__item--hidden {
+  display: none;
+}
+
 .partners__item--active {
   background-color: #f4f4f4;
 }
@@ -90,7 +94,6 @@
   justify-content: center;
   align-items: center;
 }
-
 
 .partners__info-list-container {
   @media (width < $tablet-width) {

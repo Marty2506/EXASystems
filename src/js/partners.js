@@ -40,9 +40,32 @@ if (solutionsSelectItem) {
   // solutionsSelectItem.addEventListener('change', updatePrograms.bind(formSelectChoice));
   solutionsSelectItem.addEventListener("change", () => {
     clearSelection();
-    // filterCasesCards();
+    filterVendorsCardsFake(solutionsSelectItem);
     // TODO написать фильтрацию если понадобится
   });
+}
+
+const partnersListItem = document.querySelector(".partners__list");
+
+function filterVendorsCardsFake(el) {
+  const cards = partnersListItem.childNodes;
+  const solutionFilter = el.choice.getValue(true);
+  const firstChoice =
+    el.choice.choiceList.element.firstChild.dataset.value.toString();
+  cards.forEach((card) => {
+    card.classList.remove("partners__item--hidden");
+  });
+
+  if (solutionFilter.toString() !== firstChoice) {
+    cards.forEach((card, index) => {
+      if (index < 3) {
+        return;
+      }
+      card.classList.add("partners__item--hidden");
+    });
+  }
+
+  partnersItems.item(0).click();
 }
 
 const partnersItems = document.querySelectorAll(".partners__item");
