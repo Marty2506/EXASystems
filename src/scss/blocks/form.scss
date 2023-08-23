@@ -723,6 +723,21 @@
         background-color: $blue-color;
       }
     }
+
+    @media (width >= $desktop-width) {
+      scrollbar-color: $blue-color transparent;
+      scrollbar-width: thin;
+
+      &::-webkit-scrollbar {
+        background-color: transparent;
+        width: 11px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: $blue-color;
+        border-radius: 50px;
+      }
+    }
   }
 }
 
