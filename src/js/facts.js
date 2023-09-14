@@ -5,7 +5,8 @@ let positionRached = false;
 window.addEventListener("scroll", () => {
   const factsItemPos = factsItem.offsetTop;
   const widnowPos = document.querySelector(".page").scrollTop;
-  if (widnowPos > factsItemPos - 100 && !positionRached) {
+  const factsTransform = factsItem.offsetHeight - 300;
+  if (widnowPos > factsItemPos - factsTransform && !positionRached) {
     positionRached = true;
     runningItems.forEach((runningItem) => {
       const valPlaceholder = runningItem.querySelector("span");
