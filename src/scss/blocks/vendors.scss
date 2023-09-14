@@ -59,6 +59,17 @@
 
   text-decoration: none;
 }
+a.vendors__item-wrapper {
+  cursor: pointer;
+  &:hover {
+    @media (pointer: fine) {
+      background-color: #f4f4f4;
+    }
+  }
+  &:active {
+    opacity: 0.6;
+  }
+}
 
 .vendors__company-logo {
   max-width: 100%;
