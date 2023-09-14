@@ -175,3 +175,13 @@
 
   font-weight: 600;
 }
+
+.partners__info-more-button {
+  font-size: 15px;
+  font-weight: 600;
+  height: 53px;
+
+  @media (width >= $tablet-width) {
+    max-width: 215px;
+  }
+}

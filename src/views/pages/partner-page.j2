@@ -1,0 +1,93 @@
+{% extends "layout.j2" %}
+
+{% set page = "partner-page" %}
+
+{% block content %}
+  <main class="page-main">
+    <div class="container">
+      <div class="breadcumbs">
+        <ul class="breadcumbs__list">
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="./index.html">Главная</a>
+          </li>
+          <li class="breadcumbs__item">
+            <a class="breadcumbs__link" href="./partners.html">Партнеры</a>
+          </li>
+          <li class="breadcumbs__item">
+            <span class="breadcumbs__link breadcumbs__link--current">Aladdin</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="service section section--first-on-page">
+      <div class="container">
+        <div class="section__content">
+          <div class="service__header">
+            <h1 class="service__page-title page__title">Алладин</h1>
+          </div>
+          <div class="service__main section__main">
+            <div class="service__image-wrapper">
+              <picture>
+                <source type="image/webp" media="(min-width: {{tabletWidth}})" srcset="@img/vendors/aladdin-partner-page-desktop.webp">
+                <source type="image/webp" srcset="@img/vendors/aladdin-partner-page-mobile.webp">
+                <source media="(min-width: {{tabletWidth}})" srcset="@img/vendors/aladdin-partner-page-desktop.jpg">
+                <img class="service__image" src="@img/vendors/aladdin-partner-page-mobile.jpg" alt="Описание фотографии" width="1120" height="353" loading="lazy">
+              </picture>
+            </div>
+            <div class="service__text-block">
+              <p class="service__text-par"><b>АЛАДДИН</b> – ведущий российский разработчик и производитель ключевых компонентов для построения доверенной безопасной ИТ-инфраструктуры предприятий и защиты её главных информационных активов. Продукты, решения и технологии компании стали лидерами в своих сегментах, а во многих крупных организациях и Федеральных структурах – стандартом де-факто. Компания имеет все необходимые лицензии ФСТЭК, ФСБ и Минобороны России для проектирования, производства и поддержки СЗИ и СКЗИ, включая работу с гостайной, производство, поставку и поддержку продукции в рамках гособоронзаказа. Большинство продуктов компании имеют сертификаты соответствия ФСТЭК, ФСБ, Минобороны России и могут использоваться при работе с гостайной со степенью секретности до "Совершенно Секретно". С 2012 г. в компании внедрена система менеджмента качества продукции (СМК), ежегодно проводится внешний аудит, имеются соответствующие сертификаты ГОСТ Р ИСО 9001-2015 (ISO 9001:2015) и ГОСТ РВ 0015.002-2020 на соответствие требованиями российского военного стандарта, необходимые для участия в реализации гособоронзаказа..</p>
+            </div>
+            <a class="service__image-wrapper" href="img/vendors/aladdin-diagram-original.webp" data-image-can-open-in-modal>
+              <picture>
+                <source type="image/webp" srcset="@img/vendors/aladdin-diagram-original.webp">
+                <img class="service__image" src="@img/vendors/aladdin-diagram-original.jpg" alt="Описание фотографии" width="687" height="589" loading="lazy">
+              </picture>
+            </a>
+            <div class="service__text-block">
+              <p class="service__text-par"><b>Продукты компании предназначены:</b></p>
+              <ul class="service__text-list list">
+                <li class="service__text-list-item list__item">Для построения доверенной безопасной ИТ-инфраструктуры предприятия на базе PKI</li>
+                <li class="service__text-list-item list__item">Для надёжной идентификации и аутентификации пользователей информационных систем и онлайнсервисов, а также устройств (M2M, IIoT)</li>
+                <li class="service__text-list-item list__item">Для обеспечения безопасной дистанционной работы сотрудников и контрагентов</li>
+                <li class="service__text-list-item list__item">Для защиты ценной информации на серверах, ноутбуках сотрудников, на съёмных носителях</li>
+                <li class="service__text-list-item list__item">Для централизованного управления средствами защиты, сертификатами, профилями и политиками.</li>
+              </ul>
+            </div>
+            <div class="service__text-block">
+              <p class="service__text-par"><b>Кому необходимы продукты компании?</b></p>
+              <ul class="service__text-list list">
+                <li class="service__text-list-item list__item">Государственным организациям, организациям КИИ, ОПК, Минобороны</li>
+                <li class="service__text-list-item list__item">Корпоративным пользователям со сложной и развитой ИТ-инфраструктурой – начавшие замещение импортных продуктов ушедших с российского рынка зарубежных вендоров</li>
+                <li class="service__text-list-item list__item">Государственным организациям, организациям КИИ, ОПК, Минобороны</li>
+              </ul>
+            </div>
+            <div class="service__text-block">
+              <p class="service__text-par"><b>Сертификаты</b></p>
+              <ul class="service__text-list list">
+                <li class="service__text-list-item list__item">Имеют сертификаты соответствия ФСТЭК, ФСБ и/или Минобороны России</li>
+                <li class="service__text-list-item list__item">Могут использоваться для защиты конфиденциальной информации</li>
+                <li class="service__text-list-item list__item">Включены в единый реестр российского ПО и/или имеют сертификат происхождения СТ-1</li>
+                <li class="service__text-list-item list__item">Имеют сертификаты совместимости с продуктами ведущих российских производителей и иностранных вендоров</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {% include "./blocks/consultation.j2" %}
+
+  </main>
+{% endblock content %}
+
+{% block modal %}
+  {% include "./blocks/modals/modal-image.j2" %}
+{% endblock %}
+
+{% block js %}
+  <script src="./js/swiper-bundle.min.js" defer></script>
+  <script src="./js/modal-image.min.js" defer></script>
+  <script src="./js/engineer-cons.min.js" defer></script>
+  <script src="./js/main.min.js" defer></script>
+{% endblock %}

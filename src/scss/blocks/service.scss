@@ -22,7 +22,7 @@
   margin-top: 30px;
 
   @media (width >= $desktop-width) {
-    max-width: 60%;
+    max-width: 70%;
   }
 }
 .service__sub-title {
@@ -62,4 +62,13 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
+}
+.service__text-list {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 7px;
+}
+.service__text-list-item {
 }
