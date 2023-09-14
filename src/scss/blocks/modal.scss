@@ -226,3 +226,26 @@
     height: auto;
   }
 }
+
+.modal--consultation {
+  & .modal__wrapper {
+    @media (width >= $desktop-width) {
+      width: $desktop-width;
+      max-width: $desktop-width;
+    }
+  }
+  & .modal__content {
+    padding-top: 0;
+    padding-bottom: 30px;
+    color: $white-color;
+
+    background-color: $primary-color;
+
+    @media (width >= $desktop-width) {
+      max-width: initial;
+      max-width: $desktop-width;
+      padding-right: 0;
+      padding-bottom: 0;
+    }
+  }
+}

@@ -58,3 +58,9 @@
     max-width: 350px;
   }
 }
+
+.consultation__image-wrapper--in-modal {
+  @media (width < $desktop-width) {
+    display: none;
+  }
+}

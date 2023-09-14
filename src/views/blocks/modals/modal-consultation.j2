@@ -1,0 +1,55 @@
+<div class="modal modal--consultation">
+
+  <div class="modal__wrapper">
+    <button class="modal__close-button" type="button">
+      <span class="visually-hidden">Закрыть окно</span>
+    </button>
+    <div class="modal__content">
+      <div class="form-section__content">
+        <div class="form-section__form-wrapper">
+          <h2 class="consultation__title title">Получите консультацию инженера ExaSystems с&nbsp;10&#8209;летним опытом</h2>
+          <p class="consultation__par">Опишите Вашу задачу, и мы поможем с поиском эффективного решения</p>
+          <form class="consultation__form form-section__form form" id="modal-cons-form" action="https://echo.htmlacademy.ru" method="get">
+            <label class="form__label">
+              <span class="form__label-text">Ваше имя</span>
+              <input class="form__field" type="text" id="modal-cons-client-name" name="modal-cons-client-name" placeholder="Введите ваше имя">
+            </label>
+            <label class="form__label">
+              <span class="form__label-text">Компания</span>
+              <input class="form__field" type="text" id="modal-cons-company-name" name="modal-cons-company-name" placeholder="Введите название компании">
+            </label>
+            <label class="form__label">
+              <span class="form__label-text">Описание задачи</span>
+              <textarea class="form__field--textarea form__field" name="modal-cons-task" id="modal-cons-task" cols="30" rows="10" placeholder="Введите текст"></textarea>
+            </label>
+            <div class="form__row">
+              <label class="form__label form__label--messengers">
+                <span class="form__label-text">Способ связи</span>
+                <select class="form__select" id="modal-cons-messengers" name="modal-cons-messengers">
+                  <option value="Телефон">Телефон</option>
+                  <option value="Whatsapp">Whatsapp</option>
+                  <option value="Telegram">Telegram</option>
+                </select>
+              </label>
+              <label class="form__label">
+                <span class="form__label-text">Ваш телефон</span>
+                <input class="form__field" type="tel" id="modal-cons-phone" name="modal-cons-phone" placeholder="+7 (999) 999-99-99" required data-pristine-required-message="Обязательно к заполнению">
+              </label>
+            </div>
+            <div class="form__column">
+              <button class="button form__submit-button" type="submit">Получить консультацию</button>
+              <label class="form__label form__label--checkbox">
+                <input class="form__checkbox visually-hidden" type="checkbox" name="admin-cons-politics" id="modal-cons-politics" checked>
+                <span class="form__mark"></span>
+                <span class="form__checkbox-label-text">Согласен с <a href="#!">Политикой конфиденциальности сайта</a></span>
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="consultation__image-wrapper form-section__image-wrapper consultation__image-wrapper--in-modal">
+          <img class="form-section__image" src="@img/consultation-form.jpg" alt="" width="920" height="826" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

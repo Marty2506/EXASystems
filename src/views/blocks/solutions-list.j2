@@ -65,13 +65,13 @@
             <source type="image/webp" srcset="@img/solutions-list/{{ index + 1 }}.webp 1x">
             <img class="solutions-list__item-image" src="@img/solutions-list/{{ index + 1 }}.jpg" alt="" width="347" height="225" loading="lazy">
           </picture>
-          <a class="solutions-list__item-image-link" href="#!"></a>
+          <a class="solutions-list__item-image-link" href="#!" data-button-type="open-cons-modal"></a>
         </div>
-        <a href="{{ SOLUTIONS_CARDS[index].link | safe}}" class="solutions-list__item-title">{{ SOLUTIONS_CARDS[index].title | safe }}</a>
+        <a href="{{ SOLUTIONS_CARDS[index].link | safe}}" class="solutions-list__item-title" data-button-type="open-cons-modal">{{ SOLUTIONS_CARDS[index].title | safe }}</a>
         <ul class="solutions-list__list">
           {% for listIndex in range(SOLUTIONS_CARDS[index].list.length) %}
             <li class="solutions-list__list-item">
-              <a href="#!" class="solutions-list__list-item-link">{{ SOLUTIONS_CARDS[index].list[listIndex] | safe}}</a>
+              <a href="#!" class="solutions-list__list-item-link" data-button-type="open-cons-modal">{{ SOLUTIONS_CARDS[index].list[listIndex] | safe}}</a>
             </li>
           {% endfor %}
         </ul>
