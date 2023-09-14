@@ -1,6 +1,6 @@
 .contacts {
   @media (width >= $desktop-width) {
-    padding-top: 50px;
+    padding-top: 80px;
   }
 }
 .contacts__container {
@@ -40,6 +40,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 35px;
+    line-height: 100%;
   }
 }
 
@@ -224,7 +225,7 @@ a.contacts__item {
 
   & .contacts__content {
     @media (min-width: $tablet-width) {
-      padding-bottom: 270px;
+      padding-bottom: 350px;
 
       background-image: url("@img/contacts-buildings.png");
       background-repeat: no-repeat;
