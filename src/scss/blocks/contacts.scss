@@ -170,6 +170,7 @@ a.contacts__item {
 
 .contacts__map {
   display: flex;
+  position: relative;
 
   @media (max-width: $max-mobile-width) {
     height: 400px;
@@ -191,8 +192,21 @@ a.contacts__item {
   }
 }
 
+.contacts__map-wrapper {
+  position: relative;
+  flex-grow: 1;
+
+  @media (width >= $desktop-width) {
+    max-width: calc($desktop-swiper-width + 200px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .contacts__map iframe {
   width: 100%;
+  margin: 0;
+  border: none;
 
   // filter: invert(1) grayscale(0.5);
 
@@ -205,6 +219,26 @@ a.contacts__item {
 
     // filter: invert(1) grayscale(0.5);
   }
+}
+
+.contacts__map-tooltip {
+  position: absolute;
+  z-index: 1000;
+
+  padding: 5px 20px;
+
+  background: $bg-color;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $primary-color;
+  color: $white-color;
+  border-radius: 5px;
+  border-image: initial;
+  box-shadow: rgb(0 0 0 / 25%) 0 0 5px;
+}
+
+.contacts__map-tooltip--hidden {
+  display: none;
 }
 
 .contacts--page {
